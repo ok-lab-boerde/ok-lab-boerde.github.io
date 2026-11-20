@@ -162,6 +162,9 @@ def main() -> None:
     grenze = wfs("vg250:vg250_krs", CQL_FILTER=f"ags='{AGS}'")
     for ft in grenze["features"]:
         ft["properties"] = {"name": ft["properties"].get("gen"), "ags": ft["properties"].get("ags")}
+    # Nur stabile Felder behalten: der WFS liefert sonst bei jedem Abruf einen neuen
+    # "timeStamp", und die jährliche Action würde grundlos committen.
+    grenze = {"type": grenze["type"], "features": grenze["features"]}
 
     alle.sort(key=lambda z: (z[0], z[1], z[3]))
     schreibe(OUT / "unfaelle.json", {"felder": FELDER, "bits": BITS, "gemeinden": dict(sorted(namen.items())),
