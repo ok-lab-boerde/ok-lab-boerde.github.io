@@ -15,7 +15,9 @@ Vorbild sind die OK Labs im Netzwerk [Code for Germany](https://codefor.de/), et
 | `docs/projektideen.md` | Projektideen für die Börde mit möglichen Datenquellen |
 | `energiewende/` | Energiewende-Monitor (Seite + `data.json`) |
 | `scripts/fetch_mastr.py` | Lädt die Daten aus dem Marktstammdatenregister (`python scripts/fetch_mastr.py`) |
-| `.github/workflows/` | Monatliche automatische Aktualisierung der Energiewende-Daten |
+| `unfallatlas/` | Unfallatlas Börde (Karte, Daten, eigene [README](unfallatlas/README.md)) |
+| `scripts/unfallatlas/build.py` | Bereitet die Unfallatlas-Daten auf |
+| `.github/workflows/` | Automatische Aktualisierung: Energiewende monatlich, Unfallatlas jährlich im August |
 | `logo/` | Original-Logo (PNG) |
 
 ## Website lokal ansehen

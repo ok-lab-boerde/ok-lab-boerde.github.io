@@ -1,0 +1,39 @@
+{
+ "datenstand": "2026-07-07",
+ "jahre": [
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "anzahl": 5073,
+ "je_jahr": {
+  "2017": 565,
+  "2018": 549,
+  "2019": 571,
+  "2020": 484,
+  "2021": 498,
+  "2022": 568,
+  "2023": 573,
+  "2024": 626,
+  "2025": 639
+ },
+ "quelle": {
+  "name": "Unfallatlas der Statistischen Ämter des Bundes und der Länder",
+  "url": "https://unfallatlas.statistikportal.de/",
+  "daten_url": "https://www.opengeodata.nrw.de/produkte/transport_verkehr/unfallatlas/",
+  "lizenz": "Datenlizenz Deutschland – Namensnennung – Version 2.0",
+  "lizenz_url": "https://www.govdata.de/dl-de/by-2-0"
+ },
+ "grenzen": {
+  "name": "Verwaltungsgebiete 1:250 000 (VG250), © GeoBasis-DE / BKG",
+  "url": "https://gdz.bkg.bund.de/index.php/default/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html",
+  "lizenz": "Datenlizenz Deutschland – Namensnennung – Version 2.0",
+  "lizenz_url": "https://www.govdata.de/dl-de/by-2-0"
+ }
+}

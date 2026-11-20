@@ -1,0 +1,39 @@
+name: Unfallatlas-Daten aktualisieren
+
+on:
+  schedule:
+    - cron: "23 5 15 8 *"   # jedes Jahr am 15. August, 05:23 UTC (neue Daten erscheinen meist im Juli)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: unfallatlas-daten
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Unfallatlas-Daten aufbereiten
+        run: python scripts/unfallatlas/build.py
+
+      - name: Änderungen committen
+        run: |
+          if git diff --quiet -- unfallatlas/data; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add unfallatlas/data
+          git commit -m "Unfallatlas-Daten aktualisieren ($(date -u +%Y-%m-%d))"
+          git push

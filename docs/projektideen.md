@@ -14,6 +14,13 @@ Wind-, Solar- und Biogasanlagen im Landkreis in Zeitreihen: Was ist installiert,
 - **Daten:** Marktstammdatenregister der Bundesnetzagentur. Die Daten sind öffentlich und als Gesamtexport verfügbar.
 - **Einstieg:** gut geeignet. Der Datenzugang ist gut und das Thema ist in der Börde sehr präsent.
 
+## Unfallatlas Börde ✅
+**Online:** https://ok-lab-boerde.github.io/unfallatlas/ (Code in `unfallatlas/` und `scripts/unfallatlas/build.py`, jährliche Aktualisierung im August per GitHub Action)
+
+Verkehrsunfälle mit Personenschaden im Landkreis auf einer Karte (Punkte oder Heatmap) mit Filtern nach Jahr, Schwere, Beteiligten und Licht und einem Schalter für Fahrradunfälle. Dazu Diagramme nach Jahr, Wochentag und Uhrzeit sowie eine Gemeindetabelle.
+- **Daten:** [Unfallatlas der Statistischen Ämter des Bundes und der Länder](https://unfallatlas.statistikportal.de/), Sachsen-Anhalt ab 2017. Kreisgrenze und Gemeindenamen aus VG250 (© GeoBasis-DE / BKG).
+- **Lizenz:** Datenlizenz Deutschland – Namensnennung – Version 2.0. Kartenhintergrund © OpenStreetMap-Mitwirkende (ODbL).
+
 ## 2. Bus & Bahn in der Fläche 💡
 Erreichbarkeitskarte: Wie lange braucht man von jedem Ort mit dem ÖPNV nach Haldensleben, Oschersleben oder Magdeburg, zum Beispiel werktags um 7 Uhr und am Sonntag? Lücken im ländlichen Raum werden so sichtbar.
 - **Daten:** Fahrplandaten im GTFS-Format, z. B. der bundesweite Datensatz von DELFI. Zusätzlich OpenStreetMap.

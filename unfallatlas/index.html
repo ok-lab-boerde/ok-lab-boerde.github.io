@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unfallatlas Börde – OK Lab Börde</title>
+  <meta name="description" content="Verkehrsunfälle mit Personenschaden im Landkreis Börde auf der Karte, mit Filtern nach Jahr, Schwere, Beteiligten und Lichtverhältnissen.">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="vendor/markercluster/MarkerCluster.css">
+  <style>
+    .viz-root {
+      --k1: #8b1a1a; --k2: #e0532f; --k3: #f2a33a;
+      --bar: #2a78d6; --grid: #e1e0d9; --axis: #c3c2b7; --axis-text: #898781;
+    }
+    @media (prefers-color-scheme: dark) {
+      .viz-root { --bar: #3987e5; --grid: #2c2c2a; --axis: #383835; }
+    }
+    .crumb { font-size: .95rem; margin: 24px 0 0; }
+    .ua-head { padding: 24px 0 8px; }
+    .ua-head h1 { color: var(--blue); font-size: clamp(1.9rem, 4.5vw, 2.8rem); line-height: 1.15; margin: 0 0 10px; letter-spacing: -0.02em; }
+    .ua-head p { color: var(--muted); margin: 0; max-width: 46em; }
+    .stand { font-size: .9rem; margin-top: 10px !important; }
+
+    .hinweis { background: var(--wheat-soft); border-left: 5px solid var(--wheat); border-radius: 8px; padding: 12px 16px; margin: 20px 0 0; font-size: .95rem; }
+    .hinweis p { margin: 0 0 6px; } .hinweis p:last-child { margin: 0; }
+
+    .filters { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: flex-end; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-top: 24px; }
+    .filters fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+    .filters legend, .filters label.cap { display: block; font-size: .8rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; padding: 0; }
+    .filters select { font: inherit; font-size: .95rem; padding: 6px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); }
+    .checks { display: flex; gap: 4px 12px; flex-wrap: wrap; }
+    .checks label { display: inline-flex; align-items: center; gap: 6px; font-size: .95rem; cursor: pointer; }
+    .row { display: flex; gap: 6px; align-items: center; }
+    .toggle { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; cursor: pointer; padding: 6px 12px; border: 2px solid var(--blue); border-radius: 999px; color: var(--blue); }
+    .toggle input { width: 18px; height: 18px; accent-color: var(--blue); }
+    .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .seg label { padding: 6px 12px; cursor: pointer; font-size: .95rem; }
+    .seg input { position: absolute; opacity: 0; pointer-events: none; }
+    .seg input:checked + span { font-weight: 700; color: var(--blue); }
+    .seg label:has(input:checked) { background: var(--blue-soft); }
+    .seg label:has(input:focus-visible) { outline: 2px solid var(--blue); outline-offset: -2px; }
+    .reset { font: inherit; font-size: .9rem; background: none; border: 0; color: var(--blue); text-decoration: underline; cursor: pointer; padding: 6px 0; }
+    input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+    .summary { margin: 16px 0 10px; font-size: 1.05rem; }
+    .summary strong { font-size: 1.4rem; }
+    .sev { display: inline-flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: .95rem; margin-left: 4px; }
+    .sev span { display: inline-flex; align-items: center; gap: 6px; }
+    .dot { display: inline-block; border-radius: 50%; border: 1.5px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.25); flex: none; }
+
+    #map { height: min(70vh, 620px); min-height: 380px; border-radius: var(--radius); border: 1px solid var(--border); z-index: 0; }
+    .leaflet-container { font: inherit; }
+    .leaflet-popup-content { font-size: .9rem; line-height: 1.45; margin: 12px 14px; }
+    .leaflet-popup-content b { display: block; font-size: 1rem; margin-bottom: 4px; }
+    .cluster { background: rgba(13,74,143,.85); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.35); }
+    .map-legend { background: rgba(255,255,255,.95); color: #1a2230; padding: 8px 10px; border-radius: 8px; font-size: 12.5px; line-height: 1.7; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
+    .map-legend div { display: flex; align-items: center; gap: 8px; }
+
+    .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-top: 20px; min-width: 0; }
+    .grid2 .panel { margin-top: 0; }
+    .panel h2 { font-size: 1.2rem; margin: 0 0 4px; }
+    .panel .sub { color: var(--muted); font-size: .92rem; margin: 0 0 12px; }
+    .chart { position: relative; }
+    .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .tick { font-size: 12px; fill: var(--axis-text); font-variant-numeric: tabular-nums; }
+    .val { font-size: 11.5px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+    .tip { position: absolute; pointer-events: none; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; font-size: .85rem; box-shadow: 0 4px 16px rgba(0,0,0,.12); white-space: nowrap; display: none; z-index: 2; }
+    details { margin-top: 10px; }
+    summary { cursor: pointer; color: var(--blue); font-weight: 600; font-size: .95rem; }
+    .tbl-wrap { overflow-x: auto; margin-top: 8px; }
+    table { border-collapse: collapse; width: 100%; font-size: .9rem; font-variant-numeric: tabular-nums; }
+    th, td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    th:first-child, td:first-child { text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    .quellen { font-size: .92rem; color: var(--muted); }
+    .quellen h2 { color: var(--text); }
+    .quellen p { margin: 0 0 8px; }
+    .err { background: var(--wheat-soft); padding: 12px 16px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../assets/logo.svg" alt=""><span>OK Lab <b>Börde</b></span></a>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="../#ueber">Über uns</a></li>
+          <li><a href="../#projekte">Projekte</a></li>
+          <li><a href="../#mitmachen">Mitmachen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap viz-root">
+    <p class="crumb"><a href="../#projekte">← Alle Projekte</a></p>
+    <div class="ua-head">
+      <h1>Unfallatlas Börde</h1>
+      <p>Wo passieren im Landkreis Börde Verkehrsunfälle, bei denen Menschen verletzt oder getötet werden? Die Karte zeigt alle Unfälle mit Personenschaden, die die Polizei seit 2017 erfasst hat.</p>
+      <p class="stand" id="stand">Daten werden geladen …</p>
+    </div>
+
+    <div class="hinweis" role="note">
+      <p><strong>Bitte beachten:</strong> Enthalten sind nur polizeilich erfasste Unfälle mit Personenschaden. Reine Sachschäden und Unfälle, die der Polizei nicht gemeldet wurden, fehlen.</p>
+      <p>Die Daten stammen aus der amtlichen Statistik und werden hier ohne inhaltliche Änderung dargestellt. Trotzdem können sie Fehler enthalten. Unfallorte können ungenau verortet sein, und bei der Aufbereitung können Fehler entstehen. Alle Angaben sind ohne Gewähr. Wenn dir etwas auffällt, <a href="mailto:codefor.boerde@gmail.com?subject=Unfallatlas%20B%C3%B6rde">schreib uns</a>.</p>
+    </div>
+
+    <form class="filters" id="filters" aria-label="Filter">
+      <fieldset>
+        <legend>Jahr</legend>
+        <div class="row">
+          <select id="f-von" aria-label="Jahr von"></select>
+          <span>bis</span>
+          <select id="f-bis" aria-label="Jahr bis"></select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Schwere</legend>
+        <div class="checks">
+          <label><input type="checkbox" name="kat" value="1" checked><span class="dot" style="width:12px;height:12px;background:var(--k1)"></span>Getötete</label>
+          <label><input type="checkbox" name="kat" value="2" checked><span class="dot" style="width:10px;height:10px;background:var(--k2)"></span>Schwerverletzte</label>
+          <label><input type="checkbox" name="kat" value="3" checked><span class="dot" style="width:8px;height:8px;background:var(--k3)"></span>Leichtverletzte</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <label class="cap" for="f-bet">Beteiligt</label>
+        <select id="f-bet">
+          <option value="">alle</option>
+          <option value="fuss">Fußgänger:innen</option>
+          <option value="pkw">Pkw</option>
+          <option value="krad">Motorrad / Kraftrad</option>
+          <option value="gkfz">Lkw (ab 2018)</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label class="cap" for="f-licht">Licht</label>
+        <select id="f-licht">
+          <option value="">alle</option>
+          <option value="0">Tageslicht</option>
+          <option value="1">Dämmerung</option>
+          <option value="2">Dunkelheit</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Darstellung</legend>
+        <div class="seg">
+          <label><input type="radio" name="ansicht" value="punkte" checked><span>Punkte</span></label>
+          <label><input type="radio" name="ansicht" value="heat"><span>Heatmap</span></label>
+        </div>
+      </fieldset>
+      <label class="toggle"><input type="checkbox" id="f-rad"> nur Unfälle mit Fahrradbeteiligung</label>
+      <button type="button" class="reset" id="f-reset">Filter zurücksetzen</button>
+    </form>
+
+    <p class="summary" id="summary" aria-live="polite"></p>
+    <div id="map" role="region" aria-label="Karte der Unfälle im Landkreis Börde"></div>
+
+    <div class="grid2" style="margin-top:20px">
+      <section class="panel" aria-labelledby="h-jahr">
+        <h2 id="h-jahr">Unfälle pro Jahr</h2>
+        <p class="sub">Anzahl der Unfälle mit Personenschaden</p>
+        <div class="chart" id="c-jahr"></div>
+        <details><summary>Als Tabelle</summary><div class="tbl-wrap" id="t-jahr"></div></details>
+      </section>
+      <section class="panel" aria-labelledby="h-tag">
+        <h2 id="h-tag">Nach Wochentag</h2>
+        <p class="sub">Anzahl der Unfälle, Montag bis Sonntag</p>
+        <div class="chart" id="c-tag"></div>
+        <details><summary>Als Tabelle</summary><div class="tbl-wrap" id="t-tag"></div></details>
+      </section>
+    </div>
+    <section class="panel" aria-labelledby="h-std">
+      <h2 id="h-std">Nach Uhrzeit</h2>
+      <p class="sub">Anzahl der Unfälle je Stunde (0 = 0:00 bis 0:59 Uhr)</p>
+      <div class="chart" id="c-std"></div>
+      <details><summary>Als Tabelle</summary><div class="tbl-wrap" id="t-std"></div></details>
+    </section>
+    <section class="panel" aria-labelledby="h-gem">
+      <h2 id="h-gem">Gemeinden mit den meisten Unfällen</h2>
+      <p class="sub">Die 15 Gemeinden mit den meisten Unfällen in der aktuellen Auswahl. Größere Gemeinden haben mehr Straßen und Verkehr, die Zahlen sind deshalb nicht direkt vergleichbar.</p>
+      <div class="tbl-wrap" id="t-gem"></div>
+    </section>
+
+    <section class="panel quellen" aria-labelledby="h-quellen">
+      <h2 id="h-quellen">Quellen &amp; Hinweise</h2>
+      <p><strong>Unfalldaten:</strong> <a href="https://unfallatlas.statistikportal.de/">Unfallatlas der Statistischen Ämter des Bundes und der Länder</a>. Verwendet werden die <a href="https://www.opengeodata.nrw.de/produkte/transport_verkehr/unfallatlas/">offenen Daten</a> mit der <a href="https://www.opengeodata.nrw.de/produkte/transport_verkehr/unfallatlas/DSB_Unfallatlas.pdf">Datensatzbeschreibung</a>, Lizenz <a href="https://www.govdata.de/dl-de/by-2-0">Datenlizenz Deutschland – Namensnennung – Version 2.0</a>. Wir filtern die Daten auf den Landkreis Börde, verändern sie aber nicht inhaltlich.</p>
+      <p><strong>Kreisgrenze und Gemeindenamen:</strong> Verwaltungsgebiete 1:250 000 (VG250), © <a href="https://gdz.bkg.bund.de/">GeoBasis-DE / BKG</a>, Lizenz <a href="https://www.govdata.de/dl-de/by-2-0">Datenlizenz Deutschland – Namensnennung – Version 2.0</a>.</p>
+      <p><strong>Kartenhintergrund:</strong> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL). Die Kartenkacheln werden von Servern der OpenStreetMap Foundation geladen, siehe <a href="../datenschutz.html">Datenschutzerklärung</a>.</p>
+      <p><strong>Zu den Daten:</strong> Sachsen-Anhalt ist erst ab 2017 im Unfallatlas enthalten. Jeder Unfall wird nach seiner schwersten Folge eingeordnet. Lkw-Beteiligung wird erst ab 2018 getrennt erfasst, 2017 sind Lkw unter „Sonstige“ gezählt. Die Zahlen können von anderen amtlichen Veröffentlichungen abweichen, zum Beispiel weil nicht jeder Unfall genau verortet werden kann oder weil die Daten später berichtigt wurden.</p>
+      <p><strong>Haftung:</strong> Alle Angaben ohne Gewähr. Die Seite ersetzt keine amtliche Auskunft. Maßgeblich sind die Veröffentlichungen der Statistischen Ämter.</p>
+      <p>Quellcode und Aufbereitung: <a href="https://github.com/ok-lab-boerde/ok-lab-boerde.github.io/tree/main/unfallatlas">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>OK Lab Börde</strong></p>
+        <p>Inhalte unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>. Inspiriert von <a href="https://codefor.de/">Code for Germany</a>.</p>
+      </div>
+      <ul>
+        <li><a href="../impressum.html">Impressum</a></li>
+        <li><a href="../datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://github.com/ok-lab-boerde/ok-lab-boerde.github.io/tree/main/unfallatlas">Quellcode</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="vendor/markercluster/leaflet.markercluster.js"></script>
+  <script src="vendor/leaflet-heat/leaflet-heat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
