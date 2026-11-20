@@ -35,10 +35,6 @@ Angelehnt an „Magdeburg gießt“: Bürger:innen übernehmen Patenschaften fü
 - **Daten:** Baumkataster der Städte. Ob es veröffentlicht ist, muss bei der Verwaltung angefragt werden. Wetterdaten kommen vom DWD (Open Data).
 - **Vorteil:** Der Code von „Gieß den Kiez“ (Berlin) und „Magdeburg gießt“ ist Open Source und lässt sich wiederverwenden.
 
-## 5. Schwarzerde-Atlas 💡
-Die Magdeburger Börde hat einige der besten Böden Deutschlands. Ein interaktiver Atlas zeigt Bodenqualität, Flächenverbrauch und Landnutzung im Zeitverlauf.
-- **Daten:** Bodendaten des Landesamts für Geologie und Bergwesen Sachsen-Anhalt und das Geodatenportal Sachsen-Anhalt. Verfügbarkeit und Lizenz sind zu prüfen. Für die Landnutzung eignen sich Copernicus/CORINE und OpenStreetMap.
-
 ## 6. Pegel & Hochwasser an Ohre, Aller und Bode 💡
 Ein einfaches Dashboard mit den aktuellen Wasserständen und deren Verlauf an den Flüssen der Region.
 - **Daten:** Landesbetrieb für Hochwasserschutz und Wasserwirtschaft (LHW) Sachsen-Anhalt. Für den Mittellandkanal und die Elbe gibt es PEGELONLINE der WSV mit offener API.
