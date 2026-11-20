@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Energiewende-Monitor Börde – OK Lab Börde</title>
+  <meta name="description" content="Wie viel Solar-, Wind- und Biogasleistung steht im Landkreis Börde? Offene Daten aus dem Marktstammdatenregister, monatlich aktualisiert.">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .viz-root {
+      --s-wind: #2a78d6;
+      --s-solar: #eb6834;
+      --s-bio: #1baf7a;
+      --grid: #e1e0d9;
+      --axis: #c3c2b7;
+      --axis-text: #898781;
+    }
+    @media (prefers-color-scheme: dark) {
+      .viz-root {
+        --s-wind: #3987e5;
+        --s-solar: #d95926;
+        --s-bio: #199e70;
+        --grid: #2c2c2a;
+        --axis: #383835;
+      }
+    }
+    .crumb { font-size: .95rem; margin: 24px 0 0; }
+    .ew-head { padding: 24px 0 8px; }
+    .ew-head h1 { color: var(--blue); font-size: clamp(1.9rem, 4.5vw, 2.8rem); line-height: 1.15; margin: 0 0 10px; letter-spacing: -0.02em; }
+    .ew-head p { color: var(--muted); margin: 0; max-width: 44em; }
+    .stand { font-size: .9rem; color: var(--muted); margin-top: 10px !important; }
+
+    .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin: 28px 0 0; }
+    .tile { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+    .tile .k { font-size: .85rem; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+    .tile .v { font-size: 1.9rem; font-weight: 700; line-height: 1.2; margin-top: 4px; }
+    .tile .v small { font-size: .95rem; font-weight: 600; color: var(--muted); }
+    .tile .n { font-size: .85rem; color: var(--muted); }
+    .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; flex: none; }
+
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-top: 24px; }
+    .panel h2 { font-size: 1.25rem; margin: 0 0 4px; }
+    .panel .sub { color: var(--muted); font-size: .95rem; margin: 0 0 14px; }
+    .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: .9rem; color: var(--muted); margin-bottom: 8px; }
+    .legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .chart { position: relative; width: 100%; }
+    .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .chart text { font-family: inherit; }
+    .tick { font-size: 12px; fill: var(--axis-text); font-variant-numeric: tabular-nums; }
+    .lbl { font-size: 12.5px; fill: var(--text); }
+    .val { font-size: 12px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+    .tip { position: absolute; pointer-events: none; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: .85rem; box-shadow: 0 4px 16px rgba(0,0,0,.12); white-space: nowrap; display: none; z-index: 2; }
+    .tip b { display: block; margin-bottom: 4px; }
+    .tip div { display: flex; align-items: center; gap: 6px; font-variant-numeric: tabular-nums; }
+    .tip div span:last-child { margin-left: auto; padding-left: 12px; font-weight: 600; }
+
+    .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+    .facts div { border-left: 4px solid var(--wheat); padding: 4px 12px; }
+    .facts strong { display: block; font-size: 1.3rem; }
+    .facts span { color: var(--muted); font-size: .92rem; }
+
+    details { margin-top: 14px; }
+    summary { cursor: pointer; color: var(--blue); font-weight: 600; }
+    .tbl-wrap { overflow-x: auto; margin-top: 10px; }
+    table { border-collapse: collapse; width: 100%; font-size: .9rem; font-variant-numeric: tabular-nums; }
+    th, td { text-align: right; padding: 6px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    th:first-child, td:first-child { text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+
+    .note { color: var(--muted); font-size: .9rem; margin-top: 28px; }
+    .err { color: var(--text); background: var(--wheat-soft); padding: 12px 16px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../assets/logo.svg" alt=""><span>OK Lab <b>Börde</b></span></a>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="../#ueber">Über uns</a></li>
+          <li><a href="../#projekte">Projekte</a></li>
+          <li><a href="../#mitmachen">Mitmachen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap viz-root">
+    <p class="crumb"><a href="../#projekte">← Alle Projekte</a></p>
+    <div class="ew-head">
+      <h1>Energiewende-Monitor Börde</h1>
+      <p>Wie viel Strom aus Sonne, Wind und Biomasse kann im Landkreis Börde erzeugt werden, und wie schnell wächst das? Die Zahlen stammen aus dem Marktstammdatenregister, in dem jede Anlage gemeldet sein muss.</p>
+      <p class="stand" id="stand">Daten werden geladen …</p>
+    </div>
+
+    <div id="content">
+      <div class="tiles" id="tiles"></div>
+
+      <section class="panel" aria-labelledby="h-verlauf">
+        <h2 id="h-verlauf">Installierte Leistung seit 2000</h2>
+        <p class="sub">Leistung in Megawatt (MW) am Jahresende, nach Energieträger</p>
+        <div class="legend" id="legend-verlauf"></div>
+        <div class="chart" id="chart-verlauf"></div>
+        <details><summary>Als Tabelle anzeigen</summary><div class="tbl-wrap" id="tbl-verlauf"></div></details>
+      </section>
+
+      <section class="panel" aria-labelledby="h-gem">
+        <h2 id="h-gem">Gemeinden im Vergleich</h2>
+        <p class="sub">Installierte Leistung erneuerbarer Anlagen in MW, die 15 Gemeinden mit der höchsten Leistung</p>
+        <div class="legend" id="legend-gem"></div>
+        <div class="chart" id="chart-gem"></div>
+        <details><summary>Alle Gemeinden als Tabelle</summary><div class="tbl-wrap" id="tbl-gem"></div></details>
+      </section>
+
+      <section class="panel" aria-labelledby="h-solar">
+        <h2 id="h-solar">Solar genauer betrachtet</h2>
+        <p class="sub">Solaranlagen in Betrieb nach Art</p>
+        <div class="facts" id="facts-solar"></div>
+      </section>
+
+      <p class="note" id="quelle"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>OK Lab Börde</strong></p>
+        <p>Inhalte unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>. Inspiriert von <a href="https://codefor.de/">Code for Germany</a>.</p>
+      </div>
+      <ul>
+        <li><a href="../impressum.html">Impressum</a></li>
+        <li><a href="../datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://github.com/ok-lab-boerde/ok-lab-boerde.github.io/tree/main/energiewende">Quellcode</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+  (() => {
+    const SERIES = [
+      { key: "wind", name: "Wind", color: "var(--s-wind)" },
+      { key: "solar", name: "Solar", color: "var(--s-solar)" },
+      { key: "biomasse", name: "Biomasse", color: "var(--s-bio)" },
+    ];
+    const START_JAHR = 2000;
+    const nf = (d) => new Intl.NumberFormat("de-DE", { maximumFractionDigits: d, minimumFractionDigits: d });
+    const mw = (v) => nf(v >= 100 ? 0 : 1).format(v);
+    const int = (v) => nf(0).format(v);
+    const NS = "http://www.w3.org/2000/svg";
+    const el = (tag, attrs = {}, parent) => {
+      const n = document.createElementNS(NS, tag);
+      for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+      if (parent) parent.appendChild(n);
+      return n;
+    };
+    const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    const sw = (c) => `<span class="sw" style="background:${c}"></span>`;
+
+    function niceMax(v) {
+      const p = Math.pow(10, Math.floor(Math.log10(v)));
+      for (const m of [1, 2, 2.5, 5, 10]) if (m * p >= v) return m * p;
+      return 10 * p;
+    }
+
+    function legend(id) {
+      document.getElementById(id).innerHTML = SERIES.map((s) => `<span>${sw(s.color)}${s.name}</span>`).join("");
+    }
+
+    function tooltip(container) {
+      const t = document.createElement("div");
+      t.className = "tip";
+      container.appendChild(t);
+      return {
+        show(html, x, y) {
+          t.innerHTML = html;
+          t.style.display = "block";
+          const cw = container.clientWidth, tw = t.offsetWidth;
+          t.style.left = Math.min(Math.max(x + 12, 0), cw - tw) + "px";
+          t.style.top = Math.max(y - t.offsetHeight - 10, 0) + "px";
+        },
+        hide() { t.style.display = "none"; },
+      };
+    }
+
+    function tipRows(title, rows) {
+      return `<b>${esc(title)}</b>` + rows.map(([c, n, v]) => `<div>${sw(c)}<span>${esc(n)}</span><span>${v}</span></div>`).join("");
+    }
+
+    // ---------- Linien: Verlauf ----------
+    function drawVerlauf(data) {
+      const box = document.getElementById("chart-verlauf");
+      box.innerHTML = "";
+      const rows = data.verlauf.filter((r) => r.jahr >= START_JAHR);
+      const W = Math.max(box.clientWidth, 300), H = W < 500 ? 260 : 320;
+      const m = { t: 12, r: W < 500 ? 56 : 76, b: 28, l: 44 };
+      const iw = W - m.l - m.r, ih = H - m.t - m.b;
+      const yMax = niceMax(Math.max(...rows.flatMap((r) => SERIES.map((s) => r[s.key]))));
+      const x0 = rows[0].jahr, x1 = rows[rows.length - 1].jahr;
+      const X = (j) => m.l + ((j - x0) / (x1 - x0)) * iw;
+      const Y = (v) => m.t + ih - (v / yMax) * ih;
+      const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Liniendiagramm der installierten Leistung nach Energieträger seit 2000" }, box);
+
+      for (let i = 0; i <= 4; i++) {
+        const v = (yMax / 4) * i, y = Y(v);
+        el("line", { x1: m.l, x2: m.l + iw, y1: y, y2: y, stroke: i ? "var(--grid)" : "var(--axis)", "stroke-width": 1 }, svg);
+        el("text", { x: m.l - 8, y: y + 4, "text-anchor": "end", class: "tick" }, svg).textContent = int(v);
+      }
+      const step = W < 500 ? 10 : 5;
+      for (let j = Math.ceil(x0 / step) * step; j <= x1; j += step) {
+        el("text", { x: X(j), y: H - 8, "text-anchor": "middle", class: "tick" }, svg).textContent = j;
+      }
+      el("text", { x: m.l - 8, y: m.t - 2, "text-anchor": "end", class: "tick" }, svg).textContent = "";
+
+      const ends = [];
+      for (const s of SERIES) {
+        const d = rows.map((r, i) => `${i ? "L" : "M"}${X(r.jahr).toFixed(1)},${Y(r[s.key]).toFixed(1)}`).join("");
+        el("path", { d, fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+        ends.push({ s, y: Y(rows[rows.length - 1][s.key]), v: rows[rows.length - 1][s.key] });
+      }
+      // Direkte Beschriftung am Linienende, Überlappung vermeiden
+      ends.sort((a, b) => a.y - b.y);
+      for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 15) ends[i].y = ends[i - 1].y + 15;
+      for (const e of ends) {
+        el("text", { x: m.l + iw + 8, y: e.y + 4, class: "lbl" }, svg).textContent = e.s.name;
+      }
+
+      // Crosshair + Tooltip
+      const cross = el("line", { y1: m.t, y2: m.t + ih, stroke: "var(--axis)", "stroke-width": 1, visibility: "hidden" }, svg);
+      const dots = SERIES.map((s) => el("circle", { r: 4.5, fill: s.color, stroke: "var(--card)", "stroke-width": 2, visibility: "hidden" }, svg));
+      const hit = el("rect", { x: m.l, y: m.t, width: iw, height: ih, fill: "transparent" }, svg);
+      const tip = tooltip(box);
+      const move = (ev) => {
+        const r = svg.getBoundingClientRect(), k = W / r.width;
+        const px = (ev.clientX - r.left) * k;
+        const j = Math.round(x0 + ((px - m.l) / iw) * (x1 - x0));
+        const row = rows.find((q) => q.jahr === Math.min(Math.max(j, x0), x1));
+        const cx = X(row.jahr);
+        cross.setAttribute("x1", cx); cross.setAttribute("x2", cx); cross.setAttribute("visibility", "visible");
+        SERIES.forEach((s, i) => { dots[i].setAttribute("cx", cx); dots[i].setAttribute("cy", Y(row[s.key])); dots[i].setAttribute("visibility", "visible"); });
+        const ordered = [...SERIES].sort((a, b) => row[b.key] - row[a.key]);
+        tip.show(tipRows(`Ende ${row.jahr}`, ordered.map((s) => [s.color, s.name, mw(row[s.key]) + " MW"])), cx / k, Y(Math.max(...SERIES.map((s) => row[s.key]))) / k);
+      };
+      const leave = () => { cross.setAttribute("visibility", "hidden"); dots.forEach((d) => d.setAttribute("visibility", "hidden")); tip.hide(); };
+      hit.addEventListener("pointermove", move);
+      hit.addEventListener("pointerdown", move);
+      hit.addEventListener("pointerleave", leave);
+    }
+
+    // ---------- Balken: Gemeinden ----------
+    function drawGemeinden(data) {
+      const box = document.getElementById("chart-gem");
+      box.innerHTML = "";
+      const list = data.gemeinden
+        .filter((g) => g.name !== "Unbekannt")
+        .map((g) => ({ ...g, ee: SERIES.reduce((a, s) => a + g[s.key], 0) }))
+        .sort((a, b) => b.ee - a.ee)
+        .slice(0, 15);
+      const W = Math.max(box.clientWidth, 300);
+      const labelW = W < 500 ? 118 : 170, valW = 56, rowH = 26, barH = 16;
+      const m = { t: 4, b: 24 };
+      const iw = W - labelW - valW, H = m.t + list.length * rowH + m.b;
+      const xMax = niceMax(Math.max(...list.map((g) => g.ee)));
+      const X = (v) => labelW + (v / xMax) * iw;
+      const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Balkendiagramm der erneuerbaren Leistung je Gemeinde" }, box);
+
+      const ticks = W < 500 ? 2 : 4;
+      for (let i = 0; i <= ticks; i++) {
+        const v = (xMax / ticks) * i, x = X(v);
+        el("line", { x1: x, x2: x, y1: m.t, y2: H - m.b, stroke: i ? "var(--grid)" : "var(--axis)", "stroke-width": 1 }, svg);
+        el("text", { x, y: H - 6, "text-anchor": "middle", class: "tick" }, svg).textContent = int(v);
+      }
+      const tip = tooltip(box);
+      list.forEach((g, i) => {
+        const y = m.t + i * rowH + (rowH - barH) / 2;
+        const name = g.name.length > (W < 500 ? 16 : 26) ? g.name.slice(0, W < 500 ? 15 : 25) + "…" : g.name;
+        el("text", { x: labelW - 8, y: y + barH / 2 + 4, "text-anchor": "end", class: "lbl" }, svg).textContent = name;
+        let acc = 0;
+        const segs = SERIES.filter((s) => g[s.key] > 0);
+        segs.forEach((s, si) => {
+          const x = X(acc), w = Math.max(X(acc + g[s.key]) - x - (si < segs.length - 1 ? 2 : 0), 1);
+          const last = si === segs.length - 1;
+          const r = last ? Math.min(4, w / 2) : 0;
+          const d = r
+            ? `M${x},${y}h${w - r}a${r},${r} 0 0 1 ${r},${r}v${barH - 2 * r}a${r},${r} 0 0 1 -${r},${r}h-${w - r}z`
+            : `M${x},${y}h${w}v${barH}h-${w}z`;
+          el("path", { d, fill: s.color }, svg);
+          acc += g[s.key];
+        });
+        el("text", { x: X(g.ee) + 6, y: y + barH / 2 + 4, class: "val" }, svg).textContent = mw(g.ee);
+        const hit = el("rect", { x: 0, y: m.t + i * rowH, width: W, height: rowH, fill: "transparent" }, svg);
+        const show = (ev) => {
+          const r = svg.getBoundingClientRect(), k = W / r.width;
+          tip.show(tipRows(g.name, [...SERIES.map((s) => [s.color, s.name, mw(g[s.key]) + " MW"])]), (ev.clientX - r.left), (y) / k);
+        };
+        hit.addEventListener("pointermove", show);
+        hit.addEventListener("pointerdown", show);
+        hit.addEventListener("pointerleave", () => tip.hide());
+      });
+    }
+
+    function table(id, head, rows) {
+      document.getElementById(id).innerHTML =
+        `<table><thead><tr>${head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>` +
+        rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("") + "</tbody></table>";
+    }
+
+    function render(data) {
+      const a = data.aktuell, p = data.planung;
+      const stand = new Date(data.stand + "T00:00:00").toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+      document.getElementById("stand").textContent = `Datenstand: ${stand} · ${int(data.einheiten_gesamt)} registrierte Einheiten im Landkreis`;
+
+      const ee = SERIES.reduce((s, x) => s + a[x.key].mw, 0);
+      const planEE = SERIES.reduce((s, x) => s + p[x.key].mw, 0);
+      const tiles = [
+        ["Erneuerbare gesamt", null, ee, `${int(SERIES.reduce((s, x) => s + a[x.key].anzahl, 0))} Anlagen in Betrieb`],
+        ...SERIES.map((s) => [s.name, s.color, a[s.key].mw, `${int(a[s.key].anzahl)} Anlagen`]),
+        ["In Planung", null, planEE, `davon Wind ${mw(p.wind.mw)} MW`],
+        ["Batteriespeicher", null, a.speicher.mw, `${int(a.speicher.anzahl)} Speicher`],
+      ];
+      document.getElementById("tiles").innerHTML = tiles.map(([k, c, v, n]) =>
+        `<div class="tile"><div class="k">${c ? sw(c) : ""}${esc(k)}</div><div class="v">${mw(v)} <small>MW</small></div><div class="n">${esc(n)}</div></div>`).join("");
+
+      legend("legend-verlauf");
+      legend("legend-gem");
+      drawVerlauf(data);
+      drawGemeinden(data);
+
+      table("tbl-verlauf", ["Jahr", ...SERIES.map((s) => s.name + " (MW)")],
+        data.verlauf.filter((r) => r.jahr >= START_JAHR).map((r) => [r.jahr, ...SERIES.map((s) => mw(r[s.key]))]));
+      table("tbl-gem", ["Gemeinde", ...SERIES.map((s) => s.name + " (MW)"), "Speicher (MW)", "Einheiten"],
+        data.gemeinden.map((g) => [g.name, ...SERIES.map((s) => mw(g[s.key])), mw(g.speicher), int(g.anzahl)]));
+
+      const sa = data.solar_art;
+      const pick = (needle) => Object.entries(sa).find(([k]) => k.includes(needle))?.[1] || { anzahl: 0, mw: 0 };
+      const ff = pick("Freifläche"), geb = pick("Gebäude"), bk = pick("Balkon");
+      document.getElementById("facts-solar").innerHTML = [
+        [`${mw(ff.mw)} MW`, `aus nur ${int(ff.anzahl)} Freiflächenanlagen`],
+        [`${mw(geb.mw)} MW`, `auf ${int(geb.anzahl)} Dächern und Gebäuden`],
+        [`${int(bk.anzahl)}`, `Balkonkraftwerke mit zusammen ${mw(bk.mw)} MW`],
+      ].map(([v, t]) => `<div><strong>${v}</strong><span>${t}</span></div>`).join("");
+
+      const q = data.quelle;
+      document.getElementById("quelle").innerHTML =
+        `Quelle: <a href="${q.url}">${esc(q.name)}</a>, Lizenz: <a href="${q.lizenz_url}">${esc(q.lizenz)}</a>. ` +
+        `Leistung = Bruttoleistung laut Register. Der Verlauf rechnet Inbetriebnahmen minus endgültige Stilllegungen. ` +
+        `Anlagen, die vor dem Register stillgelegt wurden, fehlen deshalb. Wir speichern nur Summen, keine Namen oder Standorte. ` +
+        `„Sonstige“ (z. B. Erdgas) mit ${mw(a.sonstige.mw)} MW ist nicht in den Diagrammen enthalten.`;
+
+      let rt;
+      window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => { drawVerlauf(data); drawGemeinden(data); }, 150); });
+    }
+
+    fetch("data.json", { cache: "no-cache" })
+      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(render)
+      .catch(() => {
+        document.getElementById("stand").textContent = "";
+        document.getElementById("content").innerHTML = '<p class="err">Die Daten konnten nicht geladen werden. Bitte später erneut versuchen.</p>';
+      });
+  })();
+  </script>
+</body>
+</html>

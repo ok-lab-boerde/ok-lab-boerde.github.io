@@ -7,8 +7,10 @@ Status-Legende: 💡 Idee · 🔨 In Arbeit · ✅ Läuft · 📦 Abgeschlossen
 
 ---
 
-## 1. Energiewende-Monitor Börde 💡
-Wind-, Solar- und Biogasanlagen im Landkreis auf einer Karte und in Zeitreihen: Was ist installiert, wie schnell geht der Ausbau voran, welche Gemeinde erzeugt wie viel?
+## 1. Energiewende-Monitor Börde ✅
+**Online:** https://ok-lab-boerde.github.io/energiewende/ (Code in `energiewende/` und `scripts/fetch_mastr.py`, monatliche Aktualisierung per GitHub Action)
+
+Wind-, Solar- und Biogasanlagen im Landkreis in Zeitreihen: Was ist installiert, wie schnell geht der Ausbau voran, welche Gemeinde erzeugt wie viel? Nächster Schritt könnte eine Karte sein.
 - **Daten:** Marktstammdatenregister der Bundesnetzagentur. Die Daten sind öffentlich und als Gesamtexport verfügbar.
 - **Einstieg:** gut geeignet. Der Datenzugang ist gut und das Thema ist in der Börde sehr präsent.
 
