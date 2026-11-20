@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="t">
+  <title id="t">OK Lab Börde</title>
+  <defs>
+    <clipPath id="inner"><circle cx="100" cy="100" r="80"/></clipPath>
+  </defs>
+  <!-- offener Ring, Lücke oben rechts für die Ähre -->
+  <style>@media (prefers-color-scheme: dark) { .ring { stroke: #4f8fd6; } }</style>
+  <circle class="ring" cx="100" cy="100" r="90" fill="none" stroke="#0d4a8f" stroke-width="8"
+          stroke-linecap="round" stroke-dasharray="471 94" transform="rotate(-15 100 100)"/>
+  <g clip-path="url(#inner)">
+    <rect x="0" y="0" width="200" height="200" fill="#ffffff" fill-opacity="0"/>
+    <!-- Daten-Pixel -->
+    <rect x="24" y="92" width="16" height="16" fill="#1f6e3a"/>
+    <rect x="40" y="92" width="16" height="16" fill="#3c9a35"/>
+    <rect x="40" y="76" width="16" height="16" fill="#3c9a35"/>
+    <rect x="56" y="60" width="14" height="14" fill="#3c9a35"/>
+    <rect x="62" y="82" width="12" height="12" fill="#5bb547"/>
+    <rect x="72" y="44" width="12" height="12" fill="#3c9a35"/>
+    <rect x="80" y="70" width="10" height="10" fill="#5bb547"/>
+    <rect x="86" y="54" width="9" height="9" fill="#0d4a8f"/>
+    <rect x="24" y="108" width="16" height="10" fill="#3c9a35"/>
+    <!-- Felder und Fluss -->
+    <path d="M10 118 C60 112 90 120 120 132 L120 200 L10 200 Z" fill="#3c9a35"/>
+    <path d="M10 130 C55 126 90 134 112 146 C80 150 45 158 10 170 Z" fill="#1d6fb8"/>
+    <path d="M10 150 C50 142 85 146 110 152 C80 158 40 168 10 184 Z" fill="#0d4a8f" opacity=".55"/>
+    <path d="M80 128 C110 112 150 108 195 114 L195 200 L60 200 C80 175 100 150 80 128 Z" fill="#5bb547"/>
+    <path d="M60 200 C95 165 140 145 195 140 L195 200 Z" fill="#3c9a35"/>
+    <path d="M90 200 C125 175 160 165 195 165 L195 200 Z" fill="#7cc95a"/>
+  </g>
+  <!-- Ähre -->
+  <g fill="#f2b632">
+    <path d="M134 150 L134 40" stroke="#f2b632" stroke-width="3.5" stroke-linecap="round"/>
+    <ellipse cx="134" cy="30" rx="6" ry="12"/>
+    <ellipse cx="125" cy="50" rx="6" ry="12" transform="rotate(-30 125 50)"/>
+    <ellipse cx="143" cy="50" rx="6" ry="12" transform="rotate(30 143 50)"/>
+    <ellipse cx="125" cy="72" rx="6" ry="12" transform="rotate(-30 125 72)"/>
+    <ellipse cx="143" cy="72" rx="6" ry="12" transform="rotate(30 143 72)"/>
+    <ellipse cx="125" cy="94" rx="6" ry="12" transform="rotate(-30 125 94)"/>
+    <ellipse cx="143" cy="94" rx="6" ry="12" transform="rotate(30 143 94)"/>
+    <ellipse cx="126" cy="114" rx="5" ry="10" transform="rotate(-35 126 114)"/>
+    <ellipse cx="142" cy="114" rx="5" ry="10" transform="rotate(35 142 114)"/>
+  </g>
+</svg>
