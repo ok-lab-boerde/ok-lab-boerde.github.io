@@ -31,7 +31,7 @@ jobs:
 
       - name: Änderungen committen
         run: |
-          git add -A betriebe orte leben sitemap.xml
+          git add -A betriebe orte leben regional sitemap.xml
           if git diff --cached --quiet; then
             echo "Keine Änderungen."
             exit 0

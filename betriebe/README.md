@@ -42,3 +42,11 @@ Betriebsseiten mit mindestens zwei von Öffnungszeiten, Telefon, Website und E-M
 ## Karten-Check
 
 Jede Betriebsseite zeigt, welche von sechs Angaben in OSM eingetragen sind (Adresse mit Hausnummer und PLZ, Öffnungszeiten, Telefon, Website, E-Mail, Rollstuhl), mit Bearbeiten-Link in den iD-Editor und einem Link für OSM-Hinweise ohne Konto. `/betriebe/karten-check/` fasst das je Gemeinde zusammen. In `data/betriebe.json` steht dafür das Feld `fehlt` als Bitmaske in der Reihenfolge von `check`.
+
+## Regional einkaufen (`/regional/`)
+
+Erzeugt von `scripts/orte/regional.py` (aufgerufen aus `build.py`), Skript `/assets/regional.js`. Alle Einträge kommen aus OpenStreetMap, eigene Anmeldungen sammeln wir bewusst nicht (Datenschutz). `/regional/eintragen/` erklärt Betrieben, wie sie sich selbst in OSM eintragen oder ohne Konto einen OSM-Hinweis hinterlassen.
+
+- **Arten:** `shop=farm|dairy|cheese` (Hofladen, mit `seasonal=*` oder Monaten in `opening_hours` als Saisonstand), `amenity=vending_machine` (Automat), `amenity=marketplace` (Wochenmarkt), `shop=greengrocer`, `shop=butcher`, `shop=bakery` ohne `brand:wikidata` (bundesweite Ketten fallen raus), `craft=beekeeper` und `shop=honey`. Jeder Eintrag verlinkt auf seine Betriebsseite.
+- **Angebot:** aus `produce=*`, `vending=*` und `product=*` (Zuordnung in `VENDING` in `regional.py`).
+- **Saisonkalender:** Faustregel in `SAISON` in `regional.py`.

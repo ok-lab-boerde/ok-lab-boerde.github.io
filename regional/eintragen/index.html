@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hofladen in OpenStreetMap eintragen – Anleitung | OK Lab Börde</title>
+  <meta name="description" content="Schritt für Schritt: So tragen Hofläden, Saisonstände, Automaten und Imker im Landkreis Börde sich kostenlos in OpenStreetMap ein und erscheinen auf der Regional-Karte.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ok-lab-boerde.github.io/regional/eintragen/">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/assets/orte.css">
+  
+  
+  
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/logo.svg" alt=""><span>OK Lab <b>Börde</b></span></a>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="/betriebe/">Betriebe</a></li>
+          <li><a href="/orte/">Orte</a></li>
+          <li><a href="/#projekte">Projekte</a></li>
+          <li><a href="/#mitmachen">Mitmachen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap orte-main">
+    <nav class="krumen" aria-label="Brotkrümelnavigation"><a href="/">Start</a> <span aria-hidden="true">›</span> <a href="/regional/">Regional einkaufen</a> <span aria-hidden="true">›</span> <span aria-current="page">So kommt Ihr Hof auf die Karte</span></nav>
+<h1>So kommt Ihr Hof auf die Karte</h1>
+<p class="lead">Die Karte <a href="/regional/">Regional einkaufen</a> zeigt, was in <a href="https://www.openstreetmap.org/">OpenStreetMap</a> eingetragen ist, der freien Weltkarte, die jede und jeder bearbeiten darf. Wer dort steht, erscheint kostenlos bei uns und in Karten-Apps wie OsmAnd, Organic Maps oder Komoot. Zurzeit sind im Landkreis Börde erst 10 Hofläden und Saisonstände eingetragen.</p>
+
+<section aria-labelledby="h-schon"><h2 id="h-schon">1. Prüfen, ob Sie schon eingetragen sind</h2>
+<p>Suchen Sie Ihren Betrieb auf der <a href="/regional/">Regional-Karte</a> oder im <a href="/betriebe/karten-check/">Karten-Check</a>. Dort sehen Sie auch, welche Angaben noch fehlen, und kommen mit „Eintrag bearbeiten“ direkt zum richtigen Punkt.</p>
+</section>
+
+<section aria-labelledby="h-ohne"><h2 id="h-ohne">2. Ohne Konto: Hinweis hinterlassen</h2>
+<p>Der einfachste Weg. Er dauert etwas länger, weil Freiwillige den Hinweis eintragen.</p>
+<ol class="schritte">
+<li><a href="https://www.openstreetmap.org/note/new#map=11/52.2/11.35">Hinweis-Formular von OpenStreetMap öffnen</a> und die Karte bis zu Ihrem Hof heranzoomen.</li>
+<li>Den Marker genau auf den Verkaufsstand oder die Hofeinfahrt ziehen.</li>
+<li>In das Textfeld schreiben, was dort ist. Zum Beispiel: <em>„Hofladen Müller, verkauft Eier, Kartoffeln und Honig. Geöffnet Mo–Fr 9–18 Uhr, Sa 9–12 Uhr. Telefon 039xx 12345.“</em></li>
+<li>„Hinweis hinzufügen“ klicken. Der Hinweis ist öffentlich sichtbar. Bitte nur Angaben schreiben, die auch auf der Karte stehen sollen.</li>
+</ol>
+</section>
+
+<section aria-labelledby="h-selbst"><h2 id="h-selbst">3. Selbst eintragen</h2>
+<p>Dauert etwa zehn Minuten und ist sofort in OpenStreetMap gespeichert. Bei uns erscheint der Eintrag nach der nächsten wöchentlichen Aktualisierung.</p>
+<ol class="schritte">
+<li>Auf openstreetmap.org <a href="https://www.openstreetmap.org/user/new">ein kostenloses Konto anlegen</a> und anmelden.</li>
+<li>Zur eigenen Adresse zoomen und oben auf „Bearbeiten“ klicken. Es öffnet sich der Editor iD mit einer kurzen Einführung, die sich lohnt.</li>
+<li>Oben auf „Punkt“ klicken und den Punkt auf den Verkaufsort setzen.</li>
+<li>Links die passende Art suchen und auswählen (siehe Tabelle unten), zum Beispiel „Hofladen“.</li>
+<li>Name, Öffnungszeiten, Telefon, Website und Adresse in die Felder schreiben. Für Öffnungszeiten hilft der <a href="https://projets.pavie.info/yohours/">YoHours-Assistent</a>.</li>
+<li>Was Sie verkaufen, kommt in die Textansicht der Eigenschaften (Schalter „Textansicht“ unter „Eigenschaften“), zum Beispiel <code>produce=eggs;potatoes;honey</code>.</li>
+<li>Oben auf „Speichern“ klicken und kurz beschreiben, was Sie eingetragen haben, etwa „Hofladen ergänzt“.</li>
+</ol>
+</section>
+
+<section aria-labelledby="h-was"><h2 id="h-was">Was wo eingetragen wird</h2>
+<div class="tabelle-scroll" tabindex="0" role="region" aria-label="Tabelle: Arten und OSM-Merkmale">
+<table class="daten links"><thead><tr><th scope="col">Sie haben …</th><th scope="col">Im Editor auswählen</th><th scope="col">OSM-Merkmal</th></tr></thead><tbody>
+<tr><th scope="row">Hofladen</th><td>Hofladen</td><td><code>shop=farm</code></td></tr>
+<tr><th scope="row">Stand nur in der Saison (Spargel, Erdbeeren)</th><td>Hofladen, Öffnungszeiten mit Monaten</td><td><code>shop=farm</code>, <code>opening_hours=Apr-Jun Mo-Sa 09:00-18:00</code></td></tr>
+<tr><th scope="row">Milch-, Eier- oder Kartoffelautomat</th><td>Verkaufsautomat</td><td><code>amenity=vending_machine</code>, <code>vending=milk;eggs</code></td></tr>
+<tr><th scope="row">Imkerei mit Verkauf</th><td>Honigladen</td><td><code>shop=honey</code></td></tr>
+<tr><th scope="row">Wochenmarkt</th><td>Marktplatz</td><td><code>amenity=marketplace</code>, Markttage als <code>opening_hours</code></td></tr>
+<tr><th scope="row">Bio-Betrieb</th><td>Feld „Bio“</td><td><code>organic=only</code> oder <code>organic=yes</code></td></tr>
+</tbody></table></div>
+<p class="klein">Angebote im Merkmal <code>produce</code> oder <code>vending</code>, die wir erkennen: eggs (Eier), milk (Milch), cheese (Käse), potatoes (Kartoffeln), vegetables (Gemüse), fruit oder apples (Obst), asparagus (Spargel), strawberries (Erdbeeren), honey (Honig), meat oder sausages (Fleisch und Wurst), bread (Brot), juice (Saft), flowers (Blumen).</p>
+</section>
+
+<section aria-labelledby="h-tipps"><h2 id="h-tipps">Gut zu wissen</h2>
+<ul class="eintraege">
+<li><strong>Alles ist öffentlich:</strong> Was in OpenStreetMap steht, kann jeder sehen und weiterverwenden (Lizenz ODbL). Bitte keine privaten Telefonnummern oder Wohnadressen eintragen, die nicht öffentlich sein sollen.</li>
+<li><strong>Änderungen:</strong> Öffnungszeiten ändern sich? Einfach wieder auf „Bearbeiten“ gehen. Bei uns ist die Änderung spätestens nach einer Woche sichtbar.</li>
+<li><strong>Werbung und Bewertungen</strong> gehören nicht in OpenStreetMap, nur sachliche Angaben.</li>
+<li><strong>Hilfe:</strong> Fragen beantwortet die deutschsprachige OpenStreetMap-Gemeinschaft im <a href="https://community.openstreetmap.org/c/communities/de/">Forum</a>. Oder fragen Sie uns über den Bereich <a href="/#mitmachen">Mitmachen &amp; Kontakt</a>.</li>
+</ul></section>
+    <p class="quelle">Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (<a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>). Ohne Gewähr. <a href="/betriebe/ueber-die-daten/">Über die Daten</a></p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>OK Lab Börde</strong></p>
+        <p>Inhalte unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>, Daten aus OpenStreetMap unter ODbL.</p>
+      </div>
+      <ul>
+        <li><a href="/impressum.html">Impressum</a></li>
+        <li><a href="/datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://github.com/ok-lab-boerde/ok-lab-boerde.github.io">Quellcode</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>

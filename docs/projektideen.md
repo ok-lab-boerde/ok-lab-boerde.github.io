@@ -31,6 +31,13 @@ Durchsuchbare Karte von rund 2.000 Betrieben mit eigener Seite je Betrieb, dazu 
 - **Leben in der Börde** (https://ok-lab-boerde.github.io/leben/): alle Städte und Dörfer im Vergleich, mit der Entfernung zur nächsten Kita, Schule, Arztpraxis, Apotheke, zum Supermarkt, Bahnhof und nach Magdeburg und Wolfsburg (Luftlinie). Glasfaser und echte Pendelzeiten fehlen noch.
 - **Nächste Stufe:** einbettbares Widget für Gemeinde- und Firmenwebsites.
 
+## Regional einkaufen in der Börde ✅
+**Online:** https://ok-lab-boerde.github.io/regional/ (Code in `scripts/orte/regional.py`, wöchentlich mit Betrieben und Orten aktualisiert)
+
+Hofläden, Automaten, Wochenmärkte, Saisonstände, Obst und Gemüse, Fleischereien, Bäckereien und Imker auf einer Karte. Bei jedem Eintrag gibt es Knöpfe zum Anrufen, Schreiben, für WhatsApp und die Route. Dazu kommen ein Saisonkalender und eine Anleitung, wie Betriebe sich selbst in OpenStreetMap eintragen.
+- **Daten:** nur OpenStreetMap (ODbL). Ein eigenes Anmeldeformular gibt es bewusst nicht, aus Datenschutzgründen.
+- **Hinweis:** In OSM stehen nur rund 10 Hofläden. Der Wert der Karte hängt daran, dass Betriebe sich eintragen. Dafür Betriebe ansprechen, etwa über Bauernverband, Gemeinden oder Lokalpresse, und auf die Anleitung verweisen.
+
 ## 2. Bus & Bahn in der Fläche 💡
 Erreichbarkeitskarte: Wie lange braucht man von jedem Ort mit dem ÖPNV nach Haldensleben, Oschersleben oder Magdeburg, zum Beispiel werktags um 7 Uhr und am Sonntag? Lücken im ländlichen Raum werden so sichtbar.
 - **Daten:** Fahrplandaten im GTFS-Format, z. B. der bundesweite Datensatz von DELFI. Zusätzlich OpenStreetMap.

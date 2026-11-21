@@ -26,6 +26,7 @@ CACHE = HIER / ".cache"
 OUT_BETRIEBE = ROOT / "betriebe"
 OUT_ORTE = ROOT / "orte"
 OUT_LEBEN = ROOT / "leben"
+OUT_REGIONAL = ROOT / "regional"
 RESERVIERT = {"branche", "data", "ueber-die-daten", "karte", "karten-check"}
 
 # Karten-Check: Reihenfolge = Bit im Feld "fehlt" von betriebe.json
@@ -185,6 +186,13 @@ def betriebe_laden(gemeinden: list[dict]) -> list[dict]:
             "email": t.get("email") or t.get("contact:email"),
             "oh": oh, "woche": oz.parse(oh), "rollstuhl": ROLLSTUHL.get(t.get("wheelchair", "")),
             "typ": f"{schluessel}={wert}",
+            "rtags": {k: t[k] for k in ("shop", "craft", "amenity", "brand:wikidata", "vending", "product", "produce", "organic",
+                                        "seasonal")
+                      if k in t},
+            "mobil": t.get("contact:mobile") or t.get("mobile"),
+            "whatsapp": t.get("contact:whatsapp"),
+            "facebook": t.get("contact:facebook") or t.get("facebook"),
+            "instagram": t.get("contact:instagram") or t.get("instagram"),
         })
         b = betriebe[-1]
         da = {"adresse": bool((t.get("addr:street") or t.get("addr:place")) and t.get("addr:housenumber") and t.get("addr:postcode")),
@@ -858,8 +866,9 @@ def aufraeumen() -> None:
         for p in OUT_ORTE.iterdir():
             if p.name != "README.md":
                 shutil.rmtree(p) if p.is_dir() else p.unlink()
-    if OUT_LEBEN.exists():
-        shutil.rmtree(OUT_LEBEN)
+    for d in (OUT_LEBEN, OUT_REGIONAL):
+        if d.exists():
+            shutil.rmtree(d)
     if OUT_BETRIEBE.exists():
         for p in OUT_BETRIEBE.iterdir():
             if p.is_dir() and p.name != "data":
@@ -936,6 +945,10 @@ def main() -> None:
     leben_punkte = [p for p in punkte if p["place"] != "hamlet"]
     schreibe(OUT_LEBEN / "index.html", leben_seite(leben_punkte, gemeinden, stand))
     n_seiten += 2
+    import regional
+    reg_urls = regional.erzeugen(betriebe, gemeinden, stand, schreibe, OUT_REGIONAL)
+    sitemap.extend(reg_urls)
+    n_seiten += len(reg_urls)
     schreibe(OUT_BETRIEBE / "ueber-die-daten" / "index.html", ueber_seite(stand, len(betriebe), n_seiten))
 
     # Daten für die Karte (kompakt)
