@@ -27,7 +27,9 @@ Verkehrsunfälle mit Personenschaden im Landkreis auf einer Karte (Punkte oder H
 Durchsuchbare Karte von rund 2.000 Betrieben mit eigener Seite je Betrieb, dazu Steckbriefe für alle 34 Gemeinden und ihre Ortsteile mit Betrieben, Vereinen, Kitas und Schulen, Bus und Bahn und Ausflugszielen.
 - **Daten:** OpenStreetMap über die Overpass API. Gemeindegrenzen aus VG250 (© GeoBasis-DE / BKG).
 - **Lizenz:** OpenStreetMap-Daten unter ODbL (© OpenStreetMap-Mitwirkende), VG250 unter Datenlizenz Deutschland – Namensnennung – Version 2.0.
-- **Nächste Stufe:** Karten-Check (welche Angaben fehlen), einbettbares Widget, Zuzugs-Seite „Leben in der Börde“.
+- **Karten-Check** (https://ok-lab-boerde.github.io/betriebe/karten-check/): Je Betrieb sieht man, welche Angaben in OSM fehlen, mit Link zum Bearbeiten.
+- **Leben in der Börde** (https://ok-lab-boerde.github.io/leben/): alle Städte und Dörfer im Vergleich, mit der Entfernung zur nächsten Kita, Schule, Arztpraxis, Apotheke, zum Supermarkt, Bahnhof und nach Magdeburg und Wolfsburg (Luftlinie). Glasfaser und echte Pendelzeiten fehlen noch.
+- **Nächste Stufe:** einbettbares Widget für Gemeinde- und Firmenwebsites.
 
 ## 2. Bus & Bahn in der Fläche 💡
 Erreichbarkeitskarte: Wie lange braucht man von jedem Ort mit dem ÖPNV nach Haldensleben, Oschersleben oder Magdeburg, zum Beispiel werktags um 7 Uhr und am Sonntag? Lücken im ländlichen Raum werden so sichtbar.

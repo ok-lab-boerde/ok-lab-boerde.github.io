@@ -1,4 +1,4 @@
-"""Erzeugt aus den Rohdaten in scripts/orte/.cache/ die Seiten unter /betriebe/ und /orte/ sowie sitemap.xml.
+"""Erzeugt aus den Rohdaten in scripts/orte/.cache/ die Seiten unter /betriebe/, /orte/ und /leben/ sowie sitemap.xml.
 
 Aufruf:  python scripts/orte/build.py      (vorher: python scripts/orte/fetch.py)
 Nur Standardbibliothek. Ausgabe ist deterministisch: gleiche Daten ergeben gleiche Dateien.
@@ -25,7 +25,26 @@ ROOT = HIER.parents[1]
 CACHE = HIER / ".cache"
 OUT_BETRIEBE = ROOT / "betriebe"
 OUT_ORTE = ROOT / "orte"
-RESERVIERT = {"branche", "data", "ueber-die-daten", "karte"}
+OUT_LEBEN = ROOT / "leben"
+RESERVIERT = {"branche", "data", "ueber-die-daten", "karte", "karten-check"}
+
+# Karten-Check: Reihenfolge = Bit im Feld "fehlt" von betriebe.json
+CHECK = [
+    ("adresse", "Adresse", "Straße, Hausnummer und Postleitzahl",
+     "<code>addr:street</code>, <code>addr:housenumber</code>, <code>addr:postcode</code>"),
+    ("oh", "Öffnungszeiten", "Öffnungszeiten, z. B. mit dem <a href=\"https://projets.pavie.info/yohours/\">YoHours-Assistenten</a>",
+     "<code>opening_hours</code>"),
+    ("telefon", "Telefon", "Telefonnummer mit Vorwahl, z. B. +49 3904 12345", "<code>phone</code>"),
+    ("website", "Website", "Adresse der eigenen Website", "<code>website</code>"),
+    ("email", "E-Mail", "E-Mail-Adresse, wenn sie öffentlich sein soll", "<code>email</code>"),
+    ("rollstuhl", "Rollstuhl", "ob der Eingang stufenlos erreichbar ist (ja, eingeschränkt, nein)", "<code>wheelchair</code>"),
+]
+
+# Ziele für Pendel-Entfernungen (Luftlinie), Hauptbahnhöfe
+ZIELE = [("magdeburg", "Magdeburg", 11.6271, 52.1306), ("wolfsburg", "Wolfsburg", 10.7878, 52.4295)]
+# Alltag: Kategorie -> Anzeigename
+ALLTAG = [("kita", "Kita"), ("grundschule", "Grundschule"), ("weiterfuehrend", "Weiterführende Schule"),
+          ("arzt", "Arztpraxis"), ("apotheke", "Apotheke"), ("supermarkt", "Supermarkt"), ("bahnhof", "Bahnhof")]
 
 
 # ---------------------------------------------------------------- Hilfen
@@ -165,7 +184,14 @@ def betriebe_laden(gemeinden: list[dict]) -> list[dict]:
             "website": t.get("website") or t.get("contact:website") or t.get("url"),
             "email": t.get("email") or t.get("contact:email"),
             "oh": oh, "woche": oz.parse(oh), "rollstuhl": ROLLSTUHL.get(t.get("wheelchair", "")),
+            "typ": f"{schluessel}={wert}",
         })
+        b = betriebe[-1]
+        da = {"adresse": bool((t.get("addr:street") or t.get("addr:place")) and t.get("addr:housenumber") and t.get("addr:postcode")),
+              "oh": bool(oh), "telefon": bool(b["telefon"]), "website": bool(b["website"]), "email": bool(b["email"]),
+              "rollstuhl": bool(t.get("wheelchair"))}
+        b["check"] = da
+        b["fehlt"] = sum(1 << i for i, (k, *_r) in enumerate(CHECK) if not da[k])
     betriebe.sort(key=lambda b: (b["gemeinde"]["slug"], b["name"].lower(), b["osm"]))
     vergeben: dict[str, set] = defaultdict(lambda: set(RESERVIERT))
     for b in betriebe:
@@ -223,9 +249,98 @@ def pois_laden(gemeinden: list[dict]) -> list[dict]:
         if not g:
             continue
         out.append({"kat": k, "name": t.get("name"), "osm": f"{el['type']}/{el['id']}", "lon": p[0], "lat": p[1],
-                    "gemeinde": g, "ortsteil": o, "sport": t.get("sport")})
+                    "gemeinde": g, "ortsteil": o, "sport": t.get("sport"),
+                    "stufe": schulstufe(t) if k == "schule" else None})
     out.sort(key=lambda x: ((x["name"] or "~").lower(), x["osm"]))
     return out
+
+
+def schulstufe(t: dict) -> str | None:
+    """'grundschule', 'weiterfuehrend', 'beides' oder None (Förderschule, Akademie, unbekannt)."""
+    name = (t.get("name") or "").lower()
+    isced = set(re.split(r"[;,]\s*", t.get("isced:level", "")))
+    gs = "grundschule" in name or "1" in isced
+    ws = bool(re.search(r"sekundarschule|gymnasium|gemeinschaftsschule|gesamtschule", name)) or bool(isced & {"2", "3"})
+    if "förderschule" in name or t.get("school") == "special_education_needs":
+        return None
+    return "beides" if gs and ws else "grundschule" if gs else "weiterfuehrend" if ws else None
+
+
+# ---------------------------------------------------------------- Leben: Ortspunkte und Alltag
+PLACE_RANG = {"city": 0, "town": 1, "village": 2, "hamlet": 3}
+
+
+def ortspunkte_laden(gemeinden: list[dict]) -> list[dict]:
+    datei = CACHE / "ortspunkte.json"
+    if not datei.exists():
+        return []
+    out = []
+    for el in json.loads(datei.read_text(encoding="utf-8"))["elements"]:
+        t = el.get("tags", {})
+        if t.get("place") not in PLACE_RANG or "lat" not in el:
+            continue
+        g, o = verorten(el["lon"], el["lat"], gemeinden)
+        if not g:
+            continue
+        out.append({"name": t["name"], "place": t["place"], "osm": f"node/{el['id']}", "lon": el["lon"], "lat": el["lat"],
+                    "gemeinde": g, "ortsteil": o, "einwohner": t.get("population")})
+    out.sort(key=lambda x: (x["name"].lower(), x["osm"]))
+    return out
+
+
+def ziele_alltag(betriebe: list[dict], pois: list[dict]) -> dict[str, list[dict]]:
+    def bt(*typen):
+        return [{"name": b["name"], "lon": b["lon"], "lat": b["lat"], "url": b["url"]} for b in betriebe if b["typ"] in typen]
+
+    def pt(filt):
+        out = []
+        for p in pois:
+            if filt(p):
+                typ, oid = p["osm"].split("/")
+                out.append({"name": p["name"], "lon": p["lon"], "lat": p["lat"], "url": f"https://www.openstreetmap.org/{typ}/{oid}"})
+        return out
+    return {
+        "kita": pt(lambda p: p["kat"] == "kita"),
+        "grundschule": pt(lambda p: p["kat"] == "schule" and p["stufe"] in ("grundschule", "beides")),
+        "weiterfuehrend": pt(lambda p: p["kat"] == "schule" and p["stufe"] in ("weiterfuehrend", "beides")),
+        "arzt": bt("amenity=doctors", "healthcare=doctor"),
+        "apotheke": bt("amenity=pharmacy", "healthcare=pharmacy"),
+        "supermarkt": bt("shop=supermarket"),
+        "bahnhof": pt(lambda p: p["kat"] == "bahnhof" and p["name"]),
+        "bus": pt(lambda p: p["kat"] == "haltestelle"),
+    }
+
+
+def alltag(lon: float, lat: float, ziele: dict[str, list[dict]]) -> dict:
+    """Nächstes Ziel je Kategorie (Luftlinie), Bushaltestellen im Umkreis von 1 km, Entfernung zu den Pendelzielen."""
+    out: dict = {}
+    for kat, liste_ in ziele.items():
+        best = min(((geo.distanz_m(lon, lat, z["lon"], z["lat"]), z) for z in liste_), key=lambda x: x[0], default=None)
+        out[kat] = None if not best else {"d": best[0], **best[1]}
+    out["bus_1km"] = len({(z["name"] or "", round(z["lat"], 3)) for z in ziele["bus"]
+                          if geo.distanz_m(lon, lat, z["lon"], z["lat"]) <= 1000})
+    for zid, _n, zlon, zlat in ZIELE:
+        out[zid] = geo.distanz_m(lon, lat, zlon, zlat)
+    return out
+
+
+def ortspunkt_fuer(g: dict, o: dict | None, punkte: list[dict]) -> dict | None:
+    """Der Ortspunkt, der einen Ortsteil oder (o=None) den Hauptort einer Gemeinde am besten vertritt."""
+    if o:
+        kand = [p for p in punkte if p["ortsteil"] is o]
+        gleich = [p for p in kand if p["name"] == o["name"]]
+    else:
+        kand = [p for p in punkte if p["gemeinde"] is g]
+        gleich = [p for p in kand if p["name"] == g["name"] or g["name"].startswith(p["name"] + " (")]
+    pool = gleich or kand
+    return min(pool, key=lambda p: (PLACE_RANG[p["place"]], p["osm"])) if pool else None
+
+
+def ort_url(p: dict) -> str:
+    g, o = p["gemeinde"], p["ortsteil"]
+    if o and not hauptort(o, g):
+        return f"/orte/{g['slug']}/{o['slug']}/"
+    return f"/orte/{g['slug']}/"
 
 
 # ---------------------------------------------------------------- Lab-Daten je Gemeinde
@@ -264,6 +379,35 @@ def entfernung(m: float) -> str:
 def hauptort(o: dict | None, g: dict) -> bool:
     """True, wenn der Ortsteil der namensgebende Hauptort ist (z. B. Oschersleben in Oschersleben (Bode))."""
     return not o or o["name"] == g["name"] or g["name"].startswith(o["name"] + " (")
+
+
+def karten_check_box(b: dict, typ: str, oid: str) -> str:
+    da = b["check"]
+    n = sum(da.values())
+    zeilen = []
+    for k, titel, hilfe, osm in CHECK:
+        if da[k]:
+            zeilen.append(f'<li class="ok"><span class="mark" aria-hidden="true">✓</span> {titel} <span class="zusatz">eingetragen</span></li>')
+        else:
+            zeilen.append(f'<li class="fehlt"><span class="mark" aria-hidden="true">✗</span> <strong>{titel} fehlt</strong>'
+                          f'<span class="hilfe">Ergänzen: {hilfe}. OSM-Feld {osm}</span></li>')
+    such = ("" if b["index"] else
+            '<p><strong>Diese Seite ist für Suchmaschinen gesperrt</strong>, weil weniger als zwei der Angaben Öffnungszeiten, '
+            'Telefon, Website und E-Mail eingetragen sind. Sobald zwei davon in OpenStreetMap stehen, wird sie nach der nächsten '
+            'Aktualisierung freigegeben.</p>')
+    notiz = f"https://www.openstreetmap.org/note/new?lat={b['lat']}&lon={b['lon']}#map=19/{b['lat']}/{b['lon']}"
+    return (f'<aside class="korrektur" id="karten-check" aria-labelledby="h-korr">'
+            f'<h2 id="h-korr">Karten-Check: {n} von {len(CHECK)} Angaben vorhanden</h2>'
+            f'<ul class="check">{"".join(zeilen)}</ul>{such}'
+            f'<p>Alle Angaben stammen aus OpenStreetMap, einer freien Karte, die jede und jeder bearbeiten kann. '
+            f'Änderungen erscheinen hier nach der nächsten wöchentlichen Aktualisierung.</p>'
+            f'<ul class="aktionen">'
+            f'<li><a class="btn primary" href="https://www.openstreetmap.org/edit?editor=id&amp;{typ}={oid}" rel="nofollow">Eintrag bearbeiten</a> '
+            f'<span class="zusatz">kostenloses OSM-Konto nötig</span></li>'
+            f'<li><a href="{e(notiz)}" rel="nofollow">Ohne Konto: Hinweis an der Karte hinterlassen</a> '
+            f'<span class="zusatz">Freiwillige tragen ihn ein</span></li>'
+            f'<li><a href="https://www.openstreetmap.org/{typ}/{oid}">Eintrag in OpenStreetMap ansehen</a></li>'
+            f'<li><a href="/betriebe/karten-check/">Anleitung und Karten-Check für alle Betriebe</a></li></ul></aside>')
 
 
 def betrieb_seite(b: dict, je_gemeinde: dict[str, list], haltestellen: list[dict]) -> str:
@@ -336,13 +480,7 @@ def betrieb_seite(b: dict, je_gemeinde: dict[str, list], haltestellen: list[dict
                  f'<section aria-labelledby="h-nah"><h2 id="h-nah">In der Nähe</h2>{liste(nah)}'
                  f'<p><a href="/betriebe/{g["slug"]}/">Alle Betriebe in {e(g["name"])} →</a></p></section></div>')
 
-    korrektur = (f'<aside class="korrektur" aria-labelledby="h-korr"><h2 id="h-korr">Daten fehlen oder sind falsch?</h2>'
-                 f'<p>Alle Angaben stammen aus OpenStreetMap, einer freien Karte, die jede und jeder bearbeiten kann. '
-                 f'Änderungen dort erscheinen hier nach der nächsten wöchentlichen Aktualisierung.</p>'
-                 f'<ol><li><a href="https://www.openstreetmap.org/{typ}/{oid}">Eintrag in OpenStreetMap ansehen</a></li>'
-                 f'<li><a href="https://www.openstreetmap.org/edit?{typ}={oid}">Eintrag bearbeiten</a> (kostenloses Konto nötig)</li>'
-                 f'<li>Öffnungszeiten, Telefon oder Website ergänzen und speichern.</li></ol>'
-                 f'<p><a href="/betriebe/ueber-die-daten/">Anleitung und weitere Möglichkeiten</a></p></aside>')
+    korrektur = karten_check_box(b, typ, oid)
 
     karte = karte_div({"zentrum": [b["lat"], b["lon"]], "zoom": 16, "punkte": [[b["lat"], b["lon"], b["name"], None]]},
                       "260px", f"Lage von {b['name']}")
@@ -435,7 +573,8 @@ def poi_liste(pois: list[dict], kat: str, mit_ort: bool) -> str:
     return liste(eint, "Keine benannten Einträge in OpenStreetMap.")
 
 
-def ort_seite(g: dict, o: dict | None, bs: list[dict], pois: list[dict], lab: dict, branchen: dict[str, str]) -> tuple[str, bool]:
+def ort_seite(g: dict, o: dict | None, bs: list[dict], pois: list[dict], lab: dict, branchen: dict[str, str],
+              punkt: dict | None = None) -> tuple[str, bool]:
     name = o["name"] if o else g["name"]
     pfad = f"/orte/{g['slug']}/{o['slug']}/" if o else f"/orte/{g['slug']}/"
     nb = Counter(b["branche"] for b in bs)
@@ -512,7 +651,8 @@ def ort_seite(g: dict, o: dict | None, bs: list[dict], pois: list[dict], lab: di
                        "punkte": [[b["lat"], b["lon"], b["name"], b["url"]] for b in bs], "cluster": len(bs) > 60},
                       "380px", f"Karte von {name}")
     inhalt = (f'<h1>{e(name)}</h1><p class="untertitel">{"Ortsteil von " + e(g["name"]) if o else "Gemeinde"} · Landkreis Börde</p>'
-              f'<p class="lead">{lead}</p>{kachel_html}{karte}{ortsteile_html}{absch_html}{lab_html}')
+              f'<p class="lead">{lead}</p>{kachel_html}{karte}{ortsteile_html}'
+              f'{alltag_html(punkt["name"], punkt["alltag"]) if punkt else ""}{absch_html}{lab_html}')
     index = (not o) or benannt >= 5
     krumen = [("Start", "/"), ("Orte", "/orte/"), (g["name"], f"/orte/{g['slug']}/" if o else None)]
     if o:
@@ -530,7 +670,9 @@ def orte_index(gemeinden: list[dict], je_gemeinde: dict[str, list], stand: str) 
         for g in gemeinden)
     inhalt = (f'<h1>Orte in der Börde</h1><p class="lead">Steckbriefe für alle {len(gemeinden)} Gemeinden im Landkreis Börde und ihre '
               f'Ortsteile: Betriebe, Vereine, Kitas und Schulen, Gesundheit, Bus und Bahn und Ausflugsziele, '
-              f'zusammengestellt aus OpenStreetMap. Datenstand: {e(stand)}.</p><ul class="eintraege gemeinden">{zeilen}</ul>')
+              f'zusammengestellt aus OpenStreetMap. Datenstand: {e(stand)}.</p>'
+              f'<p>Wer umziehen möchte: <a href="/leben/">Leben in der Börde</a> vergleicht alle Städte und Dörfer nach Kita, Schule, Arzt, Einkauf und Bahn.</p>'
+              f'<ul class="eintraege gemeinden">{zeilen}</ul>')
     return seite(titel="Orte in der Börde – Steckbriefe aller Gemeinden | OK Lab Börde",
                  beschreibung="Steckbriefe aller Gemeinden und Ortsteile im Landkreis Börde mit Betrieben, Vereinen, Schulen, Bus und Bahn und Ausflugszielen.",
                  pfad="/orte/", inhalt=inhalt, brotkrumen=[("Start", "/"), ("Orte", None)])
@@ -548,7 +690,7 @@ def ueber_seite(stand: str, n_betriebe: int, n_seiten: int) -> str:
 <li><strong>Öffnungszeiten:</strong> werden aus der OSM-Angabe gelesen. Feiertage, Ferien und saisonale Zeiten berücksichtigen wir nicht. Komplizierte Angaben zeigen wir als Text.</li>
 </ul></section>
 <section aria-labelledby="h-aendern"><h2 id="h-aendern">Eintrag ändern oder ergänzen</h2>
-<p>Unsere Seiten spiegeln OpenStreetMap. Eine Änderung direkt bei uns würde bei der nächsten Aktualisierung überschrieben. So ändern Sie Ihren Eintrag dauerhaft:</p>
+<p>Unsere Seiten spiegeln OpenStreetMap. Eine Änderung direkt bei uns würde bei der nächsten Aktualisierung überschrieben. Welche Angaben fehlen, zeigt der <a href="/betriebe/karten-check/">Karten-Check</a>. So ändern Sie Ihren Eintrag dauerhaft:</p>
 <ol class="schritte">
 <li>Auf der Seite Ihres Betriebs auf „Eintrag bearbeiten“ klicken. Sie landen direkt beim richtigen Objekt in OpenStreetMap.</li>
 <li>Ein kostenloses OpenStreetMap-Konto anlegen und anmelden.</li>
@@ -568,12 +710,156 @@ def ueber_seite(stand: str, n_betriebe: int, n_seiten: int) -> str:
                  pfad="/betriebe/ueber-die-daten/", inhalt=inhalt, brotkrumen=[("Start", "/"), ("Betriebe", "/betriebe/"), ("Über die Daten", None)])
 
 
+# ---------------------------------------------------------------- Seiten: Karten-Check
+def prozent(n: int, von: int) -> str:
+    return f"{round(100 * n / von)} %" if von else "–"
+
+
+def karten_check_seite(gemeinden: list[dict], je_gemeinde: dict[str, list], betriebe: list[dict], stand: str) -> str:
+    n = len(betriebe)
+    kacheln = "".join(
+        f'<div class="kachel"><span class="zahl">{prozent(sum(b["check"][k] for b in betriebe), n)}</span>'
+        f'<span>mit {t}</span></div>' for k, t, *_r in CHECK)
+    idx = sum(1 for b in betriebe if b["index"])
+    kopf = "".join(f'<th scope="col">{t}</th>' for _k, t, *_r in CHECK[:4])
+    zeilen = []
+    for g in gemeinden:
+        bs = je_gemeinde[g["slug"]]
+        if not bs:
+            continue
+        zellen = "".join(f'<td>{prozent(sum(b["check"][k] for b in bs), len(bs))}</td>' for k, *_r in CHECK[:4])
+        zeilen.append(f'<tr><th scope="row"><a href="/betriebe/{g["slug"]}/">{e(g["name"])}</a></th><td>{zahl(len(bs))}</td>'
+                      f'{zellen}<td>{prozent(sum(1 for b in bs if b["index"]), len(bs))}</td></tr>')
+    optionen = "".join(f'<option value="{i}">{t} fehlt</option>' for i, (_k, t, *_r) in enumerate(CHECK))
+    gem_opt = "".join(f'<option value="{i}">{e(g["name"])}</option>' for i, g in enumerate(gemeinden))
+    hilfe = "".join(f'<li><strong>{t}:</strong> {h}. OSM-Feld {osm}</li>' for _k, t, h, osm in CHECK)
+    inhalt = f"""<h1>Karten-Check</h1>
+<p class="lead">Wie vollständig sind die {zahl(n)} Betriebe im Landkreis Börde in OpenStreetMap eingetragen? Hier sehen Betriebe, Gemeinden und Freiwillige, welche Angaben fehlen, und können sie selbst ergänzen. Datenstand: {e(stand)}.</p>
+<div class="kacheln">{kacheln}</div>
+<p>{zahl(idx)} von {zahl(n)} Betriebsseiten ({prozent(idx, n)}) haben mindestens zwei Angaben aus Öffnungszeiten, Telefon, Website und E-Mail und erscheinen deshalb in Suchmaschinen.</p>
+
+<section aria-labelledby="h-finden"><h2 id="h-finden">Betrieb prüfen</h2>
+<form class="suche" id="kc-suche" role="search" aria-label="Betriebe im Karten-Check suchen">
+  <label>Name<input type="search" id="kc-q" placeholder="z. B. Bäckerei Müller" autocomplete="off"></label>
+  <label>Ort<select id="kc-ort"><option value="">alle Gemeinden</option>{gem_opt}</select></label>
+  <label>Fehlende Angabe<select id="kc-fehlt"><option value="">beliebig</option><option value="voll">nichts fehlt</option>{optionen}</select></label>
+</form>
+<p class="treffer" id="kc-treffer" aria-live="polite"><noscript>Die Suche braucht JavaScript. Jede Betriebsseite enthält ihren eigenen Karten-Check.</noscript></p>
+<ul class="ergebnisse kc-liste" id="kc-liste"></ul>
+<p><button type="button" class="mehr" id="kc-mehr" hidden>Weitere anzeigen</button></p>
+</section>
+
+<section aria-labelledby="h-gem"><h2 id="h-gem">Nach Gemeinde</h2>
+<p class="klein">Anteil der Betriebe, bei denen die Angabe in OpenStreetMap eingetragen ist.</p>
+<div class="tabelle-scroll" tabindex="0" role="region" aria-label="Tabelle Vollständigkeit nach Gemeinde">
+<table class="daten"><thead><tr><th scope="col">Gemeinde</th><th scope="col">Betriebe</th>{kopf}<th scope="col">in Suchmaschinen</th></tr></thead>
+<tbody>{"".join(zeilen)}</tbody></table></div>
+</section>
+
+<section aria-labelledby="h-wie"><h2 id="h-wie">So ergänzen Sie einen Eintrag</h2>
+<ol class="schritte">
+<li>Betrieb oben suchen und „bearbeiten“ wählen. Sie landen direkt beim richtigen Objekt im OpenStreetMap-Editor.</li>
+<li>Ein kostenloses OpenStreetMap-Konto anlegen und anmelden.</li>
+<li>Links im Editor die fehlenden Felder ausfüllen, speichern und kurz beschreiben, was geändert wurde.</li>
+<li>Spätestens nach einer Woche erscheint die Änderung hier und auf der Seite des Betriebs.</li>
+</ol>
+<p>Ohne Konto geht es auch: Auf jeder Betriebsseite führt „Hinweis an der Karte hinterlassen“ zu einem Formular. Freiwillige der OpenStreetMap-Gemeinschaft tragen den Hinweis dann ein, das kann aber dauern.</p>
+<h3>Was in die Felder gehört</h3>
+<ul class="eintraege">{hilfe}</ul>
+<p>Bitte nur Angaben eintragen, die öffentlich sein sollen. Mehr zur Herkunft der Daten unter <a href="/betriebe/ueber-die-daten/">Über die Daten</a>.</p>
+</section>"""
+    return seite(titel="Karten-Check: Welche Angaben fehlen in OpenStreetMap? | OK Lab Börde",
+                 beschreibung=f"Für {zahl(n)} Betriebe im Landkreis Börde prüfen, ob Adresse, Öffnungszeiten, Telefon, Website und Rollstuhlzugang in OpenStreetMap eingetragen sind, mit Anleitung zum Ergänzen.",
+                 pfad="/betriebe/karten-check/", inhalt=inhalt,
+                 extra_head='<script src="/assets/karten-check.js" defer></script>',
+                 brotkrumen=[("Start", "/"), ("Betriebe", "/betriebe/"), ("Karten-Check", None)])
+
+
+# ---------------------------------------------------------------- Seiten: Leben in der Börde
+def km(m: float | None) -> str:
+    if m is None:
+        return "–"
+    return f"{m / 1000:.1f} km".replace(".", ",") if m < 10000 else f"{round(m / 1000)} km"
+
+
+def alltag_html(name: str, a: dict) -> str:
+    zeilen = []
+    for kat, titel in ALLTAG:
+        z = a[kat]
+        if not z:
+            zeilen.append((titel, '<span class="leer">nicht in OpenStreetMap</span>'))
+            continue
+        zname = z["name"] or titel
+        link = f'<a href="{e(z["url"])}">{e(zname)}</a>'
+        zeilen.append((titel, f'{link}, {km(z["d"])}'))
+    zeilen.append(("Bushaltestellen", f'{zahl(a["bus_1km"])} im Umkreis von 1 km'))
+    zeilen.append(("Pendeln", " · ".join(f'{n} Hbf {km(a[zid])}' for zid, n, *_r in ZIELE) + " (Luftlinie)"))
+    dl = '<dl class="fakten">' + "".join(f"<dt>{t}</dt><dd>{v}</dd>" for t, v in zeilen) + "</dl>"
+    return (f'<section aria-labelledby="h-alltag"><h2 id="h-alltag">Alltag in {e(name)}</h2>'
+            f'<p>Nächste Einrichtung von der Ortsmitte aus, Luftlinie, nur Einträge im Landkreis Börde.</p>{dl}'
+            f'<p><a href="/leben/">Alle Orte vergleichen: Leben in der Börde →</a></p></section>')
+
+
+def leben_seite(punkte: list[dict], gemeinden: list[dict], stand: str) -> str:
+    gidx = {g["slug"]: i for i, g in enumerate(gemeinden)}
+    kats = [k for k, _t in ALLTAG]
+    zeilen = []
+    for p in punkte:
+        a = p["alltag"]
+        d = ",".join(str(round(a[k]["d"])) if a[k] else "" for k in kats)
+        zellen = "".join(
+            f'<td data-d="{round(a[k]["d"]) if a[k] else ""}"' + (f' title="{e(a[k]["name"] or t)}"' if a[k] else "") + f'>{km(a[k]["d"] if a[k] else None)}</td>'
+            for k, t in ALLTAG)
+        art = {"city": "Stadt", "town": "Stadt", "village": "Dorf", "hamlet": "Weiler"}[p["place"]]
+        zeilen.append(
+            f'<tr data-g="{gidx[p["gemeinde"]["slug"]]}" data-d="{d}" data-md="{round(a["magdeburg"])}" data-wob="{round(a["wolfsburg"])}">'
+            f'<th scope="row"><a href="{ort_url(p)}">{e(p["name"])}</a> <span class="zusatz">{art}</span></th>'
+            f'<td>{e(p["gemeinde"]["name"])}</td>{zellen}<td>{zahl(a["bus_1km"])}</td>'
+            f'<td>{km(a["magdeburg"])}</td><td>{km(a["wolfsburg"])}</td></tr>')
+    kopf = "".join(f'<th scope="col">{t}</th>' for _k, t in ALLTAG)
+    gem_opt = "".join(f'<option value="{i}">{e(g["name"])}</option>' for i, g in enumerate(gemeinden))
+    haken = "".join(f'<label class="schalter"><input type="checkbox" value="{i}"> {t}</label>' for i, (_k, t) in enumerate(ALLTAG))
+    staedte = sum(1 for p in punkte if p["place"] in ("city", "town"))
+    inhalt = f"""<h1>Leben in der Börde</h1>
+<p class="lead">Wer in den Landkreis Börde ziehen möchte, findet hier alle {zahl(len(punkte))} Städte und Dörfer im Vergleich: Wie weit ist es zur nächsten Kita, Grundschule, weiterführenden Schule, Arztpraxis, Apotheke, zum Supermarkt und zum Bahnhof? Und wie weit ist es nach Magdeburg und Wolfsburg? Mehr zu jedem Ort steht in seinem <a href="/orte/">Steckbrief</a>.</p>
+<p class="klein">{zahl(staedte)} Städte und {zahl(len(punkte) - staedte)} Dörfer. Datenstand: {e(stand)}.</p>
+
+<form class="suche" id="lb-filter" aria-label="Orte filtern">
+  <label>Gemeinde<select id="lb-gem"><option value="">alle Gemeinden</option>{gem_opt}</select></label>
+  <label>Nach Magdeburg höchstens<select id="lb-md"><option value="">beliebig</option><option value="20000">20 km</option><option value="30000">30 km</option><option value="40000">40 km</option><option value="50000">50 km</option></select></label>
+  <label>Sortieren nach<select id="lb-sort"><option value="name">Name</option><option value="md">Entfernung Magdeburg</option><option value="wob">Entfernung Wolfsburg</option></select></label>
+  <fieldset class="haken"><legend>Höchstens <select id="lb-km" aria-label="Entfernung"><option value="1000">1 km</option><option value="2000" selected>2 km</option><option value="5000">5 km</option></select> entfernt:</legend>{haken}</fieldset>
+</form>
+<p class="treffer" id="lb-treffer" aria-live="polite"></p>
+<div class="tabelle-scroll" tabindex="0" role="region" aria-label="Tabelle: Entfernungen je Ort">
+<table class="daten leben" id="lb-tabelle"><thead><tr><th scope="col">Ort</th><th scope="col">Gemeinde</th>{kopf}<th scope="col">Bushalte&shy;stellen ≤ 1 km</th><th scope="col">Magdeburg</th><th scope="col">Wolfsburg</th></tr></thead>
+<tbody>{"".join(zeilen)}</tbody></table></div>
+
+<section aria-labelledby="h-lesen"><h2 id="h-lesen">So sind die Zahlen zu lesen</h2>
+<ul class="eintraege">
+<li><strong>Luftlinie, keine Fahrzeit:</strong> Gemessen wird vom Ortspunkt in OpenStreetMap (meist Ortsmitte oder Kirche) zur nächsten Einrichtung. Der echte Weg ist länger.</li>
+<li><strong>Nur der Landkreis:</strong> Einrichtungen in Nachbarkreisen, in Magdeburg oder Wolfsburg zählen nicht mit. Für Orte am Kreisrand kann die nächste Schule also näher sein.</li>
+<li><strong>Nur was in OpenStreetMap steht:</strong> Fehlt eine Kita oder Praxis dort, fehlt sie auch hier. Arztpraxen sind in OpenStreetMap noch lückenhaft eingetragen. Über den <a href="/betriebe/karten-check/">Karten-Check</a> lässt sich das ändern.</li>
+<li><strong>Weiler fehlen:</strong> Sehr kleine Siedlungen ohne eigenen Ortsnamen als Dorf sind nicht aufgeführt.</li>
+</ul></section>
+
+<section aria-labelledby="h-fehlt"><h2 id="h-fehlt">Was noch fehlt: Glasfaser und Pendelzeiten</h2>
+<p>Für den Internetanschluss gibt es noch keine offenen Daten, die wir hier je Ort verwenden dürfen. Die Verfügbarkeit an einer Adresse zeigt das <a href="https://gigabitgrundbuch.bund.de/">Gigabit-Grundbuch des Bundes</a>. Echte Fahrzeiten mit Bus und Bahn berechnet die <a href="https://www.insa.de/">INSA-Fahrplanauskunft Sachsen-Anhalt</a>. Eine Erreichbarkeitskarte aus offenen Fahrplandaten steht auf unserer <a href="/#projekte">Ideenliste</a>.</p>
+</section>"""
+    return seite(titel="Leben in der Börde – alle Orte im Vergleich: Kita, Schule, Arzt, Bahn | OK Lab Börde",
+                 beschreibung=f"{zahl(len(punkte))} Städte und Dörfer im Landkreis Börde im Vergleich: Entfernung zur nächsten Kita, Schule, Arztpraxis, Apotheke, zum Supermarkt, Bahnhof und nach Magdeburg.",
+                 pfad="/leben/", inhalt=inhalt, extra_head='<script src="/assets/leben.js" defer></script>',
+                 brotkrumen=[("Start", "/"), ("Leben in der Börde", None)])
+
+
 # ---------------------------------------------------------------- Hauptprogramm
 def aufraeumen() -> None:
     if OUT_ORTE.exists():
         for p in OUT_ORTE.iterdir():
             if p.name != "README.md":
                 shutil.rmtree(p) if p.is_dir() else p.unlink()
+    if OUT_LEBEN.exists():
+        shutil.rmtree(OUT_LEBEN)
     if OUT_BETRIEBE.exists():
         for p in OUT_BETRIEBE.iterdir():
             if p.is_dir() and p.name != "data":
@@ -588,12 +874,17 @@ def main() -> None:
     betriebe = betriebe_laden(gemeinden)
     pois = pois_laden(gemeinden)
     lab = lab_daten()
+    punkte = ortspunkte_laden(gemeinden)
+    ziele = ziele_alltag(betriebe, pois)
+    for pk in punkte:
+        pk["alltag"] = alltag(pk["lon"], pk["lat"], ziele)
     osm_stand = lade("betriebe.json").get("osm3s", {}).get("timestamp_osm_base", "")[:10]
 
     # Datenstand nur weiterschreiben, wenn sich die Daten wirklich geändert haben
     kern = json.dumps([[b["osm"], b["name"], b["detail"], b["lat"], b["lon"], b["oh"], b["telefon"], b["website"], b["email"],
                         b["strasse"], b["ortzeile"], b["rollstuhl"]] for b in betriebe] +
-                      [[p["osm"], p["name"], p["kat"]] for p in pois] +
+                      [[p["osm"], p["name"], p["kat"], p["stufe"]] for p in pois] +
+                      [[p["osm"], p["name"], p["place"], p["lat"], p["lon"]] for p in punkte] +
                       [[g["ags"], [o["osm"] for o in g["ortsteile"]]] for g in gemeinden], ensure_ascii=False)
     hash_neu = hashlib.sha256(kern.encode()).hexdigest()[:16]
     stand_datei = OUT_BETRIEBE / "data" / "stand.json"
@@ -607,7 +898,7 @@ def main() -> None:
     for b in betriebe:
         je_gemeinde[b["gemeinde"]["slug"]].append(b)
     haltestellen = [p for p in pois if p["kat"] in ("haltestelle", "bahnhof") and p["name"]]
-    sitemap: list[str] = ["/betriebe/", "/orte/", "/betriebe/ueber-die-daten/"]
+    sitemap: list[str] = ["/betriebe/", "/orte/", "/leben/", "/betriebe/karten-check/", "/betriebe/ueber-die-daten/"]
     n_seiten = 0
 
     for b in betriebe:
@@ -628,29 +919,34 @@ def main() -> None:
                 if len(sel) >= 3:
                     sitemap.append(f"/betriebe/{g['slug']}/branche/{bid}/")
         gp = [p for p in pois if p["gemeinde"] is g]
-        html, _ = ort_seite(g, None, bs, gp, lab.get(g["ags"], {}), branchen)
+        html, _ = ort_seite(g, None, bs, gp, lab.get(g["ags"], {}), branchen, ortspunkt_fuer(g, None, punkte))
         schreibe(OUT_ORTE / g["slug"] / "index.html", html)
         sitemap.append(f"/orte/{g['slug']}/")
         n_seiten += 1
         for o in g["ortsteile"]:
             ob = [b for b in bs if b["ortsteil"] is o]
             op = [p for p in gp if p["ortsteil"] is o]
-            html, idx = ort_seite(g, o, ob, op, {}, branchen)
+            html, idx = ort_seite(g, o, ob, op, {}, branchen, ortspunkt_fuer(g, o, punkte))
             schreibe(OUT_ORTE / g["slug"] / o["slug"] / "index.html", html)
             n_seiten += 1
             if idx:
                 sitemap.append(f"/orte/{g['slug']}/{o['slug']}/")
     schreibe(OUT_ORTE / "index.html", orte_index(gemeinden, je_gemeinde, stand))
+    schreibe(OUT_BETRIEBE / "karten-check" / "index.html", karten_check_seite(gemeinden, je_gemeinde, betriebe, stand))
+    leben_punkte = [p for p in punkte if p["place"] != "hamlet"]
+    schreibe(OUT_LEBEN / "index.html", leben_seite(leben_punkte, gemeinden, stand))
+    n_seiten += 2
     schreibe(OUT_BETRIEBE / "ueber-die-daten" / "index.html", ueber_seite(stand, len(betriebe), n_seiten))
 
     # Daten für die Karte (kompakt)
     bl = list(branchen)
     karte = {
-        "felder": ["name", "branche", "detail", "lat", "lon", "gemeinde", "ort", "url", "woche"],
+        "felder": ["name", "branche", "detail", "lat", "lon", "gemeinde", "ort", "url", "woche", "fehlt", "osm"],
+        "check": [t for _k, t, *_r in CHECK],
         "branchen": [[k, v] for k, v in branchen.items()],
         "gemeinden": [[g["slug"], g["name"]] for g in gemeinden],
         "betriebe": [[b["name"], bl.index(b["branche"]), b["detail"], b["lat"], b["lon"],
-                      gemeinden.index(b["gemeinde"]), b["ort"], b["url"], b["woche"]] for b in betriebe],
+                      gemeinden.index(b["gemeinde"]), b["ort"], b["url"], b["woche"], b["fehlt"], b["osm"]] for b in betriebe],
     }
     schreibe(OUT_BETRIEBE / "data" / "betriebe.json", json.dumps(karte, ensure_ascii=False, separators=(",", ":")) + "\n")
     schreibe(stand_datei, json.dumps({"datenstand": stand_iso, "hash": hash_neu, "betriebe": len(betriebe),
@@ -664,7 +960,7 @@ def main() -> None:
 
     idx = sum(1 for b in betriebe if b["index"])
     print(f"{len(betriebe)} Betriebe ({idx} indexierbar), {len(pois)} weitere Objekte, {len(gemeinden)} Gemeinden, "
-          f"{sum(len(g['ortsteile']) for g in gemeinden)} Ortsteile, {n_seiten} Seiten, Sitemap {len(fest) + len(sitemap)} URLs, Stand {stand}",
+          f"{sum(len(g['ortsteile']) for g in gemeinden)} Ortsteile, {len(punkte)} Ortspunkte, {n_seiten} Seiten, Sitemap {len(fest) + len(sitemap)} URLs, Stand {stand}",
           file=sys.stderr)
 
 

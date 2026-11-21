@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karten-Check: Welche Angaben fehlen in OpenStreetMap? | OK Lab Börde</title>
+  <meta name="description" content="Für 2.017 Betriebe im Landkreis Börde prüfen, ob Adresse, Öffnungszeiten, Telefon, Website und Rollstuhlzugang in OpenStreetMap eingetragen sind, mit Anleitung zum Ergänzen.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ok-lab-boerde.github.io/betriebe/karten-check/">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/assets/orte.css">
+  
+  
+  <script src="/assets/karten-check.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/logo.svg" alt=""><span>OK Lab <b>Börde</b></span></a>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="/betriebe/">Betriebe</a></li>
+          <li><a href="/orte/">Orte</a></li>
+          <li><a href="/#projekte">Projekte</a></li>
+          <li><a href="/#mitmachen">Mitmachen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap orte-main">
+    <nav class="krumen" aria-label="Brotkrümelnavigation"><a href="/">Start</a> <span aria-hidden="true">›</span> <a href="/betriebe/">Betriebe</a> <span aria-hidden="true">›</span> <span aria-current="page">Karten-Check</span></nav>
+<h1>Karten-Check</h1>
+<p class="lead">Wie vollständig sind die 2.017 Betriebe im Landkreis Börde in OpenStreetMap eingetragen? Hier sehen Betriebe, Gemeinden und Freiwillige, welche Angaben fehlen, und können sie selbst ergänzen. Datenstand: 21.11.2026.</p>
+<div class="kacheln"><div class="kachel"><span class="zahl">83 %</span><span>mit Adresse</span></div><div class="kachel"><span class="zahl">43 %</span><span>mit Öffnungszeiten</span></div><div class="kachel"><span class="zahl">69 %</span><span>mit Telefon</span></div><div class="kachel"><span class="zahl">57 %</span><span>mit Website</span></div><div class="kachel"><span class="zahl">40 %</span><span>mit E-Mail</span></div><div class="kachel"><span class="zahl">17 %</span><span>mit Rollstuhl</span></div></div>
+<p>1.321 von 2.017 Betriebsseiten (65 %) haben mindestens zwei Angaben aus Öffnungszeiten, Telefon, Website und E-Mail und erscheinen deshalb in Suchmaschinen.</p>
+
+<section aria-labelledby="h-finden"><h2 id="h-finden">Betrieb prüfen</h2>
+<form class="suche" id="kc-suche" role="search" aria-label="Betriebe im Karten-Check suchen">
+  <label>Name<input type="search" id="kc-q" placeholder="z. B. Bäckerei Müller" autocomplete="off"></label>
+  <label>Ort<select id="kc-ort"><option value="">alle Gemeinden</option><option value="0">Altenhausen</option><option value="1">Am Großen Bruch</option><option value="2">Angern</option><option value="3">Ausleben</option><option value="4">Barleben</option><option value="5">Beendorf</option><option value="6">Burgstall</option><option value="7">Bülstringen</option><option value="8">Calvörde</option><option value="9">Colbitz</option><option value="10">Eilsleben</option><option value="11">Erxleben</option><option value="12">Flechtingen</option><option value="13">Gröningen</option><option value="14">Haldensleben</option><option value="15">Harbke</option><option value="16">Hohe Börde</option><option value="17">Hötensleben</option><option value="18">Ingersleben</option><option value="19">Kroppenstedt</option><option value="20">Loitsche-Heinrichsberg</option><option value="21">Niedere Börde</option><option value="22">Oebisfelde-Weferlingen</option><option value="23">Oschersleben (Bode)</option><option value="24">Rogätz</option><option value="25">Sommersdorf</option><option value="26">Sülzetal</option><option value="27">Ummendorf</option><option value="28">Völpke</option><option value="29">Wanzleben-Börde</option><option value="30">Wefensleben</option><option value="31">Westheide</option><option value="32">Wolmirstedt</option><option value="33">Zielitz</option></select></label>
+  <label>Fehlende Angabe<select id="kc-fehlt"><option value="">beliebig</option><option value="voll">nichts fehlt</option><option value="0">Adresse fehlt</option><option value="1">Öffnungszeiten fehlt</option><option value="2">Telefon fehlt</option><option value="3">Website fehlt</option><option value="4">E-Mail fehlt</option><option value="5">Rollstuhl fehlt</option></select></label>
+</form>
+<p class="treffer" id="kc-treffer" aria-live="polite"><noscript>Die Suche braucht JavaScript. Jede Betriebsseite enthält ihren eigenen Karten-Check.</noscript></p>
+<ul class="ergebnisse kc-liste" id="kc-liste"></ul>
+<p><button type="button" class="mehr" id="kc-mehr" hidden>Weitere anzeigen</button></p>
+</section>
+
+<section aria-labelledby="h-gem"><h2 id="h-gem">Nach Gemeinde</h2>
+<p class="klein">Anteil der Betriebe, bei denen die Angabe in OpenStreetMap eingetragen ist.</p>
+<div class="tabelle-scroll" tabindex="0" role="region" aria-label="Tabelle Vollständigkeit nach Gemeinde">
+<table class="daten"><thead><tr><th scope="col">Gemeinde</th><th scope="col">Betriebe</th><th scope="col">Adresse</th><th scope="col">Öffnungszeiten</th><th scope="col">Telefon</th><th scope="col">Website</th><th scope="col">in Suchmaschinen</th></tr></thead>
+<tbody><tr><th scope="row"><a href="/betriebe/altenhausen/">Altenhausen</a></th><td>5</td><td>100 %</td><td>20 %</td><td>80 %</td><td>100 %</td><td>80 %</td></tr><tr><th scope="row"><a href="/betriebe/am-grossen-bruch/">Am Großen Bruch</a></th><td>26</td><td>81 %</td><td>42 %</td><td>69 %</td><td>46 %</td><td>65 %</td></tr><tr><th scope="row"><a href="/betriebe/angern/">Angern</a></th><td>19</td><td>79 %</td><td>58 %</td><td>84 %</td><td>58 %</td><td>74 %</td></tr><tr><th scope="row"><a href="/betriebe/ausleben/">Ausleben</a></th><td>23</td><td>91 %</td><td>13 %</td><td>87 %</td><td>35 %</td><td>57 %</td></tr><tr><th scope="row"><a href="/betriebe/barleben/">Barleben</a></th><td>155</td><td>94 %</td><td>49 %</td><td>77 %</td><td>77 %</td><td>82 %</td></tr><tr><th scope="row"><a href="/betriebe/beendorf/">Beendorf</a></th><td>3</td><td>67 %</td><td>0 %</td><td>33 %</td><td>0 %</td><td>33 %</td></tr><tr><th scope="row"><a href="/betriebe/burgstall/">Burgstall</a></th><td>13</td><td>62 %</td><td>15 %</td><td>31 %</td><td>38 %</td><td>23 %</td></tr><tr><th scope="row"><a href="/betriebe/buelstringen/">Bülstringen</a></th><td>5</td><td>100 %</td><td>80 %</td><td>100 %</td><td>80 %</td><td>100 %</td></tr><tr><th scope="row"><a href="/betriebe/calvoerde/">Calvörde</a></th><td>40</td><td>75 %</td><td>40 %</td><td>48 %</td><td>40 %</td><td>48 %</td></tr><tr><th scope="row"><a href="/betriebe/colbitz/">Colbitz</a></th><td>28</td><td>93 %</td><td>43 %</td><td>68 %</td><td>71 %</td><td>71 %</td></tr><tr><th scope="row"><a href="/betriebe/eilsleben/">Eilsleben</a></th><td>25</td><td>52 %</td><td>36 %</td><td>32 %</td><td>48 %</td><td>36 %</td></tr><tr><th scope="row"><a href="/betriebe/erxleben/">Erxleben</a></th><td>24</td><td>83 %</td><td>46 %</td><td>79 %</td><td>67 %</td><td>75 %</td></tr><tr><th scope="row"><a href="/betriebe/flechtingen/">Flechtingen</a></th><td>32</td><td>78 %</td><td>34 %</td><td>88 %</td><td>72 %</td><td>78 %</td></tr><tr><th scope="row"><a href="/betriebe/groeningen/">Gröningen</a></th><td>44</td><td>80 %</td><td>32 %</td><td>70 %</td><td>43 %</td><td>70 %</td></tr><tr><th scope="row"><a href="/betriebe/haldensleben/">Haldensleben</a></th><td>364</td><td>88 %</td><td>66 %</td><td>70 %</td><td>57 %</td><td>70 %</td></tr><tr><th scope="row"><a href="/betriebe/harbke/">Harbke</a></th><td>19</td><td>16 %</td><td>53 %</td><td>53 %</td><td>21 %</td><td>37 %</td></tr><tr><th scope="row"><a href="/betriebe/hohe-boerde/">Hohe Börde</a></th><td>203</td><td>81 %</td><td>39 %</td><td>61 %</td><td>55 %</td><td>60 %</td></tr><tr><th scope="row"><a href="/betriebe/hoetensleben/">Hötensleben</a></th><td>28</td><td>61 %</td><td>32 %</td><td>11 %</td><td>14 %</td><td>14 %</td></tr><tr><th scope="row"><a href="/betriebe/ingersleben/">Ingersleben</a></th><td>13</td><td>62 %</td><td>15 %</td><td>77 %</td><td>77 %</td><td>85 %</td></tr><tr><th scope="row"><a href="/betriebe/kroppenstedt/">Kroppenstedt</a></th><td>19</td><td>26 %</td><td>37 %</td><td>74 %</td><td>53 %</td><td>63 %</td></tr><tr><th scope="row"><a href="/betriebe/loitsche-heinrichsberg/">Loitsche-Heinrichsberg</a></th><td>2</td><td>50 %</td><td>0 %</td><td>50 %</td><td>50 %</td><td>50 %</td></tr><tr><th scope="row"><a href="/betriebe/niedere-boerde/">Niedere Börde</a></th><td>28</td><td>75 %</td><td>36 %</td><td>64 %</td><td>50 %</td><td>61 %</td></tr><tr><th scope="row"><a href="/betriebe/oebisfelde-weferlingen/">Oebisfelde-Weferlingen</a></th><td>147</td><td>76 %</td><td>37 %</td><td>72 %</td><td>61 %</td><td>70 %</td></tr><tr><th scope="row"><a href="/betriebe/oschersleben-bode/">Oschersleben (Bode)</a></th><td>304</td><td>84 %</td><td>35 %</td><td>72 %</td><td>52 %</td><td>62 %</td></tr><tr><th scope="row"><a href="/betriebe/rogaetz/">Rogätz</a></th><td>20</td><td>100 %</td><td>55 %</td><td>85 %</td><td>80 %</td><td>80 %</td></tr><tr><th scope="row"><a href="/betriebe/suelzetal/">Sülzetal</a></th><td>134</td><td>93 %</td><td>34 %</td><td>77 %</td><td>63 %</td><td>67 %</td></tr><tr><th scope="row"><a href="/betriebe/ummendorf/">Ummendorf</a></th><td>6</td><td>100 %</td><td>67 %</td><td>83 %</td><td>33 %</td><td>67 %</td></tr><tr><th scope="row"><a href="/betriebe/voelpke/">Völpke</a></th><td>5</td><td>80 %</td><td>40 %</td><td>60 %</td><td>20 %</td><td>40 %</td></tr><tr><th scope="row"><a href="/betriebe/wanzleben-boerde/">Wanzleben-Börde</a></th><td>103</td><td>86 %</td><td>32 %</td><td>62 %</td><td>51 %</td><td>55 %</td></tr><tr><th scope="row"><a href="/betriebe/wefensleben/">Wefensleben</a></th><td>13</td><td>85 %</td><td>62 %</td><td>85 %</td><td>69 %</td><td>77 %</td></tr><tr><th scope="row"><a href="/betriebe/westheide/">Westheide</a></th><td>8</td><td>88 %</td><td>25 %</td><td>62 %</td><td>50 %</td><td>62 %</td></tr><tr><th scope="row"><a href="/betriebe/wolmirstedt/">Wolmirstedt</a></th><td>146</td><td>95 %</td><td>47 %</td><td>73 %</td><td>61 %</td><td>71 %</td></tr><tr><th scope="row"><a href="/betriebe/zielitz/">Zielitz</a></th><td>13</td><td>62 %</td><td>38 %</td><td>38 %</td><td>38 %</td><td>38 %</td></tr></tbody></table></div>
+</section>
+
+<section aria-labelledby="h-wie"><h2 id="h-wie">So ergänzen Sie einen Eintrag</h2>
+<ol class="schritte">
+<li>Betrieb oben suchen und „bearbeiten“ wählen. Sie landen direkt beim richtigen Objekt im OpenStreetMap-Editor.</li>
+<li>Ein kostenloses OpenStreetMap-Konto anlegen und anmelden.</li>
+<li>Links im Editor die fehlenden Felder ausfüllen, speichern und kurz beschreiben, was geändert wurde.</li>
+<li>Spätestens nach einer Woche erscheint die Änderung hier und auf der Seite des Betriebs.</li>
+</ol>
+<p>Ohne Konto geht es auch: Auf jeder Betriebsseite führt „Hinweis an der Karte hinterlassen“ zu einem Formular. Freiwillige der OpenStreetMap-Gemeinschaft tragen den Hinweis dann ein, das kann aber dauern.</p>
+<h3>Was in die Felder gehört</h3>
+<ul class="eintraege"><li><strong>Adresse:</strong> Straße, Hausnummer und Postleitzahl. OSM-Feld <code>addr:street</code>, <code>addr:housenumber</code>, <code>addr:postcode</code></li><li><strong>Öffnungszeiten:</strong> Öffnungszeiten, z. B. mit dem <a href="https://projets.pavie.info/yohours/">YoHours-Assistenten</a>. OSM-Feld <code>opening_hours</code></li><li><strong>Telefon:</strong> Telefonnummer mit Vorwahl, z. B. +49 3904 12345. OSM-Feld <code>phone</code></li><li><strong>Website:</strong> Adresse der eigenen Website. OSM-Feld <code>website</code></li><li><strong>E-Mail:</strong> E-Mail-Adresse, wenn sie öffentlich sein soll. OSM-Feld <code>email</code></li><li><strong>Rollstuhl:</strong> ob der Eingang stufenlos erreichbar ist (ja, eingeschränkt, nein). OSM-Feld <code>wheelchair</code></li></ul>
+<p>Bitte nur Angaben eintragen, die öffentlich sein sollen. Mehr zur Herkunft der Daten unter <a href="/betriebe/ueber-die-daten/">Über die Daten</a>.</p>
+</section>
+    <p class="quelle">Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (<a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>). Ohne Gewähr. <a href="/betriebe/ueber-die-daten/">Über die Daten</a></p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>OK Lab Börde</strong></p>
+        <p>Inhalte unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>, Daten aus OpenStreetMap unter ODbL.</p>
+      </div>
+      <ul>
+        <li><a href="/impressum.html">Impressum</a></li>
+        <li><a href="/datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://github.com/ok-lab-boerde/ok-lab-boerde.github.io">Quellcode</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>

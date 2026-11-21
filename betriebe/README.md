@@ -12,6 +12,7 @@ Live: https://ok-lab-boerde.github.io/betriebe/
 | `data/stand.json` | Datenstand, Prüfsumme, Anzahl Seiten (erzeugt) |
 | `<gemeinde>/` | Betriebe je Gemeinde, `<gemeinde>/<betrieb>/` je Betrieb, `<gemeinde>/branche/<branche>/` je Branche (erzeugt) |
 | `ueber-die-daten/` | Herkunft der Daten und Anleitung zum Ändern (erzeugt) |
+| `karten-check/` | Karten-Check: welche Angaben in OSM fehlen, je Gemeinde und mit Suche (erzeugt, Skript `/assets/karten-check.js`) |
 
 Alles außer `index.html`, `app.js` und dieser README wird von `scripts/orte/build.py` erzeugt und bei jedem Lauf neu geschrieben. Bitte dort nichts von Hand ändern.
 
@@ -37,3 +38,7 @@ Die GitHub Action `.github/workflows/orte-daten.yml` läuft jeden Montag und lä
 ## Suchmaschinen
 
 Betriebsseiten mit mindestens zwei von Öffnungszeiten, Telefon, Website und E-Mail stehen auf `index` und in der `sitemap.xml`. Alle anderen stehen auf `noindex, follow`. Jede Seite enthält strukturierte Daten (schema.org `LocalBusiness`).
+
+## Karten-Check
+
+Jede Betriebsseite zeigt, welche von sechs Angaben in OSM eingetragen sind (Adresse mit Hausnummer und PLZ, Öffnungszeiten, Telefon, Website, E-Mail, Rollstuhl), mit Bearbeiten-Link in den iD-Editor und einem Link für OSM-Hinweise ohne Konto. `/betriebe/karten-check/` fasst das je Gemeinde zusammen. In `data/betriebe.json` steht dafür das Feld `fehlt` als Bitmaske in der Reihenfolge von `check`.

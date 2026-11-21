@@ -66,6 +66,10 @@ out center tags;""",
 area({AREA})->.k;
 relation["boundary"="administrative"]["admin_level"~"^(9|10)$"](area.k);
 out geom;""",
+    "ortspunkte": f"""[out:json][timeout:120];
+area({AREA})->.k;
+node["place"~"^(city|town|village|hamlet)$"]["name"](area.k);
+out body;""",
 }
 
 
