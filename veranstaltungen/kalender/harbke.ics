@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen Harbke
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:vp-2968457@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T110000
+SUMMARY:Weihnachtsmarkt auf dem Schlosshof
+LOCATION:Schloss & Schlosshof\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2968457/2026/11/28/weihnacht
+ smarkt-auf-dem-schlosshof
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2968457/2026/11/28/weihnachtsmarkt-auf-dem-schlosshof
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2968471@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261207
+SUMMARY:Rassegeflügelausstellung
+LOCATION:Schloss & Schlosshof\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2968471/2026/12/05/rassegefl
+ uegelausstellung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2968471/2026/12/05/rassegefluegelausstellung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2968467@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T150000
+SUMMARY:Rentnerweihnachtsfeier des Harbker SV Turbine e. V.
+LOCATION:Harbker SV Turbine e.V.\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2968467/2026/12/05/rentnerwe
+ ihnachtsfeier-des-harbker-sv-turbine-e.-v
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2968467/2026/12/05/rentnerweihnachtsfeier-des-harbker-sv-turbine-
+ e.-v
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2968473@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261225T200000
+SUMMARY:Weihnachtsdisco
+LOCATION:Kulturhaus\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2968473/2026/12/25/weihnacht
+ sdisco
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2968473/2026/12/25/weihnachtsdisco
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2991578@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270110T100000
+SUMMARY:Braunkohlwanderung
+LOCATION:Kulturhaus\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2991578/2027/01/10/braunkohl
+ wanderung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2991578/2027/01/10/braunkohlwanderung
+END:VEVENT
+END:VCALENDAR

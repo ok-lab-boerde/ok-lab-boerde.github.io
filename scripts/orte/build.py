@@ -686,8 +686,9 @@ def ort_seite(g: dict, o: dict | None, bs: list[dict], pois: list[dict], lab: di
     karte = karte_div({"grenze": geo.polys_vereinfachen(flaeche, 0.0003 if o else 0.0005),
                        "punkte": [[b["lat"], b["lon"], b["name"], b["url"]] for b in bs], "cluster": len(bs) > 60},
                       "380px", f"Karte von {name}")
+    termine_html = termine_box(g, o, name)
     inhalt = (f'<h1>{e(name)}</h1><p class="untertitel">{"Ortsteil von " + e(g["name"]) if o else "Gemeinde"} · Landkreis Börde</p>'
-              f'<p class="lead">{lead}</p>{kachel_html}{karte}{ortsteile_html}'
+              f'<p class="lead">{lead}</p>{kachel_html}{karte}{termine_html}{ortsteile_html}'
               f'{alltag_html(punkt["name"], punkt["alltag"]) if punkt else ""}{absch_html}{lab_html}')
     index = (not o) or benannt >= 5
     krumen = [("Start", "/"), ("Orte", "/orte/"), (g["name"], f"/orte/{g['slug']}/" if o else None)]
@@ -696,7 +697,18 @@ def ort_seite(g: dict, o: dict | None, bs: list[dict], pois: list[dict], lab: di
     besch = (f"Steckbrief {name}" + (f" ({g['name']})" if o else "") +
              f": {zahl(len(bs))} Betriebe, Vereine, Kitas, Schulen, Bus und Bahn und Ausflugsziele im Landkreis Börde.")
     return seite(titel=f"{name}" + (f" ({g['name']})" if o else "") + " – Ortssteckbrief | OK Lab Börde", beschreibung=besch,
-                 pfad=pfad, inhalt=inhalt, karte=True, index=index, brotkrumen=krumen), index
+                 pfad=pfad, inhalt=inhalt, karte=True, index=index, brotkrumen=krumen,
+                 extra_head='<script src="/assets/termine.js" defer></script>'), index
+
+
+def termine_box(g: dict, o: dict | None, name: str) -> str:
+    """Abschnitt „Veranstaltungen“; die Termine lädt assets/termine.js aus /veranstaltungen/termine.json (täglich aktuell)."""
+    return (f'<section class="termine-box" aria-labelledby="h-termine" data-g="{e(g["slug"])}" data-ot="{e(o["slug"]) if o else ""}" '
+            f'data-name="{e(name)}"><h2 id="h-termine">Veranstaltungen</h2>'
+            f'<ul class="termine-liste"><li class="leer">Termine werden geladen …</li></ul>'
+            f'<p class="klein"><a href="/veranstaltungen/?g={e(g["slug"])}">Alle Veranstaltungen in {e(g["name"])}</a> · '
+            f'<a href="/veranstaltungen/kalender/{e(g["slug"])}.ics">Kalender abonnieren</a> · '
+            f'<a href="/veranstaltungen/">Gesamtkalender</a></p></section>')
 
 
 def orte_index(gemeinden: list[dict], je_gemeinde: dict[str, list], stand: str) -> str:
@@ -995,9 +1007,10 @@ def main() -> None:
                                       "ortsteile": sum(len(g["ortsteile"]) for g in gemeinden)}, ensure_ascii=False, indent=1) + "\n")
 
     # Sitemap für die ganze Website
-    fest = ["/", "/energiewende/", "/unfallatlas/"]
-    if (ROOT / "ratskarte" / "index.html").exists():
-        fest.append("/ratskarte/")
+    fest = ["/", "/energiewende/", "/unfallatlas/", "/feedback/"]
+    for extra in ("ratskarte", "veranstaltungen"):
+        if (ROOT / extra / "index.html").exists():
+            fest.append(f"/{extra}/")
     urls = "".join(f"<url><loc>{BASIS_URL}{u}</loc></url>\n" for u in fest + sitemap)
     schreibe(ROOT / "sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
 

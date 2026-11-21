@@ -1,0 +1,176 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen Haldensleben
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:lk-festliches-weihnachtskonzert@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261127T193000
+DTEND;TZID=Europe/Berlin:20261127T210000
+SUMMARY:Festliches Weihnachtskonzert
+LOCATION:Schloss Hundisburg\, Schloss 1 39343 Hundisburg / Einheitsgemeinde
+  Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ festliches-weihnachtskonzert
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/festliches-weihnachtskonzert
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmarkt-auf-schloss-hundisburg-6@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T110000
+DTEND;TZID=Europe/Berlin:20261205T180000
+SUMMARY:Weihnachtsmarkt auf Schloss Hundisburg
+LOCATION:Schloss Hundisburg\, Schloss 1 39343 Hundisburg / Einheitsgemeinde
+  Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmarkt-auf-schloss-hundisburg-6
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmarkt-auf-schloss-hundisbur
+ g-6
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-sternenmarkt-mit-eisbahn@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T150000
+DTEND;TZID=Europe/Berlin:20261219T200000
+SUMMARY:Sternenmarkt mit Eisbahn
+LOCATION:Markt\, 20:00 Markt 39340 Einheitsgemeinde Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ sternenmarkt-mit-eisbahn
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/sternenmarkt-mit-eisbahn
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt-1@ok-
+ lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T160000
+DTEND;TZID=Europe/Berlin:20261205T170000
+SUMMARY:"Weihnachtskonzert" der Kreismusikschule Börde -Haus Wolmirstedt-
+LOCATION:Musikschule Haldensleben\, Maschenpromenade 4 39340 Einheitsgemein
+ de Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt-1
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtskonzert-der-kreismusikschul
+ e-boerde-haus-wolmirstedt-1
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmarkt-auf-schloss-hundisburg-3@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T110000
+DTEND;TZID=Europe/Berlin:20261206T180000
+SUMMARY:Weihnachtsmarkt auf Schloss Hundisburg
+LOCATION:Schloss Hundisburg\, Schloss 1 39343 Hundisburg / Einheitsgemeinde
+  Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmarkt-auf-schloss-hundisburg-3
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmarkt-auf-schloss-hundisbur
+ g-3
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmatinee-2@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T110000
+DTEND;TZID=Europe/Berlin:20261206T120000
+SUMMARY:Weihnachtsmatinee
+LOCATION:Schloss Hundisburg\, Schloss 1 39343 Hundisburg / Einheitsgemeinde
+  Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmatinee-2
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmatinee-2
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-beratersprechtag-fuer-unternehmen-gemeinsam-mit-der-investitionsbank
+ -sachsen-anhalt-900-bis-1200-uhr@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261208T090000
+DTEND;TZID=Europe/Berlin:20261208T120000
+SUMMARY:Beratersprechtag für Unternehmen  - gemeinsam mit der Investitions
+ bank Sachsen-Anhalt | 9:00 bis 12:00 Uhr
+LOCATION:Landkreis Börde\, Bornsche Straße 2 39340 Einheitsgemeinde Halde
+ nsleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ beratersprechtag-fuer-unternehmen-gemeinsam-mit-der-investitionsbank-sachs
+ en-anhalt-900-bis-1200-uhr
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/beratersprechtag-fuer-unternehmen-gem
+ einsam-mit-der-investitionsbank-sachsen-anhalt-900-bis-1200-uhr
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
+ m-einzigartigen-fabrikambiente@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261212T160000
+DTEND;TZID=Europe/Berlin:20261212T190000
+SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
+ im einzigartigen Fabrikambiente
+LOCATION:Goethesaal - Alte Fabrik\, Wedringer Straße 8 39340 Einheitsgemei
+ nde Haldensleben\, Stadt\, Wedringen
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-im-einz
+ igartigen-fabrikambiente
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/zauberhafte-weihnachtskonzerte-mit-an
+ na-moritz-und-christian-nolte-im-einzigartigen-fabrikambiente
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
+ m-einzigartigen-fabrikambiente-2@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261213T160000
+DTEND;TZID=Europe/Berlin:20261213T190000
+SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
+ im einzigartigen Fabrikambiente
+LOCATION:Goethesaal - Alte Fabrik\, Wedringer Straße 8 39340 Einheitsgemei
+ nde Haldensleben\, Stadt\, Wedringen
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-im-einz
+ igartigen-fabrikambiente-2
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/zauberhafte-weihnachtskonzerte-mit-an
+ na-moritz-und-christian-nolte-im-einzigartigen-fabrikambiente-2
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
+ m-einzigartigen-fabrikambiente-1@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261219T160000
+DTEND;TZID=Europe/Berlin:20261219T190000
+SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
+ im einzigartigen Fabrikambiente
+LOCATION:Goethesaal - Alte Fabrik\, Wedringer Straße 8 39340 Einheitsgemei
+ nde Haldensleben\, Stadt\, Wedringen
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-im-einz
+ igartigen-fabrikambiente-1
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/zauberhafte-weihnachtskonzerte-mit-an
+ na-moritz-und-christian-nolte-im-einzigartigen-fabrikambiente-1
+END:VEVENT
+END:VCALENDAR

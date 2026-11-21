@@ -1,0 +1,701 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen Niedere Börde
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:vp-2877986@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Aufstellen Weihnachtsbaum
+LOCATION:Förderverein "Gersdorfer Kessel/Niedere Börde" e.V.\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/2877986/2026/11/21/aufste
+ llen-weihnachtsbaum
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2877986/2026/11/21/aufstellen-weihnachtsbaum
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2976949@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Weihnachtsbasteln
+LOCATION:Förderverein "Gersdorfer Kessel/Niedere Börde" e.V.\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/2976949/2026/11/21/weihna
+ chtsbasteln
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2976949/2026/11/21/weihnachtsbasteln
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3010015@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261121T180000
+SUMMARY:Gewichtheben
+LOCATION:Sporthalle\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3010015/2026/11/21/gewich
+ theben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3010015/2026/11/21/gewichtheben
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2998488@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261123T170000
+SUMMARY:Samsweger Adventsglühen
+LOCATION:Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2998488/2026/11/23/samswe
+ ger-adventsgluehen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2998488/2026/11/23/samsweger-adventsgluehen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2990901@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261125T143000
+SUMMARY:Rentnerweihnachtsfeier - Samswegen
+LOCATION:Gasthof "Zum Krug"\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2990901/2026/11/25/rentne
+ rweihnachtsfeier-samswegen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2990901/2026/11/25/rentnerweihnachtsfeier-samswegen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2971920@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261126T170000
+SUMMARY:Ehrenamtstag
+LOCATION:Domäne 4\, 39326 Niedere Börde OT Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2971920/2026/11/26/ehrena
+ mtstag
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2971920/2026/11/26/ehrenamtstag
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2888325@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T110000
+SUMMARY:Adventsmarkt
+LOCATION:Camping- und Erlebnisresort am Jersleber See\, Jersleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2888325/2026/11/28/advent
+ smarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2888325/2026/11/28/adventsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2850806@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T150000
+SUMMARY:Advent an der Kirche
+LOCATION:Kirche\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2850806/2026/11/28/advent
+ -an-der-kirche
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2850806/2026/11/28/advent-an-der-kirche
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851368@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T180000
+SUMMARY:offenes Adventssingen
+LOCATION:Kirche\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851368/2026/11/28/offene
+ s-adventssingen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851368/2026/11/28/offenes-adventssingen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2877987@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Weihnachtsmarkt
+LOCATION:Förderverein "Gersdorfer Kessel/Niedere Börde" e.V.\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/2877987/2026/11/29/weihna
+ chtsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2877987/2026/11/29/weihnachtsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2815789@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261129T140000
+SUMMARY:Adventsmarkt
+LOCATION:Rund um die Kirche Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2815789/2026/11/29/advent
+ smarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2815789/2026/11/29/adventsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3008386@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T143000
+SUMMARY:Weihnachtsmarkt
+LOCATION:Heimat- und Kulturverein Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3008386/2026/12/05/weihna
+ chtsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3008386/2026/12/05/weihnachtsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851370@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T150000
+SUMMARY:Adventsmarkt
+LOCATION:Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851370/2026/12/05/advent
+ smarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851370/2026/12/05/adventsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003409@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T180000
+SUMMARY:Weihnachtsfeier - SV Gutenswegen/Kl. Ammensleben
+LOCATION:Villa Riecke\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003409/2026/12/05/weihna
+ chtsfeier-sv-gutenswegen-kl.-ammensleben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003409/2026/12/05/weihnachtsfeier-sv-gutenswegen-kl.-ammensle
+ ben
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851371@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261210T150000
+SUMMARY:Seniorenweihnachtsfeier
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2851371/2026/12/10/senior
+ enweihnachtsfeier
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851371/2026/12/10/seniorenweihnachtsfeier
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2867868@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Sportlerball
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2867868/2026/12/12/sportl
+ erball
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2867868/2026/12/12/sportlerball
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2815791@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261217T190000
+SUMMARY:Benefizkonzert Chor TonArt
+LOCATION:Kirche\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2815791/2026/12/17/benefi
+ zkonzert-chor-tonart
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2815791/2026/12/17/benefizkonzert-chor-tonart
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2969214@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261219T143000
+SUMMARY:Weihnachtsmarkt
+LOCATION:Jersleben\, Feuerwehr/Bürgerhaus Flocke
+URL:https://www.niedere-boerde.de/veranstaltungen/2969214/2026/12/19/weihna
+ chtsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2969214/2026/12/19/weihnachtsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3000707@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261222T190000
+SUMMARY:Benefizkonzert Chor TonArt
+LOCATION:Kirche\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3000707/2026/12/22/benefi
+ zkonzert-chor-tonart
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3000707/2026/12/22/benefizkonzert-chor-tonart
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2877988@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Der Weihnachtsmann kommt
+LOCATION:Bushaltestelle\, Gersdorf + Eichplatz\, Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2877988/2026/12/23/der-we
+ ihnachtsmann-kommt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2877988/2026/12/23/der-weihnachtsmann-kommt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851373@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261223T170000
+SUMMARY:Baumsingen
+LOCATION:Börde-Konsum\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851373/2026/12/23/baumsi
+ ngen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851373/2026/12/23/baumsingen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851376@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261224T200000
+SUMMARY:Heiliger Abend - Christmette
+LOCATION:Kirche\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851376/2026/12/24/heilig
+ er-abend-christmette
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851376/2026/12/24/heiliger-abend-christmette
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3006323@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:Sternensinger besuchen die Häuser (nur nach Voranmeldung
+LOCATION:Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3006323/2027/01/06/sterne
+ nsinger-besuchen-die-haeuser-nur-nach-voranmeldung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3006323/2027/01/06/sternensinger-besuchen-die-haeuser-nur-nach
+ -voranmeldung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851378@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270109T170000
+SUMMARY:offenes Adventssingen/Kirchenmusik zum Abschluss der Weihnachtszeit
+LOCATION:Kirche\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851378/2027/01/09/offene
+ s-adventssingen-kirchenmusik-zum-abschluss-der-weihnachtszeit
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851378/2027/01/09/offenes-adventssingen-kirchenmusik-zum-absc
+ hluss-der-weihnachtszeit
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2848223@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Weihnachtsbaumverbrennung
+LOCATION:Festwiese Klein Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2848223/2027/01/15/weihna
+ chtsbaumverbrennung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2848223/2027/01/15/weihnachtsbaumverbrennung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851379@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270116T170000
+SUMMARY:Weihnachstbaumverbrennung
+LOCATION:Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851379/2027/01/16/weihna
+ chstbaumverbrennung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851379/2027/01/16/weihnachstbaumverbrennung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003372@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Fackelumzug + Wotansball
+LOCATION:Gutenswegen/Karnevalsvereinshaus
+URL:https://www.niedere-boerde.de/veranstaltungen/3003372/2027/01/23/fackel
+ umzug--wotansball
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003372/2027/01/23/fackelumzug--wotansball
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003373@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Prunksitzung
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003373/2027/01/30/prunks
+ itzung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003373/2027/01/30/prunksitzung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003375@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Seniorenkarneval
+LOCATION:Gutenswegen/Karnevalsvereinshaus
+URL:https://www.niedere-boerde.de/veranstaltungen/3003375/2027/01/31/senior
+ enkarneval
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003375/2027/01/31/seniorenkarneval
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003376@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Kostümball
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003376/2027/02/06/kostue
+ mball
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003376/2027/02/06/kostuemball
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002812@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270206T150000
+SUMMARY:MCV Kinderkarneval
+LOCATION:Turnhalle\, Meseberg
+URL:https://www.niedere-boerde.de/veranstaltungen/3002812/2027/02/06/mcv-ki
+ nderkarneval
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002812/2027/02/06/mcv-kinderkarneval
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002813@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270206T201100
+SUMMARY:MCV Karnevalsparty
+LOCATION:Turnhalle\, Meseberg
+URL:https://www.niedere-boerde.de/veranstaltungen/3002813/2027/02/06/mcv-ka
+ rnevalsparty
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002813/2027/02/06/mcv-karnevalsparty
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003378@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Kinder- und Jugendkarneval
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003378/2027/02/07/kinder
+ -und-jugendkarneval
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003378/2027/02/07/kinder-und-jugendkarneval
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003381@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Rot-Weiß-Ball
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003381/2027/02/07/rot-we
+ iss-ball
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003381/2027/02/07/rot-weiss-ball
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003382@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:Rosenmontagsumzug
+LOCATION:Gutenswegen/Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003382/2027/02/08/rosenm
+ ontagsumzug
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003382/2027/02/08/rosenmontagsumzug
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003509@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270222
+SUMMARY:Grünkohlwanderung
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003509/2027/02/20/gruenk
+ ohlwanderung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003509/2027/02/20/gruenkohlwanderung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003510@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Suppenverkauf aus der Gulaschkanone
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003510/2027/03/13/suppen
+ verkauf-aus-der-gulaschkanone
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003510/2027/03/13/suppenverkauf-aus-der-gulaschkanone
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002512@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Dorfputz der Ortschaft Groß Ammensleben
+LOCATION:Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002512/2027/03/20/dorfpu
+ tz-der-ortschaft-gross-ammensleben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002512/2027/03/20/dorfputz-der-ortschaft-gross-ammensleben
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003366@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Osterbasteln
+LOCATION:Dorfgemeinschaftssaal\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003366/2027/03/20/osterb
+ asteln
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003366/2027/03/20/osterbasteln
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003512@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:Ostereier färben
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003512/2027/03/25/ostere
+ ier-faerben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003512/2027/03/25/ostereier-faerben
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003367@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:Osterfeuer
+LOCATION:Sportplatz\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003367/2027/03/25/osterf
+ euer
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003367/2027/03/25/osterfeuer
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002515@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+SUMMARY:Traditionelles Osterfeuer
+LOCATION:Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002515/2027/03/27/tradit
+ ionelles-osterfeuer
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002515/2027/03/27/traditionelles-osterfeuer
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003513@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:„Der Dreck muss weg“ - Frühjahrsputz
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003513/2027/04/24/der-dr
+ eck-muss-weg-fruehjahrsputz
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003513/2027/04/24/der-dreck-muss-weg-fruehjahrsputz
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002517@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Fackelumzug mit anschließendem Ausklang an der Gaststätte „Zur 
+ Post“
+LOCATION:Groß Ammensleben / Gaststätte „Zur Post“
+URL:https://www.niedere-boerde.de/veranstaltungen/3002517/2027/04/30/fackel
+ umzug-mit-anschliessendem-ausklang-an-der-gaststaette-zur-post
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002517/2027/04/30/fackelumzug-mit-anschliessendem-ausklang-an
+ -der-gaststaette-zur-post
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003515@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Tanz in den Mai
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003515/2027/04/30/tanz-i
+ n-den-mai
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003515/2027/04/30/tanz-in-den-mai
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002519@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Wecken durch die Schalmeienkapelle und Aufstellung des Maibaums an 
+ der Gaststätte „Zur Post“
+LOCATION:Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002519/2027/05/01/wecken
+ -durch-die-schalmeienkapelle-und-aufstellung-des-maibaums-an-der-gaststaet
+ te-zur-post
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002519/2027/05/01/wecken-durch-die-schalmeienkapelle-und-aufs
+ tellung-des-maibaums-an-der-gaststaette-zur-post
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003517@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Muttertagsbrunch
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003517/2027/05/09/mutter
+ tagsbrunch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003517/2027/05/09/muttertagsbrunch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003518@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+SUMMARY:Nachtflohmarkt auf den Höfen
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003518/2027/06/05/nachtf
+ lohmarkt-auf-den-hoefen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003518/2027/06/05/nachtflohmarkt-auf-den-hoefen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003368@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:Mittsommernachtsfest
+LOCATION:Sportplatz\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003368/2027/06/25/mittso
+ mmernachtsfest
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003368/2027/06/25/mittsommernachtsfest
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002521@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270703
+DTEND;VALUE=DATE:20270704
+SUMMARY:Fest der Vereine
+LOCATION:Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002521/2027/07/03/fest-d
+ er-vereine
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002521/2027/07/03/fest-der-vereine
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003519@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270828
+DTEND;VALUE=DATE:20270829
+SUMMARY:Sommercafé – evtl. mit der Band „Planxty Irwin“
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003519/2027/08/28/sommer
+ café--evtl.-mit-der-band-planxty-irwin
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003519/2027/08/28/sommercafé--evtl.-mit-der-band-planxty-irw
+ in
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002523@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270905
+DTEND;VALUE=DATE:20270906
+SUMMARY:Radwegfest
+LOCATION:Radwegfest zwischen Gutenswegen und Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002523/2027/09/05/radweg
+ fest
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002523/2027/09/05/radwegfest
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002524@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270912
+DTEND;VALUE=DATE:20270913
+SUMMARY:Klostertage und Tag des offenen Denkmals Kirche / Domäne
+LOCATION:Kloster/Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002524/2027/09/12/kloste
+ rtage-und-tag-des-offenen-denkmals-kirche-domaene
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002524/2027/09/12/klostertage-und-tag-des-offenen-denkmals-ki
+ rche-domaene
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003524@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270912
+DTEND;VALUE=DATE:20270913
+SUMMARY:Tag des offenen Denkmals – Museumshof Colbitz Fahrradtour
+LOCATION:Dahlenwarsleben/Colbitz
+URL:https://www.niedere-boerde.de/veranstaltungen/3003524/2027/09/12/tag-de
+ s-offenen-denkmals--museumshof-colbitz-fahrradtour
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003524/2027/09/12/tag-des-offenen-denkmals--museumshof-colbit
+ z-fahrradtour
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003369@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20271009
+DTEND;VALUE=DATE:20271010
+SUMMARY:Erntedankfest
+LOCATION:Conertscher Hof\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003369/2027/10/09/ernted
+ ankfest
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003369/2027/10/09/erntedankfest
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003528@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20271030
+DTEND;VALUE=DATE:20271031
+SUMMARY:Spuk in den Höfen
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003528/2027/10/30/spuk-i
+ n-den-hoefen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003528/2027/10/30/spuk-in-den-hoefen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003370@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20271120
+DTEND;VALUE=DATE:20271121
+SUMMARY:Weihnachtsbasteln
+LOCATION:Dorfgemeinschaftssaal\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003370/2027/11/20/weihna
+ chtsbasteln
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003370/2027/11/20/weihnachtsbasteln
+END:VEVENT
+END:VCALENDAR

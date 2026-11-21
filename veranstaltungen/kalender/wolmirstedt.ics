@@ -1,0 +1,123 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen Wolmirstedt
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:lk-weinabend-5@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261121T190000
+DTEND;TZID=Europe/Berlin:20261121T220000
+SUMMARY:Weinabend
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weinabend-5
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weinabend-5
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt@ok-la
+ b-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261129T160000
+DTEND;TZID=Europe/Berlin:20261129T170000
+SUMMARY:"Weihnachtskonzert" der Kreismusikschule Börde -Haus Wolmirstedt-
+LOCATION:St. Katharinen-Kirche Wolmirstedt\, Kirchplatz 6 39326 Einheitsgem
+ einde Wolmirstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtskonzert-der-kreismusikschul
+ e-boerde-haus-wolmirstedt
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-nachts-durchs-museum-1@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261204T170000
+DTEND;TZID=Europe/Berlin:20261204T190000
+SUMMARY:Nachts durchs Museum
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ nachts-durchs-museum-1
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/nachts-durchs-museum-1
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-adventszauber-im-museum@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T140000
+DTEND;TZID=Europe/Berlin:20261206T170000
+SUMMARY:Adventszauber im Museum
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ adventszauber-im-museum
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/adventszauber-im-museum
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-kulturcafe-9@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261209T140000
+DTEND;TZID=Europe/Berlin:20261209T160000
+SUMMARY:Kulturcafé
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ kulturcafe-9
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/kulturcafe-9
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-von-wolmirstedt-bis-ans-kaspische-meer-ein-weltbuerger-kehrt-zurueck
+ @ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261210T190000
+DTEND;TZID=Europe/Berlin:20261210T213000
+SUMMARY:Von Wolmirstedt bis ans Kaspische Meer: Ein Weltbürger kehrt zurü
+ ck
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ von-wolmirstedt-bis-ans-kaspische-meer-ein-weltbuerger-kehrt-zurueck
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/von-wolmirstedt-bis-ans-kaspische-mee
+ r-ein-weltbuerger-kehrt-zurueck
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-nachts-durchs-museum@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261211T170000
+DTEND;TZID=Europe/Berlin:20261211T190000
+SUMMARY:Nachts durchs Museum
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ nachts-durchs-museum
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/nachts-durchs-museum
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen Ummendorf
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:vp-2990928@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261130
+SUMMARY:Weihnachtsmarkt der Gemeinde Ummendorf
+LOCATION:Gemeinde Ummendorf
+URL:https://www.obere-aller.de/veranstaltungen/2990928/2026/11/28/weihnacht
+ smarkt-der-gemeinde-ummendorf
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2990928/2026/11/28/weihnachtsmarkt-der-gemeinde-ummendorf
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2858334@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T110000
+SUMMARY:Weihnachtsmarkt
+LOCATION:Heinemanns Hof\, Ummendorf
+URL:https://www.obere-aller.de/veranstaltungen/2858334/2026/11/28/weihnacht
+ smarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2858334/2026/11/28/weihnachtsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmarkt-in-ummendorf@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T110000
+DTEND;TZID=Europe/Berlin:20261129T170000
+SUMMARY:Weihnachtsmarkt in Ummendorf
+LOCATION:Börde-Museum Burg Ummendorf\, Meyendorffstr. 4 39365 Gemeinde Umm
+ endorf
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmarkt-in-ummendorf
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmarkt-in-ummendorf
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-lesung-aus-dornige-wege@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261210T190000
+DTEND;TZID=Europe/Berlin:20261210T210000
+SUMMARY:Lesung aus "Dornige Wege"
+LOCATION:Börde-Museum Burg Ummendorf\, Meyendorffstr. 4 39365 Gemeinde Umm
+ endorf
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ lesung-aus-dornige-wege
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/lesung-aus-dornige-wege
+END:VEVENT
+END:VCALENDAR

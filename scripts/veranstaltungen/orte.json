@@ -1,0 +1,2370 @@
+{
+"gemeinden": [
+{
+"name": "Altenhausen",
+"slug": "altenhausen",
+"lat": 52.26225,
+"lon": 11.25354
+},
+{
+"name": "Am Großen Bruch",
+"slug": "am-grossen-bruch",
+"lat": 52.05036,
+"lon": 11.03326
+},
+{
+"name": "Angern",
+"slug": "angern",
+"lat": 52.35744,
+"lon": 11.73555
+},
+{
+"name": "Ausleben",
+"slug": "ausleben",
+"lat": 52.08953,
+"lon": 11.114
+},
+{
+"name": "Barleben",
+"slug": "barleben",
+"lat": 52.20074,
+"lon": 11.62036
+},
+{
+"name": "Beendorf",
+"slug": "beendorf",
+"lat": 52.24342,
+"lon": 11.08672
+},
+{
+"name": "Burgstall",
+"slug": "burgstall",
+"lat": 52.40633,
+"lon": 11.69732
+},
+{
+"name": "Bülstringen",
+"slug": "buelstringen",
+"lat": 52.32004,
+"lon": 11.34778
+},
+{
+"name": "Calvörde",
+"slug": "calvoerde",
+"lat": 52.41983,
+"lon": 11.30866
+},
+{
+"name": "Colbitz",
+"slug": "colbitz",
+"lat": 52.31755,
+"lon": 11.6084
+},
+{
+"name": "Eilsleben",
+"slug": "eilsleben",
+"lat": 52.14704,
+"lon": 11.21219
+},
+{
+"name": "Erxleben",
+"slug": "erxleben",
+"lat": 52.25452,
+"lon": 11.22318
+},
+{
+"name": "Flechtingen",
+"slug": "flechtingen",
+"lat": 52.31468,
+"lon": 11.15096
+},
+{
+"name": "Gröningen",
+"slug": "groeningen",
+"lat": 51.93637,
+"lon": 11.21663
+},
+{
+"name": "Haldensleben",
+"slug": "haldensleben",
+"lat": 52.29112,
+"lon": 11.41327
+},
+{
+"name": "Harbke",
+"slug": "harbke",
+"lat": 52.18776,
+"lon": 11.04831
+},
+{
+"name": "Hohe Börde",
+"slug": "hohe-boerde",
+"lat": 52.22307,
+"lon": 11.43815
+},
+{
+"name": "Hötensleben",
+"slug": "hoetensleben",
+"lat": 52.12004,
+"lon": 11.07674
+},
+{
+"name": "Ingersleben",
+"slug": "ingersleben",
+"lat": 52.21439,
+"lon": 11.14192
+},
+{
+"name": "Kroppenstedt",
+"slug": "kroppenstedt",
+"lat": 51.94166,
+"lon": 11.30852
+},
+{
+"name": "Loitsche-Heinrichsberg",
+"slug": "loitsche-heinrichsberg",
+"lat": 52.2732,
+"lon": 11.73546
+},
+{
+"name": "Niedere Börde",
+"slug": "niedere-boerde",
+"lat": 52.25589,
+"lon": 11.54798
+},
+{
+"name": "Oebisfelde-Weferlingen",
+"slug": "oebisfelde-weferlingen",
+"lat": 52.4295,
+"lon": 10.98726
+},
+{
+"name": "Oschersleben (Bode)",
+"slug": "oschersleben-bode",
+"lat": 52.02665,
+"lon": 11.22778
+},
+{
+"name": "Rogätz",
+"slug": "rogaetz",
+"lat": 52.31538,
+"lon": 11.7675
+},
+{
+"name": "Sommersdorf",
+"slug": "sommersdorf",
+"lat": 52.2,
+"lon": 11.1167
+},
+{
+"name": "Sülzetal",
+"slug": "suelzetal",
+"lat": 51.9983,
+"lon": 11.53063
+},
+{
+"name": "Ummendorf",
+"slug": "ummendorf",
+"lat": 52.15716,
+"lon": 11.18026
+},
+{
+"name": "Völpke",
+"slug": "voelpke",
+"lat": 52.14636,
+"lon": 11.12521
+},
+{
+"name": "Wanzleben-Börde",
+"slug": "wanzleben-boerde",
+"lat": 52.05929,
+"lon": 11.4432
+},
+{
+"name": "Wefensleben",
+"slug": "wefensleben",
+"lat": 52.19481,
+"lon": 11.15649
+},
+{
+"name": "Westheide",
+"slug": "westheide",
+"lat": 52.37597,
+"lon": 11.4706
+},
+{
+"name": "Wolmirstedt",
+"slug": "wolmirstedt",
+"lat": 52.24849,
+"lon": 11.62674
+},
+{
+"name": "Zielitz",
+"slug": "zielitz",
+"lat": 52.30326,
+"lon": 11.66141
+}
+],
+"orte": [
+{
+"name": "Ackendorf",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Ackendorf",
+"ortsteil_slug": "ackendorf",
+"lat": 52.22307,
+"lon": 11.43815,
+"rang": 2
+},
+{
+"name": "Alikendorf",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Alikendorf",
+"ortsteil_slug": "alikendorf",
+"lat": 51.9878,
+"lon": 11.2838,
+"rang": 2
+},
+{
+"name": "Alleringersleben",
+"gemeinde": "ingersleben",
+"ortsteil": "Alleringersleben",
+"ortsteil_slug": "alleringersleben",
+"lat": 52.21439,
+"lon": 11.14192,
+"rang": 2
+},
+{
+"name": "Altbrandsleben",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Altbrandsleben",
+"ortsteil_slug": "altbrandsleben",
+"lat": 52.07341,
+"lon": 11.25099,
+"rang": 2
+},
+{
+"name": "Altenhausen",
+"gemeinde": "altenhausen",
+"ortsteil": "Altenhausen",
+"ortsteil_slug": "altenhausen",
+"lat": 52.26225,
+"lon": 11.25354,
+"rang": 2
+},
+{
+"name": "Altenweddingen",
+"gemeinde": "suelzetal",
+"ortsteil": "Altenweddingen",
+"ortsteil_slug": "altenweddingen",
+"lat": 51.9983,
+"lon": 11.53063,
+"rang": 2
+},
+{
+"name": "Ampfurth",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Ampfurth",
+"ortsteil_slug": "ampfurth",
+"lat": 52.06243,
+"lon": 11.31311,
+"rang": 2
+},
+{
+"name": "Andersleben",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Oschersleben",
+"ortsteil_slug": "oschersleben",
+"lat": 52.01634,
+"lon": 11.29931,
+"rang": 3
+},
+{
+"name": "Angern",
+"gemeinde": "angern",
+"ortsteil": "Angern",
+"ortsteil_slug": "angern",
+"lat": 52.35744,
+"lon": 11.73555,
+"rang": 2
+},
+{
+"name": "Angern-Rogätz Bahnhof",
+"gemeinde": "angern",
+"ortsteil": "Angern",
+"ortsteil_slug": "angern",
+"lat": 52.33862,
+"lon": 11.7587,
+"rang": 3
+},
+{
+"name": "Ausleben",
+"gemeinde": "ausleben",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.08953,
+"lon": 11.114,
+"rang": 2
+},
+{
+"name": "Badeleben",
+"gemeinde": "voelpke",
+"ortsteil": "Badeleben",
+"ortsteil_slug": "badeleben",
+"lat": 52.14636,
+"lon": 11.12521,
+"rang": 2
+},
+{
+"name": "Bahnhof Loitsche",
+"gemeinde": "loitsche-heinrichsberg",
+"ortsteil": "Loitsche",
+"ortsteil_slug": "loitsche",
+"lat": 52.3135,
+"lon": 11.70781,
+"rang": 3
+},
+{
+"name": "Bahrendorf",
+"gemeinde": "suelzetal",
+"ortsteil": "Bahrendorf",
+"ortsteil_slug": "bahrendorf",
+"lat": 51.99934,
+"lon": 11.55763,
+"rang": 2
+},
+{
+"name": "Barleben",
+"gemeinde": "barleben",
+"ortsteil": "Barleben",
+"ortsteil_slug": "barleben",
+"lat": 52.20074,
+"lon": 11.62036,
+"rang": 2
+},
+{
+"name": "Barneberg",
+"gemeinde": "hoetensleben",
+"ortsteil": "Barneberg",
+"ortsteil_slug": "barneberg",
+"lat": 52.12004,
+"lon": 11.07674,
+"rang": 2
+},
+{
+"name": "Bebertal",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Bebertal",
+"ortsteil_slug": "bebertal",
+"lat": 52.24206,
+"lon": 11.34588,
+"rang": 2
+},
+{
+"name": "Beckendorf",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Beckendorf-Neindorf",
+"ortsteil_slug": "beckendorf-neindorf",
+"lat": 52.09269,
+"lon": 11.15728,
+"rang": 2
+},
+{
+"name": "Beendorf",
+"gemeinde": "beendorf",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.24342,
+"lon": 11.08672,
+"rang": 2
+},
+{
+"name": "Behnsdorf",
+"gemeinde": "flechtingen",
+"ortsteil": "Behnsdorf",
+"ortsteil_slug": "behnsdorf",
+"lat": 52.31468,
+"lon": 11.15096,
+"rang": 2
+},
+{
+"name": "Belsdorf",
+"gemeinde": "wefensleben",
+"ortsteil": "Belsdorf",
+"ortsteil_slug": "belsdorf",
+"lat": 52.19481,
+"lon": 11.15649,
+"rang": 2
+},
+{
+"name": "Belsdorf",
+"gemeinde": "flechtingen",
+"ortsteil": "Belsdorf",
+"ortsteil_slug": "belsdorf",
+"lat": 52.34115,
+"lon": 11.14967,
+"rang": 2
+},
+{
+"name": "Berenbrock",
+"gemeinde": "calvoerde",
+"ortsteil": "Berenbrock",
+"ortsteil_slug": "berenbrock",
+"lat": 52.41983,
+"lon": 11.30866,
+"rang": 2
+},
+{
+"name": "Bergen",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Groß Rodensleben",
+"ortsteil_slug": "gross-rodensleben",
+"lat": 52.11088,
+"lon": 11.36476,
+"rang": 3
+},
+{
+"name": "Bergfriede",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Bergfriede",
+"ortsteil_slug": "bergfriede",
+"lat": 52.45116,
+"lon": 11.06654,
+"rang": 2
+},
+{
+"name": "Bertingen",
+"gemeinde": "angern",
+"ortsteil": "Bertingen",
+"ortsteil_slug": "bertingen",
+"lat": 52.34971,
+"lon": 11.83522,
+"rang": 2
+},
+{
+"name": "Bischofswald",
+"gemeinde": "altenhausen",
+"ortsteil": "Ivenrode",
+"ortsteil_slug": "ivenrode",
+"lat": 52.27513,
+"lon": 11.20036,
+"rang": 3
+},
+{
+"name": "Bleiche",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Bleiche",
+"ortsteil_slug": "bleiche",
+"lat": 52.25589,
+"lon": 11.54798,
+"rang": 2
+},
+{
+"name": "Blumenberg",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Wanzleben",
+"ortsteil_slug": "wanzleben",
+"lat": 52.03187,
+"lon": 11.45968,
+"rang": 2
+},
+{
+"name": "Bodendorf",
+"gemeinde": "haldensleben",
+"ortsteil": "Süplingen",
+"ortsteil_slug": "sueplingen",
+"lat": 52.28565,
+"lon": 11.28972,
+"rang": 2
+},
+{
+"name": "Born",
+"gemeinde": "westheide",
+"ortsteil": "Born",
+"ortsteil_slug": "born",
+"lat": 52.37597,
+"lon": 11.4706,
+"rang": 2
+},
+{
+"name": "Bornstedt",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Bornstedt",
+"ortsteil_slug": "bornstedt",
+"lat": 52.18087,
+"lon": 11.35892,
+"rang": 2
+},
+{
+"name": "Bottmersdorf",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Bottmersdorf",
+"ortsteil_slug": "bottmersdorf",
+"lat": 52.0303,
+"lon": 11.43233,
+"rang": 2
+},
+{
+"name": "Bregenstedt",
+"gemeinde": "erxleben",
+"ortsteil": "Bregenstedt",
+"ortsteil_slug": "bregenstedt",
+"lat": 52.25452,
+"lon": 11.22318,
+"rang": 2
+},
+{
+"name": "Breitenrode",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Breitenrode",
+"ortsteil_slug": "breitenrode",
+"lat": 52.45778,
+"lon": 10.97055,
+"rang": 2
+},
+{
+"name": "Brumby",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Nordgermersleben",
+"ortsteil_slug": "nordgermersleben",
+"lat": 52.20895,
+"lon": 11.29942,
+"rang": 3
+},
+{
+"name": "Buch",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Wanzleben",
+"ortsteil_slug": "wanzleben",
+"lat": 52.04967,
+"lon": 11.48627,
+"rang": 3
+},
+{
+"name": "Buchhorst",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Buchhorst",
+"ortsteil_slug": "buchhorst",
+"lat": 52.48695,
+"lon": 11.03176,
+"rang": 2
+},
+{
+"name": "Bungalowsiedlung Jersleber See",
+"gemeinde": "barleben",
+"ortsteil": "Meitzendorf",
+"ortsteil_slug": "meitzendorf",
+"lat": 52.23089,
+"lon": 11.58502,
+"rang": 3
+},
+{
+"name": "Burgstall",
+"gemeinde": "burgstall",
+"ortsteil": "Burgstall",
+"ortsteil_slug": "burgstall",
+"lat": 52.40633,
+"lon": 11.69732,
+"rang": 2
+},
+{
+"name": "Böddensell",
+"gemeinde": "flechtingen",
+"ortsteil": "Böddensell",
+"ortsteil_slug": "boeddensell",
+"lat": 52.36399,
+"lon": 11.24412,
+"rang": 2
+},
+{
+"name": "Bösdorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Bösdorf",
+"ortsteil_slug": "boesdorf",
+"lat": 52.41501,
+"lon": 11.06989,
+"rang": 2
+},
+{
+"name": "Bülstringen",
+"gemeinde": "buelstringen",
+"ortsteil": "Bülstringen",
+"ortsteil_slug": "buelstringen",
+"lat": 52.32004,
+"lon": 11.34778,
+"rang": 2
+},
+{
+"name": "Calvörde",
+"gemeinde": "calvoerde",
+"ortsteil": "Calvörde",
+"ortsteil_slug": "calvoerde",
+"lat": 52.39487,
+"lon": 11.29692,
+"rang": 2
+},
+{
+"name": "Caroline",
+"gemeinde": "hoetensleben",
+"ortsteil": "Barneberg",
+"ortsteil_slug": "barneberg",
+"lat": 52.13264,
+"lon": 11.06539,
+"rang": 3
+},
+{
+"name": "Colbitz",
+"gemeinde": "colbitz",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.31755,
+"lon": 11.6084,
+"rang": 2
+},
+{
+"name": "Cröchern",
+"gemeinde": "burgstall",
+"ortsteil": "Cröchern",
+"ortsteil_slug": "croechern",
+"lat": 52.38878,
+"lon": 11.64948,
+"rang": 2
+},
+{
+"name": "Dahlenwarsleben",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Dahlenwarsleben",
+"ortsteil_slug": "dahlenwarsleben",
+"lat": 52.19496,
+"lon": 11.54093,
+"rang": 2
+},
+{
+"name": "Dalldorf",
+"gemeinde": "groeningen",
+"ortsteil": "Dalldorf",
+"ortsteil_slug": "dalldorf",
+"lat": 51.92639,
+"lon": 11.26533,
+"rang": 2
+},
+{
+"name": "Dodendorf",
+"gemeinde": "suelzetal",
+"ortsteil": "Dodendorf",
+"ortsteil_slug": "dodendorf",
+"lat": 52.03943,
+"lon": 11.6131,
+"rang": 2
+},
+{
+"name": "Dolle",
+"gemeinde": "burgstall",
+"ortsteil": "Dolle",
+"ortsteil_slug": "dolle",
+"lat": 52.41141,
+"lon": 11.62502,
+"rang": 2
+},
+{
+"name": "Domersleben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Domersleben",
+"ortsteil_slug": "domersleben",
+"lat": 52.09204,
+"lon": 11.43606,
+"rang": 2
+},
+{
+"name": "Dorst",
+"gemeinde": "calvoerde",
+"ortsteil": "Dorst",
+"ortsteil_slug": "dorst",
+"lat": 52.37814,
+"lon": 11.38997,
+"rang": 2
+},
+{
+"name": "Drackenstedt",
+"gemeinde": "eilsleben",
+"ortsteil": "Drackenstedt",
+"ortsteil_slug": "drackenstedt",
+"lat": 52.15465,
+"lon": 11.34716,
+"rang": 2
+},
+{
+"name": "Dreileben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Dreileben",
+"ortsteil_slug": "dreileben",
+"lat": 52.12759,
+"lon": 11.33156,
+"rang": 2
+},
+{
+"name": "Druxberge",
+"gemeinde": "eilsleben",
+"ortsteil": "Druxberge",
+"ortsteil_slug": "druxberge",
+"lat": 52.15614,
+"lon": 11.31009,
+"rang": 2
+},
+{
+"name": "Döhren",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Döhren",
+"ortsteil_slug": "doehren",
+"lat": 52.341,
+"lon": 11.02022,
+"rang": 2
+},
+{
+"name": "Ebendorf",
+"gemeinde": "barleben",
+"ortsteil": "Ebendorf",
+"ortsteil_slug": "ebendorf",
+"lat": 52.18408,
+"lon": 11.57189,
+"rang": 2
+},
+{
+"name": "Eggenstedt",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Eggenstedt",
+"ortsteil_slug": "eggenstedt",
+"lat": 52.10142,
+"lon": 11.23789,
+"rang": 2
+},
+{
+"name": "Eichenbarleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Eichenbarleben",
+"ortsteil_slug": "eichenbarleben",
+"lat": 52.16585,
+"lon": 11.40227,
+"rang": 2
+},
+{
+"name": "Eickendorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Eickendorf",
+"ortsteil_slug": "eickendorf",
+"lat": 52.36761,
+"lon": 11.14166,
+"rang": 2
+},
+{
+"name": "Eilsleben",
+"gemeinde": "eilsleben",
+"ortsteil": "Eilsleben",
+"ortsteil_slug": "eilsleben",
+"lat": 52.14704,
+"lon": 11.21219,
+"rang": 1
+},
+{
+"name": "Eimersleben",
+"gemeinde": "ingersleben",
+"ortsteil": "Eimersleben",
+"ortsteil_slug": "eimersleben",
+"lat": 52.22118,
+"lon": 11.20103,
+"rang": 2
+},
+{
+"name": "Elbeu",
+"gemeinde": "wolmirstedt",
+"ortsteil": "Wolmirstedt",
+"ortsteil_slug": "wolmirstedt",
+"lat": 52.23719,
+"lon": 11.6185,
+"rang": 2
+},
+{
+"name": "Ellersell",
+"gemeinde": "buelstringen",
+"ortsteil": "Wieglitz",
+"ortsteil_slug": "wieglitz",
+"lat": 52.35034,
+"lon": 11.31754,
+"rang": 3
+},
+{
+"name": "Ellersell",
+"gemeinde": "colbitz",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.34365,
+"lon": 11.64767,
+"rang": 3
+},
+{
+"name": "Elsebeck",
+"gemeinde": "calvoerde",
+"ortsteil": "Berenbrock",
+"ortsteil_slug": "berenbrock",
+"lat": 52.42856,
+"lon": 11.30177,
+"rang": 2
+},
+{
+"name": "Emden",
+"gemeinde": "altenhausen",
+"ortsteil": "Emden",
+"ortsteil_slug": "emden",
+"lat": 52.23957,
+"lon": 11.28113,
+"rang": 2
+},
+{
+"name": "Emmeringen",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Oschersleben",
+"ortsteil_slug": "oschersleben",
+"lat": 52.04646,
+"lon": 11.25483,
+"rang": 3
+},
+{
+"name": "Erxleben",
+"gemeinde": "erxleben",
+"ortsteil": "Erxleben",
+"ortsteil_slug": "erxleben",
+"lat": 52.21944,
+"lon": 11.24252,
+"rang": 2
+},
+{
+"name": "Eschenrode",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Eschenrode",
+"ortsteil_slug": "eschenrode",
+"lat": 52.28467,
+"lon": 11.11515,
+"rang": 2
+},
+{
+"name": "Etingen",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Etingen",
+"ortsteil_slug": "etingen",
+"lat": 52.39413,
+"lon": 11.16772,
+"rang": 2
+},
+{
+"name": "Everingen",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Everingen",
+"ortsteil_slug": "everingen",
+"lat": 52.36777,
+"lon": 11.09572,
+"rang": 2
+},
+{
+"name": "Farsleben",
+"gemeinde": "wolmirstedt",
+"ortsteil": "Farsleben",
+"ortsteil_slug": "farsleben",
+"lat": 52.27583,
+"lon": 11.65512,
+"rang": 2
+},
+{
+"name": "Flechtingen",
+"gemeinde": "flechtingen",
+"ortsteil": "Flechtingen",
+"ortsteil_slug": "flechtingen",
+"lat": 52.33214,
+"lon": 11.23945,
+"rang": 2
+},
+{
+"name": "Gehrendorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Gehrendorf",
+"ortsteil_slug": "gehrendorf",
+"lat": 52.39813,
+"lon": 11.02788,
+"rang": 2
+},
+{
+"name": "Gehringsdorf",
+"gemeinde": "eilsleben",
+"ortsteil": "Wormsdorf",
+"ortsteil_slug": "wormsdorf",
+"lat": 52.11479,
+"lon": 11.20054,
+"rang": 2
+},
+{
+"name": "Gersdorf",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Dahlenwarsleben",
+"ortsteil_slug": "dahlenwarsleben",
+"lat": 52.19311,
+"lon": 11.51367,
+"rang": 2
+},
+{
+"name": "Glindenberg",
+"gemeinde": "wolmirstedt",
+"ortsteil": "Glindenberg",
+"ortsteil_slug": "glindenberg",
+"lat": 52.24139,
+"lon": 11.68231,
+"rang": 2
+},
+{
+"name": "Glüsig",
+"gemeinde": "haldensleben",
+"ortsteil": "Haldensleben",
+"ortsteil_slug": "haldensleben",
+"lat": 52.23981,
+"lon": 11.44459,
+"rang": 3
+},
+{
+"name": "Grauingen",
+"gemeinde": "calvoerde",
+"ortsteil": "Grauingen",
+"ortsteil_slug": "grauingen",
+"lat": 52.37716,
+"lon": 11.21361,
+"rang": 2
+},
+{
+"name": "Groppendorf",
+"gemeinde": "erxleben",
+"ortsteil": "Hakenstedt",
+"ortsteil_slug": "hakenstedt",
+"lat": 52.18651,
+"lon": 11.2948,
+"rang": 2
+},
+{
+"name": "Groß Ammensleben",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Groß Ammensleben",
+"ortsteil_slug": "gross-ammensleben",
+"lat": 52.23282,
+"lon": 11.52223,
+"rang": 2
+},
+{
+"name": "Groß Bartensleben",
+"gemeinde": "erxleben",
+"ortsteil": "Bartensleben",
+"ortsteil_slug": "bartensleben",
+"lat": 52.24141,
+"lon": 11.10785,
+"rang": 2
+},
+{
+"name": "Groß Germersleben",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Groß Germersleben",
+"ortsteil_slug": "gross-germersleben",
+"lat": 52.00334,
+"lon": 11.36727,
+"rang": 2
+},
+{
+"name": "Groß Rodensleben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Groß Rodensleben",
+"ortsteil_slug": "gross-rodensleben",
+"lat": 52.12138,
+"lon": 11.38552,
+"rang": 2
+},
+{
+"name": "Groß Santersleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Groß Santersleben",
+"ortsteil_slug": "gross-santersleben",
+"lat": 52.19177,
+"lon": 11.45815,
+"rang": 2
+},
+{
+"name": "Großalsleben",
+"gemeinde": "groeningen",
+"ortsteil": "Großalsleben",
+"ortsteil_slug": "grossalsleben",
+"lat": 51.98103,
+"lon": 11.22537,
+"rang": 2
+},
+{
+"name": "Gröningen",
+"gemeinde": "groeningen",
+"ortsteil": "Gröningen",
+"ortsteil_slug": "groeningen",
+"lat": 51.93637,
+"lon": 11.21663,
+"rang": 1
+},
+{
+"name": "Gunsleben",
+"gemeinde": "am-grossen-bruch",
+"ortsteil": "Gunsleben",
+"ortsteil_slug": "gunsleben",
+"lat": 52.05036,
+"lon": 11.03326,
+"rang": 2
+},
+{
+"name": "Gut Detzel",
+"gemeinde": "haldensleben",
+"ortsteil": "Satuelle",
+"ortsteil_slug": "satuelle",
+"lat": 52.3192,
+"lon": 11.37993,
+"rang": 3
+},
+{
+"name": "Gutenswegen",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Gutenswegen",
+"ortsteil_slug": "gutenswegen",
+"lat": 52.22998,
+"lon": 11.49469,
+"rang": 2
+},
+{
+"name": "Günthersdorf",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Oschersleben",
+"ortsteil_slug": "oschersleben",
+"lat": 52.00398,
+"lon": 11.25781,
+"rang": 3
+},
+{
+"name": "Hadmersleben",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Hadmersleben",
+"ortsteil_slug": "hadmersleben",
+"lat": 51.99303,
+"lon": 11.30758,
+"rang": 2
+},
+{
+"name": "Hakenstedt",
+"gemeinde": "erxleben",
+"ortsteil": "Hakenstedt",
+"ortsteil_slug": "hakenstedt",
+"lat": 52.18081,
+"lon": 11.26443,
+"rang": 2
+},
+{
+"name": "Haldensleben",
+"gemeinde": "haldensleben",
+"ortsteil": "Haldensleben",
+"ortsteil_slug": "haldensleben",
+"lat": 52.29112,
+"lon": 11.41327,
+"rang": 1
+},
+{
+"name": "Hamersleben",
+"gemeinde": "am-grossen-bruch",
+"ortsteil": "Hamersleben",
+"ortsteil_slug": "hamersleben",
+"lat": 52.06292,
+"lon": 11.08331,
+"rang": 2
+},
+{
+"name": "Harbke",
+"gemeinde": "harbke",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.18776,
+"lon": 11.04831,
+"rang": 2
+},
+{
+"name": "Harbke Autobahn",
+"gemeinde": "harbke",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.21527,
+"lon": 11.07083,
+"rang": 3
+},
+{
+"name": "Hasselburg",
+"gemeinde": "flechtingen",
+"ortsteil": "Hasselburg",
+"ortsteil_slug": "hasselburg",
+"lat": 52.32547,
+"lon": 11.26663,
+"rang": 2
+},
+{
+"name": "Heinrichsberg",
+"gemeinde": "loitsche-heinrichsberg",
+"ortsteil": "Heinrichsberg",
+"ortsteil_slug": "heinrichsberg",
+"lat": 52.2732,
+"lon": 11.73546,
+"rang": 2
+},
+{
+"name": "Heinrichshorst",
+"gemeinde": "rogaetz",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.34299,
+"lon": 11.70724,
+"rang": 3
+},
+{
+"name": "Hemsdorf",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Groß Rodensleben",
+"ortsteil_slug": "gross-rodensleben",
+"lat": 52.1375,
+"lon": 11.39573,
+"rang": 2
+},
+{
+"name": "Hermsdorf",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Hermsdorf",
+"ortsteil_slug": "hermsdorf",
+"lat": 52.18331,
+"lon": 11.48329,
+"rang": 2
+},
+{
+"name": "Heynburg",
+"gemeinde": "groeningen",
+"ortsteil": "Gröningen",
+"ortsteil_slug": "groeningen",
+"lat": 51.94009,
+"lon": 11.25347,
+"rang": 3
+},
+{
+"name": "Hilgesdorf",
+"gemeinde": "flechtingen",
+"ortsteil": "Flechtingen",
+"ortsteil_slug": "flechtingen",
+"lat": 52.30029,
+"lon": 11.21668,
+"rang": 2
+},
+{
+"name": "Hillersleben",
+"gemeinde": "westheide",
+"ortsteil": "Hillersleben",
+"ortsteil_slug": "hillersleben",
+"lat": 52.27257,
+"lon": 11.49331,
+"rang": 2
+},
+{
+"name": "Hillersleben-Siedlung",
+"gemeinde": "westheide",
+"ortsteil": "Hillersleben",
+"ortsteil_slug": "hillersleben",
+"lat": 52.28421,
+"lon": 11.4757,
+"rang": 2
+},
+{
+"name": "Hohendodeleben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Hohendodeleben",
+"ortsteil_slug": "hohendodeleben",
+"lat": 52.10419,
+"lon": 11.5051,
+"rang": 2
+},
+{
+"name": "Hohenwarsleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Hohenwarsleben",
+"ortsteil_slug": "hohenwarsleben",
+"lat": 52.17752,
+"lon": 11.50201,
+"rang": 2
+},
+{
+"name": "Hordorf",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Hordorf",
+"ortsteil_slug": "hordorf",
+"lat": 51.99619,
+"lon": 11.19654,
+"rang": 2
+},
+{
+"name": "Hornhausen",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Hornhausen",
+"ortsteil_slug": "hornhausen",
+"lat": 52.04491,
+"lon": 11.17,
+"rang": 2
+},
+{
+"name": "Hundisburg",
+"gemeinde": "haldensleben",
+"ortsteil": "Hundisburg",
+"ortsteil_slug": "hundisburg",
+"lat": 52.24672,
+"lon": 11.40012,
+"rang": 2
+},
+{
+"name": "Hödingen",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Hödingen",
+"ortsteil_slug": "hoedingen",
+"lat": 52.30228,
+"lon": 11.10102,
+"rang": 2
+},
+{
+"name": "Hörsingen",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Hörsingen",
+"ortsteil_slug": "hoersingen",
+"lat": 52.27825,
+"lon": 11.15489,
+"rang": 2
+},
+{
+"name": "Hötensleben",
+"gemeinde": "hoetensleben",
+"ortsteil": "Hötensleben",
+"ortsteil_slug": "hoetensleben",
+"lat": 52.12065,
+"lon": 11.0202,
+"rang": 2
+},
+{
+"name": "Hütten",
+"gemeinde": "haldensleben",
+"ortsteil": "Haldensleben",
+"ortsteil_slug": "haldensleben",
+"lat": 52.35429,
+"lon": 11.46513,
+"rang": 3
+},
+{
+"name": "Irxleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Irxleben",
+"ortsteil_slug": "irxleben",
+"lat": 52.16643,
+"lon": 11.48288,
+"rang": 2
+},
+{
+"name": "Ivenrode",
+"gemeinde": "altenhausen",
+"ortsteil": "Ivenrode",
+"ortsteil_slug": "ivenrode",
+"lat": 52.27327,
+"lon": 11.23158,
+"rang": 2
+},
+{
+"name": "Jakobsberg",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Oschersleben",
+"ortsteil_slug": "oschersleben",
+"lat": 52.05658,
+"lon": 11.19662,
+"rang": 3
+},
+{
+"name": "Jakobsberg Siedlung",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Oschersleben",
+"ortsteil_slug": "oschersleben",
+"lat": 52.05294,
+"lon": 11.2079,
+"rang": 3
+},
+{
+"name": "Jersleben",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Jersleben",
+"ortsteil_slug": "jersleben",
+"lat": 52.24328,
+"lon": 11.57953,
+"rang": 2
+},
+{
+"name": "Johannenhof",
+"gemeinde": "angern",
+"ortsteil": "Angern",
+"ortsteil_slug": "angern",
+"lat": 52.33694,
+"lon": 11.76017,
+"rang": 3
+},
+{
+"name": "Jägerstieg",
+"gemeinde": "colbitz",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.31662,
+"lon": 11.56774,
+"rang": 3
+},
+{
+"name": "Kalksandsteinwerk",
+"gemeinde": "calvoerde",
+"ortsteil": "Calvörde",
+"ortsteil_slug": "calvoerde",
+"lat": 52.39115,
+"lon": 11.26921,
+"rang": 3
+},
+{
+"name": "Kathendorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Kathendorf",
+"ortsteil_slug": "kathendorf",
+"lat": 52.39754,
+"lon": 11.13522,
+"rang": 2
+},
+{
+"name": "Kauzleben",
+"gemeinde": "hoetensleben",
+"ortsteil": "Hötensleben",
+"ortsteil_slug": "hoetensleben",
+"lat": 52.10467,
+"lon": 11.0538,
+"rang": 3
+},
+{
+"name": "Keindorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Etingen",
+"ortsteil_slug": "etingen",
+"lat": 52.40691,
+"lon": 11.19531,
+"rang": 3
+},
+{
+"name": "Klausort",
+"gemeinde": "haldensleben",
+"ortsteil": "Haldensleben",
+"ortsteil_slug": "haldensleben",
+"lat": 52.27402,
+"lon": 11.38151,
+"rang": 3
+},
+{
+"name": "Klein Ammensleben",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Klein Ammensleben",
+"ortsteil_slug": "klein-ammensleben",
+"lat": 52.2167,
+"lon": 11.5167,
+"rang": 2
+},
+{
+"name": "Klein Bartensleben",
+"gemeinde": "erxleben",
+"ortsteil": "Bartensleben",
+"ortsteil_slug": "bartensleben",
+"lat": 52.24052,
+"lon": 11.13531,
+"rang": 2
+},
+{
+"name": "Klein Germersleben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Bottmersdorf",
+"ortsteil_slug": "bottmersdorf",
+"lat": 52.01818,
+"lon": 11.40467,
+"rang": 2
+},
+{
+"name": "Klein Oschersleben",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Klein Oschersleben",
+"ortsteil_slug": "klein-oschersleben",
+"lat": 52.01072,
+"lon": 11.34174,
+"rang": 2
+},
+{
+"name": "Klein Rodensleben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Klein Rodensleben",
+"ortsteil_slug": "klein-rodensleben",
+"lat": 52.11673,
+"lon": 11.43821,
+"rang": 2
+},
+{
+"name": "Klein Rottmersleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Rottmersleben",
+"ortsteil_slug": "rottmersleben",
+"lat": 52.21541,
+"lon": 11.37604,
+"rang": 3
+},
+{
+"name": "Klein Sandbeiendorf",
+"gemeinde": "burgstall",
+"ortsteil": "Sandbeiendorf",
+"ortsteil_slug": "sandbeiendorf",
+"lat": 52.38405,
+"lon": 11.68055,
+"rang": 3
+},
+{
+"name": "Kleinalsleben",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Kleinalsleben",
+"ortsteil_slug": "kleinalsleben",
+"lat": 51.98278,
+"lon": 11.25883,
+"rang": 2
+},
+{
+"name": "Klinze",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Klinze",
+"ortsteil_slug": "klinze",
+"lat": 52.34781,
+"lon": 11.1225,
+"rang": 2
+},
+{
+"name": "Kloster Gröningen",
+"gemeinde": "groeningen",
+"ortsteil": "Gröningen",
+"ortsteil_slug": "groeningen",
+"lat": 51.93736,
+"lon": 11.19683,
+"rang": 2
+},
+{
+"name": "Klüden",
+"gemeinde": "calvoerde",
+"ortsteil": "Klüden",
+"ortsteil_slug": "klueden",
+"lat": 52.40852,
+"lon": 11.39911,
+"rang": 2
+},
+{
+"name": "Kolonie Mannhausen",
+"gemeinde": "calvoerde",
+"ortsteil": "Mannhausen",
+"ortsteil_slug": "mannhausen",
+"lat": 52.4271,
+"lon": 11.19296,
+"rang": 3
+},
+{
+"name": "Kolonie Wassensdorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Buchhorst",
+"ortsteil_slug": "buchhorst",
+"lat": 52.49727,
+"lon": 11.02621,
+"rang": 3
+},
+{
+"name": "Kroppenstedt",
+"gemeinde": "kroppenstedt",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 51.94166,
+"lon": 11.30852,
+"rang": 2
+},
+{
+"name": "Krottorf",
+"gemeinde": "groeningen",
+"ortsteil": "Krottorf",
+"ortsteil_slug": "krottorf",
+"lat": 51.97719,
+"lon": 11.17688,
+"rang": 2
+},
+{
+"name": "Langenweddingen",
+"gemeinde": "suelzetal",
+"ortsteil": "Langenweddingen",
+"ortsteil_slug": "langenweddingen",
+"lat": 52.03591,
+"lon": 11.52596,
+"rang": 2
+},
+{
+"name": "Lemsell",
+"gemeinde": "flechtingen",
+"ortsteil": "Hasselburg",
+"ortsteil_slug": "hasselburg",
+"lat": 52.32458,
+"lon": 11.28087,
+"rang": 2
+},
+{
+"name": "Lindhorst",
+"gemeinde": "colbitz",
+"ortsteil": "Lindhorst",
+"ortsteil_slug": "lindhorst",
+"lat": 52.30285,
+"lon": 11.59693,
+"rang": 2
+},
+{
+"name": "Lockstedt",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Lockstedt",
+"ortsteil_slug": "lockstedt",
+"lat": 52.38399,
+"lon": 11.06585,
+"rang": 2
+},
+{
+"name": "Loitsche",
+"gemeinde": "loitsche-heinrichsberg",
+"ortsteil": "Loitsche",
+"ortsteil_slug": "loitsche",
+"lat": 52.29695,
+"lon": 11.69965,
+"rang": 2
+},
+{
+"name": "Lössewitz",
+"gemeinde": "calvoerde",
+"ortsteil": "Berenbrock",
+"ortsteil_slug": "berenbrock",
+"lat": 52.40906,
+"lon": 11.33039,
+"rang": 2
+},
+{
+"name": "Mahlwinkel",
+"gemeinde": "angern",
+"ortsteil": "Mahlwinkel",
+"ortsteil_slug": "mahlwinkel",
+"lat": 52.39414,
+"lon": 11.78575,
+"rang": 2
+},
+{
+"name": "Mammendorf",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Eichenbarleben",
+"ortsteil_slug": "eichenbarleben",
+"lat": 52.17578,
+"lon": 11.42823,
+"rang": 2
+},
+{
+"name": "Mannhausen",
+"gemeinde": "calvoerde",
+"ortsteil": "Mannhausen",
+"ortsteil_slug": "mannhausen",
+"lat": 52.4171,
+"lon": 11.2242,
+"rang": 2
+},
+{
+"name": "Marienborn",
+"gemeinde": "sommersdorf",
+"ortsteil": "Marienborn",
+"ortsteil_slug": "marienborn",
+"lat": 52.2,
+"lon": 11.1167,
+"rang": 2
+},
+{
+"name": "Maschenhorst",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Etingen",
+"ortsteil_slug": "etingen",
+"lat": 52.37498,
+"lon": 11.167,
+"rang": 3
+},
+{
+"name": "Meitzendorf",
+"gemeinde": "barleben",
+"ortsteil": "Meitzendorf",
+"ortsteil_slug": "meitzendorf",
+"lat": 52.21105,
+"lon": 11.56216,
+"rang": 2
+},
+{
+"name": "Meseberg",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Meseberg",
+"ortsteil_slug": "meseberg",
+"lat": 52.27243,
+"lon": 11.52787,
+"rang": 2
+},
+{
+"name": "Meyendorf",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Remkersleben",
+"ortsteil_slug": "remkersleben",
+"lat": 52.08822,
+"lon": 11.33115,
+"rang": 3
+},
+{
+"name": "Morsleben",
+"gemeinde": "ingersleben",
+"ortsteil": "Morsleben",
+"ortsteil_slug": "morsleben",
+"lat": 52.2192,
+"lon": 11.10905,
+"rang": 2
+},
+{
+"name": "Mose",
+"gemeinde": "wolmirstedt",
+"ortsteil": "Mose",
+"ortsteil_slug": "mose",
+"lat": 52.2759,
+"lon": 11.62828,
+"rang": 2
+},
+{
+"name": "Neindorf",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Beckendorf-Neindorf",
+"ortsteil_slug": "beckendorf-neindorf",
+"lat": 52.06493,
+"lon": 11.19042,
+"rang": 2
+},
+{
+"name": "Neu Ummendorf",
+"gemeinde": "ummendorf",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.17173,
+"lon": 11.21103,
+"rang": 3
+},
+{
+"name": "Neubau",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Peseckendorf",
+"ortsteil_slug": "peseckendorf",
+"lat": 52.04029,
+"lon": 11.34809,
+"rang": 3
+},
+{
+"name": "Neubau",
+"gemeinde": "hoetensleben",
+"ortsteil": "Hötensleben",
+"ortsteil_slug": "hoetensleben",
+"lat": 52.09285,
+"lon": 11.04569,
+"rang": 3
+},
+{
+"name": "Neubrandsleben",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Oschersleben",
+"ortsteil_slug": "oschersleben",
+"lat": 52.05845,
+"lon": 11.22726,
+"rang": 3
+},
+{
+"name": "Neudamm",
+"gemeinde": "am-grossen-bruch",
+"ortsteil": "Neuwegersleben",
+"ortsteil_slug": "neuwegersleben",
+"lat": 52.02784,
+"lon": 11.09342,
+"rang": 3
+},
+{
+"name": "Neuenhofe",
+"gemeinde": "westheide",
+"ortsteil": "Neuenhofe",
+"ortsteil_slug": "neuenhofe",
+"lat": 52.30359,
+"lon": 11.46217,
+"rang": 2
+},
+{
+"name": "Neuwegersleben",
+"gemeinde": "am-grossen-bruch",
+"ortsteil": "Neuwegersleben",
+"ortsteil_slug": "neuwegersleben",
+"lat": 52.04057,
+"lon": 11.09542,
+"rang": 2
+},
+{
+"name": "Niederndodeleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Niederndodeleben",
+"ortsteil_slug": "niederndodeleben",
+"lat": 52.13535,
+"lon": 11.50151,
+"rang": 2
+},
+{
+"name": "Niendorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Niendorf",
+"ortsteil_slug": "niendorf",
+"lat": 52.44579,
+"lon": 11.05269,
+"rang": 2
+},
+{
+"name": "Nordgermersleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Nordgermersleben",
+"ortsteil_slug": "nordgermersleben",
+"lat": 52.21036,
+"lon": 11.33784,
+"rang": 2
+},
+{
+"name": "Ochtmersleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Ochtmersleben",
+"ortsteil_slug": "ochtmersleben",
+"lat": 52.15658,
+"lon": 11.40788,
+"rang": 2
+},
+{
+"name": "Oebisfelde",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Oebisfelde",
+"ortsteil_slug": "oebisfelde",
+"lat": 52.4295,
+"lon": 10.98726,
+"rang": 1
+},
+{
+"name": "Ohrsleben",
+"gemeinde": "hoetensleben",
+"ortsteil": "Ohrsleben",
+"ortsteil_slug": "ohrsleben",
+"lat": 52.09135,
+"lon": 10.98847,
+"rang": 2
+},
+{
+"name": "Oschersleben (Bode)",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Oschersleben",
+"ortsteil_slug": "oschersleben",
+"lat": 52.02665,
+"lon": 11.22778,
+"rang": 1
+},
+{
+"name": "Osterweddingen",
+"gemeinde": "suelzetal",
+"ortsteil": "Osterweddingen",
+"ortsteil_slug": "osterweddingen",
+"lat": 52.04323,
+"lon": 11.58029,
+"rang": 2
+},
+{
+"name": "Ostingersleben",
+"gemeinde": "ingersleben",
+"ortsteil": "Ostingersleben",
+"ortsteil_slug": "ostingersleben",
+"lat": 52.21081,
+"lon": 11.16996,
+"rang": 2
+},
+{
+"name": "Ottleben",
+"gemeinde": "ausleben",
+"ortsteil": "Ottleben",
+"ortsteil_slug": "ottleben",
+"lat": 52.08538,
+"lon": 11.12229,
+"rang": 2
+},
+{
+"name": "Ovelgünne",
+"gemeinde": "eilsleben",
+"ortsteil": "Ovelgünne",
+"ortsteil_slug": "ovelguenne",
+"lat": 52.14426,
+"lon": 11.27259,
+"rang": 2
+},
+{
+"name": "Peseckendorf",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Peseckendorf",
+"ortsteil_slug": "peseckendorf",
+"lat": 52.02351,
+"lon": 11.32221,
+"rang": 2
+},
+{
+"name": "Piplockenburg",
+"gemeinde": "calvoerde",
+"ortsteil": "Mannhausen",
+"ortsteil_slug": "mannhausen",
+"lat": 52.42316,
+"lon": 11.19277,
+"rang": 3
+},
+{
+"name": "Ramstedt",
+"gemeinde": "loitsche-heinrichsberg",
+"ortsteil": "Loitsche",
+"ortsteil_slug": "loitsche",
+"lat": 52.31958,
+"lon": 11.67911,
+"rang": 3
+},
+{
+"name": "Remkersleben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Remkersleben",
+"ortsteil_slug": "remkersleben",
+"lat": 52.08829,
+"lon": 11.35295,
+"rang": 2
+},
+{
+"name": "Ribbensdorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Siestedt",
+"ortsteil_slug": "siestedt",
+"lat": 52.32672,
+"lon": 11.10367,
+"rang": 2
+},
+{
+"name": "Rogätz",
+"gemeinde": "rogaetz",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.31538,
+"lon": 11.7675,
+"rang": 2
+},
+{
+"name": "Rottmersleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Rottmersleben",
+"ortsteil_slug": "rottmersleben",
+"lat": 52.21304,
+"lon": 11.39938,
+"rang": 2
+},
+{
+"name": "Rätzlingen",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Rätzlingen",
+"ortsteil_slug": "raetzlingen",
+"lat": 52.4009,
+"lon": 11.11402,
+"rang": 2
+},
+{
+"name": "Samswegen",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Samswegen",
+"ortsteil_slug": "samswegen",
+"lat": 52.25988,
+"lon": 11.5646,
+"rang": 2
+},
+{
+"name": "Sandbeiendorf",
+"gemeinde": "burgstall",
+"ortsteil": "Sandbeiendorf",
+"ortsteil_slug": "sandbeiendorf",
+"lat": 52.39513,
+"lon": 11.71923,
+"rang": 2
+},
+{
+"name": "Sandkrug",
+"gemeinde": "angern",
+"ortsteil": "Bertingen",
+"ortsteil_slug": "bertingen",
+"lat": 52.35454,
+"lon": 11.78789,
+"rang": 3
+},
+{
+"name": "Satuelle",
+"gemeinde": "haldensleben",
+"ortsteil": "Satuelle",
+"ortsteil_slug": "satuelle",
+"lat": 52.33506,
+"lon": 11.38238,
+"rang": 2
+},
+{
+"name": "Schackensleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Schackensleben",
+"ortsteil_slug": "schackensleben",
+"lat": 52.19637,
+"lon": 11.41913,
+"rang": 2
+},
+{
+"name": "Schermcke",
+"gemeinde": "oschersleben-bode",
+"ortsteil": "Schermcke",
+"ortsteil_slug": "schermcke",
+"lat": 52.05584,
+"lon": 11.28992,
+"rang": 2
+},
+{
+"name": "Schleibnitz",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Wanzleben",
+"ortsteil_slug": "wanzleben",
+"lat": 52.0756,
+"lon": 11.48533,
+"rang": 2
+},
+{
+"name": "Schricke",
+"gemeinde": "zielitz",
+"ortsteil": "Schricke",
+"ortsteil_slug": "schricke",
+"lat": 52.30326,
+"lon": 11.66141,
+"rang": 2
+},
+{
+"name": "Schwaneberg",
+"gemeinde": "suelzetal",
+"ortsteil": "Schwaneberg",
+"ortsteil_slug": "schwaneberg",
+"lat": 51.99716,
+"lon": 11.47175,
+"rang": 2
+},
+{
+"name": "Schwanefeld",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Schwanefeld",
+"ortsteil_slug": "schwanefeld",
+"lat": 52.26457,
+"lon": 11.09218,
+"rang": 2
+},
+{
+"name": "Schwarzer Pfuhl",
+"gemeinde": "buelstringen",
+"ortsteil": "Bülstringen",
+"ortsteil_slug": "buelstringen",
+"lat": 52.33138,
+"lon": 11.33198,
+"rang": 3
+},
+{
+"name": "Seehausen",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Seehausen",
+"ortsteil_slug": "seehausen",
+"lat": 52.10121,
+"lon": 11.29394,
+"rang": 2
+},
+{
+"name": "Seggerde",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Seggerde",
+"ortsteil_slug": "seggerde",
+"lat": 52.34616,
+"lon": 11.08028,
+"rang": 2
+},
+{
+"name": "Siedlung",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Oebisfelde",
+"ortsteil_slug": "oebisfelde",
+"lat": 52.42069,
+"lon": 11.01492,
+"rang": 3
+},
+{
+"name": "Siedlung",
+"gemeinde": "burgstall",
+"ortsteil": "Dolle",
+"ortsteil_slug": "dolle",
+"lat": 52.40345,
+"lon": 11.61691,
+"rang": 3
+},
+{
+"name": "Siegersleben",
+"gemeinde": "eilsleben",
+"ortsteil": "Ovelgünne",
+"ortsteil_slug": "ovelguenne",
+"lat": 52.133,
+"lon": 11.25995,
+"rang": 2
+},
+{
+"name": "Siestedt",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Siestedt",
+"ortsteil_slug": "siestedt",
+"lat": 52.31794,
+"lon": 11.09225,
+"rang": 2
+},
+{
+"name": "Sommerschenburg",
+"gemeinde": "sommersdorf",
+"ortsteil": "Sommersdorf",
+"ortsteil_slug": "sommersdorf",
+"lat": 52.17455,
+"lon": 11.10461,
+"rang": 2
+},
+{
+"name": "Sommersdorf",
+"gemeinde": "sommersdorf",
+"ortsteil": "Sommersdorf",
+"ortsteil_slug": "sommersdorf",
+"lat": 52.16662,
+"lon": 11.08185,
+"rang": 2
+},
+{
+"name": "Stadt Frankfurt",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Wanzleben",
+"ortsteil_slug": "wanzleben",
+"lat": 52.03526,
+"lon": 11.39206,
+"rang": 3
+},
+{
+"name": "Stemmern",
+"gemeinde": "suelzetal",
+"ortsteil": "Bahrendorf",
+"ortsteil_slug": "bahrendorf",
+"lat": 51.99676,
+"lon": 11.57174,
+"rang": 2
+},
+{
+"name": "Sülldorf",
+"gemeinde": "suelzetal",
+"ortsteil": "Sülldorf",
+"ortsteil_slug": "suelldorf",
+"lat": 52.02453,
+"lon": 11.56146,
+"rang": 2
+},
+{
+"name": "Süplingen",
+"gemeinde": "haldensleben",
+"ortsteil": "Süplingen",
+"ortsteil_slug": "sueplingen",
+"lat": 52.2872,
+"lon": 11.32669,
+"rang": 2
+},
+{
+"name": "Tundersleben",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Nordgermersleben",
+"ortsteil_slug": "nordgermersleben",
+"lat": 52.19243,
+"lon": 11.33456,
+"rang": 2
+},
+{
+"name": "Uhrsleben",
+"gemeinde": "erxleben",
+"ortsteil": "Uhrsleben",
+"ortsteil_slug": "uhrsleben",
+"lat": 52.20072,
+"lon": 11.26381,
+"rang": 2
+},
+{
+"name": "Ummendorf",
+"gemeinde": "ummendorf",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.15716,
+"lon": 11.18026,
+"rang": 2
+},
+{
+"name": "Uthmöden",
+"gemeinde": "haldensleben",
+"ortsteil": "Uthmöden",
+"ortsteil_slug": "uthmoeden",
+"lat": 52.35116,
+"lon": 11.35521,
+"rang": 2
+},
+{
+"name": "Vahldorf",
+"gemeinde": "niedere-boerde",
+"ortsteil": "Vahldorf",
+"ortsteil_slug": "vahldorf",
+"lat": 52.25601,
+"lon": 11.50022,
+"rang": 2
+},
+{
+"name": "Velsdorf",
+"gemeinde": "calvoerde",
+"ortsteil": "Velsdorf",
+"ortsteil_slug": "velsdorf",
+"lat": 52.40779,
+"lon": 11.2466,
+"rang": 2
+},
+{
+"name": "Vorwerk Eimersleben",
+"gemeinde": "ingersleben",
+"ortsteil": "Eimersleben",
+"ortsteil_slug": "eimersleben",
+"lat": 52.1943,
+"lon": 11.2103,
+"rang": 3
+},
+{
+"name": "Völpke",
+"gemeinde": "voelpke",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.13915,
+"lon": 11.10288,
+"rang": 2
+},
+{
+"name": "Wackersleben",
+"gemeinde": "hoetensleben",
+"ortsteil": "Wackersleben",
+"ortsteil_slug": "wackersleben",
+"lat": 52.0699,
+"lon": 11.0179,
+"rang": 2
+},
+{
+"name": "Walbeck",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Walbeck",
+"ortsteil_slug": "walbeck",
+"lat": 52.28108,
+"lon": 11.06479,
+"rang": 2
+},
+{
+"name": "Wanzleben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Wanzleben",
+"ortsteil_slug": "wanzleben",
+"lat": 52.05929,
+"lon": 11.4432,
+"rang": 1
+},
+{
+"name": "Warsleben",
+"gemeinde": "ausleben",
+"ortsteil": "Warsleben",
+"ortsteil_slug": "warsleben",
+"lat": 52.09859,
+"lon": 11.11876,
+"rang": 2
+},
+{
+"name": "Wassensdorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Wassensdorf",
+"ortsteil_slug": "wassensdorf",
+"lat": 52.44909,
+"lon": 10.99819,
+"rang": 2
+},
+{
+"name": "Weddendorf",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Weddendorf",
+"ortsteil_slug": "weddendorf",
+"lat": 52.43782,
+"lon": 11.01634,
+"rang": 2
+},
+{
+"name": "Wedringen",
+"gemeinde": "haldensleben",
+"ortsteil": "Wedringen",
+"ortsteil_slug": "wedringen",
+"lat": 52.27271,
+"lon": 11.46546,
+"rang": 2
+},
+{
+"name": "Wefensleben",
+"gemeinde": "wefensleben",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.17953,
+"lon": 11.15744,
+"rang": 2
+},
+{
+"name": "Weferlingen",
+"gemeinde": "oebisfelde-weferlingen",
+"ortsteil": "Weferlingen",
+"ortsteil_slug": "weferlingen",
+"lat": 52.31446,
+"lon": 11.05497,
+"rang": 2
+},
+{
+"name": "Wegenstedt",
+"gemeinde": "calvoerde",
+"ortsteil": "Wegenstedt",
+"ortsteil_slug": "wegenstedt",
+"lat": 52.38733,
+"lon": 11.19987,
+"rang": 2
+},
+{
+"name": "Wellen",
+"gemeinde": "hohe-boerde",
+"ortsteil": "Wellen",
+"ortsteil_slug": "wellen",
+"lat": 52.14682,
+"lon": 11.44076,
+"rang": 2
+},
+{
+"name": "Wenddorf",
+"gemeinde": "angern",
+"ortsteil": "Wenddorf",
+"ortsteil_slug": "wenddorf",
+"lat": 52.38289,
+"lon": 11.744,
+"rang": 2
+},
+{
+"name": "Wieglitz",
+"gemeinde": "buelstringen",
+"ortsteil": "Wieglitz",
+"ortsteil_slug": "wieglitz",
+"lat": 52.35734,
+"lon": 11.32207,
+"rang": 2
+},
+{
+"name": "Wiesental",
+"gemeinde": "rogaetz",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.33951,
+"lon": 11.78008,
+"rang": 3
+},
+{
+"name": "Wolfshausen",
+"gemeinde": "haldensleben",
+"ortsteil": "Hundisburg",
+"ortsteil_slug": "hundisburg",
+"lat": 52.26314,
+"lon": 11.36862,
+"rang": 3
+},
+{
+"name": "Wolmirstedt",
+"gemeinde": "wolmirstedt",
+"ortsteil": "Wolmirstedt",
+"ortsteil_slug": "wolmirstedt",
+"lat": 52.24849,
+"lon": 11.62674,
+"rang": 1
+},
+{
+"name": "Wormsdorf",
+"gemeinde": "eilsleben",
+"ortsteil": "Wormsdorf",
+"ortsteil_slug": "wormsdorf",
+"lat": 52.13309,
+"lon": 11.19405,
+"rang": 2
+},
+{
+"name": "Wulferstedt",
+"gemeinde": "am-grossen-bruch",
+"ortsteil": "Wulferstedt",
+"ortsteil_slug": "wulferstedt",
+"lat": 52.01867,
+"lon": 11.13099,
+"rang": 2
+},
+{
+"name": "Zielitz",
+"gemeinde": "zielitz",
+"ortsteil": "",
+"ortsteil_slug": "",
+"lat": 52.28845,
+"lon": 11.67525,
+"rang": 2
+},
+{
+"name": "Zobbenitz",
+"gemeinde": "calvoerde",
+"ortsteil": "Zobbenitz",
+"ortsteil_slug": "zobbenitz",
+"lat": 52.40462,
+"lon": 11.36789,
+"rang": 2
+},
+{
+"name": "Zuckerdorf Klein Wanzleben",
+"gemeinde": "wanzleben-boerde",
+"ortsteil": "Zuckerdorf Klein Wanzleben",
+"ortsteil_slug": "zuckerdorf-klein-wanzleben",
+"lat": 52.06997,
+"lon": 11.36372,
+"rang": 2
+},
+{
+"name": "Üplingen",
+"gemeinde": "ausleben",
+"ortsteil": "Üplingen",
+"ortsteil_slug": "ueplingen",
+"lat": 52.1177,
+"lon": 11.13801,
+"rang": 2
+}
+]
+}

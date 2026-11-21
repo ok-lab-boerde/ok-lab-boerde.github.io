@@ -1,0 +1,314 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen Zielitz
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:vp-2797291@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261121T193000
+SUMMARY:Rock 'n' Roll im Kristallpalast -- ACHTUNG! Termin geändert vom 07
+ .11.2026 -- Tickets? Klicken Sie hier -- Komödie von Sigrid Vorpahl\, Mus
+ ik D. Hörold
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797291/2026/11/21/rock-n-rol
+ l-im-kristallpalast-achtung-termin-geaendert-vom-07.11.2026-tickets-klicke
+ n-sie-hier-komoedie-von-sigrid-vorpahl-musik-d.-hoerold
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797291/2026/11/21/rock-n-roll-im-kristallpalast-achtung-termin-ge
+ aendert-vom-07.11.2026-tickets-klicken-sie-hier-komoedie-von-sigrid-vorpah
+ l-musik-d.-hoerold
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2786890@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261123T150000
+SUMMARY:Lesenachmittag für junggebliebene Frohnaturen
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2786890/2026/11/23/lesenachmi
+ ttag-fuer-junggebliebene-frohnaturen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2786890/2026/11/23/lesenachmittag-fuer-junggebliebene-frohnaturen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2996362@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261124T153000
+SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2996362/2026/11/24/lesenachmi
+ ttag-fuer-kinder-mit-kaffeeklatsch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2996362/2026/11/24/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2973418@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261125T184500
+SUMMARY:Frauengesprächskreis Thema: Wechseljahre - Zwischen Abschied und A
+ ufbruch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2973418/2026/11/25/frauengesp
+ raechskreis-thema-wechseljahre-zwischen-abschied-und-aufbruch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2973418/2026/11/25/frauengespraechskreis-thema-wechseljahre-zwisch
+ en-abschied-und-aufbruch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2985243@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T150000
+SUMMARY:5. Zielitzer Adventszauber
+LOCATION:Gemeinde Zielitz
+URL:https://www.elbe-heide.de/veranstaltungen/2985243/2026/11/28/5.-zielitz
+ er-adventszauber
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2985243/2026/11/28/5.-zielitzer-adventszauber
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797294@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261129T103000
+SUMMARY:Der gestiefelte Kater Tickets? Klicken Sie hier -- Märchenkomödie
+  von Sigrid Vorpahl nach Grimm
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797294/2026/11/29/der-gestie
+ felte-kater-tickets-klicken-sie-hier-maerchenkomoedie-von-sigrid-vorpahl-n
+ ach-grimm
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797294/2026/11/29/der-gestiefelte-kater-tickets-klicken-sie-hier-
+ maerchenkomoedie-von-sigrid-vorpahl-nach-grimm
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2985246@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261129T170000
+SUMMARY:Lebendiger Adventskalender
+LOCATION:Ortsfeuerwehr Schricke
+URL:https://www.elbe-heide.de/veranstaltungen/2985246/2026/11/29/lebendiger
+ -adventskalender
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2985246/2026/11/29/lebendiger-adventskalender
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2998616@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261201T170000
+SUMMARY:Beatyauszeit "Mary Kay" mit Yvonne Heinemann
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2998616/2026/12/01/beatyausze
+ it-mary-kay-mit-yvonne-heinemann
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2998616/2026/12/01/beatyauszeit-mary-kay-mit-yvonne-heinemann
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2987362@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261204T180000
+SUMMARY:Vortrag in Bildern: Vom ersten Marathon bis nach New York – mit 8
+ 0 Jahren noch am Start
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2987362/2026/12/04/vortrag-in
+ -bildern-vom-ersten-marathon-bis-nach-new-york--mit-80-jahren-noch-am-star
+ t
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2987362/2026/12/04/vortrag-in-bildern-vom-ersten-marathon-bis-nach
+ -new-york--mit-80-jahren-noch-am-start
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2904879@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T103000
+SUMMARY:AUSVERKAUFT! - 7 Geißlein allein zu Haus -- Tickets? Klicken Sie h
+ ier -- Märchenspiel von Sigrid Vorpahl nach Grimm
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2904879/2026/12/06/ausverkauf
+ t-7-geisslein-allein-zu-haus-tickets-klicken-sie-hier-maerchenspiel-von-si
+ grid-vorpahl-nach-grimm
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2904879/2026/12/06/ausverkauft-7-geisslein-allein-zu-haus-tickets-
+ klicken-sie-hier-maerchenspiel-von-sigrid-vorpahl-nach-grimm
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2921561@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261207T170000
+SUMMARY:Bürgermeister-Sprechstunde
+LOCATION:Büro des Bürgermeisters in Zielitz\,   Ramstedter Straße 26 (2.
+  OG links)
+URL:https://www.elbe-heide.de/veranstaltungen/2921561/2026/12/07/buergermei
+ ster-sprechstunde
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2921561/2026/12/07/buergermeister-sprechstunde
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797298@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261208T103000
+SUMMARY:7 Geißlein allein zu Haus -- Nur für Schulklassen -- Anmeldung bi
+ s 15.10.2026 unter info@holzhaustheater.de -- Märchenspiel von Sigrid Vor
+ pahl nach Grimm
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797298/2026/12/08/7-geisslei
+ n-allein-zu-haus-nur-fuer-schulklassen-anmeldung-bis-15.10.2026-unter-info
+ holzhaustheater.de-maerchenspiel-von-sigrid-vorpahl-nach-grimm
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797298/2026/12/08/7-geisslein-allein-zu-haus-nur-fuer-schulklasse
+ n-anmeldung-bis-15.10.2026-unter-infoholzhaustheater.de-maerchenspiel-von-
+ sigrid-vorpahl-nach-grimm
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2996363@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261208T153000
+SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2996363/2026/12/08/lesenachmi
+ ttag-fuer-kinder-mit-kaffeeklatsch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2996363/2026/12/08/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797296@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261212T190000
+SUMMARY:Das Gespenst von Canterville - romantischer Theaterspuk von Sigrid 
+ Vorpahl nach der Erzählung von Oscar Wilde eingerichtet für Schwarzes Th
+ eater\, Musik D. Hörold
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797296/2026/12/12/das-gespen
+ st-von-canterville-romantischer-theaterspuk-von-sigrid-vorpahl-nach-der-er
+ zaehlung-von-oscar-wilde-eingerichtet-fuer-schwarzes-theater-musik-d.-hoer
+ old
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797296/2026/12/12/das-gespenst-von-canterville-romantischer-theat
+ erspuk-von-sigrid-vorpahl-nach-der-erzaehlung-von-oscar-wilde-eingerichtet
+ -fuer-schwarzes-theater-musik-d.-hoerold
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2833728@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261214T150000
+SUMMARY:Lesenachmittag für junggebliebene Frohnaturen
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2833728/2026/12/14/lesenachmi
+ ttag-fuer-junggebliebene-frohnaturen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2833728/2026/12/14/lesenachmittag-fuer-junggebliebene-frohnaturen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2949420@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261216T164500
+SUMMARY:Yoga - gemischter Kurs für Neueinsteiger und Geübte
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2949420/2026/12/16/yoga-gemis
+ chter-kurs-fuer-neueinsteiger-und-geuebte
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2949420/2026/12/16/yoga-gemischter-kurs-fuer-neueinsteiger-und-geu
+ ebte
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797297@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261220T103000
+SUMMARY:Dornröschen - ganz schön ausgeschlafen - Tickets? Klicken Sie hie
+ r -- Märchenkomödie von Sigrid Vorpahl nach Grimm
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797297/2026/12/20/dornroesch
+ en-ganz-schoen-ausgeschlafen-tickets-klicken-sie-hier-maerchenkomoedie-von
+ -sigrid-vorpahl-nach-grimm
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797297/2026/12/20/dornroeschen-ganz-schoen-ausgeschlafen-tickets-
+ klicken-sie-hier-maerchenkomoedie-von-sigrid-vorpahl-nach-grimm
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2883405@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261222T153000
+SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2883405/2026/12/22/lesenachmi
+ ttag-fuer-kinder-mit-kaffeeklatsch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2883405/2026/12/22/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2904883@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261231T183000
+SUMMARY:Das Gespenst von Canterville - romantischer Theaterspuk von Sigrid 
+ Vorpahl nach der Erzählung von Oscar Wilde eingerichtet für Schwarzes Th
+ eater\, Musik D. Hörold
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2904883/2026/12/31/das-gespen
+ st-von-canterville-romantischer-theaterspuk-von-sigrid-vorpahl-nach-der-er
+ zaehlung-von-oscar-wilde-eingerichtet-fuer-schwarzes-theater-musik-d.-hoer
+ old
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2904883/2026/12/31/das-gespenst-von-canterville-romantischer-theat
+ erspuk-von-sigrid-vorpahl-nach-der-erzaehlung-von-oscar-wilde-eingerichtet
+ -fuer-schwarzes-theater-musik-d.-hoerold
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2996369@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270112T153000
+SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2996369/2027/01/12/lesenachmi
+ ttag-fuer-kinder-mit-kaffeeklatsch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2996369/2027/01/12/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3011033@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270117T103000
+SUMMARY:Bei der Feuerwehr wird der Kaffee kalt -- Tickets? Klicken Sie hier
+  -- Schauspiel nach dem Buch von Hannes Hüttner gespielt von Kindern für
+  Kinder ab 4 Jahren
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/3011033/2027/01/17/bei-der-fe
+ uerwehr-wird-der-kaffee-kalt-tickets-klicken-sie-hier-schauspiel-nach-dem-
+ buch-von-hannes-huettner-gespielt-von-kindern-fuer-kinder-ab-4-jahren
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3011033/2027/01/17/bei-der-feuerwehr-wird-der-kaffee-kalt-tickets-
+ klicken-sie-hier-schauspiel-nach-dem-buch-von-hannes-huettner-gespielt-von
+ -kindern-fuer-kinder-ab-4-jahren
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2916833@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270122T190000
+SUMMARY:Konzert mit "Melankomiker" Jürgen Denkewitz als "Schlimmer Schlawi
+ ner"
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2916833/2027/01/22/konzert-mi
+ t-melankomiker-juergen-denkewitz-als-schlimmer-schlawiner
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2916833/2027/01/22/konzert-mit-melankomiker-juergen-denkewitz-als-
+ schlimmer-schlawiner
+END:VEVENT
+END:VCALENDAR

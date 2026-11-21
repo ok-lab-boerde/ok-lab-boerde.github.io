@@ -1,0 +1,50 @@
+name: Veranstaltungen aktualisieren
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # täglich, 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veranstaltungen
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache Detailseiten
+        uses: actions/cache@v4
+        with:
+          path: scripts/veranstaltungen/.cache
+          key: veranstaltungen-${{ github.run_id }}
+          restore-keys: veranstaltungen-
+
+      - name: Termine laden
+        run: python scripts/veranstaltungen/fetch.py
+
+      - name: Kalender erzeugen
+        run: python scripts/veranstaltungen/build.py
+
+      - name: Änderungen committen
+        run: |
+          git add -A veranstaltungen
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Veranstaltungen aktualisieren ($(date -u +%Y-%m-%d))"
+          git pull --rebase
+          git push

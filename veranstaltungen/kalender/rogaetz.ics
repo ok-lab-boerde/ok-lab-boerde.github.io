@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen Rogätz
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:vp-3003600@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Rogätzer Adventsmarkt
+LOCATION:Marktplatz am Klutturm\, Rogätz
+URL:https://www.elbe-heide.de/veranstaltungen/3003600/2026/11/28/rogaetzer-
+ adventsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3003600/2026/11/28/rogaetzer-adventsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002729@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T180000
+SUMMARY:Lebendiger Adventskalender am Tintenfass
+LOCATION:Heimat- und Kulturfreunde Rogätz e. V.
+URL:https://www.elbe-heide.de/veranstaltungen/3002729/2026/12/06/lebendiger
+ -adventskalender-am-tintenfass
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3002729/2026/12/06/lebendiger-adventskalender-am-tintenfass
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,1664 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen im Landkreis Börde
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:vp-2877986@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Aufstellen Weihnachtsbaum
+LOCATION:Förderverein "Gersdorfer Kessel/Niedere Börde" e.V.\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/2877986/2026/11/21/aufste
+ llen-weihnachtsbaum
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2877986/2026/11/21/aufstellen-weihnachtsbaum
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2976949@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Weihnachtsbasteln
+LOCATION:Förderverein "Gersdorfer Kessel/Niedere Börde" e.V.\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/2976949/2026/11/21/weihna
+ chtsbasteln
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2976949/2026/11/21/weihnachtsbasteln
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3010015@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261121T180000
+SUMMARY:Gewichtheben
+LOCATION:Sporthalle\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3010015/2026/11/21/gewich
+ theben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3010015/2026/11/21/gewichtheben
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weinabend-5@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261121T190000
+DTEND;TZID=Europe/Berlin:20261121T220000
+SUMMARY:Weinabend
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weinabend-5
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weinabend-5
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797291@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261121T193000
+SUMMARY:Rock 'n' Roll im Kristallpalast -- ACHTUNG! Termin geändert vom 07
+ .11.2026 -- Tickets? Klicken Sie hier -- Komödie von Sigrid Vorpahl\, Mus
+ ik D. Hörold
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797291/2026/11/21/rock-n-rol
+ l-im-kristallpalast-achtung-termin-geaendert-vom-07.11.2026-tickets-klicke
+ n-sie-hier-komoedie-von-sigrid-vorpahl-musik-d.-hoerold
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797291/2026/11/21/rock-n-roll-im-kristallpalast-achtung-termin-ge
+ aendert-vom-07.11.2026-tickets-klicken-sie-hier-komoedie-von-sigrid-vorpah
+ l-musik-d.-hoerold
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-freaky-music-disko@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261121T200000
+DTEND;TZID=Europe/Berlin:20261122T020000
+SUMMARY:Freaky-Music-Disko
+LOCATION:Hotel und Restaurant La Porte\, Im Wald 3 39517 Bertingen / Gemein
+ de Angern
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ freaky-music-disko
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/freaky-music-disko
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2786890@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261123T150000
+SUMMARY:Lesenachmittag für junggebliebene Frohnaturen
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2786890/2026/11/23/lesenachmi
+ ttag-fuer-junggebliebene-frohnaturen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2786890/2026/11/23/lesenachmittag-fuer-junggebliebene-frohnaturen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2998488@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261123T170000
+SUMMARY:Samsweger Adventsglühen
+LOCATION:Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2998488/2026/11/23/samswe
+ ger-adventsgluehen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2998488/2026/11/23/samsweger-adventsgluehen
+END:VEVENT
+BEGIN:VEVENT
+UID:si-4992@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261123T190000
+SUMMARY:Sitzung: Finanzausschuss
+LOCATION:Stadt Wanzleben\, Rathauskeller\, Markt 1-2
+URL:https://ratsinfo.kitu-genossenschaft.de/wzl_bi/si0057.asp?__ksinr=4992
+DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
+ ossenschaft.de/wzl_bi/si0057.asp?__ksinr=4992
+END:VEVENT
+BEGIN:VEVENT
+UID:si-4920@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261123T193000
+SUMMARY:Sitzung: Ortschaftsrat Remkersleben
+LOCATION:Remkersleben\, Bürgerhaus\, Lange Hauptstr. 17
+URL:https://ratsinfo.kitu-genossenschaft.de/wzl_bi/si0057.asp?__ksinr=4920
+DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
+ ossenschaft.de/wzl_bi/si0057.asp?__ksinr=4920
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2996362@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261124T153000
+SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2996362/2026/11/24/lesenachmi
+ ttag-fuer-kinder-mit-kaffeeklatsch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2996362/2026/11/24/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
+END:VEVENT
+BEGIN:VEVENT
+UID:si-5074@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261124T190000
+SUMMARY:Sitzung: Hauptausschuss
+LOCATION:Stadt Wanzleben\, Rathauskeller\, Markt 1-2
+URL:https://ratsinfo.kitu-genossenschaft.de/wzl_bi/si0057.asp?__ksinr=5074
+DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
+ ossenschaft.de/wzl_bi/si0057.asp?__ksinr=5074
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2990901@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261125T143000
+SUMMARY:Rentnerweihnachtsfeier - Samswegen
+LOCATION:Gasthof "Zum Krug"\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2990901/2026/11/25/rentne
+ rweihnachtsfeier-samswegen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2990901/2026/11/25/rentnerweihnachtsfeier-samswegen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2973418@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261125T184500
+SUMMARY:Frauengesprächskreis Thema: Wechseljahre - Zwischen Abschied und A
+ ufbruch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2973418/2026/11/25/frauengesp
+ raechskreis-thema-wechseljahre-zwischen-abschied-und-aufbruch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2973418/2026/11/25/frauengespraechskreis-thema-wechseljahre-zwisch
+ en-abschied-und-aufbruch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2971920@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261126T170000
+SUMMARY:Ehrenamtstag
+LOCATION:Domäne 4\, 39326 Niedere Börde OT Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2971920/2026/11/26/ehrena
+ mtstag
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2971920/2026/11/26/ehrenamtstag
+END:VEVENT
+BEGIN:VEVENT
+UID:si-4926@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261126T193000
+SUMMARY:Sitzung: Ortschaftsrat Klein Rodensleben
+LOCATION:Klein Rodensleben\, Beratungsraum Kindertagesstätte\, Domersleben
+ er Str.11
+URL:https://ratsinfo.kitu-genossenschaft.de/wzl_bi/si0057.asp?__ksinr=4926
+DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
+ ossenschaft.de/wzl_bi/si0057.asp?__ksinr=4926
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-11-27t14-00-familienfest-weihnachtsbasar@ok-lab-boerde.github.i
+ o
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261127T140000
+DTEND;TZID=Europe/Berlin:20261127T180000
+SUMMARY:Familienfest / Weihnachtsbasar
+LOCATION:Lebenshilfe OstfahlenSeehausen\, Wanzleben-Börde
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-festliches-weihnachtskonzert@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261127T193000
+DTEND;TZID=Europe/Berlin:20261127T210000
+SUMMARY:Festliches Weihnachtskonzert
+LOCATION:Schloss Hundisburg\, Schloss 1 39343 Hundisburg / Einheitsgemeinde
+  Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ festliches-weihnachtskonzert
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/festliches-weihnachtskonzert
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003600@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Rogätzer Adventsmarkt
+LOCATION:Marktplatz am Klutturm\, Rogätz
+URL:https://www.elbe-heide.de/veranstaltungen/3003600/2026/11/28/rogaetzer-
+ adventsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3003600/2026/11/28/rogaetzer-adventsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2990928@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261130
+SUMMARY:Weihnachtsmarkt der Gemeinde Ummendorf
+LOCATION:Gemeinde Ummendorf
+URL:https://www.obere-aller.de/veranstaltungen/2990928/2026/11/28/weihnacht
+ smarkt-der-gemeinde-ummendorf
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2990928/2026/11/28/weihnachtsmarkt-der-gemeinde-ummendorf
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-11-28-weihnachtsmarkt-in-domersleben@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Weihnachtsmarkt in Domersleben
+LOCATION:Schafstall\, Krugberg 13\, Domersleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2888325@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T110000
+SUMMARY:Adventsmarkt
+LOCATION:Camping- und Erlebnisresort am Jersleber See\, Jersleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2888325/2026/11/28/advent
+ smarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2888325/2026/11/28/adventsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2858334@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T110000
+SUMMARY:Weihnachtsmarkt
+LOCATION:Heinemanns Hof\, Ummendorf
+URL:https://www.obere-aller.de/veranstaltungen/2858334/2026/11/28/weihnacht
+ smarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2858334/2026/11/28/weihnachtsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2968457@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T110000
+SUMMARY:Weihnachtsmarkt auf dem Schlosshof
+LOCATION:Schloss & Schlosshof\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2968457/2026/11/28/weihnacht
+ smarkt-auf-dem-schlosshof
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2968457/2026/11/28/weihnachtsmarkt-auf-dem-schlosshof
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmarkt-in-ummendorf@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T110000
+DTEND;TZID=Europe/Berlin:20261129T170000
+SUMMARY:Weihnachtsmarkt in Ummendorf
+LOCATION:Börde-Museum Burg Ummendorf\, Meyendorffstr. 4 39365 Gemeinde Umm
+ endorf
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmarkt-in-ummendorf
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmarkt-in-ummendorf
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-11-28t12-00-eisbeinessen-feuerwehr-wanzleben@ok-lab-boerde.gith
+ ub.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T120000
+DTEND;TZID=Europe/Berlin:20261128T140000
+SUMMARY:Eisbeinessen Feuerwehr Wanzleben
+LOCATION:Wanzleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-11-28t14-00-weihnachtsmarkt-klein-rodensleben@ok-lab-boerde.git
+ hub.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T140000
+DTEND;TZID=Europe/Berlin:20261128T213000
+SUMMARY:Weihnachtsmarkt Klein Rodensleben
+LOCATION:Bauernende 1 – ehem. Gelände Gaststätte zur Kastanie\, Klein R
+ odensleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-11-28t14-00-weihnachtsmarkt-seehausen@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T140000
+DTEND;TZID=Europe/Berlin:20261128T210000
+SUMMARY:Weihnachtsmarkt Seehausen
+LOCATION:Friedensplatz\, Seehausen
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2985243@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T150000
+SUMMARY:5. Zielitzer Adventszauber
+LOCATION:Gemeinde Zielitz
+URL:https://www.elbe-heide.de/veranstaltungen/2985243/2026/11/28/5.-zielitz
+ er-adventszauber
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2985243/2026/11/28/5.-zielitzer-adventszauber
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2850806@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T150000
+SUMMARY:Advent an der Kirche
+LOCATION:Kirche\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2850806/2026/11/28/advent
+ -an-der-kirche
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2850806/2026/11/28/advent-an-der-kirche
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmarkt-an-der-burgruine@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T180000
+DTEND;TZID=Europe/Berlin:20261129T120000
+SUMMARY:Weihnachtsmarkt an der Burgruine
+LOCATION:An der Burgruine\, Gutshof 4 39356 Weferlingen\, Flecken / Einheit
+ sgemeinde Oebisfelde-Weferlingen\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmarkt-an-der-burgruine
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmarkt-an-der-burgruine
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851368@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T180000
+SUMMARY:offenes Adventssingen
+LOCATION:Kirche\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851368/2026/11/28/offene
+ s-adventssingen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851368/2026/11/28/offenes-adventssingen
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-bigband-konzert@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T193000
+DTEND;TZID=Europe/Berlin:20261129T230000
+SUMMARY:Bigband Konzert
+LOCATION:Hotel uns Restaurant La Porte\, Im Wald 3 39517 Bertingen / Gemein
+ de Angern
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ bigband-konzert
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/bigband-konzert
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2877987@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Weihnachtsmarkt
+LOCATION:Förderverein "Gersdorfer Kessel/Niedere Börde" e.V.\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/2877987/2026/11/29/weihna
+ chtsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2877987/2026/11/29/weihnachtsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797294@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261129T103000
+SUMMARY:Der gestiefelte Kater Tickets? Klicken Sie hier -- Märchenkomödie
+  von Sigrid Vorpahl nach Grimm
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797294/2026/11/29/der-gestie
+ felte-kater-tickets-klicken-sie-hier-maerchenkomoedie-von-sigrid-vorpahl-n
+ ach-grimm
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797294/2026/11/29/der-gestiefelte-kater-tickets-klicken-sie-hier-
+ maerchenkomoedie-von-sigrid-vorpahl-nach-grimm
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2815789@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261129T140000
+SUMMARY:Adventsmarkt
+LOCATION:Rund um die Kirche Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2815789/2026/11/29/advent
+ smarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2815789/2026/11/29/adventsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt@ok-la
+ b-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261129T160000
+DTEND;TZID=Europe/Berlin:20261129T170000
+SUMMARY:"Weihnachtskonzert" der Kreismusikschule Börde -Haus Wolmirstedt-
+LOCATION:St. Katharinen-Kirche Wolmirstedt\, Kirchplatz 6 39326 Einheitsgem
+ einde Wolmirstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtskonzert-der-kreismusikschul
+ e-boerde-haus-wolmirstedt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2985246@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261129T170000
+SUMMARY:Lebendiger Adventskalender
+LOCATION:Ortsfeuerwehr Schricke
+URL:https://www.elbe-heide.de/veranstaltungen/2985246/2026/11/29/lebendiger
+ -adventskalender
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2985246/2026/11/29/lebendiger-adventskalender
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2998616@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261201T170000
+SUMMARY:Beatyauszeit "Mary Kay" mit Yvonne Heinemann
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2998616/2026/12/01/beatyausze
+ it-mary-kay-mit-yvonne-heinemann
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2998616/2026/12/01/beatyauszeit-mary-kay-mit-yvonne-heinemann
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-nachts-durchs-museum-1@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261204T170000
+DTEND;TZID=Europe/Berlin:20261204T190000
+SUMMARY:Nachts durchs Museum
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ nachts-durchs-museum-1
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/nachts-durchs-museum-1
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2987362@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261204T180000
+SUMMARY:Vortrag in Bildern: Vom ersten Marathon bis nach New York – mit 8
+ 0 Jahren noch am Start
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2987362/2026/12/04/vortrag-in
+ -bildern-vom-ersten-marathon-bis-nach-new-york--mit-80-jahren-noch-am-star
+ t
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2987362/2026/12/04/vortrag-in-bildern-vom-ersten-marathon-bis-nach
+ -new-york--mit-80-jahren-noch-am-start
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2968471@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261207
+SUMMARY:Rassegeflügelausstellung
+LOCATION:Schloss & Schlosshof\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2968471/2026/12/05/rassegefl
+ uegelausstellung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2968471/2026/12/05/rassegefluegelausstellung
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmarkt-auf-schloss-hundisburg-6@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T110000
+DTEND;TZID=Europe/Berlin:20261205T180000
+SUMMARY:Weihnachtsmarkt auf Schloss Hundisburg
+LOCATION:Schloss Hundisburg\, Schloss 1 39343 Hundisburg / Einheitsgemeinde
+  Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmarkt-auf-schloss-hundisburg-6
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmarkt-auf-schloss-hundisbur
+ g-6
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-05t13-00-weihnachtsmarkt-eggenstedt@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T130000
+DTEND;TZID=Europe/Berlin:20261205T200000
+SUMMARY:Weihnachtsmarkt Eggenstedt
+LOCATION:Feuerwehrgelände\, Eggenstedt
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3008386@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T143000
+SUMMARY:Weihnachtsmarkt
+LOCATION:Heimat- und Kulturverein Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3008386/2026/12/05/weihna
+ chtsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3008386/2026/12/05/weihnachtsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851370@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T150000
+SUMMARY:Adventsmarkt
+LOCATION:Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851370/2026/12/05/advent
+ smarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851370/2026/12/05/adventsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2968467@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T150000
+SUMMARY:Rentnerweihnachtsfeier des Harbker SV Turbine e. V.
+LOCATION:Harbker SV Turbine e.V.\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2968467/2026/12/05/rentnerwe
+ ihnachtsfeier-des-harbker-sv-turbine-e.-v
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2968467/2026/12/05/rentnerweihnachtsfeier-des-harbker-sv-turbine-
+ e.-v
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-sternenmarkt-mit-eisbahn@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T150000
+DTEND;TZID=Europe/Berlin:20261219T200000
+SUMMARY:Sternenmarkt mit Eisbahn
+LOCATION:Markt\, 20:00 Markt 39340 Einheitsgemeinde Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ sternenmarkt-mit-eisbahn
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/sternenmarkt-mit-eisbahn
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt-1@ok-
+ lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T160000
+DTEND;TZID=Europe/Berlin:20261205T170000
+SUMMARY:"Weihnachtskonzert" der Kreismusikschule Börde -Haus Wolmirstedt-
+LOCATION:Musikschule Haldensleben\, Maschenpromenade 4 39340 Einheitsgemein
+ de Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt-1
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtskonzert-der-kreismusikschul
+ e-boerde-haus-wolmirstedt-1
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003409@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T180000
+SUMMARY:Weihnachtsfeier - SV Gutenswegen/Kl. Ammensleben
+LOCATION:Villa Riecke\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003409/2026/12/05/weihna
+ chtsfeier-sv-gutenswegen-kl.-ammensleben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003409/2026/12/05/weihnachtsfeier-sv-gutenswegen-kl.-ammensle
+ ben
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2904879@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T103000
+SUMMARY:AUSVERKAUFT! - 7 Geißlein allein zu Haus -- Tickets? Klicken Sie h
+ ier -- Märchenspiel von Sigrid Vorpahl nach Grimm
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2904879/2026/12/06/ausverkauf
+ t-7-geisslein-allein-zu-haus-tickets-klicken-sie-hier-maerchenspiel-von-si
+ grid-vorpahl-nach-grimm
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2904879/2026/12/06/ausverkauft-7-geisslein-allein-zu-haus-tickets-
+ klicken-sie-hier-maerchenspiel-von-sigrid-vorpahl-nach-grimm
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2904032@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T110000
+SUMMARY:Nikolausmarkt
+LOCATION:Schulplatz Eilsleben
+URL:https://www.obere-aller.de/veranstaltungen/2904032/2026/12/06/nikolausm
+ arkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2904032/2026/12/06/nikolausmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmarkt-auf-schloss-hundisburg-3@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T110000
+DTEND;TZID=Europe/Berlin:20261206T180000
+SUMMARY:Weihnachtsmarkt auf Schloss Hundisburg
+LOCATION:Schloss Hundisburg\, Schloss 1 39343 Hundisburg / Einheitsgemeinde
+  Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmarkt-auf-schloss-hundisburg-3
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmarkt-auf-schloss-hundisbur
+ g-3
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-weihnachtsmatinee-2@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T110000
+DTEND;TZID=Europe/Berlin:20261206T120000
+SUMMARY:Weihnachtsmatinee
+LOCATION:Schloss Hundisburg\, Schloss 1 39343 Hundisburg / Einheitsgemeinde
+  Haldensleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ weihnachtsmatinee-2
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/weihnachtsmatinee-2
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-adventszauber-im-museum@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T140000
+DTEND;TZID=Europe/Berlin:20261206T170000
+SUMMARY:Adventszauber im Museum
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ adventszauber-im-museum
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/adventszauber-im-museum
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-06t14-00-weihnachtsmarkt-sg-empor-kl-wanzleben@ok-lab-boerde
+ .github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T140000
+DTEND;TZID=Europe/Berlin:20261206T180000
+SUMMARY:Weihnachtsmarkt SG Empor Kl. Wanzleben
+LOCATION:Sportplatz\, Zuckerdorf Klein Wanzleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002729@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T180000
+SUMMARY:Lebendiger Adventskalender am Tintenfass
+LOCATION:Heimat- und Kulturfreunde Rogätz e. V.
+URL:https://www.elbe-heide.de/veranstaltungen/3002729/2026/12/06/lebendiger
+ -adventskalender-am-tintenfass
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3002729/2026/12/06/lebendiger-adventskalender-am-tintenfass
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2864373@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Nikolaus
+LOCATION:Kindertagesstätte "Waldhäuschen" in Burgstall
+URL:https://www.elbe-heide.de/veranstaltungen/2864373/2026/12/07/nikolaus
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2864373/2026/12/07/nikolaus
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2921561@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261207T170000
+SUMMARY:Bürgermeister-Sprechstunde
+LOCATION:Büro des Bürgermeisters in Zielitz\,   Ramstedter Straße 26 (2.
+  OG links)
+URL:https://www.elbe-heide.de/veranstaltungen/2921561/2026/12/07/buergermei
+ ster-sprechstunde
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2921561/2026/12/07/buergermeister-sprechstunde
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-beratersprechtag-fuer-unternehmen-gemeinsam-mit-der-investitionsbank
+ -sachsen-anhalt-900-bis-1200-uhr@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261208T090000
+DTEND;TZID=Europe/Berlin:20261208T120000
+SUMMARY:Beratersprechtag für Unternehmen  - gemeinsam mit der Investitions
+ bank Sachsen-Anhalt | 9:00 bis 12:00 Uhr
+LOCATION:Landkreis Börde\, Bornsche Straße 2 39340 Einheitsgemeinde Halde
+ nsleben\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ beratersprechtag-fuer-unternehmen-gemeinsam-mit-der-investitionsbank-sachs
+ en-anhalt-900-bis-1200-uhr
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/beratersprechtag-fuer-unternehmen-gem
+ einsam-mit-der-investitionsbank-sachsen-anhalt-900-bis-1200-uhr
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797298@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261208T103000
+SUMMARY:7 Geißlein allein zu Haus -- Nur für Schulklassen -- Anmeldung bi
+ s 15.10.2026 unter info@holzhaustheater.de -- Märchenspiel von Sigrid Vor
+ pahl nach Grimm
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797298/2026/12/08/7-geisslei
+ n-allein-zu-haus-nur-fuer-schulklassen-anmeldung-bis-15.10.2026-unter-info
+ holzhaustheater.de-maerchenspiel-von-sigrid-vorpahl-nach-grimm
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797298/2026/12/08/7-geisslein-allein-zu-haus-nur-fuer-schulklasse
+ n-anmeldung-bis-15.10.2026-unter-infoholzhaustheater.de-maerchenspiel-von-
+ sigrid-vorpahl-nach-grimm
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2996363@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261208T153000
+SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2996363/2026/12/08/lesenachmi
+ ttag-fuer-kinder-mit-kaffeeklatsch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2996363/2026/12/08/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-kulturcafe-9@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261209T140000
+DTEND;TZID=Europe/Berlin:20261209T160000
+SUMMARY:Kulturcafé
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ kulturcafe-9
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/kulturcafe-9
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851371@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261210T150000
+SUMMARY:Seniorenweihnachtsfeier
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2851371/2026/12/10/senior
+ enweihnachtsfeier
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851371/2026/12/10/seniorenweihnachtsfeier
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-lesung-aus-dornige-wege@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261210T190000
+DTEND;TZID=Europe/Berlin:20261210T210000
+SUMMARY:Lesung aus "Dornige Wege"
+LOCATION:Börde-Museum Burg Ummendorf\, Meyendorffstr. 4 39365 Gemeinde Umm
+ endorf
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ lesung-aus-dornige-wege
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/lesung-aus-dornige-wege
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-von-wolmirstedt-bis-ans-kaspische-meer-ein-weltbuerger-kehrt-zurueck
+ @ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261210T190000
+DTEND;TZID=Europe/Berlin:20261210T213000
+SUMMARY:Von Wolmirstedt bis ans Kaspische Meer: Ein Weltbürger kehrt zurü
+ ck
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ von-wolmirstedt-bis-ans-kaspische-meer-ein-weltbuerger-kehrt-zurueck
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/von-wolmirstedt-bis-ans-kaspische-mee
+ r-ein-weltbuerger-kehrt-zurueck
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-nachts-durchs-museum@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261211T170000
+DTEND;TZID=Europe/Berlin:20261211T190000
+SUMMARY:Nachts durchs Museum
+LOCATION:Museum Wolmirstedt\, Schlossdomäne 4 39326 Einheitsgemeinde Wolmi
+ rstedt\, Stadt
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ nachts-durchs-museum
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/nachts-durchs-museum
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2867868@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Sportlerball
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2867868/2026/12/12/sportl
+ erball
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2867868/2026/12/12/sportlerball
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003596@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Weihnachtsmarkt Heinrichsberg
+LOCATION:Dorfgemeinschaftshaus Heinrichsberg
+URL:https://www.elbe-heide.de/veranstaltungen/3003596/2026/12/12/weihnachts
+ markt-heinrichsberg
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3003596/2026/12/12/weihnachtsmarkt-heinrichsberg
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
+ m-einzigartigen-fabrikambiente@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261212T160000
+DTEND;TZID=Europe/Berlin:20261212T190000
+SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
+ im einzigartigen Fabrikambiente
+LOCATION:Goethesaal - Alte Fabrik\, Wedringer Straße 8 39340 Einheitsgemei
+ nde Haldensleben\, Stadt\, Wedringen
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-im-einz
+ igartigen-fabrikambiente
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/zauberhafte-weihnachtskonzerte-mit-an
+ na-moritz-und-christian-nolte-im-einzigartigen-fabrikambiente
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797296@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261212T190000
+SUMMARY:Das Gespenst von Canterville - romantischer Theaterspuk von Sigrid 
+ Vorpahl nach der Erzählung von Oscar Wilde eingerichtet für Schwarzes Th
+ eater\, Musik D. Hörold
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797296/2026/12/12/das-gespen
+ st-von-canterville-romantischer-theaterspuk-von-sigrid-vorpahl-nach-der-er
+ zaehlung-von-oscar-wilde-eingerichtet-fuer-schwarzes-theater-musik-d.-hoer
+ old
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797296/2026/12/12/das-gespenst-von-canterville-romantischer-theat
+ erspuk-von-sigrid-vorpahl-nach-der-erzaehlung-von-oscar-wilde-eingerichtet
+ -fuer-schwarzes-theater-musik-d.-hoerold
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-13t12-00-weihnachtsmarkt-wanzleben@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261213T120000
+DTEND;TZID=Europe/Berlin:20261213T190000
+SUMMARY:Weihnachtsmarkt Wanzleben
+LOCATION:Wanzleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
+ m-einzigartigen-fabrikambiente-2@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261213T160000
+DTEND;TZID=Europe/Berlin:20261213T190000
+SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
+ im einzigartigen Fabrikambiente
+LOCATION:Goethesaal - Alte Fabrik\, Wedringer Straße 8 39340 Einheitsgemei
+ nde Haldensleben\, Stadt\, Wedringen
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-im-einz
+ igartigen-fabrikambiente-2
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/zauberhafte-weihnachtskonzerte-mit-an
+ na-moritz-und-christian-nolte-im-einzigartigen-fabrikambiente-2
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2833728@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261214T150000
+SUMMARY:Lesenachmittag für junggebliebene Frohnaturen
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2833728/2026/12/14/lesenachmi
+ ttag-fuer-junggebliebene-frohnaturen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2833728/2026/12/14/lesenachmittag-fuer-junggebliebene-frohnaturen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2864374@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Weinachtsfeier der Kinder
+LOCATION:Kindertagesstätte "Waldhäuschen" in Burgstall
+URL:https://www.elbe-heide.de/veranstaltungen/2864374/2026/12/15/weinachtsf
+ eier-der-kinder
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2864374/2026/12/15/weinachtsfeier-der-kinder
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2949420@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261216T164500
+SUMMARY:Yoga - gemischter Kurs für Neueinsteiger und Geübte
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2949420/2026/12/16/yoga-gemis
+ chter-kurs-fuer-neueinsteiger-und-geuebte
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2949420/2026/12/16/yoga-gemischter-kurs-fuer-neueinsteiger-und-geu
+ ebte
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2815791@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261217T190000
+SUMMARY:Benefizkonzert Chor TonArt
+LOCATION:Kirche\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/2815791/2026/12/17/benefi
+ zkonzert-chor-tonart
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2815791/2026/12/17/benefizkonzert-chor-tonart
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-wintermarkt-in-la-porte@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261219T110000
+DTEND;TZID=Europe/Berlin:20261219T180000
+SUMMARY:Wintermarkt in La Porte
+LOCATION:Hotel und Restaurant La Porte\, Im Wald 3 39517 Bertingen / Gemein
+ de Angern
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ wintermarkt-in-la-porte
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/wintermarkt-in-la-porte
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2969214@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261219T143000
+SUMMARY:Weihnachtsmarkt
+LOCATION:Jersleben\, Feuerwehr/Bürgerhaus Flocke
+URL:https://www.niedere-boerde.de/veranstaltungen/2969214/2026/12/19/weihna
+ chtsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2969214/2026/12/19/weihnachtsmarkt
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
+ m-einzigartigen-fabrikambiente-1@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261219T160000
+DTEND;TZID=Europe/Berlin:20261219T190000
+SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
+ im einzigartigen Fabrikambiente
+LOCATION:Goethesaal - Alte Fabrik\, Wedringer Straße 8 39340 Einheitsgemei
+ nde Haldensleben\, Stadt\, Wedringen
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-im-einz
+ igartigen-fabrikambiente-1
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/zauberhafte-weihnachtskonzerte-mit-an
+ na-moritz-und-christian-nolte-im-einzigartigen-fabrikambiente-1
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2797297@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261220T103000
+SUMMARY:Dornröschen - ganz schön ausgeschlafen - Tickets? Klicken Sie hie
+ r -- Märchenkomödie von Sigrid Vorpahl nach Grimm
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2797297/2026/12/20/dornroesch
+ en-ganz-schoen-ausgeschlafen-tickets-klicken-sie-hier-maerchenkomoedie-von
+ -sigrid-vorpahl-nach-grimm
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2797297/2026/12/20/dornroeschen-ganz-schoen-ausgeschlafen-tickets-
+ klicken-sie-hier-maerchenkomoedie-von-sigrid-vorpahl-nach-grimm
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2990875@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261220T150000
+SUMMARY:Weihnachtskonzert
+LOCATION:Evangelische Dorfkirche 'St. Petrus' Badeleben
+URL:https://www.obere-aller.de/veranstaltungen/2990875/2026/12/20/weihnacht
+ skonzert
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2990875/2026/12/20/weihnachtskonzert
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2883405@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261222T153000
+SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2883405/2026/12/22/lesenachmi
+ ttag-fuer-kinder-mit-kaffeeklatsch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2883405/2026/12/22/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3000707@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261222T190000
+SUMMARY:Benefizkonzert Chor TonArt
+LOCATION:Kirche\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3000707/2026/12/22/benefi
+ zkonzert-chor-tonart
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3000707/2026/12/22/benefizkonzert-chor-tonart
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2877988@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Der Weihnachtsmann kommt
+LOCATION:Bushaltestelle\, Gersdorf + Eichplatz\, Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2877988/2026/12/23/der-we
+ ihnachtsmann-kommt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2877988/2026/12/23/der-weihnachtsmann-kommt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851373@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261223T170000
+SUMMARY:Baumsingen
+LOCATION:Börde-Konsum\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851373/2026/12/23/baumsi
+ ngen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851373/2026/12/23/baumsingen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851376@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261224T200000
+SUMMARY:Heiliger Abend - Christmette
+LOCATION:Kirche\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851376/2026/12/24/heilig
+ er-abend-christmette
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851376/2026/12/24/heiliger-abend-christmette
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2968473@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261225T200000
+SUMMARY:Weihnachtsdisco
+LOCATION:Kulturhaus\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2968473/2026/12/25/weihnacht
+ sdisco
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2968473/2026/12/25/weihnachtsdisco
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2904883@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261231T183000
+SUMMARY:Das Gespenst von Canterville - romantischer Theaterspuk von Sigrid 
+ Vorpahl nach der Erzählung von Oscar Wilde eingerichtet für Schwarzes Th
+ eater\, Musik D. Hörold
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2904883/2026/12/31/das-gespen
+ st-von-canterville-romantischer-theaterspuk-von-sigrid-vorpahl-nach-der-er
+ zaehlung-von-oscar-wilde-eingerichtet-fuer-schwarzes-theater-musik-d.-hoer
+ old
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2904883/2026/12/31/das-gespenst-von-canterville-romantischer-theat
+ erspuk-von-sigrid-vorpahl-nach-der-erzaehlung-von-oscar-wilde-eingerichtet
+ -fuer-schwarzes-theater-musik-d.-hoerold
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3006323@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:Sternensinger besuchen die Häuser (nur nach Voranmeldung
+LOCATION:Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3006323/2027/01/06/sterne
+ nsinger-besuchen-die-haeuser-nur-nach-voranmeldung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3006323/2027/01/06/sternensinger-besuchen-die-haeuser-nur-nach
+ -voranmeldung
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2027-01-09t17-00-knutfest-klein-rodensleben@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270109T170000
+DTEND;TZID=Europe/Berlin:20270109T230000
+SUMMARY:Knutfest Klein Rodensleben
+LOCATION:An der Feuerwehr\, Klein Rodensleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851378@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270109T170000
+SUMMARY:offenes Adventssingen/Kirchenmusik zum Abschluss der Weihnachtszeit
+LOCATION:Kirche\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851378/2027/01/09/offene
+ s-adventssingen-kirchenmusik-zum-abschluss-der-weihnachtszeit
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851378/2027/01/09/offenes-adventssingen-kirchenmusik-zum-absc
+ hluss-der-weihnachtszeit
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2991578@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270110T100000
+SUMMARY:Braunkohlwanderung
+LOCATION:Kulturhaus\, Harbke
+URL:https://www.obere-aller.de/veranstaltungen/2991578/2027/01/10/braunkohl
+ wanderung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2991578/2027/01/10/braunkohlwanderung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2996369@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270112T153000
+SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2996369/2027/01/12/lesenachmi
+ ttag-fuer-kinder-mit-kaffeeklatsch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2996369/2027/01/12/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2848223@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Weihnachtsbaumverbrennung
+LOCATION:Festwiese Klein Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2848223/2027/01/15/weihna
+ chtsbaumverbrennung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2848223/2027/01/15/weihnachtsbaumverbrennung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2851379@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270116T170000
+SUMMARY:Weihnachstbaumverbrennung
+LOCATION:Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/2851379/2027/01/16/weihna
+ chstbaumverbrennung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/2851379/2027/01/16/weihnachstbaumverbrennung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3011033@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270117T103000
+SUMMARY:Bei der Feuerwehr wird der Kaffee kalt -- Tickets? Klicken Sie hier
+  -- Schauspiel nach dem Buch von Hannes Hüttner gespielt von Kindern für
+  Kinder ab 4 Jahren
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/3011033/2027/01/17/bei-der-fe
+ uerwehr-wird-der-kaffee-kalt-tickets-klicken-sie-hier-schauspiel-nach-dem-
+ buch-von-hannes-huettner-gespielt-von-kindern-fuer-kinder-ab-4-jahren
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3011033/2027/01/17/bei-der-feuerwehr-wird-der-kaffee-kalt-tickets-
+ klicken-sie-hier-schauspiel-nach-dem-buch-von-hannes-huettner-gespielt-von
+ -kindern-fuer-kinder-ab-4-jahren
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2916833@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270122T190000
+SUMMARY:Konzert mit "Melankomiker" Jürgen Denkewitz als "Schlimmer Schlawi
+ ner"
+LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/2916833/2027/01/22/konzert-mi
+ t-melankomiker-juergen-denkewitz-als-schlimmer-schlawiner
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2916833/2027/01/22/konzert-mit-melankomiker-juergen-denkewitz-als-
+ schlimmer-schlawiner
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003372@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Fackelumzug + Wotansball
+LOCATION:Gutenswegen/Karnevalsvereinshaus
+URL:https://www.niedere-boerde.de/veranstaltungen/3003372/2027/01/23/fackel
+ umzug--wotansball
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003372/2027/01/23/fackelumzug--wotansball
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003373@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Prunksitzung
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003373/2027/01/30/prunks
+ itzung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003373/2027/01/30/prunksitzung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003375@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Seniorenkarneval
+LOCATION:Gutenswegen/Karnevalsvereinshaus
+URL:https://www.niedere-boerde.de/veranstaltungen/3003375/2027/01/31/senior
+ enkarneval
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003375/2027/01/31/seniorenkarneval
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003376@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Kostümball
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003376/2027/02/06/kostue
+ mball
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003376/2027/02/06/kostuemball
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002812@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270206T150000
+SUMMARY:MCV Kinderkarneval
+LOCATION:Turnhalle\, Meseberg
+URL:https://www.niedere-boerde.de/veranstaltungen/3002812/2027/02/06/mcv-ki
+ nderkarneval
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002812/2027/02/06/mcv-kinderkarneval
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002813@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270206T201100
+SUMMARY:MCV Karnevalsparty
+LOCATION:Turnhalle\, Meseberg
+URL:https://www.niedere-boerde.de/veranstaltungen/3002813/2027/02/06/mcv-ka
+ rnevalsparty
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002813/2027/02/06/mcv-karnevalsparty
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003378@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Kinder- und Jugendkarneval
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003378/2027/02/07/kinder
+ -und-jugendkarneval
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003378/2027/02/07/kinder-und-jugendkarneval
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003381@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Rot-Weiß-Ball
+LOCATION:Karnevalsvereinshaus\, Gutenswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3003381/2027/02/07/rot-we
+ iss-ball
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003381/2027/02/07/rot-weiss-ball
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003382@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:Rosenmontagsumzug
+LOCATION:Gutenswegen/Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003382/2027/02/08/rosenm
+ ontagsumzug
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003382/2027/02/08/rosenmontagsumzug
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2982635@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Fussball: Heidecup Reservierung 2027
+LOCATION:Abteilung Fußball
+URL:https://www.elbe-heide.de/veranstaltungen/2982635/2027/02/13/fussball-h
+ eidecup-reservierung-2027
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2982635/2027/02/13/fussball-heidecup-reservierung-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2982636@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Fussball: Heidecup Reservierung 2027
+LOCATION:Abteilung Fußball
+URL:https://www.elbe-heide.de/veranstaltungen/2982636/2027/02/20/fussball-h
+ eidecup-reservierung-2027
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2982636/2027/02/20/fussball-heidecup-reservierung-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003509@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270222
+SUMMARY:Grünkohlwanderung
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003509/2027/02/20/gruenk
+ ohlwanderung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003509/2027/02/20/gruenkohlwanderung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2982637@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Fussball: Heidecup Reservierung 2027
+LOCATION:Abteilung Fußball
+URL:https://www.elbe-heide.de/veranstaltungen/2982637/2027/02/21/fussball-h
+ eidecup-reservierung-2027
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/2982637/2027/02/21/fussball-heidecup-reservierung-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003510@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Suppenverkauf aus der Gulaschkanone
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003510/2027/03/13/suppen
+ verkauf-aus-der-gulaschkanone
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003510/2027/03/13/suppenverkauf-aus-der-gulaschkanone
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002512@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Dorfputz der Ortschaft Groß Ammensleben
+LOCATION:Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002512/2027/03/20/dorfpu
+ tz-der-ortschaft-gross-ammensleben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002512/2027/03/20/dorfputz-der-ortschaft-gross-ammensleben
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003366@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Osterbasteln
+LOCATION:Dorfgemeinschaftssaal\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003366/2027/03/20/osterb
+ asteln
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003366/2027/03/20/osterbasteln
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003512@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:Ostereier färben
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003512/2027/03/25/ostere
+ ier-faerben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003512/2027/03/25/ostereier-faerben
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003367@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:Osterfeuer
+LOCATION:Sportplatz\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003367/2027/03/25/osterf
+ euer
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003367/2027/03/25/osterfeuer
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002515@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+SUMMARY:Traditionelles Osterfeuer
+LOCATION:Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002515/2027/03/27/tradit
+ ionelles-osterfeuer
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002515/2027/03/27/traditionelles-osterfeuer
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003513@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:„Der Dreck muss weg“ - Frühjahrsputz
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003513/2027/04/24/der-dr
+ eck-muss-weg-fruehjahrsputz
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003513/2027/04/24/der-dreck-muss-weg-fruehjahrsputz
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002517@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Fackelumzug mit anschließendem Ausklang an der Gaststätte „Zur 
+ Post“
+LOCATION:Groß Ammensleben / Gaststätte „Zur Post“
+URL:https://www.niedere-boerde.de/veranstaltungen/3002517/2027/04/30/fackel
+ umzug-mit-anschliessendem-ausklang-an-der-gaststaette-zur-post
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002517/2027/04/30/fackelumzug-mit-anschliessendem-ausklang-an
+ -der-gaststaette-zur-post
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003515@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Tanz in den Mai
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003515/2027/04/30/tanz-i
+ n-den-mai
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003515/2027/04/30/tanz-in-den-mai
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002519@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Wecken durch die Schalmeienkapelle und Aufstellung des Maibaums an 
+ der Gaststätte „Zur Post“
+LOCATION:Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002519/2027/05/01/wecken
+ -durch-die-schalmeienkapelle-und-aufstellung-des-maibaums-an-der-gaststaet
+ te-zur-post
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002519/2027/05/01/wecken-durch-die-schalmeienkapelle-und-aufs
+ tellung-des-maibaums-an-der-gaststaette-zur-post
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003517@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Muttertagsbrunch
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003517/2027/05/09/mutter
+ tagsbrunch
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003517/2027/05/09/muttertagsbrunch
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003518@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+SUMMARY:Nachtflohmarkt auf den Höfen
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003518/2027/06/05/nachtf
+ lohmarkt-auf-den-hoefen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003518/2027/06/05/nachtflohmarkt-auf-den-hoefen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-2987554@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20270620T143000
+SUMMARY:Jahresfest des Ev. Kindergartens " Arche Noah"
+LOCATION:Evangelische Kirche Eilsleben
+URL:https://www.obere-aller.de/veranstaltungen/2987554/2027/06/20/jahresfes
+ t-des-ev.-kindergartens-quot-arche-noah-quot
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2987554/2027/06/20/jahresfest-des-ev.-kindergartens-quot-arche-no
+ ah-quot
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003368@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:Mittsommernachtsfest
+LOCATION:Sportplatz\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003368/2027/06/25/mittso
+ mmernachtsfest
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003368/2027/06/25/mittsommernachtsfest
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002521@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270703
+DTEND;VALUE=DATE:20270704
+SUMMARY:Fest der Vereine
+LOCATION:Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002521/2027/07/03/fest-d
+ er-vereine
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002521/2027/07/03/fest-der-vereine
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003519@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270828
+DTEND;VALUE=DATE:20270829
+SUMMARY:Sommercafé – evtl. mit der Band „Planxty Irwin“
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003519/2027/08/28/sommer
+ café--evtl.-mit-der-band-planxty-irwin
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003519/2027/08/28/sommercafé--evtl.-mit-der-band-planxty-irw
+ in
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002523@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270905
+DTEND;VALUE=DATE:20270906
+SUMMARY:Radwegfest
+LOCATION:Radwegfest zwischen Gutenswegen und Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002523/2027/09/05/radweg
+ fest
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002523/2027/09/05/radwegfest
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3002524@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270912
+DTEND;VALUE=DATE:20270913
+SUMMARY:Klostertage und Tag des offenen Denkmals Kirche / Domäne
+LOCATION:Kloster/Domäne\, Groß Ammensleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3002524/2027/09/12/kloste
+ rtage-und-tag-des-offenen-denkmals-kirche-domaene
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3002524/2027/09/12/klostertage-und-tag-des-offenen-denkmals-ki
+ rche-domaene
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003524@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20270912
+DTEND;VALUE=DATE:20270913
+SUMMARY:Tag des offenen Denkmals – Museumshof Colbitz Fahrradtour
+LOCATION:Dahlenwarsleben/Colbitz
+URL:https://www.niedere-boerde.de/veranstaltungen/3003524/2027/09/12/tag-de
+ s-offenen-denkmals--museumshof-colbitz-fahrradtour
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003524/2027/09/12/tag-des-offenen-denkmals--museumshof-colbit
+ z-fahrradtour
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003369@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20271009
+DTEND;VALUE=DATE:20271010
+SUMMARY:Erntedankfest
+LOCATION:Conertscher Hof\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003369/2027/10/09/ernted
+ ankfest
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003369/2027/10/09/erntedankfest
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003528@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20271030
+DTEND;VALUE=DATE:20271031
+SUMMARY:Spuk in den Höfen
+LOCATION:Dahlenwarsleben
+URL:https://www.niedere-boerde.de/veranstaltungen/3003528/2027/10/30/spuk-i
+ n-den-hoefen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003528/2027/10/30/spuk-in-den-hoefen
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003370@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20271120
+DTEND;VALUE=DATE:20271121
+SUMMARY:Weihnachtsbasteln
+LOCATION:Dorfgemeinschaftssaal\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003370/2027/11/20/weihna
+ chtsbasteln
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003370/2027/11/20/weihnachtsbasteln
+END:VEVENT
+END:VCALENDAR

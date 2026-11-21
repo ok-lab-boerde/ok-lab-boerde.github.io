@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OK Lab Börde//Veranstaltungen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Veranstaltungen Angern
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:lk-freaky-music-disko@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261121T200000
+DTEND;TZID=Europe/Berlin:20261122T020000
+SUMMARY:Freaky-Music-Disko
+LOCATION:Hotel und Restaurant La Porte\, Im Wald 3 39517 Bertingen / Gemein
+ de Angern
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ freaky-music-disko
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/freaky-music-disko
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-bigband-konzert@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T193000
+DTEND;TZID=Europe/Berlin:20261129T230000
+SUMMARY:Bigband Konzert
+LOCATION:Hotel uns Restaurant La Porte\, Im Wald 3 39517 Bertingen / Gemein
+ de Angern
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ bigband-konzert
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/bigband-konzert
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-wintermarkt-in-la-porte@ok-lab-boerde.github.io
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Berlin:20261219T110000
+DTEND;TZID=Europe/Berlin:20261219T180000
+SUMMARY:Wintermarkt in La Porte
+LOCATION:Hotel und Restaurant La Porte\, Im Wald 3 39517 Bertingen / Gemein
+ de Angern
+URL:https://www.landkreis-boerde.de/erleben/veranstaltungen/details/termin/
+ wintermarkt-in-la-porte
+DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
+ leben/veranstaltungen/details/termin/wintermarkt-in-la-porte
+END:VEVENT
+END:VCALENDAR

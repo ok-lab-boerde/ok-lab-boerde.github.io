@@ -123,3 +123,19 @@ table.daten.links th, table.daten.links td { text-align: left; white-space: norm
 .rk-ziel { background: none; border: 0; padding: 0; font: inherit; color: var(--blue); text-decoration: underline; cursor: pointer; }
 .aufruf.block { display: block; }
 #rk-filter label { min-width: 0; max-width: 100%; } #rk-filter select { max-width: 100%; }
+
+/* Veranstaltungen */
+.vk-liste { list-style: none; padding: 0; margin: 12px 0 32px; display: flex; flex-direction: column; gap: 10px; }
+.vk-monat h2 { margin: 18px 0 2px; font-size: 1.2rem; }
+.vk-termin { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; }
+.vk-termin h3 { margin: 2px 0; font-size: 1.05rem; overflow-wrap: anywhere; }
+.vk-termin p { margin: 2px 0; }
+.vk-zeit { font-weight: 600; color: var(--muted); font-size: .92rem; }
+.vk-ort { overflow-wrap: anywhere; }
+.vk-art { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-left: 8px; color: var(--blue); }
+.spalten { columns: 14rem; padding-left: 1.2em; }
+.termine-box .termine-liste { padding-left: 1.2em; }
+.termine-box .termine-liste li { margin: 4px 0; overflow-wrap: anywhere; }
+.termine-box .leer { list-style: none; margin-left: -1.2em; color: var(--muted); }
+#vk-filter label { min-width: 0; max-width: 100%; } #vk-filter select { max-width: 100%; }
+.url-lang { overflow-wrap: anywhere; word-break: break-all; }
