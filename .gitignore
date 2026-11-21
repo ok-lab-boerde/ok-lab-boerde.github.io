@@ -6,3 +6,5 @@ desktop.ini
 node_modules/
 .claude/
 docs/auftraege/
+scripts/orte/.cache/
+__pycache__/

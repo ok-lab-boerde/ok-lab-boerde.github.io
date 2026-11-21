@@ -1,0 +1,42 @@
+name: Betriebe- und Ortsdaten aktualisieren
+
+on:
+  schedule:
+    - cron: "41 3 * * 1"   # jeden Montag, 03:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: orte-daten
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Daten aus OpenStreetMap und VG250 laden
+        run: python scripts/orte/fetch.py
+
+      - name: Seiten erzeugen
+        run: python scripts/orte/build.py
+
+      - name: Änderungen committen
+        run: |
+          git add -A betriebe orte sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Betriebe- und Ortsdaten aktualisieren ($(date -u +%Y-%m-%d))"
+          git push

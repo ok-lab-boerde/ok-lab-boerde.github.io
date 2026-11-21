@@ -1,0 +1,64 @@
+/* Gemeinsame Stile für /betriebe/ und /orte/ (ergänzt css/style.css) */
+.orte-main { padding-bottom: 48px; }
+.krumen { font-size: .9rem; color: var(--muted); margin: 20px 0 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+.krumen a { color: var(--muted); }
+.orte-main h1 { color: var(--blue); font-size: clamp(1.7rem, 4.5vw, 2.5rem); line-height: 1.15; margin: 8px 0 4px; letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.orte-main h2 { font-size: 1.25rem; margin: 32px 0 10px; }
+.orte-main h3 { font-size: 1rem; margin: 16px 0 6px; color: var(--muted); }
+.untertitel { color: var(--muted); margin: 0 0 14px; font-weight: 500; }
+.lead { font-size: 1.05rem; max-width: 48em; }
+.klein, .zusatz, .anzahl { color: var(--muted); font-size: .9rem; }
+.anzahl { font-weight: 500; }
+.leer { color: var(--muted); font-style: italic; }
+
+.zwei { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px 28px; align-items: start; }
+
+.fakten { display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; margin: 0; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+.fakten dt { color: var(--muted); font-size: .9rem; }
+.fakten dd { margin: 0; overflow-wrap: anywhere; }
+
+.ok-karte { height: 360px; border-radius: var(--radius); border: 1px solid var(--border); z-index: 0; margin: 12px 0; }
+.leaflet-container { font: inherit; }
+
+.oz { border-collapse: collapse; min-width: 260px; }
+.oz th, .oz td { text-align: left; padding: 5px 14px 5px 0; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+.oz th { font-weight: 500; color: var(--muted); }
+.oz tr.heute th, .oz tr.heute td { font-weight: 700; color: var(--text); }
+.jetzt { font-weight: 600; margin: 0 0 8px; }
+.jetzt .auf { color: var(--green); }
+.jetzt .zu { color: var(--text); }
+
+.eintraege { list-style: none; padding: 0; margin: 0; }
+.eintraege li { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.eintraege li:last-child { border-bottom: 0; }
+.eintraege .zusatz { margin-left: 6px; }
+.spalten { columns: 3 180px; padding-left: 18px; margin: 0; }
+.spalten li { break-inside: avoid; padding: 2px 0; }
+.sprung { display: flex; flex-wrap: wrap; gap: 6px 16px; list-style: none; padding: 0; margin: 12px 0; }
+
+.kacheln { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 18px 0; }
+.kachel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; display: flex; flex-direction: column; }
+.kachel .zahl { font-size: 1.6rem; font-weight: 700; line-height: 1.2; }
+.kachel span:last-child { color: var(--muted); font-size: .9rem; }
+
+.korrektur { background: var(--wheat-soft); border-left: 5px solid var(--wheat); border-radius: 8px; padding: 6px 18px 14px; margin-top: 32px; }
+.korrektur h2 { margin-top: 12px; }
+.schritte li { margin-bottom: 6px; }
+.quelle { color: var(--muted); font-size: .9rem; margin-top: 36px; }
+
+/* Betriebe-Karte */
+.suche { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: flex-end; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin: 18px 0 12px; }
+.suche label { display: flex; flex-direction: column; font-size: .8rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; gap: 4px; }
+.suche input[type=search], .suche select { font: inherit; font-size: 1rem; text-transform: none; letter-spacing: 0; padding: 7px 9px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); min-width: 0; }
+.suche input[type=search] { width: min(320px, 100%); }
+.suche .schalter { flex-direction: row; align-items: center; gap: 8px; text-transform: none; letter-spacing: 0; font-size: .95rem; color: var(--text); font-weight: 600; padding: 7px 0; }
+.suche .schalter input { width: 18px; height: 18px; accent-color: var(--blue); }
+.treffer { margin: 8px 0; }
+.ergebnisse { list-style: none; padding: 0; margin: 12px 0; }
+.ergebnisse li { padding: 9px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.ergebnisse .info { color: var(--muted); font-size: .9rem; }
+.ergebnisse .offen { color: var(--green); font-weight: 600; font-size: .85rem; }
+.mehr { font: inherit; padding: 8px 16px; border-radius: 999px; border: 2px solid var(--blue); background: none; color: var(--blue); font-weight: 600; cursor: pointer; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.cluster { background: rgba(13,74,143,.88); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.35); }
+.gemeinden li { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }

@@ -1,0 +1,4 @@
+{
+  "_hinweis": "OSM-Objekte, die auf Wunsch nicht auf ok-lab-boerde.github.io erscheinen sollen. Format: \"node/123\", \"way/456\" oder \"relation/789\", mit kurzer Notiz (ohne personenbezogene Daten).",
+  "objekte": []
+}

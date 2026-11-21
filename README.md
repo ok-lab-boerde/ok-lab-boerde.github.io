@@ -17,7 +17,11 @@ Vorbild sind die OK Labs im Netzwerk [Code for Germany](https://codefor.de/), et
 | `scripts/fetch_mastr.py` | Lädt die Daten aus dem Marktstammdatenregister (`python scripts/fetch_mastr.py`) |
 | `unfallatlas/` | Unfallatlas Börde (Karte, Daten, eigene [README](unfallatlas/README.md)) |
 | `scripts/unfallatlas/build.py` | Bereitet die Unfallatlas-Daten auf |
-| `.github/workflows/` | Automatische Aktualisierung: Energiewende monatlich, Unfallatlas jährlich im August |
+| `betriebe/`, `orte/` | Betriebe-Karte und Ortssteckbriefe (größtenteils erzeugt, siehe [betriebe/README.md](betriebe/README.md)) |
+| `scripts/orte/` | Abruf aus OpenStreetMap (`fetch.py`) und Seitengenerator (`build.py`) |
+| `assets/` | Logo, gemeinsame Stile und Bibliotheken für Kartenseiten |
+| `sitemap.xml`, `robots.txt` | Für Suchmaschinen (Sitemap wird von `scripts/orte/build.py` erzeugt) |
+| `.github/workflows/` | Automatische Aktualisierung: Energiewende monatlich, Unfallatlas jährlich im August, Betriebe und Orte wöchentlich |
 | `logo/` | Original-Logo (PNG) |
 
 ## Website lokal ansehen

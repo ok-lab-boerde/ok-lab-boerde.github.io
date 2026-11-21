@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ok-lab-boerde.github.io/sitemap.xml

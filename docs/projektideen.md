@@ -21,6 +21,14 @@ Verkehrsunfälle mit Personenschaden im Landkreis auf einer Karte (Punkte oder H
 - **Daten:** [Unfallatlas der Statistischen Ämter des Bundes und der Länder](https://unfallatlas.statistikportal.de/), Sachsen-Anhalt ab 2017. Kreisgrenze und Gemeindenamen aus VG250 (© GeoBasis-DE / BKG).
 - **Lizenz:** Datenlizenz Deutschland – Namensnennung – Version 2.0. Kartenhintergrund © OpenStreetMap-Mitwirkende (ODbL).
 
+## Betriebe in der Börde und Orte in der Börde ✅
+**Online:** https://ok-lab-boerde.github.io/betriebe/ und https://ok-lab-boerde.github.io/orte/ (Code in `scripts/orte/`, wöchentliche Aktualisierung per GitHub Action)
+
+Durchsuchbare Karte von rund 2.000 Betrieben mit eigener Seite je Betrieb, dazu Steckbriefe für alle 34 Gemeinden und ihre Ortsteile mit Betrieben, Vereinen, Kitas und Schulen, Bus und Bahn und Ausflugszielen.
+- **Daten:** OpenStreetMap über die Overpass API. Gemeindegrenzen aus VG250 (© GeoBasis-DE / BKG).
+- **Lizenz:** OpenStreetMap-Daten unter ODbL (© OpenStreetMap-Mitwirkende), VG250 unter Datenlizenz Deutschland – Namensnennung – Version 2.0.
+- **Nächste Stufe:** Karten-Check (welche Angaben fehlen), einbettbares Widget, Zuzugs-Seite „Leben in der Börde“.
+
 ## 2. Bus & Bahn in der Fläche 💡
 Erreichbarkeitskarte: Wie lange braucht man von jedem Ort mit dem ÖPNV nach Haldensleben, Oschersleben oder Magdeburg, zum Beispiel werktags um 7 Uhr und am Sonntag? Lücken im ländlichen Raum werden so sichtbar.
 - **Daten:** Fahrplandaten im GTFS-Format, z. B. der bundesweite Datensatz von DELFI. Zusätzlich OpenStreetMap.

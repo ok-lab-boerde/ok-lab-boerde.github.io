@@ -1,0 +1,118 @@
+{
+  "_hinweis": "Zuordnung von OSM-Tags zu verständlichen Branchen. Reihenfolge der Regeln zählt: die erste passende gewinnt. 'wert' * passt auf jeden Wert. 'details' übersetzt einzelne Werte für die Anzeige.",
+  "branchen": {
+    "landwirtschaft": "Landwirtschaft & Hofläden",
+    "handwerk": "Handwerk",
+    "einkaufen": "Einkaufen",
+    "essen": "Essen & Trinken",
+    "gesundheit": "Gesundheit",
+    "uebernachten": "Übernachten",
+    "dienstleistung": "Dienstleistung"
+  },
+  "ausschliessen": [
+    ["office", "government"], ["office", "religion"], ["office", "association"], ["office", "political_party"],
+    ["office", "educational_institution"], ["office", "diplomatic"], ["office", "ngo"],
+    ["shop", "vacant"], ["shop", "no"], ["shop", "disused"], ["access", "private"]
+  ],
+  "regeln": [
+    {"schluessel": "shop", "wert": "farm", "branche": "landwirtschaft"},
+    {"schluessel": "amenity", "wert": "vending_machine", "branche": "landwirtschaft"},
+    {"schluessel": "amenity", "wert": "marketplace", "branche": "landwirtschaft"},
+    {"schluessel": "craft", "wert": "agricultural_engines", "branche": "handwerk"},
+    {"schluessel": "craft", "wert": "beekeeper", "branche": "landwirtschaft"},
+    {"schluessel": "craft", "wert": "winery", "branche": "landwirtschaft"},
+    {"schluessel": "office", "wert": "agriculture", "branche": "landwirtschaft"},
+    {"schluessel": "craft", "wert": "*", "branche": "handwerk"},
+    {"schluessel": "amenity", "wert": "restaurant", "branche": "essen"},
+    {"schluessel": "amenity", "wert": "cafe", "branche": "essen"},
+    {"schluessel": "amenity", "wert": "fast_food", "branche": "essen"},
+    {"schluessel": "amenity", "wert": "bar", "branche": "essen"},
+    {"schluessel": "amenity", "wert": "pub", "branche": "essen"},
+    {"schluessel": "amenity", "wert": "biergarten", "branche": "essen"},
+    {"schluessel": "amenity", "wert": "ice_cream", "branche": "essen"},
+    {"schluessel": "amenity", "wert": "pharmacy", "branche": "gesundheit"},
+    {"schluessel": "amenity", "wert": "doctors", "branche": "gesundheit"},
+    {"schluessel": "amenity", "wert": "dentist", "branche": "gesundheit"},
+    {"schluessel": "amenity", "wert": "clinic", "branche": "gesundheit"},
+    {"schluessel": "amenity", "wert": "veterinary", "branche": "gesundheit"},
+    {"schluessel": "healthcare", "wert": "*", "branche": "gesundheit"},
+    {"schluessel": "shop", "wert": "medical_supply", "branche": "gesundheit"},
+    {"schluessel": "shop", "wert": "hearing_aids", "branche": "gesundheit"},
+    {"schluessel": "shop", "wert": "optician", "branche": "gesundheit"},
+    {"schluessel": "tourism", "wert": "*", "branche": "uebernachten"},
+    {"schluessel": "shop", "wert": "hairdresser", "branche": "dienstleistung"},
+    {"schluessel": "shop", "wert": "beauty", "branche": "dienstleistung"},
+    {"schluessel": "shop", "wert": "car_repair", "branche": "handwerk"},
+    {"schluessel": "shop", "wert": "*", "branche": "einkaufen"},
+    {"schluessel": "office", "wert": "*", "branche": "dienstleistung"},
+    {"schluessel": "amenity", "wert": "*", "branche": "dienstleistung"}
+  ],
+  "details": {
+    "shop": {
+      "supermarket": "Supermarkt", "convenience": "Lebensmittelladen", "bakery": "Bäckerei", "butcher": "Fleischerei",
+      "farm": "Hofladen", "kiosk": "Kiosk", "beverages": "Getränkemarkt", "alcohol": "Spirituosen", "greengrocer": "Obst und Gemüse",
+      "clothes": "Bekleidung", "shoes": "Schuhe", "florist": "Blumen", "garden_centre": "Gartencenter", "doityourself": "Baumarkt",
+      "hardware": "Eisenwaren", "car": "Autohaus", "car_repair": "Kfz-Werkstatt", "car_parts": "Autoteile", "tyres": "Reifen",
+      "motorcycle": "Motorräder", "bicycle": "Fahrräder", "hairdresser": "Friseur", "beauty": "Kosmetik", "chemist": "Drogerie",
+      "optician": "Optiker", "hearing_aids": "Hörgeräte", "medical_supply": "Sanitätshaus", "furniture": "Möbel", "kitchen": "Küchen",
+      "electronics": "Elektronik", "mobile_phone": "Mobilfunk", "computer": "Computer", "books": "Bücher", "stationery": "Schreibwaren",
+      "newsagent": "Zeitschriften", "gift": "Geschenke", "toys": "Spielwaren", "jewelry": "Schmuck", "pet": "Tierbedarf",
+      "agrarian": "Landhandel", "funeral_directors": "Bestattungen", "laundry": "Wäscherei", "dry_cleaning": "Reinigung",
+      "variety_store": "Sonderposten", "department_store": "Kaufhaus", "second_hand": "Second Hand", "tattoo": "Tattoo",
+      "massage": "Massage", "nutrition_supplements": "Nahrungsergänzung", "deli": "Feinkost", "confectionery": "Süßwaren",
+      "pastry": "Konditorei", "coffee": "Kaffee", "tobacco": "Tabak", "lottery": "Lotto", "fuel": "Brennstoffe", "gas": "Gas",
+      "paint": "Farben", "flooring": "Bodenbeläge", "interior_decoration": "Raumausstattung", "bed": "Betten", "curtain": "Gardinen",
+      "fabric": "Stoffe", "sewing": "Nähbedarf", "sports": "Sport", "outdoor": "Outdoor", "travel_agency": "Reisebüro",
+      "photo": "Foto", "copyshop": "Copyshop", "frame": "Bilderrahmen", "music": "Musik", "musical_instrument": "Musikinstrumente",
+      "trade": "Fachhandel", "wholesale": "Großhandel", "boutique": "Boutique", "fashion_accessories": "Accessoires",
+      "houseware": "Haushaltswaren", "appliance": "Haushaltsgeräte", "trailer": "Anhänger", "caravan": "Wohnwagen",
+      "agricultural": "Landtechnik", "water": "Wasser", "seafood": "Fisch", "cheese": "Käse", "dairy": "Milchprodukte",
+      "wine": "Wein", "e-cigarette": "E-Zigaretten", "cosmetics": "Kosmetikartikel", "perfumery": "Parfümerie",
+      "pawnbroker": "Pfandhaus", "rental": "Verleih", "storage_rental": "Lagerräume", "weapons": "Waffen", "hunting": "Jagdbedarf",
+      "craft": "Bastelbedarf", "art": "Kunst", "antiques": "Antiquitäten", "general": "Gemischtwaren", "electrical": "Elektrobedarf",
+      "lighting": "Leuchten", "bathroom_furnishing": "Bad und Sanitär", "doors": "Türen", "windows": "Fenster", "glaziery": "Glaserei",
+      "energy": "Energie", "security": "Sicherheitstechnik", "vacuum_cleaner": "Staubsauger"
+    },
+    "craft": {
+      "metal_construction": "Metallbau", "electrician": "Elektroinstallation", "painter": "Malerbetrieb", "joiner": "Tischlerei",
+      "carpenter": "Zimmerei", "agricultural_engines": "Landtechnik", "plumber": "Sanitär und Heizung", "hvac": "Heizung und Lüftung",
+      "gardener": "Garten- und Landschaftsbau", "roofer": "Dachdeckerei", "builder": "Baugewerbe", "bricklayer": "Maurer",
+      "tiler": "Fliesenleger", "stonemason": "Steinmetz", "plasterer": "Stuckateur", "glaziery": "Glaserei", "locksmith": "Schlüsseldienst",
+      "car_repair": "Kfz-Werkstatt", "car_painter": "Autolackiererei", "blacksmith": "Schmiede", "upholsterer": "Polsterei",
+      "tailor": "Schneiderei", "shoemaker": "Schuhmacher", "photographer": "Fotograf", "beekeeper": "Imkerei", "brewery": "Brauerei",
+      "distillery": "Brennerei", "winery": "Weingut", "confectionery": "Konditorei", "optician": "Optiker", "scaffolder": "Gerüstbau",
+      "insulation": "Dämmung", "floorer": "Bodenleger", "parquet_layer": "Parkettleger", "window_construction": "Fensterbau",
+      "chimney_sweeper": "Schornsteinfeger", "sawmill": "Sägewerk", "electronics_repair": "Elektronikreparatur", "sign_maker": "Schilder",
+      "printer": "Druckerei", "cleaning": "Gebäudereinigung", "sweep": "Kehrdienst", "goldsmith": "Goldschmied", "watchmaker": "Uhrmacher",
+      "turner": "Dreherei", "welder": "Schweißerei", "rigger": "Anschläger", "dental_technician": "Zahntechnik",
+      "orthopaedic_technician": "Orthopädietechnik", "handicraft": "Kunsthandwerk", "pottery": "Töpferei", "saddler": "Sattlerei",
+      "caterer": "Partyservice", "hairdresser": "Friseur", "sculptor": "Bildhauer", "stand_builder": "Messebau", "builder;carpenter": "Bau und Zimmerei"
+    },
+    "amenity": {
+      "restaurant": "Restaurant", "cafe": "Café", "fast_food": "Imbiss", "bar": "Bar", "pub": "Kneipe", "biergarten": "Biergarten",
+      "ice_cream": "Eiscafé", "pharmacy": "Apotheke", "doctors": "Arztpraxis", "dentist": "Zahnarztpraxis", "clinic": "Klinik",
+      "veterinary": "Tierarztpraxis", "bank": "Bank", "fuel": "Tankstelle", "car_wash": "Autowäsche", "car_rental": "Autovermietung",
+      "driving_school": "Fahrschule", "marketplace": "Wochenmarkt", "vending_machine": "Automat mit regionalen Produkten"
+    },
+    "tourism": {
+      "hotel": "Hotel", "guest_house": "Pension", "hostel": "Herberge", "apartment": "Ferienwohnung", "chalet": "Ferienhaus",
+      "camp_site": "Campingplatz", "caravan_site": "Wohnmobilstellplatz"
+    },
+    "office": {
+      "company": "Unternehmen", "insurance": "Versicherung", "tax_advisor": "Steuerberatung", "property_management": "Hausverwaltung",
+      "estate_agent": "Immobilien", "lawyer": "Rechtsanwalt", "advertising_agency": "Werbeagentur", "engineer": "Ingenieurbüro",
+      "employment_agency": "Arbeitsvermittlung", "architect": "Architekturbüro", "notary": "Notariat", "accountant": "Buchhaltung",
+      "financial": "Finanzdienstleistung", "financial_advisor": "Finanzberatung", "it": "IT-Dienstleistung", "logistics": "Logistik",
+      "energy_supplier": "Energieversorger", "water_utility": "Wasserversorger", "telecommunication": "Telekommunikation",
+      "consulting": "Beratung", "surveyor": "Vermessung", "agriculture": "Landwirtschaftsbetrieb", "construction_company": "Baufirma",
+      "coworking": "Coworking", "therapist": "Therapie", "graphic_design": "Grafikdesign", "physician": "Arztpraxis", "yes": "Büro"
+    },
+    "healthcare": {
+      "physiotherapist": "Physiotherapie", "doctor": "Arztpraxis", "dentist": "Zahnarztpraxis", "pharmacy": "Apotheke",
+      "alternative": "Heilpraktiker", "occupational_therapist": "Ergotherapie", "speech_therapist": "Logopädie",
+      "psychotherapist": "Psychotherapie", "podiatrist": "Fußpflege", "nursing": "Pflegedienst", "optometrist": "Optiker",
+      "hearing_care": "Hörakustik", "rehabilitation": "Reha", "clinic": "Klinik", "hospital": "Krankenhaus", "laboratory": "Labor",
+      "dialysis": "Dialyse", "centre": "Gesundheitszentrum", "counselling": "Beratung", "audiologist": "Hörakustik", "yes": "Gesundheit"
+    }
+  }
+}
