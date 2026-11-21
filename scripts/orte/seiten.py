@@ -24,6 +24,10 @@ def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: 
                   '  <script src="/assets/vendor/markercluster/leaflet.markercluster.js"></script>\n'
                   '  <script src="/assets/orte-karte.js"></script>') if karte else ""
     ld = (f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>' if jsonld else "")
+    # Google kürzt Titel ab etwa 60–70 Zeichen; der Markenname steht dann ohnehin in og:site_name.
+    if len(titel) > 70 and titel.endswith(" | OK Lab Börde"):
+        titel = titel[: -len(" | OK Lab Börde")]
+    og_titel = titel.removesuffix(" | OK Lab Börde")
     return f"""<!doctype html>
 <html lang="de">
 <head>
@@ -33,6 +37,17 @@ def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: 
   <meta name="description" content="{e(beschreibung)}">
   <meta name="robots" content="{robots}">
   <link rel="canonical" href="{BASIS_URL}{e(pfad)}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OK Lab Börde">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="{e(og_titel)}">
+  <meta property="og:description" content="{e(beschreibung)}">
+  <meta property="og:url" content="{BASIS_URL}{e(pfad)}">
+  <meta property="og:image" content="{BASIS_URL}/assets/og-bild.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo und Schriftzug OK Lab Börde">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/assets/orte.css">

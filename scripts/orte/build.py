@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 import re
 import shutil
 import sys
@@ -200,7 +201,13 @@ def betriebe_laden(gemeinden: list[dict]) -> list[dict]:
               "rollstuhl": bool(t.get("wheelchair"))}
         b["check"] = da
         b["fehlt"] = sum(1 << i for i, (k, *_r) in enumerate(CHECK) if not da[k])
+    betriebe = doppelte_entfernen(betriebe)
     betriebe.sort(key=lambda b: (b["gemeinde"]["slug"], b["name"].lower(), b["osm"]))
+    # Gleichnamige Filialen im selben Ort: Straße in Titel und Beschreibung, damit sie unterscheidbar sind.
+    gleich = Counter((b["name"], b["detail"], b["ortsteil"]["name"] if b["ortsteil"] else b["gemeinde"]["name"]) for b in betriebe)
+    for b in betriebe:
+        n = gleich[(b["name"], b["detail"], b["ortsteil"]["name"] if b["ortsteil"] else b["gemeinde"]["name"])]
+        b["zusatz"] = (b["strasse"] or f"Standort {b['osm'].split('/')[1]}") if n > 1 else ""
     vergeben: dict[str, set] = defaultdict(lambda: set(RESERVIERT))
     for b in betriebe:
         gs = b["gemeinde"]["slug"]
@@ -215,6 +222,27 @@ def betriebe_laden(gemeinden: list[dict]) -> list[dict]:
         b["ort"] = b["ortsteil"]["name"] if b["ortsteil"] else b["gemeinde"]["name"]
         b["index"] = sum(bool(b[k]) for k in ("oh", "telefon", "website", "email")) >= 2
     return betriebe
+
+
+def doppelte_entfernen(betriebe: list[dict]) -> list[dict]:
+    """Derselbe Betrieb doppelt in OSM (z. B. als Punkt und als Gebäude, weniger als 50 m auseinander):
+    nur den Eintrag mit mehr Angaben behalten."""
+    gruppen: dict[tuple, list[dict]] = defaultdict(list)
+    for b in betriebe:
+        gruppen[(b["name"].casefold(), b["typ"])].append(b)
+    raus: set[str] = set()
+    for gr in gruppen.values():
+        if len(gr) < 2:
+            continue
+        gr.sort(key=lambda b: (bin(b["fehlt"]).count("1"), b["osm"]))
+        for i, a in enumerate(gr):
+            if a["osm"] in raus:
+                continue
+            for b in gr[i + 1:]:
+                if b["osm"] not in raus and math.hypot((a["lat"] - b["lat"]) * 111_320,
+                                                       (a["lon"] - b["lon"]) * 111_320 * math.cos(math.radians(a["lat"]))) < 50:
+                    raus.add(b["osm"])
+    return [b for b in betriebe if b["osm"] not in raus]
 
 
 # ---------------------------------------------------------------- Steckbrief-Objekte
@@ -425,7 +453,7 @@ def betrieb_seite(b: dict, je_gemeinde: dict[str, list], haltestellen: list[dict
     ort_text = f"{o['name']} ({g['name']})" if o else g["name"]
     typ, oid = b["osm"].split("/")
     vorhanden = [w for w, k in (("Adresse", "strasse"), ("Öffnungszeiten", "oh"), ("Telefon", "telefon"), ("Website", "website")) if b[k]]
-    beschreibung = f"{b['name']}, {b['detail']} in {ort_text}" + (f": {', '.join(vorhanden)}." if vorhanden else ".") + " Daten aus OpenStreetMap."
+    beschreibung = f"{b['name']}" + (f" ({b['zusatz']})" if b["zusatz"] else "") + f", {b['detail']} in {ort_text}" + (f": {', '.join(vorhanden)}." if vorhanden else ".") + " Daten aus OpenStreetMap."
 
     if o:
         lage =(f'in <a href="/orte/{g["slug"]}/{o["slug"]}/">{e(o["name"])}</a>, einem Ortsteil von '
@@ -508,7 +536,7 @@ def betrieb_seite(b: dict, je_gemeinde: dict[str, list], haltestellen: list[dict
 
     inhalt = (f'<article class="betrieb"><h1>{e(b["name"])}</h1><p class="untertitel">{e(b["detail"])} · {e(ort_text)}</p>'
               f'{intro}<div class="zwei">{fakten_html}{karte}</div>{oh_html}{oepnv_html}{mehr_html}{korrektur}</article>')
-    titel = f"{b['name']} – {b['detail']} in {ort_text} | OK Lab Börde"
+    titel = f"{b['name']}" + (f", {b['zusatz']}" if b["zusatz"] else "") + f" – {b['detail']} in {ort_text} | OK Lab Börde"
     return seite(titel=titel, beschreibung=beschreibung, pfad=b["url"], inhalt=inhalt, index=b["index"], karte=True, jsonld=jsonld,
                  brotkrumen=[("Start", "/"), ("Betriebe", "/betriebe/"), (g["name"], f"/betriebe/{g['slug']}/"), (b["name"], None)])
 
