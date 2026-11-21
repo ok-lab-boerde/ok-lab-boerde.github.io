@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zeitschichten der Börde – Geschichte auf der Karte | OK Lab Börde</title>
+  <meta name="description" content="400.000 Jahre Geschichte im Landkreis Börde auf einer Karte: von den ersten Feuersteinwerkzeugen über Klöster und Burgen bis zur deutschen Teilung. Mit Zeitreise durch zehn Zeitschichten.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ok-lab-boerde.github.io/zeitschichten/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OK Lab Börde">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Zeitschichten der Börde – Geschichte auf der Karte">
+  <meta property="og:description" content="400.000 Jahre Geschichte im Landkreis Börde auf einer Karte, mit Zeitreise durch zehn Zeitschichten.">
+  <meta property="og:url" content="https://ok-lab-boerde.github.io/zeitschichten/">
+  <meta property="og:image" content="https://ok-lab-boerde.github.io/assets/og-bild.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo und Schriftzug OK Lab Börde">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/assets/orte.css">
+  <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/assets/zeitschichten.css">
+  <script src="/assets/vendor/leaflet/leaflet.js" defer></script>
+  <script src="/assets/zeitschichten.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/logo.svg" alt=""><span>OK Lab <b>Börde</b></span></a>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="/betriebe/">Betriebe</a></li>
+          <li><a href="/orte/">Orte</a></li>
+          <li><a href="/#projekte">Projekte</a></li>
+          <li><a href="/#mitmachen">Mitmachen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap orte-main">
+    <nav class="krumen" aria-label="Brotkrümelnavigation"><a href="/">Start</a> <span aria-hidden="true">›</span> <span aria-current="page">Zeitschichten der Börde</span></nav>
+    <h1>Zeitschichten der Börde</h1>
+    <p class="lead">400.000 Jahre Geschichte im Landkreis Börde auf einer Karte. Wählen Sie eine Zeitschicht im Bodenprofil oder starten Sie die Zeitreise. Die Punkte zeigen, was an diesem Ort passiert ist.</p>
+    <aside class="aufruf block"><strong>Prototyp.</strong> Die Ereignisse sind aus Wikipedia-Artikeln zusammengefasst und noch lückenhaft. Archäologische Fundstellen sind bewusst nur auf Ortsebene verortet. Fehlt ein Ereignis aus Ihrem Ort? Ergänzungen sind willkommen, siehe unten.</aside>
+
+    <div class="zs-grid">
+      <div class="zs-kartenspalte">
+        <div id="zs-karte" class="ok-karte zs-karte" role="region" aria-label="Karte des Landkreises Börde mit historischen Ereignissen"></div>
+        <p class="klein">Gestrichelt: Gemeindegrenzen. Die Farbe eines Punkts zeigt seine Zeitschicht. Blasse Punkte gehören zu anderen Zeitschichten.</p>
+      </div>
+
+      <section class="zs-profil" aria-labelledby="h-profil">
+        <div class="zs-kopf"><h2 id="h-profil">Bodenprofil</h2><span class="klein">oben jung · unten alt</span></div>
+        <div class="zs-schichten" id="zs-schichten"></div>
+        <div class="zs-steuerung">
+          <button type="button" class="zs-btn" id="zs-play">▶ Zeitreise starten</button>
+          <button type="button" class="zs-btn zs-btn-2" id="zs-alle" aria-pressed="true">Alle Zeiten</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="zs-grid zs-unten">
+      <section class="zs-detail" id="zs-detail" aria-live="polite"><p class="klein">Ereignisse werden geladen …</p></section>
+      <section aria-labelledby="zs-listtitel">
+        <div class="zs-kopf"><h2 id="zs-listtitel">Alle Ereignisse</h2><span class="klein" id="zs-anzahl"></span></div>
+        <ul class="zs-liste" id="zs-liste"></ul>
+      </section>
+    </div>
+
+    <section aria-labelledby="h-mitmachen">
+      <h2 id="h-mitmachen">Mitmachen und Daten</h2>
+      <ul class="eintraege">
+        <li><strong>Daten:</strong> Alle Ereignisse stehen in <a href="ereignisse.geojson">ereignisse.geojson</a>, ein Punkt pro Ereignis mit Jahr, Titel, Ort, Text, Lagegenauigkeit und Quelle. Die Datei lässt sich mit QGIS, uMap oder geojson.io öffnen und bearbeiten.</li>
+        <li><strong>Ergänzen:</strong> Neue Ereignisse bitte mit Quelle als Issue oder Pull Request im <a href="https://github.com/ok-lab-boerde/ok-lab-boerde.github.io">Repository</a> einreichen. Die Zeitschicht ergibt sich automatisch aus dem Feld <code>jahr</code>.</li>
+        <li><strong>Lücke:</strong> Für die Bronze- und Eisenzeit gibt es noch keine Einträge. Ortschroniken, Museen und das Landesamt für Denkmalpflege sind gute Quellen.</li>
+        <li><strong>Fundstellen:</strong> Genaue Lagen von Bodendenkmälern nehmen wir nicht auf, um sie vor Raubgrabungen zu schützen.</li>
+      </ul>
+    </section>
+    <p class="quelle">Texte zusammengefasst aus der deutschsprachigen <a href="https://de.wikipedia.org/">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>), Quelle je Ereignis verlinkt. Gemeindegrenzen: VG250, © GeoBasis-DE / BKG (<a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a>). Karte: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (<a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>). Ohne Gewähr.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>OK Lab Börde</strong></p>
+        <p>Inhalte unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>, Daten aus OpenStreetMap unter ODbL.</p>
+      </div>
+      <ul>
+        <li><a href="/impressum.html">Impressum</a></li>
+        <li><a href="/datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://github.com/ok-lab-boerde/ok-lab-boerde.github.io">Quellcode</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

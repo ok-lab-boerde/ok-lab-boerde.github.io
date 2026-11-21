@@ -1,0 +1,41 @@
+/* Zeitschichten der Börde: Karte mit Bodenprofil als Zeitleiste. Nutzt die Variablen aus /css/style.css. */
+.zs-grid { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 20px; align-items: start; margin-top: 16px; }
+.zs-unten { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+@media (max-width: 860px) { .zs-grid, .zs-unten { grid-template-columns: minmax(0, 1fr); } }
+.zs-karte { height: min(68vh, 600px); margin-top: 0; }
+.zs-kopf { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 8px; }
+.orte-main .zs-kopf h2 { margin: 0; }
+
+/* Bodenprofil: Bandfarben sind fest (Erdtöne), die Schrift passt sich der Bandhelligkeit an */
+.zs-schichten { display: flex; flex-direction: column; border: 1.5px solid var(--text); border-radius: 6px; overflow: hidden; }
+.zs-schicht { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 1fr auto; gap: 0 8px; align-items: center; padding: 7px 12px; cursor: pointer; color: #1d211b; }
+.zs-schicht.dunkel { color: #f3efe4; }
+.zs-schicht .n { font-weight: 600; font-size: .92rem; line-height: 1.25; }
+.zs-schicht .r { font-size: .74rem; opacity: .85; font-variant-numeric: tabular-nums; }
+.zs-schicht .c { grid-row: 1 / span 2; grid-column: 2; font-size: .75rem; background: rgba(0,0,0,.14); border-radius: 10px; padding: 1px 8px; font-variant-numeric: tabular-nums; }
+.zs-schicht.dunkel .c { background: rgba(255,255,255,.2); }
+.zs-schicht[aria-pressed="true"] { box-shadow: inset 6px 0 0 #1d211b; }
+.zs-schicht.dunkel[aria-pressed="true"] { box-shadow: inset 6px 0 0 #f3efe4; }
+.zs-schicht[aria-pressed="true"] .n::after { content: "  ◂"; }
+.zs-schicht:focus-visible, .zs-btn:focus-visible, .zs-ev:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+
+.zs-steuerung { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.zs-btn { font: inherit; font-weight: 600; font-size: .9rem; border-radius: 8px; padding: 7px 14px; cursor: pointer; background: var(--blue); color: var(--bg); border: 1px solid var(--blue); }
+.zs-btn-2 { background: transparent; color: var(--text); border-color: var(--border); }
+.zs-btn-2[aria-pressed="true"] { background: var(--blue-soft); border-color: var(--blue); }
+
+/* Detail und Liste */
+.zs-detail { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+.zs-detail .zs-datum { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: .88rem; font-variant-numeric: tabular-nums; }
+.zs-punkt { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid #3b2f25; flex: none; }
+.orte-main .zs-detail h3 { color: var(--text); font-size: 1.25rem; margin: 6px 0 8px; line-height: 1.25; }
+.zs-detail p { margin: 0 0 10px; }
+.zs-liste { list-style: none; margin: 0; padding: 0; max-height: 420px; overflow: auto; border-top: 1px solid var(--border); }
+.zs-ev { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 14px 96px minmax(0, 1fr); gap: 8px; align-items: baseline; width: 100%; padding: 7px 4px; border-bottom: 1px solid var(--border); cursor: pointer; font-size: .92rem; }
+.zs-ev:hover { background: var(--bg-alt); }
+.zs-ev[aria-current="true"] { background: var(--blue-soft); }
+.zs-ev .zs-punkt { width: 10px; height: 10px; align-self: center; }
+.zs-ev .y { color: var(--muted); font-size: .82rem; font-variant-numeric: tabular-nums; }
+.zs-leer { color: var(--muted); padding: 8px 0; }
+.leaflet-container { font: inherit; }
+@media (prefers-reduced-motion: reduce) { .zs-schicht { transition: none; } }

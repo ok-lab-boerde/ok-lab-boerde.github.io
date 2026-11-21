@@ -20,6 +20,7 @@ Vorbild sind die OK Labs im Netzwerk [Code for Germany](https://codefor.de/), et
 | `betriebe/`, `orte/` | Betriebe-Karte mit Karten-Check und Ortssteckbriefe (größtenteils erzeugt, siehe [betriebe/README.md](betriebe/README.md)) |
 | `regional/` | „Regional einkaufen“: Hofläden, Automaten, Märkte, mit Anleitung zum Eintragen in OSM (erzeugt, siehe [betriebe/README.md](betriebe/README.md)) |
 | `ratskarte/` | Ratskarte Wanzleben-Börde (Prototyp): öffentliche Tagesordnungspunkte nach Straße und Ort (erzeugt von `scripts/ratskarte/`, siehe [scripts/ratskarte/README.md](scripts/ratskarte/README.md)) |
+| `zeitschichten/` | Zeitschichten der Börde (Prototyp): historische Ereignisse auf der Karte mit Zeitreise. Daten in `zeitschichten/ereignisse.geojson` (von Hand gepflegt, Quelle je Ereignis), Gemeindegrenzen in `gemeinden.geojson` (aus VG250) |
 | `veranstaltungen/` | Veranstaltungskalender: Gesamtkalender, `termine.json` für die Ortsseiten, Kalender-Abos `kalender/*.ics` (erzeugt täglich von `scripts/veranstaltungen/`, siehe [scripts/veranstaltungen/README.md](scripts/veranstaltungen/README.md)) |
 | `leben/` | „Leben in der Börde“: alle Orte im Vergleich (erzeugt, siehe [orte/README.md](orte/README.md)) |
 | `scripts/orte/` | Abruf aus OpenStreetMap (`fetch.py`) und Seitengenerator (`build.py`) |

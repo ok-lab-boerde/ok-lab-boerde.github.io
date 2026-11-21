@@ -1,0 +1,915 @@
+{
+  "type": "FeatureCollection",
+  "name": "Zeitschichten der Börde – Ereignisse",
+  "beschreibung": "Historische Ereignisse im Landkreis Börde (Sachsen-Anhalt). Prototyp des OK Lab Börde. Texte zusammengefasst aus der deutschsprachigen Wikipedia (CC BY-SA 4.0).",
+  "felder": {
+    "jahr": "Sortierjahr, negativ = v. Chr. bzw. vor heute",
+    "datum": "Anzeigetext für das Datum",
+    "lagegenauigkeit": "objekt = genaues Bauwerk/Ort; ortsmitte = Ortszentrum; ungefaehr = nur grob verortet",
+    "ausserhalb_landkreis": "true, wenn der Ort außerhalb des Landkreises liegt (Kontext)"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.398,
+          52.262
+        ]
+      },
+      "properties": {
+        "id": "v400000-erste-werkzeuge-aus-feuerstein",
+        "jahr": -400000,
+        "datum": "vor ca. 400.000 J.",
+        "titel": "Erste Werkzeuge aus Feuerstein",
+        "ort": "Raum Haldensleben/Hundisburg",
+        "beschreibung": "Bei Haldensleben wurden altsteinzeitliche Feuersteinartefakte gesammelt. Lumineszenz-Datierungen der Fundschicht deuten auf rund 400.000 Jahre. Damit gehören sie in eine Warmzeit am Ende der Elster-Kaltzeit, wie die Funde von Bilzingsleben.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Haldensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Haldensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9893,
+          52.1335
+        ]
+      },
+      "properties": {
+        "id": "v300000-schoeninger-speere-nachbarkreis",
+        "jahr": -300000,
+        "datum": "vor ca. 300.000 J.",
+        "titel": "Schöninger Speere (Nachbarkreis)",
+        "ort": "Schöningen, Landkreis Helmstedt",
+        "beschreibung": "Wenige Kilometer hinter der heutigen Landesgrenze fanden Archäologen ab 1994 im Braunkohletagebau hölzerne Jagdspeere. Sie gelten als älteste vollständig erhaltene Jagdwaffen der Welt und zeigen, wie die Menschen damals in der Region jagten.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": true,
+        "quelle_titel": "Schöninger Speere",
+        "quelle_url": "https://de.wikipedia.org/wiki/Sch%C3%B6ninger_Speere"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2167,
+          52.1497
+        ]
+      },
+      "properties": {
+        "id": "v5300-die-ersten-bauern-linienbandkeramik",
+        "jahr": -5300,
+        "datum": "ab ca. 5500 v. Chr.",
+        "titel": "Die ersten Bauern: Linienbandkeramik",
+        "ort": "Eilsleben",
+        "beschreibung": "Funde der Linienbandkeramischen Kultur in der Gemarkung Eilsleben zeigen eine der frühesten Bauernsiedlungen der Börde. Auf dem fruchtbaren Lössboden ließen sich hier die ersten Ackerbauern und Viehzüchter nieder.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Eilsleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Eilsleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.355,
+          52.268
+        ]
+      },
+      "properties": {
+        "id": "v3500-grosssteingraeber-der-historischen-quadr",
+        "jahr": -3500,
+        "datum": "ca. 3500 – 2800 v. Chr.",
+        "titel": "Großsteingräber der Historischen Quadratmeile",
+        "ort": "Haldensleber Forst / Bebertal",
+        "beschreibung": "Im rund 20 km² großen Wald zwischen Haldensleben und Bebertal sind über 80 Großsteingräber erhalten, darunter die „Teufelsküche“. Allein für Bebertal sind 43 Anlagen nachgewiesen. Es ist eine der dichtesten Gruppen solcher Gräber in Mitteldeutschland.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Haldensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Haldensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.382,
+          52.29
+        ]
+      },
+      "properties": {
+        "id": "784-karl-der-grosse-rastet-in-steinfurt",
+        "jahr": 784,
+        "datum": "784",
+        "titel": "Karl der Große rastet in Steinfurt",
+        "ort": "Steinfurt an der Ohre (Wüstung)",
+        "beschreibung": "Während seines Feldzugs von der Elbe nach Schöningen machte Karl der Große in Steinfurt Station. Der Ort lag 2 km westlich von Neuhaldensleben an der Ohre und fiel später wüst. Er ist der älteste im Frühmittelalter namentlich genannte Ort im nördlichen Sachsen-Anhalt.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Haldensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Haldensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6398,
+          52.1316
+        ]
+      },
+      "properties": {
+        "id": "805-magdeburg-wird-erstmals-erwaehnt",
+        "jahr": 805,
+        "datum": "805",
+        "titel": "Magdeburg wird erstmals erwähnt",
+        "ort": "Magdeburg (kreisfreie Stadt)",
+        "beschreibung": "Im Diedenhofener Kapitular wird Magdeburg als Grenzhandelsplatz genannt. Die Stadt ist nicht Teil des Landkreises, prägt die Börde aber seitdem als Zentrum.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": true,
+        "quelle_titel": "Magdeburg",
+        "quelle_url": "https://de.wikipedia.org/wiki/Magdeburg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6736,
+          52.29
+        ]
+      },
+      "properties": {
+        "id": "937-zielitz-ein-ort-mit-slawischem-namen",
+        "jahr": 937,
+        "datum": "937",
+        "titel": "Zielitz: ein Ort mit slawischem Namen",
+        "ort": "Zielitz",
+        "beschreibung": "In einer Schenkungsurkunde an das Magdeburger Moritzkloster taucht der Ort als „Zelici“ auf. Der Name ist slawischen Ursprungs und erinnert daran, dass an der Elbe slawische und sächsische Siedlungsgebiete aufeinandertrafen.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Zielitz",
+        "quelle_url": "https://de.wikipedia.org/wiki/Zielitz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0697,
+          52.2786
+        ]
+      },
+      "properties": {
+        "id": "942-graf-lothar-gruendet-das-stift-walbeck",
+        "jahr": 942,
+        "datum": "942",
+        "titel": "Graf Lothar gründet das Stift Walbeck",
+        "ort": "Walbeck (Oebisfelde-Weferlingen)",
+        "beschreibung": "Graf Lothar II. stiftete das Kanonikerstift als Sühne für seine Beteiligung an einer Verschwörung gegen König Otto I. Er wurde 964 in der Kirche beigesetzt. Sein Enkel Thietmar von Merseburg, der berühmte Chronist, war ab 1002 Propst des Stifts. Die Ruine liegt heute an der Straße der Romanik.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Stiftskirche Walbeck",
+        "quelle_url": "https://de.wikipedia.org/wiki/Stiftskirche_Walbeck"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3014,
+          51.9919
+        ]
+      },
+      "properties": {
+        "id": "961-kloster-hadmersleben-gegruendet",
+        "jahr": 961,
+        "datum": "961",
+        "titel": "Kloster Hadmersleben gegründet",
+        "ort": "Hadmersleben",
+        "beschreibung": "Bischof Bernhard von Halberstadt gründete ein Benediktinerinnenkloster. Es bestand fast 850 Jahre, bis es 1809 unter Jérôme Bonaparte aufgehoben wurde.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Hadmersleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Hadmersleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2403,
+          52.3322
+        ]
+      },
+      "properties": {
+        "id": "961-flechtingen-im-nordthueringgau",
+        "jahr": 961.5,
+        "datum": "961",
+        "titel": "Flechtingen im Nordthüringgau",
+        "ort": "Flechtingen",
+        "beschreibung": "Eine Schenkungsurkunde Ottos I. für das Magdeburger Moritzkloster nennt Flechtingen. Der Ort gehörte damals zum Nordthüringgau.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Flechtingen",
+        "quelle_url": "https://de.wikipedia.org/wiki/Flechtingen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5233,
+          52.2328
+        ]
+      },
+      "properties": {
+        "id": "965-gross-ammensleben-erstmals-genannt",
+        "jahr": 965,
+        "datum": "965",
+        "titel": "Groß Ammensleben erstmals genannt",
+        "ort": "Groß Ammensleben",
+        "beschreibung": "Als „Nordammuneslevu“ taucht der Ort 965 erstmals in einer Urkunde auf. Seine Geschichte ist eng mit dem späteren Kloster verbunden.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Groß Ammensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Gro%C3%9F_Ammensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4129,
+          52.2906
+        ]
+      },
+      "properties": {
+        "id": "966-burgward-haldensleben",
+        "jahr": 966,
+        "datum": "966",
+        "titel": "Burgward Haldensleben",
+        "ort": "Haldensleben",
+        "beschreibung": "In einer Urkunde Kaiser Ottos I. erscheint „Hahaldeslevo“ als Hauptort eines Burgwards, eines Verwaltungsbezirks rund um eine Burg.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Haldensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Haldensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4435,
+          52.0648
+        ]
+      },
+      "properties": {
+        "id": "968-burg-wanzleben-erwaehnt",
+        "jahr": 968,
+        "datum": "968",
+        "titel": "Burg Wanzleben erwähnt",
+        "ort": "Wanzleben",
+        "beschreibung": "Die Niederungsburg an der alten Heerstraße von Magdeburg nach Hadmersleben wird 968 erstmals erwähnt. Sie war als Rundburg mit doppelten Gräben und Wällen angelegt.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Burg Wanzleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Burg_Wanzleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2267,
+          52.0267
+        ]
+      },
+      "properties": {
+        "id": "994-oschersleben-am-grossen-bruch",
+        "jahr": 994,
+        "datum": "994",
+        "titel": "Oschersleben am Großen Bruch",
+        "ort": "Oschersleben (Bode)",
+        "beschreibung": "König Otto III. verlieh Quedlinburg das Marktrecht. In der Urkunde wird Oschersleben als Grenzpunkt genannt: der Sumpf, der sich von Oschersleben bis Hornburg ausdehnt. Eine angebliche Erwähnung von 814 beruht auf einer Fälschung des 12. Jahrhunderts.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Oschersleben (Bode)",
+        "quelle_url": "https://de.wikipedia.org/wiki/Oschersleben_(Bode)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.628,
+          52.2524
+        ]
+      },
+      "properties": {
+        "id": "1009-angriff-auf-die-burg-wolmirstedt",
+        "jahr": 1009,
+        "datum": "1009",
+        "titel": "Angriff auf die Burg Wolmirstedt",
+        "ort": "Wolmirstedt",
+        "beschreibung": "Die erste urkundliche Erwähnung von 1014 berichtet von einem Angriff im Jahr 1009 auf die östliche Mauer der Oberburg an der Ohremündung.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Wolmirstedt",
+        "quelle_url": "https://de.wikipedia.org/wiki/Wolmirstedt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0861,
+          52.0633
+        ]
+      },
+      "properties": {
+        "id": "1112-augustinerstift-hamersleben",
+        "jahr": 1112,
+        "datum": "1108 / 1112",
+        "titel": "Augustinerstift Hamersleben",
+        "ort": "Hamersleben",
+        "beschreibung": "1108 in Osterwieck gestiftet, wurde das Augustiner-Chorherrenstift 1112 nach Hamersleben verlegt. Die romanische Stiftskirche war vor 1140 vollendet und ist für ihre Würfelkapitelle bekannt. Das Stift besaß ein bedeutendes Skriptorium.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Kloster Hamersleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Kloster_Hamersleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5233,
+          52.2328
+        ]
+      },
+      "properties": {
+        "id": "1129-benediktiner-in-gross-ammensleben",
+        "jahr": 1129,
+        "datum": "1129",
+        "titel": "Benediktiner in Groß Ammensleben",
+        "ort": "Groß Ammensleben",
+        "beschreibung": "Erzbischof Norbert von Xanten übertrug Kirche und Kloster dem Benediktinerorden. 1140 wurde es zur Abtei erhoben.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Groß Ammensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Gro%C3%9F_Ammensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4129,
+          52.2906
+        ]
+      },
+      "properties": {
+        "id": "1181-haldensleben-unter-wasser-gesetzt",
+        "jahr": 1181,
+        "datum": "1181",
+        "titel": "Haldensleben unter Wasser gesetzt",
+        "ort": "Haldensleben",
+        "beschreibung": "Erzbischof Wichmann von Magdeburg belagerte die Stadt lange. Seine Truppen stauten schließlich die Ohre, überfluteten Haldensleben und zerstörten es.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Haldensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Haldensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1081,
+          52.195
+        ]
+      },
+      "properties": {
+        "id": "1191-wallfahrtsort-marienborn",
+        "jahr": 1191,
+        "datum": "Ende 12. Jh.",
+        "titel": "Wallfahrtsort Marienborn",
+        "ort": "Marienborn",
+        "beschreibung": "An einer Quelle, an der der Legende nach eine Marienfigur vom Himmel fiel, entstand einer der ältesten Wallfahrtsorte Deutschlands. Die geistliche Gemeinschaft dort ist von 1191 bis 1910 überliefert.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Marienborn",
+        "quelle_url": "https://de.wikipedia.org/wiki/Marienborn"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.432,
+          52.2905
+        ]
+      },
+      "properties": {
+        "id": "1228-zisterzienserinnen-in-althaldensleben",
+        "jahr": 1228,
+        "datum": "1228",
+        "titel": "Zisterzienserinnen in Althaldensleben",
+        "ort": "Althaldensleben",
+        "beschreibung": "Erzbischof Albrecht I. stiftete das Zisterzienserinnenkloster. Es wurde 1810 aufgehoben. Die Gebäude nutzt heute eine Berufsschule.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Haldensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Haldensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2384,
+          52.331
+        ]
+      },
+      "properties": {
+        "id": "1307-die-wasserburg-flechtingen",
+        "jahr": 1307,
+        "datum": "1307",
+        "titel": "Die Wasserburg Flechtingen",
+        "ort": "Flechtingen",
+        "beschreibung": "Die Familie Schenck wird als Inhaberin der Wasserburg genannt. Die Burg steht auf einem Grauwackefelsen in einem künstlich angestauten See und ist bis heute gut erhalten.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Wasserburg Flechtingen",
+        "quelle_url": "https://de.wikipedia.org/wiki/Wasserburg_Flechtingen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0861,
+          52.0633
+        ]
+      },
+      "properties": {
+        "id": "1633-dreissigjaehriger-krieg-hamersleben-wird",
+        "jahr": 1633,
+        "datum": "1633 – 1649",
+        "titel": "Dreißigjähriger Krieg: Hamersleben wird Kriegsbeute",
+        "ort": "Hamersleben",
+        "beschreibung": "Weil das Stift katholisch blieb, fiel es als Kriegsbeute an die Schweden. Auch Groß Ammensleben, Hundisburg und Wolmirstedt litten unter Plünderungen und Zerstörungen durch durchziehende Truppen.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Kloster Hamersleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Kloster_Hamersleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4002,
+          52.2493
+        ]
+      },
+      "properties": {
+        "id": "1693-barockschloss-hundisburg",
+        "jahr": 1693,
+        "datum": "1693",
+        "titel": "Barockschloss Hundisburg",
+        "ort": "Hundisburg",
+        "beschreibung": "Johann Friedrich II. von Alvensleben beauftragte den Wolfenbütteler Baumeister Hermann Korb, die im Krieg zerstörte Anlage zu einem Barockschloss mit großem Garten auszubauen. Es gilt als eines der bedeutendsten ländlichen Barockschlösser in Sachsen-Anhalt.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Schloss Hundisburg",
+        "quelle_url": "https://de.wikipedia.org/wiki/Schloss_Hundisburg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3014,
+          51.9919
+        ]
+      },
+      "properties": {
+        "id": "1809-napoleons-bruder-hebt-das-kloster-auf",
+        "jahr": 1809,
+        "datum": "1809",
+        "titel": "Napoleons Bruder hebt das Kloster auf",
+        "ort": "Hadmersleben",
+        "beschreibung": "Die Börde gehörte zum Königreich Westphalen. König Jérôme Bonaparte löste 1809 das Kloster Hadmersleben auf und verkaufte 1812 das Amt. Auch Hamersleben (1804) und Althaldensleben (1810) wurden in dieser Zeit säkularisiert.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Hadmersleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Hadmersleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4002,
+          52.2493
+        ]
+      },
+      "properties": {
+        "id": "1811-ein-schloss-als-fabrik",
+        "jahr": 1811,
+        "datum": "1811",
+        "titel": "Ein Schloss als Fabrik",
+        "ort": "Hundisburg",
+        "beschreibung": "Der Magdeburger Unternehmer Johann Gottlob Nathusius kaufte Hundisburg und nutzte das Schloss zunächst als Fabrikgebäude. Er zog dafür Zwischendecken in den Festsaal ein.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Schloss Hundisburg",
+        "quelle_url": "https://de.wikipedia.org/wiki/Schloss_Hundisburg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3617,
+          52.0703
+        ]
+      },
+      "properties": {
+        "id": "1838-die-zuckerruebe-macht-klein-wanzleben-be",
+        "jahr": 1838,
+        "datum": "1838 / 1856",
+        "titel": "Die Zuckerrübe macht Klein Wanzleben bekannt",
+        "ort": "Klein Wanzleben",
+        "beschreibung": "Landwirte gründeten 1838 eine Zuckerfabrik. 1856 übernahm Matthias Christian Rabbethge die Mehrheit. Daraus entstand die Kleinwanzlebener Saatzucht, die heutige KWS SAAT. Seit 2010 heißt der Ort „Zuckerdorf Klein Wanzleben“.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Zuckerdorf Klein Wanzleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Zuckerdorf_Klein_Wanzleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2267,
+          52.0267
+        ]
+      },
+      "properties": {
+        "id": "1840-erste-zuckerfabrik-in-oschersleben",
+        "jahr": 1840,
+        "datum": "1840",
+        "titel": "Erste Zuckerfabrik in Oschersleben",
+        "ort": "Oschersleben (Bode)",
+        "beschreibung": "Die Schwarzerdeböden der Börde machten den Rübenanbau besonders ertragreich. Zuckerfabriken prägten im 19. Jahrhundert viele Orte der Region.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Oschersleben (Bode)",
+        "quelle_url": "https://de.wikipedia.org/wiki/Oschersleben_(Bode)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2395,
+          52.0225
+        ]
+      },
+      "properties": {
+        "id": "1843-die-eisenbahn-kommt",
+        "jahr": 1843,
+        "datum": "15. Juli 1843",
+        "titel": "Die Eisenbahn kommt",
+        "ort": "Bahnhof Oschersleben",
+        "beschreibung": "Die Magdeburg-Halberstädter Eisenbahngesellschaft eröffnete ihre 58 km lange Strecke Magdeburg – Oschersleben – Halberstadt.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Magdeburg-Halberstädter Eisenbahngesellschaft",
+        "quelle_url": "https://de.wikipedia.org/wiki/Magdeburg-Halberst%C3%A4dter_Eisenbahngesellschaft"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0167,
+          52.1167
+        ]
+      },
+      "properties": {
+        "id": "1851-braunkohle-in-hoetensleben",
+        "jahr": 1851,
+        "datum": "1851 – 1955",
+        "titel": "Braunkohle in Hötensleben",
+        "ort": "Hötensleben",
+        "beschreibung": "1851 wurden die ersten Braunkohlegruben eröffnet. Viele Bergleute arbeiteten später jenseits der Grenze bei der Braunschweigischen Kohlen-Bergwerke AG. Die Förderung endete im Mai 1955.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Hötensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/H%C3%B6tensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.215,
+          52.035
+        ]
+      },
+      "properties": {
+        "id": "1940-ruestung-in-oschersleben",
+        "jahr": 1940,
+        "datum": "bis 1945",
+        "titel": "Rüstung in Oschersleben",
+        "ort": "AGO-Werk, Oschersleben",
+        "beschreibung": "Seit dem Ersten Weltkrieg fertigte hier ein Werk der AGO Flugzeugteile. Im Zweiten Weltkrieg war es ein Rüstungsbetrieb und deshalb Ziel von Luftangriffen. Bei Kriegsende war es zu 80 % zerstört.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Oschersleben (Bode)",
+        "quelle_url": "https://de.wikipedia.org/wiki/Oschersleben_(Bode)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.665,
+          52.284
+        ]
+      },
+      "properties": {
+        "id": "1945-der-zug-von-farsleben",
+        "jahr": 1945.27,
+        "datum": "13. April 1945",
+        "titel": "Der Zug von Farsleben",
+        "ort": "zwischen Farsleben und Zielitz",
+        "beschreibung": "Ein Zug mit rund 2.500 jüdischen Häftlingen aus dem KZ Bergen-Belsen blieb hier stehen und wurde von amerikanischen Truppen befreit. Ein Gedenkstein auf dem Friedhof Farsleben erinnert an die Opfer.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Farsleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Farsleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4922,
+          52.2736
+        ]
+      },
+      "properties": {
+        "id": "1945-juedischer-friedhof-hillersleben",
+        "jahr": 1945.3,
+        "datum": "April 1945",
+        "titel": "Jüdischer Friedhof Hillersleben",
+        "ort": "Hillersleben",
+        "beschreibung": "Auf dem Gelände der früheren Heeresversuchsanstalt wurden Häftlinge aus einem Evakuierungstransport aus Bergen-Belsen versorgt. Wer starb, wurde auf einem eigens angelegten jüdischen Friedhof begraben. Ein Gedenkstein erinnert an 143 Opfer.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Hillersleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Hillersleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2403,
+          52.3322
+        ]
+      },
+      "properties": {
+        "id": "1952-erste-lpg-in-flechtingen",
+        "jahr": 1952,
+        "datum": "1952",
+        "titel": "Erste LPG in Flechtingen",
+        "ort": "Flechtingen",
+        "beschreibung": "Drei Kleinbauern gründeten die LPG „Frieden“. Im selben Jahr entstand eine Maschinen-Traktoren-Station für die Höfe der Umgebung.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Flechtingen",
+        "quelle_url": "https://de.wikipedia.org/wiki/Flechtingen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0167,
+          52.1167
+        ]
+      },
+      "properties": {
+        "id": "1952-zwangsaussiedlung-an-der-grenze",
+        "jahr": 1952.5,
+        "datum": "1952 / 1961",
+        "titel": "Zwangsaussiedlung an der Grenze",
+        "ort": "Hötensleben",
+        "beschreibung": "Bei der „Aktion Ungeziefer“ zwang die Volkspolizei im Juni 1952 zahlreiche Familien, ihre Heimat binnen kürzester Zeit zu verlassen. 1961 folgte die „Aktion Festigung“.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Hötensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/H%C3%B6tensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.68,
+          52.3
+        ]
+      },
+      "properties": {
+        "id": "1968-kalibergbau-in-zielitz",
+        "jahr": 1968,
+        "datum": "1968",
+        "titel": "Kalibergbau in Zielitz",
+        "ort": "Kaliwerk Zielitz",
+        "beschreibung": "Nach Probebohrungen ab 1960 wurde der VEB Kalibetrieb Zielitz gegründet. Heute ist es das größte Kalibergwerk Deutschlands. Die weiße Halde heißt im Volksmund „Kalimandscharo“.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Kaliwerk Zielitz",
+        "quelle_url": "https://de.wikipedia.org/wiki/Kaliwerk_Zielitz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0593,
+          52.2188
+        ]
+      },
+      "properties": {
+        "id": "1972-grenzuebergangsstelle-marienborn",
+        "jahr": 1972,
+        "datum": "1972 – 1990",
+        "titel": "Grenzübergangsstelle Marienborn",
+        "ort": "an der A 2 bei Marienborn",
+        "beschreibung": "Marienborn war der größte und wichtigste Übergang an der innerdeutschen Grenze, vor allem für den Transit nach West-Berlin. 1972 bis 1974 baute die DDR hier eine 35 Hektar große Anlage. Am 30. Juni 1990 wurden die Kontrollen eingestellt.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Grenzübergang Helmstedt/Marienborn",
+        "quelle_url": "https://de.wikipedia.org/wiki/Grenz%C3%BCbergang_Helmstedt/Marienborn"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0133,
+          52.1227
+        ]
+      },
+      "properties": {
+        "id": "1989-grenzoeffnung-in-hoetensleben",
+        "jahr": 1989,
+        "datum": "November 1989",
+        "titel": "Grenzöffnung in Hötensleben",
+        "ort": "Grenzdenkmal Hötensleben",
+        "beschreibung": "Die Straße nach Schöningen wurde freigegeben. 350 Meter der Grenzanlagen blieben im Ausbauzustand von 1989 erhalten und sind heute Teil des Europäischen Kulturerbes.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Grenzdenkmal Hötensleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Grenzdenkmal_H%C3%B6tensleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3,
+          52.16
+        ]
+      },
+      "properties": {
+        "id": "1994-boerdekreis-und-ohrekreis-entstehen",
+        "jahr": 1994,
+        "datum": "1. Juli 1994",
+        "titel": "Bördekreis und Ohrekreis entstehen",
+        "ort": "Oschersleben / Haldensleben",
+        "beschreibung": "Die DDR-Kreise Oschersleben und Wanzleben wurden zum Bördekreis zusammengelegt, Haldensleben und Wolmirstedt zum Ohrekreis. Die gestrichelte Linie auf der Karte zeigt die damalige Grenze.",
+        "lagegenauigkeit": "ungefaehr",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Bördekreis",
+        "quelle_url": "https://de.wikipedia.org/wiki/B%C3%B6rdekreis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0593,
+          52.2188
+        ]
+      },
+      "properties": {
+        "id": "1996-gedenkstaette-deutsche-teilung",
+        "jahr": 1996,
+        "datum": "13. August 1996",
+        "titel": "Gedenkstätte Deutsche Teilung",
+        "ort": "Marienborn",
+        "beschreibung": "Auf dem denkmalgeschützten Gelände der Grenzübergangsstelle eröffnete die Gedenkstätte Deutsche Teilung Marienborn.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Gedenkstätte Deutsche Teilung Marienborn",
+        "quelle_url": "https://de.wikipedia.org/wiki/Gedenkst%C3%A4tte_Deutsche_Teilung_Marienborn"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2786,
+          52.0271
+        ]
+      },
+      "properties": {
+        "id": "1997-motopark-oschersleben",
+        "jahr": 1997,
+        "datum": "1997",
+        "titel": "Motopark Oschersleben",
+        "ort": "Motorsport Arena Oschersleben",
+        "beschreibung": "Nach 13 Monaten Bauzeit eröffnete die vierte permanente Rennstrecke Deutschlands, nach Nürburgring, Hockenheimring und Sachsenring.",
+        "lagegenauigkeit": "objekt",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Motorsport Arena Oschersleben",
+        "quelle_url": "https://de.wikipedia.org/wiki/Motorsport_Arena_Oschersleben"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4129,
+          52.2906
+        ]
+      },
+      "properties": {
+        "id": "2007-landkreis-boerde",
+        "jahr": 2007,
+        "datum": "1. Juli 2007",
+        "titel": "Landkreis Börde",
+        "ort": "Kreissitz Haldensleben",
+        "beschreibung": "Bördekreis und Ohrekreis werden zum Landkreis Börde zusammengelegt. Verwaltungssitz ist Haldensleben.",
+        "lagegenauigkeit": "ortsmitte",
+        "ausserhalb_landkreis": false,
+        "quelle_titel": "Landkreis Börde",
+        "quelle_url": "https://de.wikipedia.org/wiki/Landkreis_B%C3%B6rde"
+      }
+    }
+  ]
+}
