@@ -15,7 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
 
@@ -29,9 +29,22 @@ jobs:
       - name: Seiten erzeugen
         run: python scripts/orte/build.py
 
+      - name: Cache Ratsinformationen
+        uses: actions/cache@v4
+        with:
+          path: scripts/ratskarte/.cache
+          key: ratskarte-${{ github.run_id }}
+          restore-keys: ratskarte-
+
+      - name: Ratskarte Wanzleben-Börde (Prototyp)
+        continue-on-error: true      # Ausfall des Ratsinfos soll die übrigen Daten nicht blockieren
+        run: |
+          python scripts/ratskarte/fetch.py
+          python scripts/ratskarte/build.py
+
       - name: Änderungen committen
         run: |
-          git add -A betriebe orte leben regional sitemap.xml
+          git add -A betriebe orte leben regional ratskarte sitemap.xml
           if git diff --cached --quiet; then
             echo "Keine Änderungen."
             exit 0

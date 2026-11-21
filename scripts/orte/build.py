@@ -996,6 +996,8 @@ def main() -> None:
 
     # Sitemap für die ganze Website
     fest = ["/", "/energiewende/", "/unfallatlas/"]
+    if (ROOT / "ratskarte" / "index.html").exists():
+        fest.append("/ratskarte/")
     urls = "".join(f"<url><loc>{BASIS_URL}{u}</loc></url>\n" for u in fest + sitemap)
     schreibe(ROOT / "sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
 

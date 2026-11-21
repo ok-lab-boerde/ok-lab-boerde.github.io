@@ -7,4 +7,5 @@ node_modules/
 .claude/
 docs/auftraege/
 scripts/orte/.cache/
+scripts/ratskarte/.cache/
 __pycache__/
