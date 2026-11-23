@@ -24,4 +24,16 @@ DTSTART:19701025T030000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+UID:vp-2904032@ok-lab-boerde.github.io
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Europe/Berlin:20261212T130000
+SUMMARY:Flohmarkt an der katholischen Kirche Hötensleben
+LOCATION:Katholische Kirche Hötensleben
+URL:https://www.obere-aller.de/veranstaltungen/2904032/2026/12/12/flohmarkt
+ -an-der-katholischen-kirche-hoetensleben
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2904032/2026/12/12/flohmarkt-an-der-katholischen-kirche-hoetensle
+ ben
+END:VEVENT
 END:VCALENDAR

@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:vp-2990928@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:Weihnachtsmarkt der Gemeinde Ummendorf
@@ -38,7 +38,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2858334@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T110000
 SUMMARY:Weihnachtsmarkt
 LOCATION:Heinemanns Hof\, Ummendorf
@@ -49,7 +49,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmarkt-in-ummendorf@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T110000
 DTEND;TZID=Europe/Berlin:20261129T170000
 SUMMARY:Weihnachtsmarkt in Ummendorf
@@ -62,7 +62,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-lesung-aus-dornige-wege@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261210T190000
 DTEND;TZID=Europe/Berlin:20261210T210000
 SUMMARY:Lesung aus "Dornige Wege"

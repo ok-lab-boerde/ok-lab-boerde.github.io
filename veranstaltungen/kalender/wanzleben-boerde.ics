@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:si-4992@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261123T190000
 SUMMARY:Sitzung: Finanzausschuss
 LOCATION:Stadt Wanzleben\, Rathauskeller\, Markt 1-2
@@ -36,7 +36,7 @@ DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
 END:VEVENT
 BEGIN:VEVENT
 UID:si-4920@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261123T193000
 SUMMARY:Sitzung: Ortschaftsrat Remkersleben
 LOCATION:Remkersleben\, Bürgerhaus\, Lange Hauptstr. 17
@@ -46,7 +46,7 @@ DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
 END:VEVENT
 BEGIN:VEVENT
 UID:si-5074@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261124T190000
 SUMMARY:Sitzung: Hauptausschuss
 LOCATION:Stadt Wanzleben\, Rathauskeller\, Markt 1-2
@@ -56,7 +56,7 @@ DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
 END:VEVENT
 BEGIN:VEVENT
 UID:si-4926@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261126T193000
 SUMMARY:Sitzung: Ortschaftsrat Klein Rodensleben
 LOCATION:Klein Rodensleben\, Beratungsraum Kindertagesstätte\, Domersleben
@@ -64,5 +64,15 @@ LOCATION:Klein Rodensleben\, Beratungsraum Kindertagesstätte\, Domersleben
 URL:https://ratsinfo.kitu-genossenschaft.de/wzl_bi/si0057.asp?__ksinr=4926
 DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
  ossenschaft.de/wzl_bi/si0057.asp?__ksinr=4926
+END:VEVENT
+BEGIN:VEVENT
+UID:si-5042@ok-lab-boerde.github.io
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Europe/Berlin:20261202T180000
+SUMMARY:Sitzung: Ortschaftsrat Stadt Wanzleben
+LOCATION:Stadt Wanzleben\, Rathauskeller\, Markt 1-2
+URL:https://ratsinfo.kitu-genossenschaft.de/wzl_bi/si0057.asp?__ksinr=5042
+DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
+ ossenschaft.de/wzl_bi/si0057.asp?__ksinr=5042
 END:VEVENT
 END:VCALENDAR

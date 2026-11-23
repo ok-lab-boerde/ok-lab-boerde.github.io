@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:vp-2786890@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261123T150000
 SUMMARY:Lesenachmittag für junggebliebene Frohnaturen
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -37,7 +37,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2996362@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261124T153000
 SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -48,7 +48,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2973418@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261125T184500
 SUMMARY:Frauengesprächskreis Thema: Wechseljahre - Zwischen Abschied und A
  ufbruch
@@ -61,7 +61,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2985243@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T150000
 SUMMARY:5. Zielitzer Adventszauber
 LOCATION:Gemeinde Zielitz
@@ -72,7 +72,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2797294@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261129T103000
 SUMMARY:Der gestiefelte Kater Tickets? Klicken Sie hier -- Märchenkomödie
   von Sigrid Vorpahl nach Grimm
@@ -86,7 +86,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2985246@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261129T170000
 SUMMARY:Lebendiger Adventskalender
 LOCATION:Ortsfeuerwehr Schricke
@@ -97,7 +97,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2998616@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261201T170000
 SUMMARY:Beatyauszeit "Mary Kay" mit Yvonne Heinemann
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -108,7 +108,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2987362@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261204T180000
 SUMMARY:Vortrag in Bildern: Vom ersten Marathon bis nach New York – mit 8
  0 Jahren noch am Start
@@ -122,7 +122,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2904879@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T103000
 SUMMARY:AUSVERKAUFT! - 7 Geißlein allein zu Haus -- Tickets? Klicken Sie h
  ier -- Märchenspiel von Sigrid Vorpahl nach Grimm
@@ -136,7 +136,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2921561@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261207T170000
 SUMMARY:Bürgermeister-Sprechstunde
 LOCATION:Büro des Bürgermeisters in Zielitz\, Ramstedter Straße 26 (2. O
@@ -148,7 +148,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2797298@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261208T103000
 SUMMARY:7 Geißlein allein zu Haus -- Nur für Schulklassen -- Anmeldung bi
  s 15.10.2026 unter info@holzhaustheater.de -- Märchenspiel von Sigrid Vor
@@ -164,7 +164,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2996363@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261208T153000
 SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -175,7 +175,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2797296@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261212T190000
 SUMMARY:Das Gespenst von Canterville - romantischer Theaterspuk von Sigrid 
  Vorpahl nach der Erzählung von Oscar Wilde eingerichtet für Schwarzes Th
@@ -192,7 +192,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2833728@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261214T150000
 SUMMARY:Lesenachmittag für junggebliebene Frohnaturen
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -203,7 +203,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2949420@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261216T164500
 SUMMARY:Yoga - gemischter Kurs für Neueinsteiger und Geübte
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -215,7 +215,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2797297@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261220T103000
 SUMMARY:Dornröschen - ganz schön ausgeschlafen - Tickets? Klicken Sie hie
  r -- Märchenkomödie von Sigrid Vorpahl nach Grimm
@@ -229,7 +229,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2883405@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261222T153000
 SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -240,7 +240,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2904883@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20261231T183000
 SUMMARY:Das Gespenst von Canterville - romantischer Theaterspuk von Sigrid 
  Vorpahl nach der Erzählung von Oscar Wilde eingerichtet für Schwarzes Th
@@ -257,7 +257,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2996369@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20270112T153000
 SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -267,24 +267,22 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
  ltungen/2996369/2027/01/12/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
 END:VEVENT
 BEGIN:VEVENT
-UID:vp-3011033@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
-DTSTART;TZID=Europe/Berlin:20270117T103000
-SUMMARY:Bei der Feuerwehr wird der Kaffee kalt -- Tickets? Klicken Sie hier
-  -- Schauspiel nach dem Buch von Hannes Hüttner gespielt von Kindern für
-  Kinder ab 4 Jahren
+UID:vp-3011366@ok-lab-boerde.github.io
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Europe/Berlin:20270117T153000
+SUMMARY:„Aber bitte mit Sahne“ – Kaffee\, Kuchen und Theater serviert
+  von unseren Schauspielschülern
 LOCATION:Holzhaustheater Zielitz e.V.
-URL:https://www.elbe-heide.de/veranstaltungen/3011033/2027/01/17/bei-der-fe
- uerwehr-wird-der-kaffee-kalt-tickets-klicken-sie-hier-schauspiel-nach-dem-
- buch-von-hannes-huettner-gespielt-von-kindern-fuer-kinder-ab-4-jahren
+URL:https://www.elbe-heide.de/veranstaltungen/3011366/2027/01/17/aber-bitte
+ -mit-sahne--kaffee-kuchen-und-theater-serviert-von-unseren-schauspielschue
+ lern
 DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
- ltungen/3011033/2027/01/17/bei-der-feuerwehr-wird-der-kaffee-kalt-tickets-
- klicken-sie-hier-schauspiel-nach-dem-buch-von-hannes-huettner-gespielt-von
- -kindern-fuer-kinder-ab-4-jahren
+ ltungen/3011366/2027/01/17/aber-bitte-mit-sahne--kaffee-kuchen-und-theater
+ -serviert-von-unseren-schauspielschuelern
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2916833@ok-lab-boerde.github.io
-DTSTAMP:20261122T000000Z
+DTSTAMP:20261123T000000Z
 DTSTART;TZID=Europe/Berlin:20270122T190000
 SUMMARY:Konzert mit "Melankomiker" Jürgen Denkewitz als "Schlimmer Schlawi
  ner"
@@ -294,5 +292,51 @@ URL:https://www.elbe-heide.de/veranstaltungen/2916833/2027/01/22/konzert-mi
 DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
  ltungen/2916833/2027/01/22/konzert-mit-melankomiker-juergen-denkewitz-als-
  schlimmer-schlawiner
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3011033@ok-lab-boerde.github.io
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Europe/Berlin:20270124T103000
+SUMMARY:Bei der Feuerwehr wird der Kaffee kalt -- Tickets? Klicken Sie hier
+  -- Schauspiel nach dem Buch von Hannes Hüttner gespielt von Kindern für
+  Kinder ab 4 Jahren
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/3011033/2027/01/24/bei-der-fe
+ uerwehr-wird-der-kaffee-kalt-tickets-klicken-sie-hier-schauspiel-nach-dem-
+ buch-von-hannes-huettner-gespielt-von-kindern-fuer-kinder-ab-4-jahren
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3011033/2027/01/24/bei-der-feuerwehr-wird-der-kaffee-kalt-tickets-
+ klicken-sie-hier-schauspiel-nach-dem-buch-von-hannes-huettner-gespielt-von
+ -kindern-fuer-kinder-ab-4-jahren
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3011354@ok-lab-boerde.github.io
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Europe/Berlin:20270213T193000
+SUMMARY:"Je öller\, je döller - Pension Schöller" -- Tickets? Klicken Si
+ e hier -- Komödie von Sigrid Vorpahl nach Jacoby/Lauf Musik Dietmar Höro
+ ld
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/3011354/2027/02/13/je-oeller-
+ je-doeller-pension-schoeller-tickets-klicken-sie-hier-komoedie-von-sigrid-
+ vorpahl-nach-jacoby-lauf-musik-dietmar-hoerold
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3011354/2027/02/13/je-oeller-je-doeller-pension-schoeller-tickets-
+ klicken-sie-hier-komoedie-von-sigrid-vorpahl-nach-jacoby-lauf-musik-dietma
+ r-hoerold
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3011367@ok-lab-boerde.github.io
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Europe/Berlin:20270221T153000
+SUMMARY:„Aber bitte mit Sahne“ – Kaffee\, Kuchen und Theater serviert
+  von unseren Schauspielschülern
+LOCATION:Holzhaustheater Zielitz e.V.
+URL:https://www.elbe-heide.de/veranstaltungen/3011367/2027/02/21/aber-bitte
+ -mit-sahne--kaffee-kuchen-und-theater-serviert-von-unseren-schauspielschue
+ lern
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
+ ltungen/3011367/2027/02/21/aber-bitte-mit-sahne--kaffee-kuchen-und-theater
+ -serviert-von-unseren-schauspielschuelern
 END:VEVENT
 END:VCALENDAR
