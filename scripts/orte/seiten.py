@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from html import escape
 
-BASIS_URL = "https://ok-lab-boerde.github.io"
+BASIS_URL = "https://oklab-boerde.de"
 OSM_HINWEIS = ('Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> '
                '(<a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>)')
 

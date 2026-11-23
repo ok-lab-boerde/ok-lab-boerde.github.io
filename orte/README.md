@@ -1,7 +1,7 @@
 # Orte in der Börde
 
 Steckbriefe für alle Gemeinden und Ortsteile im Landkreis Börde: Betriebe, Vereine und Sport, Kitas und Schulen, Gesundheit, Bus und Bahn, Ausflugsziele, dazu Zahlen aus dem Energiewende-Monitor und dem Unfallatlas.
-Live: https://ok-lab-boerde.github.io/orte/
+Live: https://oklab-boerde.de/orte/
 
 Alle Dateien in diesem Ordner außer dieser README werden von `scripts/orte/build.py` erzeugt und bei jedem Lauf gelöscht und neu geschrieben.
 

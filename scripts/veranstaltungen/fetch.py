@@ -26,7 +26,7 @@ from pathlib import Path
 HIER = Path(__file__).resolve().parent
 CACHE = HIER / ".cache"
 DETAILS = CACHE / "details"
-UA = {"User-Agent": "ok-lab-boerde-veranstaltungen/0.1 (+https://ok-lab-boerde.github.io/veranstaltungen/)"}
+UA = {"User-Agent": "ok-lab-boerde-veranstaltungen/0.1 (+https://oklab-boerde.de/veranstaltungen/)"}
 LK = "https://www.landkreis-boerde.de"
 PORTALE = {  # Basis-URL: Gemeinde bzw. Verbandsgemeinde, die das Portal betreibt
     "https://www.niedere-boerde.de": "Niedere Börde",

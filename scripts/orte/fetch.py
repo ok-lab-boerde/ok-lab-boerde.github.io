@@ -21,7 +21,7 @@ CACHE = Path(__file__).resolve().parent / ".cache"
 KREIS_RELATION = 62359          # Landkreis Börde, ermittelt über de:amtlicher_gemeindeschluessel=15083
 AGS = "15083"
 AREA = 3600000000 + KREIS_RELATION
-UA = {"User-Agent": "ok-lab-boerde-orte/1.0 (+https://ok-lab-boerde.github.io/betriebe/ueber-die-daten/)"}
+UA = {"User-Agent": "ok-lab-boerde-orte/1.0 (+https://oklab-boerde.de/betriebe/ueber-die-daten/)"}
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
 WFS = "https://sgx.geodatenzentrum.de/wfs_vg250"
 

@@ -27,7 +27,7 @@ SITZ = CACHE / "sitzungen"
 BASIS = "https://ratsinfo.kitu-genossenschaft.de/wzl_bi/"
 AB_JAHR = 2024                     # Wahlperiode 2024–2029
 PAUSE = 3.0
-UA = {"User-Agent": "ok-lab-boerde-ratskarte/0.1 (+https://ok-lab-boerde.github.io/)"}
+UA = {"User-Agent": "ok-lab-boerde-ratskarte/0.1 (+https://oklab-boerde.de/)"}
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
 STRASSEN_Q = """[out:json][timeout:180];
 area["boundary"="administrative"]["admin_level"="8"]["name"="Wanzleben-Börde"]->.g;

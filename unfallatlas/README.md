@@ -1,7 +1,7 @@
 # Unfallatlas Börde
 
 Karte der Verkehrsunfälle mit Personenschaden im Landkreis Börde.
-Live: https://ok-lab-boerde.github.io/unfallatlas/
+Live: https://oklab-boerde.de/unfallatlas/
 
 ## Datenquellen
 

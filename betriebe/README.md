@@ -1,7 +1,7 @@
 # Betriebe in der Börde
 
 Durchsuchbare Karte aller benannten Betriebe im Landkreis Börde, mit eigener Seite je Betrieb.
-Live: https://ok-lab-boerde.github.io/betriebe/
+Live: https://oklab-boerde.de/betriebe/
 
 ## Inhalt
 
