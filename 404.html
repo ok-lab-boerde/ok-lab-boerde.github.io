@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Seite nicht gefunden – OK Lab Börde</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="site-header"><div class="wrap"><a class="brand" href="/"><img src="/assets/logo.svg" alt=""><span>OK Lab <b>Börde</b></span></a>
+    <nav aria-label="Hauptnavigation"><ul><li><a href="/#projekte">Projekte</a></li><li><a href="/#mitmachen">Mitmachen</a></li></ul></nav></div></header>
+  <main id="main" class="wrap page">
+    <h1>Hier ist nur Acker</h1>
+    <p><strong>Fehler 404:</strong> Diese Seite gibt es nicht oder nicht mehr. Vielleicht ist der Link veraltet, falsch abgetippt, oder ein Betrieb oder Termin wurde inzwischen aus den Daten entfernt.</p>
+
+    <h2>Hier geht es weiter</h2>
+    <div class="join-grid">
+      <a class="channel" href="/"><strong>Startseite</strong><span>Alle Projekte auf einen Blick</span></a>
+      <a class="channel" href="/orte/"><strong>Orte in der Börde</strong><span>Steckbriefe für alle 34 Gemeinden</span></a>
+      <a class="channel" href="/betriebe/"><strong>Betriebe</strong><span>Läden, Handwerk, Gaststätten, Hofläden</span></a>
+      <a class="channel" href="/veranstaltungen/"><strong>Veranstaltungen</strong><span>Märkte, Feste und Sitzungen</span></a>
+    </div>
+
+    <h2>Der Link sollte funktionieren?</h2>
+    <p>Dann sag uns Bescheid, am besten mit der Adresse, die du aufgerufen hast: <a id="melden" href="mailto:info@oklab-boerde.de?subject=Seite%20nicht%20gefunden">info@oklab-boerde.de</a> oder über die Seite <a href="/feedback/">Feedback und Wünsche</a>.</p>
+  </main>
+  <script>
+    // Aufgerufene Adresse in die Fehlermeldung übernehmen, damit niemand sie abtippen muss
+    document.getElementById("melden").href += "&body=" + encodeURIComponent("Diese Adresse wurde nicht gefunden:\n" + location.href + "\n");
+  </script>
+</body>
+</html>
