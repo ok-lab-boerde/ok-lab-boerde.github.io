@@ -139,3 +139,14 @@ table.daten.links th, table.daten.links td { text-align: left; white-space: norm
 .termine-box .leer { list-style: none; margin-left: -1.2em; color: var(--muted); }
 #vk-filter label { min-width: 0; max-width: 100%; } #vk-filter select { max-width: 100%; }
 .url-lang { overflow-wrap: anywhere; word-break: break-all; }
+
+/* Feuerwehren */
+.fw-notruf { background: var(--wheat-soft); border-left: 5px solid #c62828; border-radius: 8px; padding: 10px 16px; }
+.fw-gemeinden { list-style: none; padding: 0; margin: 12px 0 32px; }
+.fw-gemeinden h2 { margin: 22px 0 6px; font-size: 1.2rem; }
+.fw-liste { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.fw-eintrag { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; }
+.fw-eintrag h3 { margin: 0 0 2px; font-size: 1.02rem; overflow-wrap: anywhere; }
+.fw-eintrag p { margin: 2px 0; overflow-wrap: anywhere; }
+.fw-eintrag:target { outline: 3px solid var(--blue); }
+.fw-art { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-left: 6px; color: var(--muted); }

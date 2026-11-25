@@ -989,6 +989,10 @@ def main() -> None:
     reg_urls = regional.erzeugen(betriebe, gemeinden, stand, schreibe, OUT_REGIONAL)
     sitemap.extend(reg_urls)
     n_seiten += len(reg_urls)
+    import feuerwehr
+    fw_urls = feuerwehr.erzeugen(lade("poi.json")["elements"], gemeinden, verorten, stand, schreibe, ROOT / "feuerwehr")
+    sitemap.extend(fw_urls)
+    n_seiten += len(fw_urls)
     schreibe(OUT_BETRIEBE / "ueber-die-daten" / "index.html", ueber_seite(stand, len(betriebe), n_seiten))
 
     # Daten für die Karte (kompakt)

@@ -47,7 +47,7 @@ jobs:
 
       - name: Änderungen committen
         run: |
-          git add -A betriebe orte leben regional ratskarte sitemap.xml scripts/veranstaltungen/orte.json
+          git add -A betriebe orte leben regional feuerwehr ratskarte sitemap.xml scripts/veranstaltungen/orte.json
           if git diff --cached --quiet; then
             echo "Keine Änderungen."
             exit 0
