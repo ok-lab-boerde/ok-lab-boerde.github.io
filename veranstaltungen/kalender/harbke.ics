@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:vp-2968457@ok-lab-boerde.github.io
-DTSTAMP:20261124T000000Z
+DTSTAMP:20261125T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T110000
 SUMMARY:Weihnachtsmarkt auf dem Schlosshof
 LOCATION:Schloss & Schlosshof\, Harbke
@@ -37,7 +37,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2968471@ok-lab-boerde.github.io
-DTSTAMP:20261124T000000Z
+DTSTAMP:20261125T000000Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261207
 SUMMARY:Rassegeflügelausstellung
@@ -49,7 +49,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2968467@ok-lab-boerde.github.io
-DTSTAMP:20261124T000000Z
+DTSTAMP:20261125T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T150000
 SUMMARY:Rentnerweihnachtsfeier des Harbker SV Turbine e. V.
 LOCATION:Harbker SV Turbine e.V.\, Harbke
@@ -61,7 +61,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2968473@ok-lab-boerde.github.io
-DTSTAMP:20261124T000000Z
+DTSTAMP:20261125T000000Z
 DTSTART;TZID=Europe/Berlin:20261225T200000
 SUMMARY:Weihnachtsdisco
 LOCATION:Kulturhaus\, Harbke
@@ -72,7 +72,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2991578@ok-lab-boerde.github.io
-DTSTAMP:20261124T000000Z
+DTSTAMP:20261125T000000Z
 DTSTART;TZID=Europe/Berlin:20270110T100000
 SUMMARY:Braunkohlwanderung
 LOCATION:Kulturhaus\, Harbke
