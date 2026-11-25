@@ -43,7 +43,8 @@ def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: 
   <meta property="og:title" content="{e(og_titel)}">
   <meta property="og:description" content="{e(beschreibung)}">
   <meta property="og:url" content="{BASIS_URL}{e(pfad)}">
-  <meta property="og:image" content="{BASIS_URL}/assets/og-bild.png">
+  <meta property="og:image" content="{BASIS_URL}/assets/og-bild.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Logo und Schriftzug OK Lab Börde">
