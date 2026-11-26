@@ -30,6 +30,27 @@ OUT_LEBEN = ROOT / "leben"
 OUT_REGIONAL = ROOT / "regional"
 RESERVIERT = {"branche", "data", "ueber-die-daten", "karte", "karten-check"}
 
+# Öffnungszeiten, die so lange niemand angefasst hat, gelten als möglicherweise veraltet.
+OH_ALT_TAGE = 730
+MONATE = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November",
+          "Dezember"]
+
+
+def oh_datum(t: dict, el: dict) -> tuple[str | None, bool]:
+    """(Datum JJJJ-MM-TT, bestätigt?) für die Öffnungszeiten: ein Prüfdatum aus OSM, sonst die letzte Bearbeitung des Eintrags."""
+    for k in ("check_date:opening_hours", "check_date", "survey:date"):
+        m = re.match(r"(\d{4})-(\d{2})(?:-(\d{2}))?$", t.get(k, "").strip())
+        if m:
+            return f"{m[1]}-{m[2]}-{m[3] or '01'}", True
+    ts = el.get("timestamp", "")[:10]
+    return (ts or None), False
+
+
+def monat_text(iso: str) -> str:
+    d = date.fromisoformat(iso)
+    return f"{MONATE[d.month - 1]} {d.year}"
+
+
 # Karten-Check: Reihenfolge = Bit im Feld "fehlt" von betriebe.json
 CHECK = [
     ("adresse", "Adresse", "Straße, Hausnummer und Postleitzahl",
@@ -150,7 +171,9 @@ def betriebe_laden(gemeinden: list[dict]) -> list[dict]:
                                    json.loads((HIER / "ausschluss.json").read_text(encoding="utf-8"))["objekte"])}
     ausschl = [tuple(x) for x in cfg["ausschliessen"]]
     betriebe = []
-    for el in lade("betriebe.json")["elements"]:
+    roh = lade("betriebe.json")
+    bezug = date.fromisoformat(roh.get("osm3s", {}).get("timestamp_osm_base", "")[:10] or date.today().isoformat())
+    for el in roh["elements"]:
         t = el.get("tags", {})
         key = f"{el['type']}/{el['id']}"
         if key in aus or any(t.get(k) == v for k, v in ausschl):
@@ -196,6 +219,8 @@ def betriebe_laden(gemeinden: list[dict]) -> list[dict]:
             "instagram": t.get("contact:instagram") or t.get("instagram"),
         })
         b = betriebe[-1]
+        b["oh_datum"], b["oh_bestaetigt"] = oh_datum(t, el) if oh else (None, False)
+        b["oh_alt"] = bool(b["oh_datum"]) and (bezug - date.fromisoformat(b["oh_datum"])).days > OH_ALT_TAGE
         da = {"adresse": bool((t.get("addr:street") or t.get("addr:place")) and t.get("addr:housenumber") and t.get("addr:postcode")),
               "oh": bool(oh), "telefon": bool(b["telefon"]), "website": bool(b["website"]), "email": bool(b["email"]),
               "rollstuhl": bool(t.get("wheelchair"))}
@@ -482,15 +507,29 @@ def betrieb_seite(b: dict, je_gemeinde: dict[str, list], haltestellen: list[dict
     fakten.append(("Route", f'<a href="https://www.openstreetmap.org/directions?route=%3B{b["lat"]}%2C{b["lon"]}" rel="nofollow">Route planen (OpenStreetMap)</a>'))
     fakten_html = '<dl class="fakten">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in fakten) + "</dl>"
 
+    stand_oh = ""
+    if b["oh_datum"]:
+        stand_oh = (f' {"Zuletzt bestätigt" if b["oh_bestaetigt"] else "Eintrag zuletzt in OpenStreetMap bearbeitet"}: '
+                    f'{monat_text(b["oh_datum"])}.')
+    warnung = ""
+    if b["oh_alt"]:
+        nachfragen = [f'<a href="{e(tel_link(b["telefon"]))}">anrufen</a>' if b["telefon"] else "",
+                      f'<a href="{e(web_link(b["website"]))}" rel="nofollow noopener">auf der Website nachsehen</a>' if b["website"] else ""]
+        nachfragen = " oder ".join(x for x in nachfragen if x) or "nachfragen"
+        warnung = (f'<p class="oz-alt"><strong>Möglicherweise veraltet.</strong> Diese Öffnungszeiten wurden seit '
+                   f'{monat_text(b["oh_datum"])} nicht mehr aktualisiert. Bitte vor dem Besuch {nachfragen}. '
+                   f'Stimmen sie noch? <a href="https://www.openstreetmap.org/edit?editor=id&amp;{typ}={oid}" rel="nofollow">'
+                   f'In OpenStreetMap bestätigen oder korrigieren</a>.</p>')
     if b["woche"]:
         zeilen = "".join(f"<tr><th scope=\"row\">{t}</th><td>{z}</td></tr>" for t, z in oz.tabelle(b["woche"]))
-        oh_html = (f'<section aria-labelledby="h-oz"><h2 id="h-oz">Öffnungszeiten</h2>'
-                   f'<p class="jetzt" data-woche="{e(json.dumps(b["woche"], separators=(",", ":")))}"></p>'
+        # Bei alten Angaben kein „Jetzt geöffnet“, das wäre eine Auskunft, für die wir nicht geradestehen können.
+        jetzt = "" if b["oh_alt"] else f'<p class="jetzt" data-woche="{e(json.dumps(b["woche"], separators=(",", ":")))}"></p>'
+        oh_html = (f'<section aria-labelledby="h-oz"><h2 id="h-oz">Öffnungszeiten</h2>{warnung}{jetzt}'
                    f'<table class="oz">{zeilen}</table>'
-                   f'<p class="klein">Ohne Gewähr. Feiertage und Sonderöffnungszeiten sind nicht berücksichtigt.</p></section>')
+                   f'<p class="klein">Ohne Gewähr. Feiertage und Sonderöffnungszeiten sind nicht berücksichtigt.{stand_oh}</p></section>')
     elif b["oh"]:
-        oh_html = (f'<section aria-labelledby="h-oz"><h2 id="h-oz">Öffnungszeiten</h2><p>{e(oz.roh_deutsch(b["oh"]))}</p>'
-                   f'<p class="klein">Angabe aus OpenStreetMap, ohne Gewähr.</p></section>')
+        oh_html = (f'<section aria-labelledby="h-oz"><h2 id="h-oz">Öffnungszeiten</h2>{warnung}<p>{e(oz.roh_deutsch(b["oh"]))}</p>'
+                   f'<p class="klein">Angabe aus OpenStreetMap, ohne Gewähr.{stand_oh}</p></section>')
     else:
         oh_html = ('<section aria-labelledby="h-oz"><h2 id="h-oz">Öffnungszeiten</h2>'
                    '<p class="leer">In OpenStreetMap sind keine Öffnungszeiten eingetragen.</p></section>')
@@ -531,7 +570,7 @@ def betrieb_seite(b: dict, je_gemeinde: dict[str, list], haltestellen: list[dict
         jsonld["telephone"] = b["telefon"].split(";")[0]
     if b["website"]:
         jsonld["sameAs"] = web_link(b["website"])
-    if b["oh"] and b["woche"]:
+    if b["oh"] and b["woche"] and not b["oh_alt"]:   # alte Angaben nicht als Fakt an Suchmaschinen geben
         jsonld["openingHours"] = b["oh"]
 
     inhalt = (f'<article class="betrieb"><h1>{e(b["name"])}</h1><p class="untertitel">{e(b["detail"])} · {e(ort_text)}</p>'
@@ -750,6 +789,9 @@ def ueber_seite(stand: str, n_betriebe: int, n_seiten: int) -> str:
 <section aria-labelledby="h-raus"><h2 id="h-raus">Nicht aufgeführt werden</h2>
 <p>Wenn Ihr Betrieb hier nicht erscheinen soll, Sie aber nichts in OpenStreetMap ändern möchten, nehmen wir ihn auf eine Ausschlussliste. Schreiben Sie uns über die Kontaktmöglichkeiten im Bereich <a href="/#mitmachen">Mitmachen &amp; Kontakt</a>. Der Eintrag in OpenStreetMap selbst bleibt davon unberührt.</p>
 </section>
+<section aria-labelledby="h-oz-alt"><h2 id="h-oz-alt">Wie aktuell sind die Öffnungszeiten?</h2>
+<p>Bei jedem Betrieb steht, wann die Öffnungszeiten zuletzt bestätigt wurden (OSM-Feld <code>check_date:opening_hours</code>) oder, falls das fehlt, wann der Eintrag zuletzt in OpenStreetMap bearbeitet wurde. Liegt das mehr als zwei Jahre zurück, kennzeichnen wir die Zeiten als möglicherweise veraltet, zeigen kein „Jetzt geöffnet“ an und geben sie nicht an Suchmaschinen weiter. Wer die Zeiten vor Ort geprüft hat, kann sie in OpenStreetMap bestätigen, dann verschwindet der Hinweis mit der nächsten Aktualisierung.</p>
+</section>
 <section aria-labelledby="h-such"><h2 id="h-such">Suchmaschinen</h2>
 <p>Seiten von Betrieben mit mindestens zwei Angaben (Öffnungszeiten, Telefon, Website oder E-Mail) dürfen von Suchmaschinen aufgenommen werden. Seiten mit weniger Angaben sind für Suchmaschinen gesperrt, bis der Eintrag in OpenStreetMap ergänzt wird.</p>
 </section>"""
@@ -931,7 +973,7 @@ def main() -> None:
 
     # Datenstand nur weiterschreiben, wenn sich die Daten wirklich geändert haben
     kern = json.dumps([[b["osm"], b["name"], b["detail"], b["lat"], b["lon"], b["oh"], b["telefon"], b["website"], b["email"],
-                        b["strasse"], b["ortzeile"], b["rollstuhl"]] for b in betriebe] +
+                        b["strasse"], b["ortzeile"], b["rollstuhl"], b["oh_datum"]] for b in betriebe] +
                       [[p["osm"], p["name"], p["kat"], p["stufe"]] for p in pois] +
                       [[p["osm"], p["name"], p["place"], p["lat"], p["lon"]] for p in punkte] +
                       [[g["ags"], [o["osm"] for o in g["ortsteile"]]] for g in gemeinden], ensure_ascii=False)

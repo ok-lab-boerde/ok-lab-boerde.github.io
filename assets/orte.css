@@ -25,6 +25,7 @@
 .oz th { font-weight: 500; color: var(--muted); }
 .oz tr.heute th, .oz tr.heute td { font-weight: 700; color: var(--text); }
 .jetzt { font-weight: 600; margin: 0 0 8px; }
+.oz-alt { background: var(--wheat-soft); border-left: 5px solid var(--wheat); border-radius: 8px; padding: 10px 14px; margin: 0 0 12px; }
 .jetzt .auf { color: var(--green); }
 .jetzt .zu { color: var(--text); }
 

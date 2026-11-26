@@ -43,7 +43,7 @@ area({AREA})->.k;
   nwr["name"]["tourism"~"^(hotel|guest_house|hostel|apartment|chalet|camp_site|caravan_site)$"](area.k);
   nwr["amenity"="vending_machine"]["vending"~"milk|eggs|food|potatoes|meat|honey|fruit|vegetables|farm"](area.k);
 );
-out center tags;""",
+out center meta;""",
     "poi": f"""[out:json][timeout:300];
 area({AREA})->.k;
 (
@@ -89,6 +89,12 @@ def overpass(name: str, query: str) -> None:
                 parsed = json.loads(raw)
                 if parsed.get("remark") and "error" in parsed["remark"].lower():
                     raise RuntimeError(parsed["remark"])
+                if any("user" in el or "uid" in el for el in parsed.get("elements", [])):
+                    # "out meta" liefert auch, wer zuletzt bearbeitet hat. Wir brauchen nur das Datum.
+                    for el in parsed["elements"]:
+                        for k in ("user", "uid", "changeset", "version"):
+                            el.pop(k, None)
+                    raw = json.dumps(parsed, ensure_ascii=False).encode()
                 (CACHE / f"{name}.json").write_bytes(raw)
                 print(f"{name}: {len(parsed.get('elements', []))} Elemente ({endpoint})", file=sys.stderr)
                 return
