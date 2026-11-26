@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from html import escape
 
 BASIS_URL = "https://oklab-boerde.de"
@@ -11,6 +12,36 @@ OSM_HINWEIS = ('Daten: © <a href="https://www.openstreetmap.org/copyright">Open
 
 def e(text) -> str:
     return escape(str(text), quote=True)
+
+
+MARKE = " | OK Lab Börde"
+FUSS_PROJEKTE = [("Veranstaltungen", "/veranstaltungen/"), ("Feuerwehren", "/feuerwehr/"), ("Leben in der Börde", "/leben/"),
+                 ("Hofläden", "/regional/"), ("Zeitschichten", "/zeitschichten/"), ("Unfallatlas", "/unfallatlas/"),
+                 ("Energiewende", "/energiewende/"), ("Ratskarte", "/ratskarte/")]
+
+
+def ld_script(daten: dict) -> str:
+    text = json.dumps(daten, ensure_ascii=False).replace("</", "<\\/")
+    return f'<script type="application/ld+json">{text}</script>'
+
+
+def brotkrumen_ld(brotkrumen: list[tuple[str, str | None]], pfad: str) -> str:
+    """BreadcrumbList für Google; der letzte Eintrag (ohne Link) ist die Seite selbst."""
+    if len(brotkrumen) < 2:
+        return ""
+    return ld_script({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": t, "item": f"{BASIS_URL}{u or pfad}"}
+        for i, (t, u) in enumerate(brotkrumen, 1)]})
+
+
+def kurzer_titel(titel: str) -> str:
+    """Google kürzt Titel ab etwa 60–70 Zeichen. Zu lange Titel verlieren erst die Gemeinde in Klammern am Ende,
+    dann den Markennamen (der steht ohnehin in og:site_name)."""
+    if len(titel) > 70:
+        titel = re.sub(r" \([^()]*\)(?=" + re.escape(MARKE) + "$|$)", "", titel)
+    if len(titel) > 70 and titel.endswith(MARKE):
+        titel = titel[: -len(MARKE)]
+    return titel
 
 
 def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: list[tuple[str, str]],
@@ -23,11 +54,11 @@ def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: 
     leaflet_js = ('<script src="/assets/vendor/leaflet/leaflet.js"></script>\n'
                   '  <script src="/assets/vendor/markercluster/leaflet.markercluster.js"></script>\n'
                   '  <script src="/assets/orte-karte.js"></script>') if karte else ""
-    ld = (f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>' if jsonld else "")
-    # Google kürzt Titel ab etwa 60–70 Zeichen; der Markenname steht dann ohnehin in og:site_name.
-    if len(titel) > 70 and titel.endswith(" | OK Lab Börde"):
-        titel = titel[: -len(" | OK Lab Börde")]
-    og_titel = titel.removesuffix(" | OK Lab Börde")
+    ld = ld_script(jsonld) if jsonld else ""
+    krumen_ld = brotkrumen_ld(brotkrumen, pfad)
+    titel = kurzer_titel(titel)
+    og_titel = titel.removesuffix(MARKE)
+    projekte = "".join(f'<li><a href="{u}">{t}</a></li>' for t, u in FUSS_PROJEKTE)
     return f"""<!doctype html>
 <html lang="de">
 <head>
@@ -54,6 +85,7 @@ def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: 
   <link rel="stylesheet" href="/assets/orte.css">
   {leaflet_css}
   {ld}
+  {krumen_ld}
   {extra_head}
 </head>
 <body>
@@ -82,6 +114,7 @@ def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: 
         <p><strong>OK Lab Börde</strong></p>
         <p>Inhalte unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>, Daten aus OpenStreetMap unter ODbL.</p>
       </div>
+      <ul aria-label="Projekte">{projekte}</ul>
       <ul>
         <li><a href="/impressum.html">Impressum</a></li>
         <li><a href="/datenschutz.html">Datenschutz</a></li>

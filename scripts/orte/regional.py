@@ -217,7 +217,7 @@ def uebersicht(liste: list[dict], gemeinden: list[dict], stand: str) -> str:
 <li>Alle Angaben ohne Gewähr. Vor einer längeren Fahrt lohnt ein kurzer Anruf.</li>
 </ul></section>"""
     return seite(titel="Hofläden und regional einkaufen in der Börde – Karte | OK Lab Börde",
-                 beschreibung=f"{len(liste)} Hofläden, Automaten, Wochenmärkte, Saisonstände, Fleischereien, Bäckereien und Imker im Landkreis Börde, mit Telefon, Öffnungszeiten und Route.",
+                 beschreibung=f"{len(liste)} Hofläden, Automaten, Wochenmärkte, Fleischereien, Bäckereien und Imker im Landkreis Börde, mit Öffnungszeiten und Route.",
                  pfad="/regional/", inhalt=inhalt, karte=True, extra_head='<script src="/assets/regional.js" defer></script>',
                  brotkrumen=[("Start", "/"), ("Regional einkaufen", None)])
 

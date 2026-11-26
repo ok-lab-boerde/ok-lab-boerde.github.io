@@ -108,6 +108,36 @@ def zuordnen(t: dict, daten: dict) -> tuple[dict | None, dict | None]:
 
 
 # ---------------------------------------------------------------- Hilfen
+def mit_zeitzone(zeit: str) -> str:
+    """„2026-11-25T14:30“ → „2026-11-25T14:30:00+01:00“ (MEZ/MESZ nach EU-Regel); reine Daten bleiben, wie sie sind."""
+    if "T" not in zeit:
+        return zeit
+    d = datetime.fromisoformat(zeit)
+    def letzter_sonntag(monat: int) -> date:
+        x = date(d.year, monat, 31)
+        return x - timedelta(days=(x.weekday() + 1) % 7)
+    sommer = letzter_sonntag(3) <= d.date() < letzter_sonntag(10)
+    return f"{d:%Y-%m-%dT%H:%M:%S}{'+02:00' if sommer else '+01:00'}"
+
+
+def termine_jsonld(termine: list[tuple[str, str, str, str, str, str]], gem_namen: dict[str, str]) -> dict:
+    """schema.org-Events für Google. termine: (start, ende, titel, ort_text, gemeinde_slug, url)"""
+    events = []
+    for start, ende, titel, ort, g, url in termine:
+        gemeinde = gem_namen.get(g) or "Landkreis Börde"
+        ev = {"@type": "Event", "name": titel, "startDate": mit_zeitzone(start),
+              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+              "eventStatus": "https://schema.org/EventScheduled",
+              "location": {"@type": "Place", "name": ort or gemeinde,
+                           "address": {"@type": "PostalAddress", "addressLocality": gemeinde,
+                                       "addressRegion": "Sachsen-Anhalt", "addressCountry": "DE"}},
+              "url": url}
+        if ende:
+            ev["endDate"] = mit_zeitzone(ende)
+        events.append(ev)
+    return {"@context": "https://schema.org", "@graph": events}
+
+
 def datum_text(t: dict) -> str:
     d = date.fromisoformat(t["start"][:10])
     s = f"{TAGE[d.weekday()]}, {d.day}. {MONATE[d.month - 1]} {d.year}"
@@ -291,7 +321,10 @@ def erzeugen() -> list[str]:
     schreibe(OUT / "index.html", seite(
         titel="Veranstaltungen im Landkreis Börde – Kalender | OK Lab Börde",
         beschreibung=f"{len(termine)} Veranstaltungen im Landkreis Börde: Märkte, Konzerte, Feste und öffentliche Sitzungen, nach Gemeinde filterbar und als Kalender-Abo.",
-        pfad="/veranstaltungen/", inhalt=inhalt, karte=True, extra_head='<script src="/assets/veranstaltungen.js" defer></script>',
+        pfad="/veranstaltungen/", inhalt=inhalt, karte=True,
+        jsonld=termine_jsonld([(t["start"], t.get("ende", ""), t["titel"], ort_text(t), t["g"], t["url"]) for t in termine],
+                              {s: g["name"] for s, g in gem_slug.items()}),
+        extra_head='<script src="/assets/veranstaltungen.js" defer></script>',
         brotkrumen=[("Start", "/"), ("Veranstaltungen", None)]))
     zugeordnet = sum(1 for t in termine if t["g"])
     print(f"{len(termine)} Termine, {zugeordnet} einer Gemeinde zugeordnet, {sum(1 for t in termine if t['ot'] or t['lat'])} mit Kartenpunkt",

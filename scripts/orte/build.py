@@ -573,16 +573,16 @@ def gemeinde_betriebe_seite(g: dict, bs: list[dict], branchen: dict[str, str]) -
 
 
 def branche_seite(g: dict, bid: str, bname: str, bs: list[dict]) -> str:
-    details = Counter(b["detail"] for b in bs).most_common(5)
+    details = Counter(b["detail"] for b in bs).most_common(3)  # mehr macht die Beschreibung zu lang
     detail_text = ", ".join(f"{d} ({n})" for d, n in details)
     karte = karte_div({"grenze": geo.polys_vereinfachen(g["polys"], 0.0005),
                        "punkte": [[b["lat"], b["lon"], b["name"], b["url"]] for b in bs]}, "320px",
                       f"Karte: {bname} in {g['name']}")
     inhalt = (f'<h1>{e(bname)} in {e(g["name"])}</h1>'
-              f'<p class="lead">{zahl(len(bs))} Einträge in OpenStreetMap, darunter {e(detail_text)}.</p>'
+              f'<p class="lead">{zahl(len(bs))} {"Eintrag" if len(bs) == 1 else "Einträge"} in OpenStreetMap, darunter {e(detail_text)}.</p>'
               f'{karte}{betriebe_liste_html(bs)}'
               f'<p><a href="/betriebe/{g["slug"]}/">Alle Betriebe in {e(g["name"])} →</a></p>')
-    return seite(titel=f"{bname} in {g['name']} – {zahl(len(bs))} Einträge | OK Lab Börde",
+    return seite(titel=f"{bname} in {g['name']} – {zahl(len(bs))} {'Eintrag' if len(bs) == 1 else 'Einträge'} | OK Lab Börde",
                  beschreibung=f"{bname} in {g['name']} im Landkreis Börde: {detail_text}. Adressen und Öffnungszeiten aus OpenStreetMap.",
                  pfad=f"/betriebe/{g['slug']}/branche/{bid}/", inhalt=inhalt, karte=True, index=len(bs) >= 3,
                  brotkrumen=[("Start", "/"), ("Betriebe", "/betriebe/"), (g["name"], f"/betriebe/{g['slug']}/"), (bname, None)])
@@ -695,7 +695,7 @@ def ort_seite(g: dict, o: dict | None, bs: list[dict], pois: list[dict], lab: di
     if o:
         krumen.append((o["name"], None))
     besch = (f"Steckbrief {name}" + (f" ({g['name']})" if o else "") +
-             f": {zahl(len(bs))} Betriebe, Vereine, Kitas, Schulen, Bus und Bahn und Ausflugsziele im Landkreis Börde.")
+             f": {zahl(len(bs))} {'Betrieb' if len(bs) == 1 else 'Betriebe'}, Vereine, Kitas, Schulen, Bus und Bahn und Ausflugsziele im Landkreis Börde.")
     return seite(titel=f"{name}" + (f" ({g['name']})" if o else "") + " – Ortssteckbrief | OK Lab Börde", beschreibung=besch,
                  pfad=pfad, inhalt=inhalt, karte=True, index=index, brotkrumen=krumen,
                  extra_head='<script src="/assets/termine.js" defer></script>'), index
