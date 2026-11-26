@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:lk-festliches-weihnachtskonzert@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261127T193000
 DTEND;TZID=Europe/Berlin:20261127T210000
 SUMMARY:Festliches Weihnachtskonzert
@@ -39,7 +39,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmarkt-auf-schloss-hundisburg-6@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T110000
 DTEND;TZID=Europe/Berlin:20261205T180000
 SUMMARY:Weihnachtsmarkt auf Schloss Hundisburg
@@ -53,7 +53,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-sternenmarkt-mit-eisbahn@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T150000
 DTEND;TZID=Europe/Berlin:20261219T200000
 SUMMARY:Sternenmarkt mit Eisbahn
@@ -66,7 +66,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt-1@ok-
  lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T160000
 DTEND;TZID=Europe/Berlin:20261205T170000
 SUMMARY:"Weihnachtskonzert" der Kreismusikschule Börde -Haus Wolmirstedt-
@@ -80,7 +80,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmarkt-auf-schloss-hundisburg-3@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T110000
 DTEND;TZID=Europe/Berlin:20261206T180000
 SUMMARY:Weihnachtsmarkt auf Schloss Hundisburg
@@ -94,7 +94,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmatinee-2@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T110000
 DTEND;TZID=Europe/Berlin:20261206T120000
 SUMMARY:Weihnachtsmatinee
@@ -108,7 +108,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-beratersprechtag-fuer-unternehmen-gemeinsam-mit-der-investitionsbank
  -sachsen-anhalt-900-bis-1200-uhr@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261208T090000
 DTEND;TZID=Europe/Berlin:20261208T120000
 SUMMARY:Beratersprechtag für Unternehmen  - gemeinsam mit der Investitions
@@ -125,7 +125,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
  m-einzigartigen-fabrikambiente@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261212T160000
 DTEND;TZID=Europe/Berlin:20261212T190000
 SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
@@ -142,7 +142,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
  m-einzigartigen-fabrikambiente-2@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261213T160000
 DTEND;TZID=Europe/Berlin:20261213T190000
 SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
@@ -159,7 +159,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
  m-einzigartigen-fabrikambiente-1@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261219T160000
 DTEND;TZID=Europe/Berlin:20261219T190000
 SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 

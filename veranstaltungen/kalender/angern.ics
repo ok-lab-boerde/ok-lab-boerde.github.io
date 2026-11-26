@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:lk-bigband-konzert@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T193000
 DTEND;TZID=Europe/Berlin:20261129T230000
 SUMMARY:Bigband Konzert
@@ -39,7 +39,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-wintermarkt-in-la-porte@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261219T110000
 DTEND;TZID=Europe/Berlin:20261219T180000
 SUMMARY:Wintermarkt in La Porte

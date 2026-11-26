@@ -27,7 +27,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:lk-weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt@ok-la
  b-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261129T160000
 DTEND;TZID=Europe/Berlin:20261129T170000
 SUMMARY:"Weihnachtskonzert" der Kreismusikschule Börde -Haus Wolmirstedt-
@@ -41,7 +41,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-nachts-durchs-museum-1@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261204T170000
 DTEND;TZID=Europe/Berlin:20261204T190000
 SUMMARY:Nachts durchs Museum
@@ -54,7 +54,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-adventszauber-im-museum@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T140000
 DTEND;TZID=Europe/Berlin:20261206T170000
 SUMMARY:Adventszauber im Museum
@@ -67,7 +67,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-kulturcafe-9@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261209T140000
 DTEND;TZID=Europe/Berlin:20261209T160000
 SUMMARY:Kulturcafé
@@ -81,7 +81,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-von-wolmirstedt-bis-ans-kaspische-meer-ein-weltbuerger-kehrt-zurueck
  @ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261210T190000
 DTEND;TZID=Europe/Berlin:20261210T213000
 SUMMARY:Von Wolmirstedt bis ans Kaspische Meer: Ein Weltbürger kehrt zurü
@@ -96,7 +96,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-nachts-durchs-museum@ok-lab-boerde.github.io
-DTSTAMP:20261125T000000Z
+DTSTAMP:20261126T000000Z
 DTSTART;TZID=Europe/Berlin:20261211T170000
 DTEND;TZID=Europe/Berlin:20261211T190000
 SUMMARY:Nachts durchs Museum
