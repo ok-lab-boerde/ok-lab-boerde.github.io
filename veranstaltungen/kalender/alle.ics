@@ -25,30 +25,8 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:vp-2971920@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
-DTSTART;TZID=Europe/Berlin:20261126T170000
-SUMMARY:Ehrenamtstag
-LOCATION:Domäne 4\, 39326 Niedere Börde OT Groß Ammensleben
-URL:https://www.niedere-boerde.de/veranstaltungen/2971920/2026/11/26/ehrena
- mtstag
-DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
- nstaltungen/2971920/2026/11/26/ehrenamtstag
-END:VEVENT
-BEGIN:VEVENT
-UID:si-4926@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
-DTSTART;TZID=Europe/Berlin:20261126T193000
-SUMMARY:Sitzung: Ortschaftsrat Klein Rodensleben
-LOCATION:Klein Rodensleben\, Beratungsraum Kindertagesstätte\, Domersleben
- er Str.11
-URL:https://ratsinfo.kitu-genossenschaft.de/wzl_bi/si0057.asp?__ksinr=4926
-DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
- ossenschaft.de/wzl_bi/si0057.asp?__ksinr=4926
-END:VEVENT
-BEGIN:VEVENT
 UID:lk-festliches-weihnachtskonzert@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261127T193000
 DTEND;TZID=Europe/Berlin:20261127T210000
 SUMMARY:Festliches Weihnachtskonzert
@@ -61,7 +39,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003600@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Rogätzer Adventsmarkt
@@ -73,7 +51,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2990928@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:Weihnachtsmarkt der Gemeinde Ummendorf
@@ -85,7 +63,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2888325@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T110000
 SUMMARY:Adventsmarkt
 LOCATION:Camping- und Erlebnisresort am Jersleber See\, Jersleben
@@ -96,7 +74,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2858334@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T110000
 SUMMARY:Weihnachtsmarkt
 LOCATION:Heinemanns Hof\, Ummendorf
@@ -107,7 +85,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2968457@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T110000
 SUMMARY:Weihnachtsmarkt auf dem Schlosshof
 LOCATION:Schloss & Schlosshof\, Harbke
@@ -118,7 +96,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmarkt-in-ummendorf@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T110000
 DTEND;TZID=Europe/Berlin:20261129T170000
 SUMMARY:Weihnachtsmarkt in Ummendorf
@@ -131,7 +109,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2985243@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T150000
 SUMMARY:5. Zielitzer Adventszauber
 LOCATION:Gemeinde Zielitz
@@ -142,7 +120,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2850806@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T150000
 SUMMARY:Advent an der Kirche
 LOCATION:Kirche\, Gutenswegen
@@ -153,7 +131,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmarkt-an-der-burgruine@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T180000
 DTEND;TZID=Europe/Berlin:20261129T120000
 SUMMARY:Weihnachtsmarkt an der Burgruine
@@ -166,7 +144,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2851368@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T180000
 SUMMARY:offenes Adventssingen
 LOCATION:Kirche\, Groß Ammensleben
@@ -177,7 +155,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-bigband-konzert@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261128T193000
 DTEND;TZID=Europe/Berlin:20261129T230000
 SUMMARY:Bigband Konzert
@@ -190,7 +168,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2877987@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Weihnachtsmarkt
@@ -202,7 +180,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2797294@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261129T103000
 SUMMARY:Der gestiefelte Kater Tickets? Klicken Sie hier -- Märchenkomödie
   von Sigrid Vorpahl nach Grimm
@@ -216,7 +194,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2815789@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261129T140000
 SUMMARY:Adventsmarkt
 LOCATION:Rund um die Kirche Samswegen
@@ -228,7 +206,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt@ok-la
  b-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261129T160000
 DTEND;TZID=Europe/Berlin:20261129T170000
 SUMMARY:"Weihnachtskonzert" der Kreismusikschule Börde -Haus Wolmirstedt-
@@ -242,7 +220,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2985246@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261129T170000
 SUMMARY:Lebendiger Adventskalender
 LOCATION:Ortsfeuerwehr Schricke
@@ -253,7 +231,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3013295@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261201T150000
 SUMMARY:Weihnachtswichtelwerkstatt für Kinder ab 5 Jahre
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -265,7 +243,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3013296@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261202T150000
 SUMMARY:Weihnachtswichtelwerkstatt für Kinder ab 5 Jahre
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -277,7 +255,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:si-5042@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261202T180000
 SUMMARY:Sitzung: Ortschaftsrat Stadt Wanzleben
 LOCATION:Stadt Wanzleben\, Rathauskeller\, Markt 1-2
@@ -287,7 +265,7 @@ DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-nachts-durchs-museum-1@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261204T170000
 DTEND;TZID=Europe/Berlin:20261204T190000
 SUMMARY:Nachts durchs Museum
@@ -300,7 +278,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2987362@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261204T180000
 SUMMARY:Vortrag in Bildern: Vom ersten Marathon bis nach New York – mit 8
  0 Jahren noch am Start
@@ -314,7 +292,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2968471@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261207
 SUMMARY:Rassegeflügelausstellung
@@ -326,7 +304,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmarkt-auf-schloss-hundisburg-6@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T110000
 DTEND;TZID=Europe/Berlin:20261205T180000
 SUMMARY:Weihnachtsmarkt auf Schloss Hundisburg
@@ -340,7 +318,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3008386@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T143000
 SUMMARY:Weihnachtsmarkt
 LOCATION:Heimat- und Kulturverein Dahlenwarsleben
@@ -351,7 +329,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2851370@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T150000
 SUMMARY:Adventsmarkt
 LOCATION:Domäne\, Groß Ammensleben
@@ -362,7 +340,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2968467@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T150000
 SUMMARY:Rentnerweihnachtsfeier des Harbker SV Turbine e. V.
 LOCATION:Harbker SV Turbine e.V.\, Harbke
@@ -374,7 +352,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-sternenmarkt-mit-eisbahn@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T150000
 DTEND;TZID=Europe/Berlin:20261219T200000
 SUMMARY:Sternenmarkt mit Eisbahn
@@ -387,7 +365,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtskonzert-der-kreismusikschule-boerde-haus-wolmirstedt-1@ok-
  lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T160000
 DTEND;TZID=Europe/Berlin:20261205T170000
 SUMMARY:"Weihnachtskonzert" der Kreismusikschule Börde -Haus Wolmirstedt-
@@ -401,7 +379,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003409@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261205T180000
 SUMMARY:Weihnachtsfeier - SV Gutenswegen/Kl. Ammensleben
 LOCATION:Villa Riecke\, Gutenswegen
@@ -413,7 +391,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2904879@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T103000
 SUMMARY:AUSVERKAUFT! - 7 Geißlein allein zu Haus -- Tickets? Klicken Sie h
  ier -- Märchenspiel von Sigrid Vorpahl nach Grimm
@@ -427,7 +405,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmarkt-auf-schloss-hundisburg-3@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T110000
 DTEND;TZID=Europe/Berlin:20261206T180000
 SUMMARY:Weihnachtsmarkt auf Schloss Hundisburg
@@ -441,7 +419,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-weihnachtsmatinee-2@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T110000
 DTEND;TZID=Europe/Berlin:20261206T120000
 SUMMARY:Weihnachtsmatinee
@@ -454,7 +432,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-adventszauber-im-museum@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T140000
 DTEND;TZID=Europe/Berlin:20261206T170000
 SUMMARY:Adventszauber im Museum
@@ -467,7 +445,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002729@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261206T180000
 SUMMARY:Lebendiger Adventskalender am Tintenfass
 LOCATION:Heimat- und Kulturfreunde Rogätz e. V.
@@ -478,7 +456,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2864373@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:Nikolaus
@@ -489,7 +467,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2921561@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261207T170000
 SUMMARY:Bürgermeister-Sprechstunde
 LOCATION:Büro des Bürgermeisters in Zielitz\, Ramstedter Straße 26 (2. O
@@ -502,7 +480,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-beratersprechtag-fuer-unternehmen-gemeinsam-mit-der-investitionsbank
  -sachsen-anhalt-900-bis-1200-uhr@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261208T090000
 DTEND;TZID=Europe/Berlin:20261208T120000
 SUMMARY:Beratersprechtag für Unternehmen  - gemeinsam mit der Investitions
@@ -518,7 +496,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2797298@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261208T103000
 SUMMARY:7 Geißlein allein zu Haus -- Nur für Schulklassen -- Anmeldung bi
  s 15.10.2026 unter info@holzhaustheater.de -- Märchenspiel von Sigrid Vor
@@ -534,7 +512,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2996363@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261208T153000
 SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -545,7 +523,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-kulturcafe-9@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261209T140000
 DTEND;TZID=Europe/Berlin:20261209T160000
 SUMMARY:Kulturcafé
@@ -558,7 +536,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2851371@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261210T150000
 SUMMARY:Seniorenweihnachtsfeier
 LOCATION:Karnevalsvereinshaus\, Gutenswegen
@@ -569,7 +547,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-lesung-aus-dornige-wege@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261210T190000
 DTEND;TZID=Europe/Berlin:20261210T210000
 SUMMARY:Lesung aus "Dornige Wege"
@@ -583,7 +561,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-von-wolmirstedt-bis-ans-kaspische-meer-ein-weltbuerger-kehrt-zurueck
  @ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261210T190000
 DTEND;TZID=Europe/Berlin:20261210T213000
 SUMMARY:Von Wolmirstedt bis ans Kaspische Meer: Ein Weltbürger kehrt zurü
@@ -598,7 +576,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-nachts-durchs-museum@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261211T170000
 DTEND;TZID=Europe/Berlin:20261211T190000
 SUMMARY:Nachts durchs Museum
@@ -611,7 +589,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2867868@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Sportlerball
@@ -623,7 +601,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003596@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Weihnachtsmarkt Heinrichsberg
@@ -635,7 +613,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2904032@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261212T130000
 SUMMARY:Flohmarkt an der katholischen Kirche Hötensleben
 LOCATION:Katholische Kirche Hötensleben
@@ -648,7 +626,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
  m-einzigartigen-fabrikambiente@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261212T160000
 DTEND;TZID=Europe/Berlin:20261212T190000
 SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
@@ -664,7 +642,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2797296@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261212T190000
 SUMMARY:Das Gespenst von Canterville - romantischer Theaterspuk von Sigrid 
  Vorpahl nach der Erzählung von Oscar Wilde eingerichtet für Schwarzes Th
@@ -682,7 +660,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
  m-einzigartigen-fabrikambiente-2@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261213T160000
 DTEND;TZID=Europe/Berlin:20261213T190000
 SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
@@ -698,7 +676,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2833728@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261214T150000
 SUMMARY:Lesenachmittag für junggebliebene Frohnaturen
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -709,7 +687,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2864374@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:Weinachtsfeier der Kinder
@@ -721,7 +699,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2949420@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261216T164500
 SUMMARY:Yoga - gemischter Kurs für Neueinsteiger und Geübte
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -733,7 +711,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2815791@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261217T190000
 SUMMARY:Benefizkonzert Chor TonArt
 LOCATION:Kirche\, Samswegen
@@ -744,7 +722,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-wintermarkt-in-la-porte@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261219T110000
 DTEND;TZID=Europe/Berlin:20261219T180000
 SUMMARY:Wintermarkt in La Porte
@@ -757,7 +735,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2969214@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261219T143000
 SUMMARY:Weihnachtsmarkt
 LOCATION:Jersleben\, Feuerwehr/Bürgerhaus Flocke
@@ -769,7 +747,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-zauberhafte-weihnachtskonzerte-mit-anna-moritz-und-christian-nolte-i
  m-einzigartigen-fabrikambiente-1@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261219T160000
 DTEND;TZID=Europe/Berlin:20261219T190000
 SUMMARY:Zauberhafte Weihnachtskonzerte mit Anna Moritz und Christian Nolte 
@@ -785,7 +763,7 @@ DESCRIPTION:Quelle: Landkreis Börde – https://www.landkreis-boerde.de/er
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2797297@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261220T103000
 SUMMARY:Dornröschen - ganz schön ausgeschlafen - Tickets? Klicken Sie hie
  r -- Märchenkomödie von Sigrid Vorpahl nach Grimm
@@ -799,7 +777,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2990875@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261220T150000
 SUMMARY:Weihnachtskonzert
 LOCATION:Evangelische Dorfkirche 'St. Petrus' Badeleben
@@ -810,7 +788,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2883405@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261222T153000
 SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -821,7 +799,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3000707@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261222T190000
 SUMMARY:Benefizkonzert Chor TonArt
 LOCATION:Kirche\, Samswegen
@@ -832,7 +810,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2877988@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Der Weihnachtsmann kommt
@@ -844,7 +822,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2851373@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261223T170000
 SUMMARY:Baumsingen
 LOCATION:Börde-Konsum\, Groß Ammensleben
@@ -855,7 +833,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2851376@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261224T200000
 SUMMARY:Heiliger Abend - Christmette
 LOCATION:Kirche\, Groß Ammensleben
@@ -866,7 +844,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2968473@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261225T200000
 SUMMARY:Weihnachtsdisco
 LOCATION:Kulturhaus\, Harbke
@@ -877,7 +855,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2904883@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20261231T183000
 SUMMARY:Das Gespenst von Canterville - romantischer Theaterspuk von Sigrid 
  Vorpahl nach der Erzählung von Oscar Wilde eingerichtet für Schwarzes Th
@@ -893,8 +871,20 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
  -fuer-schwarzes-theater-musik-d.-hoerold
 END:VEVENT
 BEGIN:VEVENT
+UID:vp-2991932@ok-lab-boerde.github.io
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270111
+SUMMARY:Hallenfußball - Turnierwochenende 2027
+LOCATION:Eilslebener Sportverein e.V.\, Eilsleben
+URL:https://www.obere-aller.de/veranstaltungen/2991932/2027/01/05/hallenfus
+ sball-turnierwochenende-2027
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
+ altungen/2991932/2027/01/05/hallenfussball-turnierwochenende-2027
+END:VEVENT
+BEGIN:VEVENT
 UID:vp-3006323@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Sternensinger besuchen die Häuser (nur nach Voranmeldung
@@ -907,7 +897,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2851378@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270109T170000
 SUMMARY:offenes Adventssingen/Kirchenmusik zum Abschluss der Weihnachtszeit
 LOCATION:Kirche\, Groß Ammensleben
@@ -919,7 +909,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2991578@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270110T100000
 SUMMARY:Braunkohlwanderung
 LOCATION:Kulturhaus\, Harbke
@@ -930,7 +920,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2996369@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270112T153000
 SUMMARY:Lesenachmittag für Kinder mit Kaffeeklatsch
 LOCATION:Bibliothek Zielitz & Bibliotheks- und Kulturverein Zielitz e.V.
@@ -940,21 +930,8 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
  ltungen/2996369/2027/01/12/lesenachmittag-fuer-kinder-mit-kaffeeklatsch
 END:VEVENT
 BEGIN:VEVENT
-UID:vp-3015381@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
-DTSTART;VALUE=DATE:20270115
-DTEND;VALUE=DATE:20270116
-SUMMARY:Jahreshauptversammlung Männergesangsverein "Liederkranz"
-LOCATION:Gaststätte "Zum Krug"\, Samswegen
-URL:https://www.niedere-boerde.de/veranstaltungen/3015381/2027/01/15/jahres
- hauptversammlung-maennergesangsverein-liederkranz
-DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
- nstaltungen/3015381/2027/01/15/jahreshauptversammlung-maennergesangsverein
- -liederkranz
-END:VEVENT
-BEGIN:VEVENT
 UID:vp-2848223@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
 SUMMARY:Weihnachtsbaumverbrennung
@@ -966,7 +943,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2851379@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270116T170000
 SUMMARY:Weihnachstbaumverbrennung
 LOCATION:Domäne\, Groß Ammensleben
@@ -977,7 +954,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3011366@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270117T153000
 SUMMARY:„Aber bitte mit Sahne“ – Kaffee\, Kuchen und Theater serviert
   von unseren Schauspielschülern
@@ -991,7 +968,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015382@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270120
 DTEND;VALUE=DATE:20270121
 SUMMARY:Neujahrsempfang und Mitgliederversammlung
@@ -1003,7 +980,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2916833@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270122T190000
 SUMMARY:Konzert mit "Melankomiker" Jürgen Denkewitz als "Schlimmer Schlawi
  ner"
@@ -1016,7 +993,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003372@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Fackelumzug + Wotansball
@@ -1027,21 +1004,8 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
  nstaltungen/3003372/2027/01/23/fackelumzug--wotansball
 END:VEVENT
 BEGIN:VEVENT
-UID:vp-3015385@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
-SUMMARY:Jahreshauptversammlung der Freiwilligen Feuerwehr
-LOCATION:Feuerwehr\, Samswegen
-URL:https://www.niedere-boerde.de/veranstaltungen/3015385/2027/01/23/jahres
- hauptversammlung-der-freiwilligen-feuerwehr
-DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
- nstaltungen/3015385/2027/01/23/jahreshauptversammlung-der-freiwilligen-feu
- erwehr
-END:VEVENT
-BEGIN:VEVENT
 UID:vp-3011033@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270124T103000
 SUMMARY:Bei der Feuerwehr wird der Kaffee kalt -- Tickets? Klicken Sie hier
   -- Schauspiel nach dem Buch von Hannes Hüttner gespielt von Kindern für
@@ -1057,7 +1021,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003373@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:Prunksitzung
@@ -1069,7 +1033,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003375@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:Seniorenkarneval
@@ -1081,7 +1045,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003376@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 SUMMARY:Kostümball
@@ -1093,7 +1057,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002812@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270206T150000
 SUMMARY:MCV Kinderkarneval
 LOCATION:Turnhalle\, Meseberg
@@ -1104,7 +1068,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002813@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270206T201100
 SUMMARY:MCV Karnevalsparty
 LOCATION:Turnhalle\, Meseberg
@@ -1115,7 +1079,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003378@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
 SUMMARY:Kinder- und Jugendkarneval
@@ -1127,7 +1091,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003381@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
 SUMMARY:Rot-Weiß-Ball
@@ -1138,20 +1102,8 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
  nstaltungen/3003381/2027/02/07/rot-weiss-ball
 END:VEVENT
 BEGIN:VEVENT
-UID:vp-3015387@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
-DTSTART;VALUE=DATE:20270208
-DTEND;VALUE=DATE:20270209
-SUMMARY:Fasching Ohrewichtel und Fuchsbau
-LOCATION:Kita Ohrewichtel und Fuchsbau\, Samswegen
-URL:https://www.niedere-boerde.de/veranstaltungen/3015387/2027/02/08/faschi
- ng-ohrewichtel-und-fuchsbau
-DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
- nstaltungen/3015387/2027/02/08/fasching-ohrewichtel-und-fuchsbau
-END:VEVENT
-BEGIN:VEVENT
 UID:vp-3003382@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:Rosenmontagsumzug
@@ -1163,7 +1115,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2982635@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
 SUMMARY:Fussball: Heidecup Reservierung 2027
@@ -1175,7 +1127,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015388@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
 SUMMARY:Reiterball
@@ -1187,7 +1139,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3011354@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270213T193000
 SUMMARY:"Je öller\, je döller - Pension Schöller" -- Tickets? Klicken Si
  e hier -- Komödie von Sigrid Vorpahl nach Jacoby/Lauf Musik Dietmar Höro
@@ -1203,7 +1155,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2982636@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Fussball: Heidecup Reservierung 2027
@@ -1215,7 +1167,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003509@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270222
 SUMMARY:Grünkohlwanderung
@@ -1227,7 +1179,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2982637@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:Fussball: Heidecup Reservierung 2027
@@ -1239,7 +1191,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3011367@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270221T153000
 SUMMARY:„Aber bitte mit Sahne“ – Kaffee\, Kuchen und Theater serviert
   von unseren Schauspielschülern
@@ -1253,7 +1205,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015389@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270226
 DTEND;VALUE=DATE:20270227
 SUMMARY:Spielenachmittag
@@ -1265,7 +1217,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2928850@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270226T190000
 SUMMARY:Satirische Lesung mit U. S. Levin "Geld ist unbezahlbar und andere 
  bestechende Satiren"
@@ -1279,7 +1231,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.elbe-heide.de/veransta
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015390@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 SUMMARY:Ostermarkt
@@ -1291,7 +1243,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003510@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 SUMMARY:Suppenverkauf aus der Gulaschkanone
@@ -1303,7 +1255,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002512@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:Dorfputz der Ortschaft Groß Ammensleben
@@ -1315,7 +1267,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003366@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:Osterbasteln
@@ -1327,7 +1279,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003512@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270326
 SUMMARY:Ostereier färben
@@ -1339,7 +1291,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003367@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270326
 SUMMARY:Osterfeuer
@@ -1351,7 +1303,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002515@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270327
 DTEND;VALUE=DATE:20270328
 SUMMARY:Traditionelles Osterfeuer
@@ -1363,7 +1315,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015393@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270330
 SUMMARY:Eiertrudeln
@@ -1375,7 +1327,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015396@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270414
 DTEND;VALUE=DATE:20270415
 SUMMARY:Frühlingserwachen
@@ -1387,7 +1339,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003513@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270424
 DTEND;VALUE=DATE:20270425
 SUMMARY:„Der Dreck muss weg“ - Frühjahrsputz
@@ -1399,7 +1351,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002517@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:Fackelumzug mit anschließendem Ausklang an der Gaststätte „Zur 
@@ -1413,7 +1365,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003515@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:Tanz in den Mai
@@ -1425,7 +1377,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015398@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:Reitertag und Ringreiten / Hähnekrähen
@@ -1437,7 +1389,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002519@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:Wecken durch die Schalmeienkapelle und Aufstellung des Maibaums an 
@@ -1452,7 +1404,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015399@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270508
 DTEND;VALUE=DATE:20270509
 SUMMARY:Fahrertag
@@ -1464,7 +1416,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003517@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270509
 DTEND;VALUE=DATE:20270510
 SUMMARY:Muttertagsbrunch
@@ -1476,7 +1428,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015403@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270529
 DTEND;VALUE=DATE:20270530
 SUMMARY:Kindertag
@@ -1488,7 +1440,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015402@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270529
 DTEND;VALUE=DATE:20270530
 SUMMARY:Simsontreffen
@@ -1500,7 +1452,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003518@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270605
 DTEND;VALUE=DATE:20270606
 SUMMARY:Nachtflohmarkt auf den Höfen
@@ -1512,7 +1464,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2987554@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;TZID=Europe/Berlin:20270620T143000
 SUMMARY:Jahresfest des Ev. Kindergartens " Arche Noah"
 LOCATION:Evangelische Kirche Eilsleben
@@ -1524,7 +1476,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003368@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270625
 DTEND;VALUE=DATE:20270626
 SUMMARY:Mittsommernachtsfest
@@ -1535,20 +1487,8 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
  nstaltungen/3003368/2027/06/25/mittsommernachtsfest
 END:VEVENT
 BEGIN:VEVENT
-UID:vp-3015404@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
-DTSTART;VALUE=DATE:20270702
-DTEND;VALUE=DATE:20270703
-SUMMARY:Sommerfest
-LOCATION:Kita\, Samswegen
-URL:https://www.niedere-boerde.de/veranstaltungen/3015404/2027/07/02/sommer
- fest
-DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
- nstaltungen/3015404/2027/07/02/sommerfest
-END:VEVENT
-BEGIN:VEVENT
 UID:vp-3015405@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270702
 DTEND;VALUE=DATE:20270703
 SUMMARY:Sommerkonzert
@@ -1560,7 +1500,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002521@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270703
 DTEND;VALUE=DATE:20270704
 SUMMARY:Fest der Vereine
@@ -1572,7 +1512,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015408@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270703
 DTEND;VALUE=DATE:20270704
 SUMMARY:Sommerkonzert mit anschließendem Tanz auf dem Kirchplatz
@@ -1585,7 +1525,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015409@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270712
 DTEND;VALUE=DATE:20270713
 SUMMARY:Wanderkino
@@ -1597,7 +1537,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003519@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270828
 DTEND;VALUE=DATE:20270829
 SUMMARY:Sommercafé – evtl. mit der Band „Planxty Irwin“
@@ -1610,7 +1550,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002523@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270905
 DTEND;VALUE=DATE:20270906
 SUMMARY:Radwegfest
@@ -1622,7 +1562,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3002524@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270912
 DTEND;VALUE=DATE:20270913
 SUMMARY:Klostertage und Tag des offenen Denkmals Kirche / Domäne
@@ -1635,7 +1575,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003524@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270912
 DTEND;VALUE=DATE:20270913
 SUMMARY:Tag des offenen Denkmals – Museumshof Colbitz Fahrradtour
@@ -1648,7 +1588,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015410@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20270926
 DTEND;VALUE=DATE:20270927
 SUMMARY:Erntedankfest
@@ -1660,7 +1600,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015412@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20271002
 DTEND;VALUE=DATE:20271003
 SUMMARY:Kartoffelfeuer
@@ -1672,7 +1612,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003369@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20271009
 DTEND;VALUE=DATE:20271010
 SUMMARY:Erntedankfest
@@ -1684,7 +1624,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3015414@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20271023
 DTEND;VALUE=DATE:20271024
 SUMMARY:Oktoberfest
@@ -1696,7 +1636,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-3003528@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20271030
 DTEND;VALUE=DATE:20271031
 SUMMARY:Spuk in den Höfen
@@ -1707,8 +1647,56 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
  nstaltungen/3003528/2027/10/30/spuk-in-den-hoefen
 END:VEVENT
 BEGIN:VEVENT
+UID:vp-3015416@ok-lab-boerde.github.io
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271101
+SUMMARY:Halloween-Ausfahrt
+LOCATION:wird noch bekanntgegeben\, Niedere Börde
+URL:https://www.niedere-boerde.de/veranstaltungen/3015416/2027/10/31/hallow
+ een-ausfahrt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3015416/2027/10/31/halloween-ausfahrt
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3015420@ok-lab-boerde.github.io
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20271106
+DTEND;VALUE=DATE:20271108
+SUMMARY:Kleintier- und Geflügelausstellung
+LOCATION:Sportplatz\, Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3015420/2027/11/06/kleint
+ ier-und-gefluegelausstellung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3015420/2027/11/06/kleintier-und-gefluegelausstellung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3015423@ok-lab-boerde.github.io
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20271114
+DTEND;VALUE=DATE:20271115
+SUMMARY:Kranzniederlegung
+LOCATION:Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3015423/2027/11/14/kranzn
+ iederlegung
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3015423/2027/11/14/kranzniederlegung
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3015755@ok-lab-boerde.github.io
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20271114
+DTEND;VALUE=DATE:20271115
+SUMMARY:Martinsfest
+LOCATION:Samswegen\; Treff: Gaststätte "Zum Krug"
+URL:https://www.niedere-boerde.de/veranstaltungen/3015755/2027/11/14/martin
+ sfest
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3015755/2027/11/14/martinsfest
+END:VEVENT
+BEGIN:VEVENT
 UID:vp-3003370@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20271120
 DTEND;VALUE=DATE:20271121
 SUMMARY:Weihnachtsbasteln
@@ -1719,8 +1707,20 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
  nstaltungen/3003370/2027/11/20/weihnachtsbasteln
 END:VEVENT
 BEGIN:VEVENT
+UID:vp-3015756@ok-lab-boerde.github.io
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20271122
+DTEND;VALUE=DATE:20271123
+SUMMARY:Adventsglühen
+LOCATION:Samswegen
+URL:https://www.niedere-boerde.de/veranstaltungen/3015756/2027/11/22/advent
+ sgluehen
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3015756/2027/11/22/adventsgluehen
+END:VEVENT
+BEGIN:VEVENT
 UID:vp-3003532@ok-lab-boerde.github.io
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20271126
 DTEND;VALUE=DATE:20271127
 SUMMARY:Weihnachtsbasteln
@@ -1729,5 +1729,17 @@ URL:https://www.niedere-boerde.de/veranstaltungen/3003532/2027/11/26/weihna
  chtsbasteln
 DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
  nstaltungen/3003532/2027/11/26/weihnachtsbasteln
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-3003371@ok-lab-boerde.github.io
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20271127
+DTEND;VALUE=DATE:20271128
+SUMMARY:Weihnachtsmarkt
+LOCATION:Conertscher Hof\, Gersdorf
+URL:https://www.niedere-boerde.de/veranstaltungen/3003371/2027/11/27/weihna
+ chtsmarkt
+DESCRIPTION:Quelle: Gemeinde-Website – https://www.niedere-boerde.de/vera
+ nstaltungen/3003371/2027/11/27/weihnachtsmarkt
 END:VEVENT
 END:VCALENDAR
