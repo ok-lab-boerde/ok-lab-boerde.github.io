@@ -62,7 +62,8 @@
 .dm-tip b { display: block; margin-bottom: 2px; }
 .dm-tip .sw { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; vertical-align: 0; }
 
-.dm-stationen { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 14px 0; }
+.dm-stationen { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 14px 0; }
+@media (min-width: 640px) { .dm-stationen { grid-template-columns: repeat(2, 1fr); } }
 .dm-station { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
 .dm-station h3 { margin: 0; font-size: 1.15rem; }
 .dm-lage, .dm-klein { color: var(--muted); font-size: .86rem; margin: 2px 0; }
