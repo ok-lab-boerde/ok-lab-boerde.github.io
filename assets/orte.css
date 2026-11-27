@@ -1,5 +1,8 @@
 /* Gemeinsame Stile für /betriebe/ und /orte/ (ergänzt css/style.css) */
 .orte-main { padding-bottom: 48px; }
+/* section { padding: 64px 0 } aus style.css gilt für die Startseite; hier kommt der Abstand von den Überschriften */
+.orte-main > section { padding: 0; }
+.orte-main > section.korrektur { padding: 6px 18px 14px; }
 .krumen { font-size: .9rem; color: var(--muted); margin: 20px 0 8px; display: flex; flex-wrap: wrap; gap: 4px; }
 .krumen a { color: var(--muted); }
 .orte-main h1 { color: var(--blue); font-size: clamp(1.7rem, 4.5vw, 2.5rem); line-height: 1.15; margin: 8px 0 4px; letter-spacing: -0.01em; overflow-wrap: anywhere; }
