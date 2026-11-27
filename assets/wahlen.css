@@ -1,0 +1,129 @@
+/* Wahlatlas Börde */
+:root {
+  --p-cdu: #2b2b2b;
+  --p-afd: #009ee0;
+  --p-die-linke: #be3075;
+  --p-spd: #e3000f;
+  --p-gruene: #409a3c;
+  --p-fdp: #e0b800;
+  --p-dvu: #8c5a2b;
+  --p-freie-waehler: #f08a00;
+  --p-bsw: #7d254f;
+  --p-npd: #5c4033;
+  --p-rep: #5b6f9c;
+  --p-schill: #6d8fa8;
+  --p-sonstige: #a3a8b0;
+  --wa-spur: #eef1f4;
+  --wa-grenze: #ffffff;
+  --wa-leer: #e6e9ee;
+  --wa-grid: #e1e0d9;
+  --wa-axis: #c3c2b7;
+  --wa-axis-text: #6b7280;
+  --wa-beteiligung: 13, 74, 143;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --p-cdu: #b9b9b9;
+    --p-afd: #33b5ec;
+    --p-die-linke: #e0609c;
+    --p-spd: #ff4d55;
+    --p-gruene: #6cc464;
+    --p-fdp: #f2d03a;
+    --p-dvu: #c08a55;
+    --p-freie-waehler: #ffa333;
+    --p-bsw: #c0608f;
+    --p-npd: #a38672;
+    --p-rep: #8fa3d0;
+    --p-schill: #9dbdd3;
+    --p-sonstige: #7c838d;
+    --wa-spur: #232c36;
+    --wa-grenze: #10151b;
+    --wa-leer: #232c36;
+    --wa-grid: #2c2c2a;
+    --wa-axis: #44464a;
+    --wa-axis-text: #a4adb9;
+    --wa-beteiligung: 127, 178, 238;
+  }
+}
+.p-cdu { background: var(--p-cdu); } .p-afd { background: var(--p-afd); } .p-die-linke { background: var(--p-die-linke); }
+.p-spd { background: var(--p-spd); } .p-gruene { background: var(--p-gruene); } .p-fdp { background: var(--p-fdp); }
+.p-dvu { background: var(--p-dvu); } .p-freie-waehler { background: var(--p-freie-waehler); } .p-bsw { background: var(--p-bsw); }
+.p-npd { background: var(--p-npd); } .p-rep { background: var(--p-rep); } .p-schill { background: var(--p-schill); }
+.p-sonstige { background: var(--p-sonstige); }
+
+.wa-kopf h1 { color: var(--blue); }
+.wa-kopf .lead { color: var(--muted); max-width: 46em; }
+
+.wa-figur { margin: 12px 0 0; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px 12px; }
+.wa-figur figcaption { color: var(--muted); font-size: .88rem; margin-top: 8px; }
+
+.wa-balken-liste { display: grid; gap: 7px; }
+.wa-zeile { display: grid; grid-template-columns: minmax(90px, 140px) 1fr 58px 52px; align-items: center; gap: 10px; font-size: .93rem; }
+.wa-partei { font-weight: 600; overflow-wrap: anywhere; }
+.wa-spur { position: relative; height: 16px; background: var(--wa-spur); border-radius: 4px; }
+.wa-balken { display: block; height: 100%; border-radius: 0 4px 4px 0; min-width: 2px; }
+.wa-ref { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--text); border-radius: 1px; }
+.wa-wert { text-align: right; font-variant-numeric: tabular-nums; }
+.wa-diff { color: var(--muted); font-size: .84rem; font-variant-numeric: tabular-nums; }
+@media (max-width: 520px) {
+  .wa-zeile { grid-template-columns: 92px 1fr 52px; }
+  .wa-diff { grid-column: 3; margin-top: -6px; text-align: right; }
+}
+
+.wa-filter { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin: 8px 0; }
+.wa-filter [role="group"] { display: flex; flex-wrap: wrap; gap: 8px; }
+.wa-filter button, .wa-zeitleiste button { font: inherit; font-size: .95rem; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--text); cursor: pointer; }
+.wa-filter button[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: var(--bg); font-weight: 600; }
+.wa-filter select { font: inherit; font-size: .95rem; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); color: var(--text); margin-left: 6px; }
+.wa-filter button:focus-visible, .wa-zeitleiste button:focus-visible, .wa-filter select:focus-visible { outline: 3px solid var(--wheat); outline-offset: 2px; }
+
+.wa-zeitleiste { display: grid; grid-template-columns: auto 1fr minmax(150px, auto); align-items: center; gap: 12px; margin: 10px 0 4px; }
+.wa-zeitleiste button { width: 42px; height: 42px; padding: 0; font-size: 1.1rem; }
+.wa-zeitleiste input[type="range"] { width: 100%; accent-color: var(--blue); }
+.wa-zeitleiste output { font-weight: 700; font-size: 1.05rem; }
+@media (max-width: 520px) {
+  .wa-zeitleiste { grid-template-columns: auto 1fr; }
+  .wa-zeitleiste output { grid-column: 1 / -1; }
+}
+.wa-hinweis { background: var(--wheat-soft); border-left: 4px solid var(--wheat); border-radius: 8px; padding: 8px 14px; font-size: .92rem; margin: 8px 0; }
+
+.wa-zeitreise { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media (min-width: 900px) { .wa-zeitreise { grid-template-columns: 3fr 2fr; align-items: start; } }
+.wa-map { position: relative; width: 100%; }
+.wa-map svg { display: block; width: 100%; height: auto; }
+.wa-map path { stroke: var(--wa-grenze); stroke-width: 1; cursor: pointer; transition: fill .35s; }
+.wa-map path:hover, .wa-map path:focus { stroke: var(--text); stroke-width: 2; outline: none; }
+@media (prefers-reduced-motion: reduce) { .wa-map path { transition: none; } }
+.wa-legende { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .86rem; color: var(--muted); margin-bottom: 8px; min-height: 1.4em; }
+.wa-legende span { display: inline-flex; align-items: center; gap: 6px; }
+.wa-legende i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
+
+.wa-chart { position: relative; width: 100%; }
+.wa-chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.wa-chart text, .wa-map text { font-family: inherit; font-size: 11px; fill: var(--wa-axis-text); }
+.wa-chart .lbl { font-size: 12px; font-weight: 600; fill: var(--text); }
+.wa-tip { position: absolute; pointer-events: none; background: var(--card); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.14); padding: 7px 10px; font-size: .85rem; line-height: 1.45; white-space: nowrap; z-index: 3; }
+.wa-tip b { display: block; margin-bottom: 2px; }
+.wa-tip i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; }
+.wa-tip small { color: var(--muted); }
+
+.wa-tabelle-wrap { overflow-x: auto; }
+.wa-tabelle { border-collapse: collapse; width: 100%; font-size: .9rem; font-variant-numeric: tabular-nums; }
+.wa-tabelle caption { text-align: left; color: var(--muted); font-size: .88rem; padding-bottom: 6px; }
+.wa-tabelle th, .wa-tabelle td { padding: 6px 10px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; }
+.wa-tabelle th:first-child { text-align: left; }
+.wa-tabelle thead th { color: var(--muted); font-weight: 600; }
+.wa-tabelle .wa-summe th, .wa-tabelle .wa-summe td { font-weight: 700; border-top: 2px solid var(--border); }
+.wa-schmal { width: auto; min-width: 60%; }
+.wa-schmal td:last-child { text-align: left; }
+
+.wa-gemeindeliste { columns: 3 180px; padding-left: 1.1em; }
+.wa-gemeindeliste li { margin: 3px 0; }
+.wa-meta, .wa-klein { color: var(--muted); font-size: .88rem; }
+.wa-text { max-width: 46em; }
+.wa-text h3 { margin-bottom: 4px; }
+.wa-faq details { border-bottom: 1px solid var(--border); padding: 10px 0; }
+.wa-faq summary { font-weight: 600; cursor: pointer; }
+.wa-faq p { margin: 8px 0 2px; }
+.wa-neutral { color: var(--muted); font-size: .9rem; border-left: 3px solid var(--border); padding-left: 12px; }
+.wa-links li { margin: 4px 0; }

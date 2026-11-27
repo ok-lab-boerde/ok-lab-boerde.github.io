@@ -10,4 +10,5 @@ scripts/orte/.cache/
 scripts/ratskarte/.cache/
 scripts/veranstaltungen/.cache/
 scripts/duerre/.cache/
+scripts/wahlen/.cache/
 __pycache__/

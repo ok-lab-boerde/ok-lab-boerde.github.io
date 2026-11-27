@@ -423,6 +423,15 @@ def lab_daten() -> dict[str, dict]:
         rad = Counter("15083" + u[f["gemeinde"]] for u in d["unfaelle"] if u[f["beteiligt"]] & d["bits"]["rad"])
         for ags, n in z.items():
             out[ags]["unfaelle"] = {"anzahl": n, "rad": rad.get(ags, 0), "von": jahre[0], "bis": jahre[-1]}
+    wa = ROOT / "wahlen" / "data.json"
+    if wa.exists():
+        d = json.loads(wa.read_text(encoding="utf-8"))
+        w = d["wahlen"][-1]
+        for ags, g in d["gemeinden"].items():
+            x = g["wahlen"][w["id"]]
+            p = max((k for k in x["anteile"] if k != "Sonstige"), key=lambda k: x["anteile"][k])
+            out[ags]["wahl"] = {"titel": w["titel"], "beteiligung": x["beteiligung"], "partei": p,
+                                "anteil": x["anteile"][p], "slug": g["slug"]}
     return out
 
 
@@ -719,6 +728,10 @@ def ort_seite(g: dict, o: dict | None, bs: list[dict], pois: list[dict], lab: di
             rad = f', davon {zahl(u["rad"])} mit Fahrrad' if u["rad"] else ""
             teile.append(f'<li><a href="/unfallatlas/">Unfallatlas</a>: {zahl(u["anzahl"])} Unfälle mit Personenschaden '
                          f'{u["von"]}–{u["bis"]} in der Gemeinde {e(g["name"])}{rad}.</li>')
+        if "wahl" in lab:
+            wl = lab["wahl"]
+            teile.append(f'<li><a href="/wahlen/{wl["slug"]}/">Wahlatlas</a>: Bei der {e(wl["titel"])} lag die Wahlbeteiligung '
+                         f'in {e(g["name"])} bei {str(wl["beteiligung"]).replace(".", ",")} %. Alle Wahlergebnisse seit 1990.</li>')
         lab_html = "" if not teile else f'<section aria-labelledby="h-lab"><h2 id="h-lab">Aus anderen Lab-Projekten</h2><ul class="eintraege">{"".join(teile)}</ul></section>'
 
     flaeche = o["polys"] if o else g["polys"]
@@ -1054,9 +1067,10 @@ def main() -> None:
 
     # Sitemap für die ganze Website
     fest = ["/", "/energiewende/", "/unfallatlas/", "/feedback/"]
-    for extra in ("ratskarte", "veranstaltungen", "zeitschichten", "duerre"):
+    for extra in ("ratskarte", "veranstaltungen", "zeitschichten", "duerre", "wahlen"):
         if (ROOT / extra / "index.html").exists():
             fest.append(f"/{extra}/")
+    fest += sorted(f"/wahlen/{d.name}/" for d in (ROOT / "wahlen").glob("*/") if (d / "index.html").exists())
     urls = "".join(f"<url><loc>{BASIS_URL}{u}</loc></url>\n" for u in fest + sitemap)
     schreibe(ROOT / "sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
 
