@@ -9,4 +9,5 @@ docs/auftraege/
 scripts/orte/.cache/
 scripts/ratskarte/.cache/
 scripts/veranstaltungen/.cache/
+scripts/duerre/.cache/
 __pycache__/

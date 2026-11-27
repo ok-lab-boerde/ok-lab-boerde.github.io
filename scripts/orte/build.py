@@ -1054,7 +1054,7 @@ def main() -> None:
 
     # Sitemap für die ganze Website
     fest = ["/", "/energiewende/", "/unfallatlas/", "/feedback/"]
-    for extra in ("ratskarte", "veranstaltungen", "zeitschichten"):
+    for extra in ("ratskarte", "veranstaltungen", "zeitschichten", "duerre"):
         if (ROOT / extra / "index.html").exists():
             fest.append(f"/{extra}/")
     urls = "".join(f"<url><loc>{BASIS_URL}{u}</loc></url>\n" for u in fest + sitemap)

@@ -15,7 +15,7 @@ def e(text) -> str:
 
 
 MARKE = " | OK Lab Börde"
-FUSS_PROJEKTE = [("Veranstaltungen", "/veranstaltungen/"), ("Feuerwehren", "/feuerwehr/"), ("Leben in der Börde", "/leben/"),
+FUSS_PROJEKTE = [("Veranstaltungen", "/veranstaltungen/"), ("Feuerwehren", "/feuerwehr/"), ("Dürremonitor", "/duerre/"), ("Leben in der Börde", "/leben/"),
                  ("Hofläden", "/regional/"), ("Zeitschichten", "/zeitschichten/"), ("Unfallatlas", "/unfallatlas/"),
                  ("Energiewende", "/energiewende/"), ("Ratskarte", "/ratskarte/")]
 
@@ -45,7 +45,8 @@ def kurzer_titel(titel: str) -> str:
 
 
 def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: list[tuple[str, str]],
-          index: bool = True, karte: bool = False, jsonld: dict | None = None, extra_head: str = "") -> str:
+          index: bool = True, karte: bool = False, jsonld: dict | list | None = None, extra_head: str = "",
+          quelle: str | None = None) -> str:
     robots = "index, follow" if index else "noindex, follow"
     krumen = " <span aria-hidden=\"true\">›</span> ".join(
         f'<a href="{e(u)}">{e(t)}</a>' if u else f'<span aria-current="page">{e(t)}</span>' for t, u in brotkrumen)
@@ -54,7 +55,7 @@ def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: 
     leaflet_js = ('<script src="/assets/vendor/leaflet/leaflet.js"></script>\n'
                   '  <script src="/assets/vendor/markercluster/leaflet.markercluster.js"></script>\n'
                   '  <script src="/assets/orte-karte.js"></script>') if karte else ""
-    ld = ld_script(jsonld) if jsonld else ""
+    ld = "\n  ".join(ld_script(j) for j in (jsonld if isinstance(jsonld, list) else [jsonld])) if jsonld else ""
     krumen_ld = brotkrumen_ld(brotkrumen, pfad)
     titel = kurzer_titel(titel)
     og_titel = titel.removesuffix(MARKE)
@@ -106,7 +107,7 @@ def seite(*, titel: str, beschreibung: str, pfad: str, inhalt: str, brotkrumen: 
   <main id="main" class="wrap orte-main">
     <nav class="krumen" aria-label="Brotkrümelnavigation">{krumen}</nav>
 {inhalt}
-    <p class="quelle">{OSM_HINWEIS}. Ohne Gewähr. <a href="/betriebe/ueber-die-daten/">Über die Daten</a></p>
+    <p class="quelle">{quelle or OSM_HINWEIS + '. Ohne Gewähr. <a href="/betriebe/ueber-die-daten/">Über die Daten</a>'}</p>
   </main>
   <footer class="site-footer">
     <div class="wrap">
