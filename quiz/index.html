@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Börde-Quiz: Gemeinden und Orte im Landkreis Börde finden</title>
+  <meta name="description" content="Kennst du die Börde? Finde die 34 Gemeinden und 138 Ortsteile des Landkreises auf der Karte. Kostenloses Kartenquiz ohne Anmeldung, auch für den Unterricht.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://oklab-boerde.de/quiz/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OK Lab Börde">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Börde-Quiz: Gemeinden und Orte im Landkreis Börde finden">
+  <meta property="og:description" content="Kennst du die Börde? Finde die 34 Gemeinden und 138 Ortsteile des Landkreises auf der Karte. Kostenloses Kartenquiz ohne Anmeldung, auch für den Unterricht.">
+  <meta property="og:url" content="https://oklab-boerde.de/quiz/">
+  <meta property="og:image" content="https://oklab-boerde.de/assets/og-bild.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo und Schriftzug OK Lab Börde">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/assets/orte.css">
+  
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Quiz", "name": "Börde-Quiz: Kennst du deinen Landkreis?", "description": "Kartenquiz zu den 34 Gemeinden und 138 Ortsteilen im Landkreis Börde.", "url": "https://oklab-boerde.de/quiz/", "inLanguage": "de", "isAccessibleForFree": true, "educationalLevel": "Grundschule bis Erwachsene", "about": {"@type": "Place", "name": "Landkreis Börde, Sachsen-Anhalt"}, "creator": {"@type": "Organization", "name": "OK Lab Börde", "url": "https://oklab-boerde.de/"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie viele Gemeinden hat der Landkreis Börde?", "acceptedAnswer": {"@type": "Answer", "text": "Der Landkreis Börde in Sachsen-Anhalt hat 34 Gemeinden. Kreisstadt ist Haldensleben."}}, {"@type": "Question", "name": "Welche ist die größte Gemeinde im Landkreis Börde?", "acceptedAnswer": {"@type": "Answer", "text": "Nach Fläche ist Oebisfelde-Weferlingen mit rund 248 km² die größte Gemeinde, Beendorf mit rund 7 km² die kleinste."}}, {"@type": "Question", "name": "Welche Gemeinde hat die meisten Ortsteile?", "acceptedAnswer": {"@type": "Answer", "text": "Oebisfelde-Weferlingen mit 25 Ortsteilen laut OpenStreetMap."}}, {"@type": "Question", "name": "Werden beim Quiz Daten gespeichert?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Das Quiz läuft vollständig in deinem Browser. Es gibt keine Rangliste, kein Konto und keine Übertragung von Ergebnissen."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://oklab-boerde.de/"}, {"@type": "ListItem", "position": 2, "name": "Börde-Quiz", "item": "https://oklab-boerde.de/quiz/"}]}</script>
+  <link rel="stylesheet" href="/assets/quiz.css">
+  <script defer src="/assets/quiz.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/logo.svg" alt=""><span>OK Lab <b>Börde</b></span></a>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="/betriebe/">Betriebe</a></li>
+          <li><a href="/orte/">Orte</a></li>
+          <li><a href="/#projekte">Projekte</a></li>
+          <li><a href="/#mitmachen">Mitmachen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap orte-main">
+    <nav class="krumen" aria-label="Brotkrümelnavigation"><a href="/">Start</a> <span aria-hidden="true">›</span> <span aria-current="page">Börde-Quiz</span></nav>
+<header class="qz-kopf">
+  <h1>Börde-Quiz: Kennst du deinen Landkreis?</h1>
+  <p class="lead">Wo liegt Hötensleben, wo Calvörde, und zu welcher Gemeinde gehört Groß Ammensleben? Finde die 34 Gemeinden und 138 Ortsteile des Landkreises Börde auf der Karte. Zehn Fragen pro Runde, ohne Anmeldung und ohne Rangliste.</p>
+</header>
+
+<section class="qz-spiel" aria-labelledby="qz-spiel">
+  <h2 id="qz-spiel" class="qz-unsichtbar">Quiz</h2>
+  <div class="qz-modi" role="group" aria-label="Spielart wählen">
+    <button type="button" data-modus="gemeinde" aria-pressed="true"><strong>Gemeinden</strong><span>Klicke die gesuchte Gemeinde an</span></button>
+    <button type="button" data-modus="ortsteil" aria-pressed="false"><strong>Ortsteile</strong><span>Zu welcher Gemeinde gehört der Ort?</span></button>
+    <button type="button" data-modus="genau" aria-pressed="false"><strong>Punktgenau</strong><span>Tippe so nah wie möglich an den Ort</span></button>
+  </div>
+  <div class="qz-brett">
+    <div class="qz-frage" aria-live="polite">
+      <span id="qz-runde" class="qz-runde"></span>
+      <span id="qz-text" class="qz-text">Wähle eine Spielart und starte.</span>
+      <span id="qz-punkte" class="qz-punktestand"></span>
+    </div>
+    <div id="qz-karte" class="qz-karte"><noscript>Das Quiz braucht JavaScript.</noscript></div>
+    <div class="qz-leiste">
+      <p id="qz-rueck" class="qz-rueck" aria-live="polite"></p>
+      <button type="button" id="qz-weiter" class="qz-knopf">Los geht's</button>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="qz-gemeinden">
+  <h2 id="qz-gemeinden">Die 34 Gemeinden und ihre Ortsteile</h2>
+  <p>Zum Üben oder Nachschlagen: alle Gemeinden des Landkreises Börde mit ihren Ortsteilen. Jede Gemeinde hat einen eigenen <a href="/orte/">Ortssteckbrief</a>. Für Ausleben, Beendorf, Colbitz, Harbke, Kroppenstedt, Rogätz, Ummendorf, Völpke, Wefensleben, Zielitz sind in OpenStreetMap keine Ortsteile eingetragen. Fehlt etwas? Ortsteile lassen sich in <a href="https://www.openstreetmap.org/">OpenStreetMap</a> ergänzen.</p>
+  <ul class="qz-liste"><li><a href="/orte/altenhausen/">Altenhausen</a><span class="qz-ot">Emden, Ivenrode</span></li><li><a href="/orte/am-grossen-bruch/">Am Großen Bruch</a><span class="qz-ot">Gunsleben, Hamersleben, Neuwegersleben, Wulferstedt</span></li><li><a href="/orte/angern/">Angern</a><span class="qz-ot">Bertingen, Mahlwinkel, Wenddorf</span></li><li><a href="/orte/ausleben/">Ausleben</a></li><li><a href="/orte/barleben/">Barleben</a><span class="qz-ot">Ebendorf, Meitzendorf</span></li><li><a href="/orte/beendorf/">Beendorf</a></li><li><a href="/orte/burgstall/">Burgstall</a><span class="qz-ot">Cröchern, Dolle, Sandbeiendorf</span></li><li><a href="/orte/buelstringen/">Bülstringen</a><span class="qz-ot">Wieglitz</span></li><li><a href="/orte/calvoerde/">Calvörde</a><span class="qz-ot">Berenbrock, Dorst, Grauingen, Klüden, Mannhausen, Velsdorf, Wegenstedt, Zobbenitz</span></li><li><a href="/orte/colbitz/">Colbitz</a></li><li><a href="/orte/eilsleben/">Eilsleben</a><span class="qz-ot">Drackenstedt, Druxberge, Ovelgünne, Wormsdorf</span></li><li><a href="/orte/erxleben/">Erxleben</a><span class="qz-ot">Bartensleben, Bregenstedt, Hakenstedt, Uhrsleben</span></li><li><a href="/orte/flechtingen/">Flechtingen</a><span class="qz-ot">Behnsdorf, Belsdorf, Böddensell, Hasselburg</span></li><li><a href="/orte/groeningen/">Gröningen</a><span class="qz-ot">Dalldorf, Großalsleben, Krottorf</span></li><li><a href="/orte/haldensleben/">Haldensleben</a><span class="qz-ot">Hundisburg, Satuelle, Süplingen, Uthmöden, Wedringen</span></li><li><a href="/orte/harbke/">Harbke</a></li><li><a href="/orte/hohe-boerde/">Hohe Börde</a><span class="qz-ot">Ackendorf, Bebertal, Bornstedt, Eichenbarleben, Groß Santersleben, Hermsdorf, Hohenwarsleben, Irxleben, Niederndodeleben, Nordgermersleben, Ochtmersleben, Rottmersleben, Schackensleben, Wellen</span></li><li><a href="/orte/hoetensleben/">Hötensleben</a><span class="qz-ot">Barneberg, Ohrsleben, Wackersleben</span></li><li><a href="/orte/ingersleben/">Ingersleben</a><span class="qz-ot">Alleringersleben, Eimersleben, Morsleben, Ostingersleben</span></li><li><a href="/orte/kroppenstedt/">Kroppenstedt</a></li><li><a href="/orte/loitsche-heinrichsberg/">Loitsche-Heinrichsberg</a><span class="qz-ot">Heinrichsberg, Loitsche</span></li><li><a href="/orte/niedere-boerde/">Niedere Börde</a><span class="qz-ot">Bleiche, Dahlenwarsleben, Groß Ammensleben, Gutenswegen, Jersleben, Klein Ammensleben, Meseberg, Samswegen, Vahldorf</span></li><li><a href="/orte/oebisfelde-weferlingen/">Oebisfelde-Weferlingen</a><span class="qz-ot">Bergfriede, Breitenrode, Buchhorst, Bösdorf, Döhren, Eickendorf, Eschenrode, Etingen, Everingen, Gehrendorf, Hödingen, Hörsingen, Kathendorf, Klinze, Lockstedt, Niendorf, Oebisfelde, Rätzlingen, Schwanefeld, Seggerde, Siestedt, Walbeck, Wassensdorf, Weddendorf, Weferlingen</span></li><li><a href="/orte/oschersleben-bode/">Oschersleben (Bode)</a><span class="qz-ot">Alikendorf, Altbrandsleben, Ampfurth, Beckendorf-Neindorf, Groß Germersleben, Hadmersleben, Hordorf, Hornhausen, Klein Oschersleben, Kleinalsleben, Oschersleben, Peseckendorf, Schermcke</span></li><li><a href="/orte/rogaetz/">Rogätz</a></li><li><a href="/orte/sommersdorf/">Sommersdorf</a><span class="qz-ot">Marienborn</span></li><li><a href="/orte/suelzetal/">Sülzetal</a><span class="qz-ot">Altenweddingen, Bahrendorf, Dodendorf, Langenweddingen, Osterweddingen, Schwaneberg, Sülldorf</span></li><li><a href="/orte/ummendorf/">Ummendorf</a></li><li><a href="/orte/voelpke/">Völpke</a></li><li><a href="/orte/wanzleben-boerde/">Wanzleben-Börde</a><span class="qz-ot">Bottmersdorf, Domersleben, Dreileben, Eggenstedt, Groß Rodensleben, Hohendodeleben, Klein Rodensleben, Remkersleben, Seehausen, Wanzleben, Zuckerdorf Klein Wanzleben</span></li><li><a href="/orte/wefensleben/">Wefensleben</a></li><li><a href="/orte/westheide/">Westheide</a><span class="qz-ot">Born, Hillersleben, Neuenhofe</span></li><li><a href="/orte/wolmirstedt/">Wolmirstedt</a><span class="qz-ot">Farsleben, Glindenberg, Mose</span></li><li><a href="/orte/zielitz/">Zielitz</a></li></ul>
+</section>
+
+<section class="qz-text-block" aria-labelledby="qz-wissen">
+  <h2 id="qz-wissen">Gut zu wissen</h2>
+  <p>Der Landkreis Börde entstand 2007 aus dem Ohrekreis und dem Bördekreis. Seit der Gemeindegebietsreform 2009/2010 gibt es 34 Gemeinden, viele davon Einheitsgemeinden aus früher selbstständigen Dörfern. Die größte ist Oebisfelde-Weferlingen mit rund 248 km², die kleinste Beendorf mit rund 7 km². Die meisten Ortsteile hat Oebisfelde-Weferlingen mit 25.</p>
+  <p>Das Quiz eignet sich auch für den Heimatkunde-Unterricht. Alle Grenzen und Orte stammen aus offenen Daten und dürfen frei genutzt werden.</p>
+</section>
+
+<section class="qz-text-block" aria-labelledby="qz-faq">
+  <h2 id="qz-faq">Häufige Fragen</h2>
+  <div class="qz-faq"><details><summary>Wie viele Gemeinden hat der Landkreis Börde?</summary><p>Der Landkreis Börde in Sachsen-Anhalt hat 34 Gemeinden. Kreisstadt ist Haldensleben.</p></details><details><summary>Welche ist die größte Gemeinde im Landkreis Börde?</summary><p>Nach Fläche ist Oebisfelde-Weferlingen mit rund 248 km² die größte Gemeinde, Beendorf mit rund 7 km² die kleinste.</p></details><details><summary>Welche Gemeinde hat die meisten Ortsteile?</summary><p>Oebisfelde-Weferlingen mit 25 Ortsteilen laut OpenStreetMap.</p></details><details><summary>Werden beim Quiz Daten gespeichert?</summary><p>Nein. Das Quiz läuft vollständig in deinem Browser. Es gibt keine Rangliste, kein Konto und keine Übertragung von Ergebnissen.</p></details></div>
+</section>
+    <p class="quelle">Gemeindegrenzen: © GeoBasis-DE / BKG (VG250), <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a>. Ortsteile und Orte: Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (<a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>). Ohne Gewähr.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>OK Lab Börde</strong></p>
+        <p>Inhalte unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>, Daten aus OpenStreetMap unter ODbL.</p>
+      </div>
+      <ul aria-label="Projekte"><li><a href="/veranstaltungen/">Veranstaltungen</a></li><li><a href="/feuerwehr/">Feuerwehren</a></li><li><a href="/duerre/">Dürremonitor</a></li><li><a href="/wahlen/">Wahlatlas</a></li><li><a href="/quiz/">Börde-Quiz</a></li><li><a href="/leben/">Leben in der Börde</a></li><li><a href="/regional/">Hofläden</a></li><li><a href="/zeitschichten/">Zeitschichten</a></li><li><a href="/unfallatlas/">Unfallatlas</a></li><li><a href="/energiewende/">Energiewende</a></li><li><a href="/ratskarte/">Ratskarte</a></li></ul>
+      <ul>
+        <li><a href="/impressum.html">Impressum</a></li>
+        <li><a href="/datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://github.com/ok-lab-boerde/ok-lab-boerde.github.io">Quellcode</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>

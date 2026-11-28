@@ -15,7 +15,7 @@ def e(text) -> str:
 
 
 MARKE = " | OK Lab Börde"
-FUSS_PROJEKTE = [("Veranstaltungen", "/veranstaltungen/"), ("Feuerwehren", "/feuerwehr/"), ("Dürremonitor", "/duerre/"), ("Wahlatlas", "/wahlen/"), ("Leben in der Börde", "/leben/"),
+FUSS_PROJEKTE = [("Veranstaltungen", "/veranstaltungen/"), ("Feuerwehren", "/feuerwehr/"), ("Dürremonitor", "/duerre/"), ("Wahlatlas", "/wahlen/"), ("Börde-Quiz", "/quiz/"), ("Leben in der Börde", "/leben/"),
                  ("Hofläden", "/regional/"), ("Zeitschichten", "/zeitschichten/"), ("Unfallatlas", "/unfallatlas/"),
                  ("Energiewende", "/energiewende/"), ("Ratskarte", "/ratskarte/")]
 

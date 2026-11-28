@@ -1,0 +1,73 @@
+/* Börde-Quiz */
+:root {
+  --qz-flaeche: #e6ece2;
+  --qz-grenze: #ffffff;
+  --qz-hover: #d3dfcc;
+  --qz-richtig: #2f8a2a;
+  --qz-falsch: #c62828;
+  --qz-ziel: #0d4a8f;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --qz-flaeche: #26313a;
+    --qz-grenze: #10151b;
+    --qz-hover: #33424e;
+    --qz-richtig: #7cc95a;
+    --qz-falsch: #ff8a80;
+    --qz-ziel: #7fb2ee;
+  }
+}
+.qz-kopf h1 { color: var(--blue); }
+.qz-kopf .lead { color: var(--muted); max-width: 46em; }
+.qz-unsichtbar { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.qz-modi { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 16px 0 12px; }
+.qz-modi button { font: inherit; text-align: left; padding: 10px 14px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--card); color: var(--text); cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+.qz-modi button span { color: var(--muted); font-size: .88rem; }
+.qz-modi button[aria-pressed="true"] { border-color: var(--blue); box-shadow: inset 0 0 0 2px var(--blue); }
+@media (max-width: 520px) {
+  .qz-modi { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .qz-modi button { padding: 8px 6px; text-align: center; font-size: .92rem; }
+  .qz-modi button span { display: none; }
+}
+.qz-modi button:focus-visible, .qz-knopf:focus-visible { outline: 3px solid var(--wheat); outline-offset: 2px; }
+
+.qz-brett { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+.qz-frage { display: grid; grid-template-columns: auto 1fr auto; align-items: baseline; gap: 12px; min-height: 2.2em; }
+.qz-runde, .qz-punktestand { color: var(--muted); font-size: .92rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.qz-text { font-size: 1.25rem; font-weight: 700; text-align: center; }
+.qz-text b { color: var(--blue); }
+@media (max-width: 520px) {
+  .qz-frage { grid-template-columns: 1fr 1fr; }
+  .qz-text { grid-column: 1 / -1; grid-row: 2; }
+  .qz-punktestand { text-align: right; }
+}
+
+.qz-karte { position: relative; margin: 10px 0; touch-action: manipulation; }
+.qz-karte svg { display: block; width: 100%; height: auto; max-height: 72vh; }
+.qz-karte path { fill: var(--qz-flaeche); stroke: var(--qz-grenze); stroke-width: 1.2; cursor: pointer; transition: fill .2s; }
+.qz-karte.qz-aktiv path:hover, .qz-karte.qz-aktiv path:focus { fill: var(--qz-hover); outline: none; }
+.qz-karte path.qz-richtig { fill: var(--qz-richtig); }
+.qz-karte path.qz-falsch { fill: var(--qz-falsch); }
+.qz-karte path.qz-ziel { fill: var(--qz-ziel); }
+.qz-karte.qz-genau path { cursor: crosshair; }
+.qz-karte text { font-family: inherit; font-size: 13px; font-weight: 700; fill: var(--text); paint-order: stroke; stroke: var(--card); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
+.qz-karte .qz-marke-ziel { fill: var(--qz-ziel); stroke: var(--card); stroke-width: 2; }
+.qz-karte .qz-marke-klick { fill: var(--qz-falsch); stroke: var(--card); stroke-width: 2; }
+.qz-karte .qz-linie { stroke: var(--text); stroke-width: 1.5; stroke-dasharray: 4 3; fill: none; }
+@media (prefers-reduced-motion: reduce) { .qz-karte path { transition: none; } }
+
+.qz-leiste { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.qz-rueck { margin: 0; flex: 1 1 240px; }
+.qz-rueck .ok { color: var(--qz-richtig); font-weight: 700; }
+.qz-rueck .nein { color: var(--qz-falsch); font-weight: 700; }
+.qz-knopf { font: inherit; font-weight: 700; padding: 9px 20px; border-radius: 999px; border: 0; background: var(--blue); color: var(--bg); cursor: pointer; }
+.qz-knopf[hidden] { display: none; }
+
+.qz-liste { columns: 2 280px; padding-left: 1.1em; }
+.qz-liste li { break-inside: avoid; margin: 0 0 8px; }
+.qz-ot { display: block; color: var(--muted); font-size: .88rem; }
+.qz-text-block { max-width: 46em; }
+.qz-faq details { border-bottom: 1px solid var(--border); padding: 10px 0; }
+.qz-faq summary { font-weight: 600; cursor: pointer; }
+.qz-faq p { margin: 8px 0 2px; }

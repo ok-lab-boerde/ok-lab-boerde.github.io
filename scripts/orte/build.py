@@ -1067,7 +1067,7 @@ def main() -> None:
 
     # Sitemap für die ganze Website
     fest = ["/", "/energiewende/", "/unfallatlas/", "/feedback/"]
-    for extra in ("ratskarte", "veranstaltungen", "zeitschichten", "duerre", "wahlen"):
+    for extra in ("ratskarte", "veranstaltungen", "zeitschichten", "duerre", "wahlen", "quiz"):
         if (ROOT / extra / "index.html").exists():
             fest.append(f"/{extra}/")
     fest += sorted(f"/wahlen/{d.name}/" for d in (ROOT / "wahlen").glob("*/") if (d / "index.html").exists())

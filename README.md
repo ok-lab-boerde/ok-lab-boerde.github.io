@@ -18,6 +18,7 @@ Vorbild sind die OK Labs im Netzwerk [Code for Germany](https://codefor.de/), et
 | `unfallatlas/` | Unfallatlas Börde (Karte, Daten, eigene [README](unfallatlas/README.md)) |
 | `scripts/unfallatlas/build.py` | Bereitet die Unfallatlas-Daten auf |
 | `betriebe/`, `orte/` | Betriebe-Karte mit Karten-Check und Ortssteckbriefe (größtenteils erzeugt, siehe [betriebe/README.md](betriebe/README.md)) |
+| `quiz/` | Börde-Quiz: Gemeinden, Ortsteile und Orte auf der Karte finden, läuft nur im Browser (erzeugt von `scripts/quiz/build.py` aus dem OSM-Zwischenspeicher von `scripts/orte`) |
 | `wahlen/` | Wahlatlas Börde: alle Landtags-, Bundestags- und Europawahlen seit 1990 je Gemeinde, auf heutige Gemeinden umgerechnet, mit Zeitreise und Seite je Gemeinde (erzeugt von `scripts/wahlen/build.py`, nur nach neuen Wahlen) |
 | `duerre/` | Dürremonitor Börde: tägliche Bodenfeuchte des DWD für vier Stationen mit Vergleich zu 1991–2020 und Erklärtexten (erzeugt von `scripts/duerre/build.py`) |
 | `feuerwehr/` | Feuerwehren in der Börde: alle Feuerwehrhäuser aus OSM auf einer Karte, je Gemeinde, mit Karten-Check (erzeugt von `scripts/orte/feuerwehr.py`) |
