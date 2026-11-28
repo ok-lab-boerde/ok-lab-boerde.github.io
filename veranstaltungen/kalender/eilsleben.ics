@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:vp-2991932@ok-lab-boerde.github.io
-DTSTAMP:20261127T000000Z
+DTSTAMP:20261128T000000Z
 DTSTART;VALUE=DATE:20270105
 DTEND;VALUE=DATE:20270111
 SUMMARY:Hallenfußball - Turnierwochenende 2027
@@ -38,7 +38,7 @@ DESCRIPTION:Quelle: Gemeinde-Website – https://www.obere-aller.de/veranst
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-2987554@ok-lab-boerde.github.io
-DTSTAMP:20261127T000000Z
+DTSTAMP:20261128T000000Z
 DTSTART;TZID=Europe/Berlin:20270620T143000
 SUMMARY:Jahresfest des Ev. Kindergartens " Arche Noah"
 LOCATION:Evangelische Kirche Eilsleben

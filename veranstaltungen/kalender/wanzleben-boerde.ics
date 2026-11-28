@@ -25,13 +25,141 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:wz-2026-11-28-weihnachtsmarkt-in-domersleben@ok-lab-boerde.github.io
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Weihnachtsmarkt in Domersleben
+LOCATION:Schafstall\, Krugberg 13\, Domersleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-11-28t12-00-eisbeinessen-feuerwehr-wanzleben@ok-lab-boerde.gith
+ ub.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T120000
+DTEND;TZID=Europe/Berlin:20261128T140000
+SUMMARY:Eisbeinessen Feuerwehr Wanzleben
+LOCATION:Wanzleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-11-28t14-00-weihnachtsmarkt-klein-rodensleben@ok-lab-boerde.git
+ hub.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T140000
+DTEND;TZID=Europe/Berlin:20261128T213000
+SUMMARY:Weihnachtsmarkt Klein Rodensleben
+LOCATION:Bauernende 1 – ehem. Gelände Gaststätte zur Kastanie\, Klein R
+ odensleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-11-28t14-00-weihnachtsmarkt-seehausen@ok-lab-boerde.github.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261128T140000
+DTEND;TZID=Europe/Berlin:20261128T210000
+SUMMARY:Weihnachtsmarkt Seehausen
+LOCATION:Friedensplatz\, Seehausen
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
 UID:si-5042@ok-lab-boerde.github.io
-DTSTAMP:20261127T000000Z
+DTSTAMP:20261128T000000Z
 DTSTART;TZID=Europe/Berlin:20261202T180000
 SUMMARY:Sitzung: Ortschaftsrat Stadt Wanzleben
 LOCATION:Stadt Wanzleben\, Rathauskeller\, Markt 1-2
 URL:https://ratsinfo.kitu-genossenschaft.de/wzl_bi/si0057.asp?__ksinr=5042
 DESCRIPTION:Quelle: Ratsinfo Wanzleben-Börde – https://ratsinfo.kitu-gen
  ossenschaft.de/wzl_bi/si0057.asp?__ksinr=5042
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-03t18-00-lebendiger-adventskallender-im-b-rgerhaus-in-klein-
+ wanzleben@ok-lab-boerde.github.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261203T180000
+DTEND;TZID=Europe/Berlin:20261203T200000
+SUMMARY:Lebendiger Adventskallender im Bürgerhaus in Klein Wanzleben
+LOCATION:Zuckerdorf Klein Wanzleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-05t13-00-weihnachtsmarkt-eggenstedt@ok-lab-boerde.github.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T130000
+DTEND;TZID=Europe/Berlin:20261205T200000
+SUMMARY:Weihnachtsmarkt Eggenstedt
+LOCATION:Feuerwehrgelände\, Eggenstedt
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-05t15-00-christkindmarkt-klein-germersleben-an-der-kirche@ok
+ -lab-boerde.github.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261205T150000
+DTEND;TZID=Europe/Berlin:20261205T220000
+SUMMARY:Christkindmarkt Klein Germersleben an der Kirche
+LOCATION:Klein Germersleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-06t14-00-weihnachtsmarkt-sg-empor-kl-wanzleben@ok-lab-boerde
+ .github.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261206T140000
+DTEND;TZID=Europe/Berlin:20261206T180000
+SUMMARY:Weihnachtsmarkt SG Empor Kl. Wanzleben
+LOCATION:Sportplatz\, Zuckerdorf Klein Wanzleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-12t15-00-weihnachtsmarkt-mit-konzert-in-remkersleben@ok-lab-
+ boerde.github.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261212T150000
+DTEND;TZID=Europe/Berlin:20261212T220000
+SUMMARY:Weihnachtsmarkt mit Konzert in Remkersleben
+LOCATION:an der Kirche\, Remkersleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2026-12-13t12-00-weihnachtsmarkt-wanzleben@ok-lab-boerde.github.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20261213T120000
+DTEND;TZID=Europe/Berlin:20261213T190000
+SUMMARY:Weihnachtsmarkt Wanzleben
+LOCATION:Wanzleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
+END:VEVENT
+BEGIN:VEVENT
+UID:wz-2027-01-09t17-00-knutfest-klein-rodensleben@ok-lab-boerde.github.io
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Berlin:20270109T170000
+DTEND;TZID=Europe/Berlin:20270109T230000
+SUMMARY:Knutfest Klein Rodensleben
+LOCATION:An der Feuerwehr\, Klein Rodensleben
+URL:https://www.wanzleben-boerde.de/de/aktuelles/veranstaltungen.html
+DESCRIPTION:Quelle: Stadt Wanzleben-Börde – https://www.wanzleben-boerde
+ .de/de/aktuelles/veranstaltungen.html
 END:VEVENT
 END:VCALENDAR
